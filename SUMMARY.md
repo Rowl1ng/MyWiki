@@ -2,7 +2,7 @@
 
 ## 编程
 
-* [Python笔记本]()
+* [Python笔记本](README.md)
     * [基础](basics.md)
     * [多线程](multiproccessing.md)
     * [高级特性](superior.md)
@@ -91,6 +91,12 @@
   * [阈值](yu-zhi.md)
 * [医疗图像](yi-liao-tu-xiang.md)
 * [feature](feature.md)
+
+## Math
+
+* [First Chapter](chapter1.md)
+* [Probability Theory](probability-theory.md)
+* [Optimization](optimization.md)
 
 
 
