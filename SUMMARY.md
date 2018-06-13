@@ -107,7 +107,6 @@
    * [math](math.md)
    * [material](material.md)
    * [others](others.md)
-* [First Chapter](chapter1.md)
 
 
 
