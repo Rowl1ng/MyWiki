@@ -1,0 +1,191 @@
+# prefix
+
+- plac-平静的
+    - placid安静的，平和的
+- sed-坐（镇静）
+    - sedate镇静的
+    - sedentary久坐的
+    - sedulous勤勉的
+- cosm-宇宙
+    - cosmopolitanism世界性
+- ego-自我：
+    - egonism利己主义
+        - altruism利他主义
+- meta-:
+    - metaphysical 哲学上的，理论上的；非尘世的。
+- hetero其他的，相异的
+- homo同类的
+- mono单一
+    - monopolize垄断---monarch君主
+    - monologue独白；长篇大论
+- omni-全
+    - omnipotent全能的，万能的
+    - omniscient无所不知的
+- co-com-con-共同
+    - coagulate使凝结
+        - congeal凝结，凝固
+        - curdle使凝结，变稠
+    - cohesion内聚力
+    - commence开始，着手
+    - compatible和谐共处的
+    - concord一致，和睦---discord 意见不一致，不和谐
+        - cord 和谐一致；符合
+        - congruent和谐一致的，全等的--congruous---congruity
+        - square一致，符合；结清
+        - unanimous全体一致的
+    - condole同情，哀悼
+    - console安慰
+        - conciliate 平息，抚慰；调解
+            - reconcile 使和解，协调。
+        - propitiate 慰抚，劝解。
+        - salve 减轻，缓解。
+        - solace 安慰。
+    - contend竞争，争论
+    - congregate聚集，集合
+    - contiguous接壤的
+        - coterminous毗连的
+        - abut 邻接，毗邻
+- tant-相等，相近。
+- inter（埋葬）
+    - intercede说好话，代为求情
+
+    - 干涉
+        - intervene介入
+            - meddle干预
+        - interpose使介入
+        - intestate未留下遗嘱的
+
+比较：
+
+- neo新
+    - neolithic新石器时代的
+    - neologism新字/词
+    - neophyte初学者
+        - tyro新手
+- out-比…（好）：
+    - outlast比…持久
+    - outgrow
+    - outstrip超过
+    - outfox/outwit以机智胜过
+    - outmaneuver以策略制胜
+- sur-超:
+    - surfeit 过量，饮食过度。
+- under-强：
+    - underscore 强调。
+    - undergird 加强，巩固...的底部。
+- de-去掉，离开：
+    - debility衰弱
+    - deplete 耗尽，使衰竭。
+    - deplore 哀悼。
+    - depose 发誓作证；罢黜，废免；摆放。
+        - dispose 使倾向；处理掉；布置有序。
+    - deduct减去；演绎（deduce）
+    - despot暴君---ddespotic 专制的，暴虐的。
+- di-离开：
+    - diffuse 啰嗦的；不集中的，扩散的；扩散，散开。
+    - digress 离题
+        - diverge 改变方向；散开；分歧。---converge
+        - divagate漂泊
+    - dilapidate荒废，破坏
+- re-反，复：
+    - repent后悔，懊悔
+    - requite 报答；报复。
+        - revenge报复
+        - retaliate 报复，反击。
+        - remunerate 支付报酬或补偿。
+            - unrequited 无报答的，无报酬的。
+        - retribution 报偿，报应。
+        - restitution 补偿，赔偿。
+    - resign 辞职，放弃。
+    - reproof 批评，反对。
+    - reprove 温和地责备，警告；不欣赏，不喜欢。
+
+否定：
+
+- il不，ill不好的 ill-paying
+- im不；进入
+
+    - immense极大的
+    - impart传授，告知
+        - impute归咎于
+    - imbibe喝，吸入
+    - immanent内在的，普遍存在的
+    - immemorial太古的
+
+- in不；进入
+    - inappreciable微不足道的
+        - picayunish不值钱的
+        - piddling琐碎的（piddle鬼混，浪费）
+    - inflame使燃烧，激怒
+    - incriminate连累，牵连
+    - induce诱导，引起---conduce 导致；助长。
+    - incarnate 化身的，人体化的；（思想、理论的）具化，体现。
+    - invoke祈求，恳求；使生效
+        - supplicate恳求，祈求
+- dis-不；反的：
+    - disparity不同
+    - dismantle拆除
+    - disproof反证，反驳
+- ob-反：
+    - oblique不直接的，不坦率的；斜的（～ness斜度）
+        - slant倾斜；斜面，观点
+        - tilt（使）倾斜；n.倾斜，斜坡
+    - obscure难以理解的；模糊的；使变模糊，隐藏
+        - conceal 隐藏，隐瞒
+    - obliterate涂掉，擦掉
+- eu-好，优：
+    - euphoria愉快的心情
+
+词性：
+
+- em-en-使：
+    - embitter使痛苦
+    - embroil使卷入纷争
+    - enfetter使受制于
+    - enjoin命令
+    - enthrall迷惑，迷住
+        - posses
+
+方向：
+
+- e-ex-出
+    - emigrate移居国外/外地
+        - immigrate移入
+    - emote激动地表达感情
+    - exculpate开脱，申明无罪
+    - expulsion驱逐
+        - expatriate流放；移居国外
+    - expel排出，开除
+    - exorbitant 过度的。
+    - exonerate 免除责备。
+    - expire 到期；断气，死亡。
+    - expurgate 净化，删去不当处。
+    - excursive
+- en-入
+    - encipher译成密码
+    - encompass包围
+        - environ围绕
+    - entreat恳求
+- pro-pre-前，先
+    - prologue开场白；序言；序幕
+        - prelude序幕，前奏
+    - projectile抛射体
+        - projector放映机
+    - procrastinate （因为懒散）拖延。
+    - prospect 探查，勘探；期待，被期望的某物。
+        - reconnoiter 侦查，勘查。
+
+    - 预：
+        - prophecy（n.）预言
+            - prophet先知，预言者
+        - prognosticate预言
+            - portentous 预兆性的，凶兆的；勾起兴趣的，令人遐想的。
+            - forebode 预示，预兆。
+        - presage预感，预示---prescience
+            - prevision
+            - presentiment
+        - premeditate 预先考虑。
+    - precursor 先驱者，先导。---predecessor 前任，先辈。
+- retro-退，后。
+- sub-下：
+    - subliminal 下意识的，潜在意识的。
