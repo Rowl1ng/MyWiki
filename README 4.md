@@ -1,36 +1,15 @@
-# \# 非线性最优化——说人话
+## 非线性最优化——说人话
 
-# 
 
-# 标签（空格分隔）： 上课
 
-# 
+### 凸优化与非凸优化[^footnote1]
 
-# ---
 
-# 
+凸优化：
 
-# koucx@bupt.edu.cn
 
-# optim\_grs@163.com
 
-# 寇彩霞
-
-# 
-
-#  \[TOC\]
-
-#  
-
-# \#\# 凸优化与非凸优化\[^footnote1\]
-
-# 
-
-# 凸优化：
-
-# 
-
-# !\[此处输入图片的描述\]\[1\]
+![此处输入图片的描述][1]
 
 #  
 
@@ -978,125 +957,115 @@
 
 # 
 
-# \#\#\# 3. 直接法
+#### 3. 直接法
 
-# 
 
-# 1. $x\_1\in \mathbb R^n,d\_1,\dots,d\_n线性无关$
+1. $x\_1\in \mathbb R^n,d\_1,\dots,d\_n线性无关$
 
-# 2. $x\_1$沿$d\_1$线性搜索得$x\_2$，即$x\_2$是$f\(x\)$在$\{z\|z=x\_1+\alpha\_1 d\_1\}$上的极小值点
+2. $x\_1$沿$d\_1$线性搜索得$x\_2$，即$x\_2$是$f\(x\)$在$\{z\|z=x\_1+\alpha\_1 d\_1\}$上的极小值点
 
-# 3. $\beta\_1,\dots,\beta\_n&gt;0,\nu^{\(1\)}=x\_2+\beta\_2d\_2$，令$d\_2=\nu^{\(2\)}-x\_2$，$\nu^{\(2\)}$是$f\(x\)$在$\{z\|z=\nu^{\(1\)}+\alpha\_1 d\_1\}$上的极小值点
+3. $\beta\_1,\dots,\beta\_n&gt;0,\nu^{\(1\)}=x\_2+\beta\_2d\_2$，令$d\_2=\nu^{\(2\)}-x\_2$，$\nu^{\(2\)}$是$f\(x\)$在$\{z\|z=\nu^{\(1\)}+\alpha\_1 d\_1\}$上的极小值点
 
-#     - $\nabla f\(\nu^{\(1\)}\)^\top d\_1=0,\nabla f\(x\_2\)^\top d\_1=0$ 
+- $\nabla f\(\nu^{\(1\)}\)^\top d\_1=0,\nabla f\(x\_2\)^\top d\_1=0$ 
 
-#     - $d\_2^\top Hd\_1=0$\(共轭，$d\_2=\nu^{\(2\)}-x\_2$\)
+- $d\_2^\top Hd\_1=0$\(共轭，$d\_2=\nu^{\(2\)}-x\_2$\)
 
-# 4. 令$d\_3=\nu^{\(3\)}-x\_3$，则$\nu^{\(3\)}$是$f\(x\)$在$\{z\|z=x\_1+\alpha\_1 d\_1+\alpha\_2 d\_2\}$上的极小值点
+4. 令$d\_3=\nu^{\(3\)}-x\_3$，则$\nu^{\(3\)}$是$f\(x\)$在$\{z\|z=x\_1+\alpha\_1 d\_1+\alpha\_2 d\_2\}$上的极小值点
 
-# 5. $x\_{k+1}$是$f\(x\)$在$\{z\|z=x\_1+\sum\_{i=1}^k\alpha\_i d\_i\}$上的极小值点，令$d\_{k+1}=\nu^{\(k+1\)}-x\_{k+1}$
+5. $x\_{k+1}$是$f\(x\)$在$\{z\|z=x\_1+\sum\_{i=1}^k\alpha\_i d\_i\}$上的极小值点，令$d\_{k+1}=\nu^{\(k+1\)}-x\_{k+1}$
 
-#     
+   
 
-# \#\# Reference 
+### Reference 
 
-# 
 
-# - 《最优化理论与方法》陈宝林
 
-# - 《非线性优化计算方法》袁亚湘
+- 《最优化理论与方法》陈宝林
 
-# -  《Numerical Optimization》Jorge Nocedal
+- 《非线性优化计算方法》袁亚湘
 
-# 
+-  《Numerical Optimization》Jorge Nocedal
 
-# \[^footnote1\]: 《\[2.7 数学优化：找到函数的最优解\]\[16\]》
 
-# 
+[^footnote1]: 《[2.7 数学优化：找到函数的最优解][16]》
 
-# \#\# 术语表
 
-# 
 
-# 二阶（quadratic）
+### 术语表
 
-# 
 
-# \#\# 其他
+二阶（quadratic）
 
-# 
 
-# \#\#\# 0.618法
 
-# 
+### 其他
 
-# 用0.618法寻找最佳点时，虽然不能保证在有限次内准确找出最佳点，但随着试验次数的增加，最佳点被限定在越来越小的范围内，即存优范围会越来越小。用存优范围与原始范围的比值来衡量一种试验方法的效率，这个比值叫精度。用0.618法确定试点时，每一次实验都把存优范围缩小为原来的0.618.因此，n次试验后的精度为：
 
-# 
 
-# $$
+#### 0.618法
 
-# \delta \_n=0.618^n
 
-# $$
 
-# 
+用0.618法寻找最佳点时，虽然不能保证在有限次内准确找出最佳点，但随着试验次数的增加，最佳点被限定在越来越小的范围内，即存优范围会越来越小。用存优范围与原始范围的比值来衡量一种试验方法的效率，这个比值叫精度。用0.618法确定试点时，每一次实验都把存优范围缩小为原来的0.618.因此，n次试验后的精度为：
 
-# \#\#\# KKT条件
 
-# 
 
-# !\[kkt\]\[5\]
+$$
 
-# 
+\delta \_n=0.618^n
 
-# In mathematical optimization, the \*\*Karush–Kuhn–Tucker\*\* \(KKT\) conditions \(also known as the \*\*Kuhn–Tucker conditions\*\*\) are first order necessary conditions for a solution in \*\*nonlinear\*\* programming to be optimal, provided that some regularity conditions are satisfied. Allowing \*\*inequality constraints\*\*, the KKT approach to nonlinear programming generalizes the method of \*\*Lagrange multipliers\*\*, which allows only \*\*equality constraints\*\*. The system of equations corresponding to the KKT conditions is usually not solved directly, except in the few special cases where a closed-form solution can be derived analytically. In general, many optimization algorithms can be interpreted as methods for numerically solving the KKT system of equations.
+$$
 
-# 
 
-# \#\# 编程
+#### KKT条件
 
-# 
 
-# \[Anaconda\]\[17\]
+![kkt][5]
 
-# 
 
-# 
 
-#   \[1\]: http://www.scipy-lectures.org/\_images/plot\_convex\_1.png
+In mathematical optimization, the **Karush–Kuhn–Tucker** (KKT) conditions (also known as the **Kuhn–Tucker conditions**) are first order necessary conditions for a solution in **nonlinear** programming to be optimal, provided that some regularity conditions are satisfied. Allowing **inequality constraints**, the KKT approach to nonlinear programming generalizes the method of **Lagrange multipliers**, which allows only **equality constraints**. The system of equations corresponding to the KKT conditions is usually not solved directly, except in the few special cases where a closed-form solution can be derived analytically. In general, many optimization algorithms can be interpreted as methods for numerically solving the KKT system of equations.
 
-#   \[2\]: http://www.scipy-lectures.org/\_images/plot\_convex\_2.png
+### 编程
 
-#   \[3\]: http://www.scipy-lectures.org/\_images/plot\_smooth\_1.png
 
-#   \[4\]: http://www.scipy-lectures.org/\_images/plot\_smooth\_2.png
+[Anaconda][17]
 
-#   \[5\]: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Inequality\_constraint\_diagram.svg/440px-Inequality\_constraint\_diagram.svg.png
 
-#   \[6\]: http://www.scipy-lectures.org/\_images/plot\_gradient\_descent\_5.png
 
-#   \[7\]: http://www.scipy-lectures.org/\_images/plot\_gradient\_descent\_105.png
+[1]: http://www.scipy-lectures.org/\_images/plot\_convex\_1.png
 
-#   \[8\]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104515332-924434508.png
+[2]: http://www.scipy-lectures.org/\_images/plot\_convex\_2.png
 
-#   \[9\]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104611192-1570042504.png
+[3]: http://www.scipy-lectures.org/\_images/plot\_smooth\_1.png
 
-#   \[10\]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104718020-1578473912.png
+[4]: http://www.scipy-lectures.org/\_images/plot\_smooth\_2.png
 
-#   \[11\]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104838270-718234550.png
+[5]: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Inequality\_constraint\_diagram.svg/440px-Inequality\_constraint\_diagram.svg.png
 
-#   \[12\]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104907254-412111092.png
+[6]: http://www.scipy-lectures.org/\_images/plot\_gradient\_descent\_5.png
 
-#   \[13\]: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NewtonIteration\_Ani.gif/300px-NewtonIteration\_Ani.gif
+[7]: http://www.scipy-lectures.org/\_images/plot\_gradient\_descent\_105.png
 
-#   \[14\]: http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin\_l\_bfgs\_b.html\#scipy.optimize.fmin\_l\_bfgs\_b
+[8]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104515332-924434508.png
 
-#   \[15\]: http://www.scipy-lectures.org/\_images/plot\_constraints\_1.png
+[9]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104611192-1570042504.png
 
-#   \[16\]: https://wizardforcel.gitbooks.io/scipy-lecture-notes/content/12.html
+[10]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104718020-1578473912.png
 
-#   \[17\]: http://www.jianshu.com/p/2f3be7781451
+[11]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104838270-718234550.png
+
+[12]: http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104907254-412111092.png
+
+[13]: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NewtonIteration\_Ani.gif/300px-NewtonIteration\_Ani.gif
+
+[14]: http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin\_l\_bfgs\_b.html\#scipy.optimize.fmin\_l\_bfgs\_b
+
+[15]: http://www.scipy-lectures.org/\_images/plot\_constraints\_1.png
+
+[16]: https://wizardforcel.gitbooks.io/scipy-lecture-notes/content/12.html
+
+[17]: http://www.jianshu.com/p/2f3be7781451
 
 
 
