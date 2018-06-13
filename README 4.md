@@ -99,15 +99,15 @@
 
 # 
 
-# 1. local minimun $\Longrightarrow \nabla f\(x^\*\)=0,\nabla ^2 f\(x^\*\) \geq 0$ 
+1. local minimun $\Longrightarrow \nabla f\(x^\*\)=0,\nabla ^2 f\(x^\*\) \geq 0$ 
 
-# 2. $\nabla f\(x^\*\)=0 \& \nabla ^2 f\(x^\*\) &gt;0 \Longrightarrow  $local minimum ,eg. $y=x^3$
-
-# 
+2. $\nabla f\(x^\*\)=0 \& \nabla ^2 f\(x^\*\) &gt;0 \Longrightarrow  $local minimum ,eg. $y=x^3$
 
 # 
 
-# \#\#\# 迭代下降优化算法
+# 
+
+### 迭代下降优化算法
 
 # 
 
@@ -147,11 +147,10 @@
 
 # 
 
-# \#\# 第二章 无约束优化（线搜索框架下）
+## 第二章 无约束优化（线搜索框架下）
 
-# 
 
-# \#\#\# 1. 梯度法（最速下降法）
+### 1. 梯度法（最速下降法）
 
 # 
 
@@ -167,7 +166,7 @@
 
 # 
 
-# 先回答需要考虑的问题：
+先回答需要考虑的问题：
 
 # 
 
@@ -311,7 +310,7 @@
 
 # 
 
-# \#\#\#\# 一维
+#### 一维
 
 # 
 
@@ -413,7 +412,7 @@
 
 # \*\*L-BFGS\*\*:
 
-# 限制内存的BFGS介于BFGS和共轭梯度之间: 在非常高的维度 \(&gt; 250\) 计算和翻转的Hessian矩阵的成本非常高。L-BFGS保留了低秩的版本。此外，scipy版本, \[scipy.optimize.fmin\_l\_bfgs\_b\(\)\]\[14\], 包含箱边界:
+限制内存的BFGS介于BFGS和共轭梯度之间: 在非常高的维度 \(&gt; 250\) 计算和翻转的Hessian矩阵的成本非常高。L-BFGS保留了低秩的版本。此外，scipy版本, \[scipy.optimize.fmin\_l\_bfgs\_b\(\)\]\[14\], 包含箱边界:
 
 # 
 
@@ -427,7 +426,7 @@
 
 # 
 
-# \#\#\# 3.线性搜索
+### 3.线性搜索
 
 # 
 
@@ -501,17 +500,12 @@
 
 # 正交条件
 
-# 
 
-# 
 
-# 
+#### 不精确线性搜索
 
-# \#\#\#\# 不精确线性搜索
 
-# 
-
-# \#\#\#\#\# 进退法——确定初始搜索区间
+##### 进退法——确定初始搜索区间
 
 # 
 
@@ -767,15 +761,15 @@
 
 # 
 
-# $$
+$$
 
-# \begin{cases}
+\begin{cases}
 
-# \nabla f\(x\)^\top d&lt;0\cr -\nabla c\_i\(x\)^\top d\leq0
+\nabla f\(x\)^\top d&lt;0\cr -\nabla c\_i\(x\)^\top d\leq0
 
-# \end{cases}无解\Longleftrightarrow F\_{x^\*}\cap D\_{x^\*}=\phi
+\end{cases}无解\Longleftrightarrow F\_{x^\*}\cap D\_{x^\*}=\phi
 
-# $$
+$$
 
 # 
 
@@ -887,7 +881,7 @@
 
 # 
 
-# 计算$\nabla f\(\mathbf x\)=\(2x\_1-x\_2-1,4x\_2-x\_1-10\)^\top$。因为$\mathbf x^1=\(\frac 27,\frac {18}7\)^\top$，所以有效约束$I\(\mathbf x^1\)=\{1\}$，$\nabla f\(\mathbf x^1\)=\(-3,0\)^\top$，相应的等式约束问题为
+计算$\nabla f\(\mathbf x\)=\(2x\_1-x\_2-1,4x\_2-x\_1-10\)^\top$。因为$\mathbf x^1=\(\frac 27,\frac {18}7\)^\top$，所以有效约束$I\(\mathbf x^1\)=\{1\}$，$\nabla f\(\mathbf x^1\)=\(-3,0\)^\top$，相应的等式约束问题为
 
 # 
 
