@@ -19,7 +19,7 @@
                       }
                      },
              "mathjax":{
-                            "forceSVG": true
+                        "forceSVG": true
                         }
     
 }
