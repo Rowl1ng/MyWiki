@@ -5,7 +5,7 @@
         }
     },
     "plugins": [
-                "mathjax",
+                "katex-plus",
                 "anchors@^0.7.1",
                 "donate@^1.0.2"],
     "pluginsConfig": {
