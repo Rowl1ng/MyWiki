@@ -1,8 +1,4 @@
 # 非线性最优化
-
-koucx@bupt.edu.cn
-optim_grs@163.com
-寇彩霞
  
 ## 凸优化与非凸优化
 
