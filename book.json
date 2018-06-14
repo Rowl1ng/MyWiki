@@ -3,8 +3,9 @@
         "sidebar": {
             "Home": "http://rowl1ng.com"
         }
+    },
     "plugins": ["katex@^1.1.3",
-                "donate@^1.0.2"]
+                "donate@^1.0.2"],
     "pluginsConfig": {
             "donate": {
                         "wechat":"http://static.zybuluo.com/sixijinling/fdw6whn8fyr4f5idmngeexi9/image_1cfuh98ug4ggj5n1cq16a6i0c16.png",
