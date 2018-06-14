@@ -11,8 +11,7 @@ Quadratic programming,二次规划
 2.有等式约束的优化问题：
 
 $$
-\min f(x)  \\ 
-s.t. h_i(x)=0;i=1,\dots ,n
+\min f(x)  \\ s.t. h_i(x)=0;i=1,\dots ,n
 $$
 
 拉格朗日乘子法
