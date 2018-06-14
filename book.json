@@ -17,6 +17,9 @@
                         "alipayText": "支付宝打赏",
                         "wechatText": "微信打赏"
                       }
-                     }
+                     },
+             "mathjax":{
+                            "forceSVG": true
+                        }
     
 }
