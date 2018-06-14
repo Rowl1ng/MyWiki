@@ -2,19 +2,20 @@
 
 ## 编程
 
+* Read me
 * [Python笔记本](README.md)
-    * [基础](basics.md)
-    * [多线程](multiproccessing.md)
-    * [高级特性](superior.md)
-    * [数据库](database.md)
-    * [编码](code.md)
-    * [调试](debug.md)
-    * [函数式编程](functional.md)
-    * [文件](file.md)
-    * [日志](log.md)
-    * [模块](module.md)
-    * [面向对象编程](OOP.md)
-    * [错误和异常](error.md)
+  * [基础](basics.md)
+  * [多线程](multiproccessing.md)
+  * [高级特性](superior.md)
+  * [数据库](database.md)
+  * [编码](code.md)
+  * [调试](debug.md)
+  * [函数式编程](functional.md)
+  * [文件](file.md)
+  * [日志](log.md)
+  * [模块](module.md)
+  * [面向对象编程](OOP.md)
+  * [错误和异常](error.md)
 
 ## Machine Learning
 
@@ -62,8 +63,7 @@
   * [AlphaGo](alphago.md)
   * [Terms](termsmd.md)
   * [boost](boost.md)
-
-* [应用]()
+* 应用
   * [语音](ying-yong/yu-yin.md)
     * [应用于安全领域的语音技术](ying-yong/yu-yin/ying-yong-yu-an-quan-ling-yu-de-yu-yin-ji-zhu.md)
     * [内容无关](ying-yong/yu-yin/std.md)
@@ -100,15 +100,11 @@
 ## 英语
 
 * [Introduction](README 4.md)
-   * [suffix](suffix.md)
-   * [prefix](prefix.md)
-   * [verb](verb.md)
-   * [synonym](synonym.md)
-   * [math](math.md)
-   * [material](material.md)
-   * [others](others.md)
-
-
-
-
+  * [suffix](suffix.md)
+  * [prefix](prefix.md)
+  * [verb](verb.md)
+  * [synonym](synonym.md)
+  * [math](math.md)
+  * [material](material.md)
+  * [others](others.md)
 
