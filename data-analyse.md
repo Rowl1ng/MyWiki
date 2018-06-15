@@ -53,7 +53,7 @@ XXX.decode('utf-8')
 
 ## Reference
 
-* \[Pandas & Seaborn - A guide to handle & visualize data in Python\]\[2\]
+* [Pandas & Seaborn - A guide to handle & visualize data in Python\][2]
 
-\[2\]: [https://tryolabs.com/blog/2017/03/16/pandas-seaborn-a-guide-to-handle-visualize-data-elegantly/](https://tryolabs.com/blog/2017/03/16/pandas-seaborn-a-guide-to-handle-visualize-data-elegantly/)
+[2]: [https://tryolabs.com/blog/2017/03/16/pandas-seaborn-a-guide-to-handle-visualize-data-elegantly/](https://tryolabs.com/blog/2017/03/16/pandas-seaborn-a-guide-to-handle-visualize-data-elegantly/)
 
