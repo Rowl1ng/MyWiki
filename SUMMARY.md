@@ -22,7 +22,7 @@
 ## Machine Learning
 
 * [Introduction](README 3.md)
-* [第-1章 数据分析](7b2c-1-zhang-shu-ju-fen-xi.md)
+* [第-1章 数据分析](data-analyse.md)
   * [scikit-learn](data-analyse/scikit-learn.md)
   * [pandas](data-analyse/pandas.md)
   * [numpy](data-analyse/numpy.md)
