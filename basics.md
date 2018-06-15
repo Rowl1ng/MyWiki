@@ -44,7 +44,7 @@ print t # output: 0
 
 ```
 
-### 字符串
+## 字符串
 
 字符串匹配（）
 [正则表达式][7]
@@ -53,23 +53,23 @@ Python: TypeError: cannot concatenate 'str' and 'int' objects
 
 - str()
 
-### 元组
+## 元组
 
 不可变（只读）
 
-### 列表 list
+## 列表 list
 
 使用切片操作更新一部分元素
 不定长append：固定size的numpy比灵活list存取快得多
 zip转list才能正常sort
 
 ```
-## 串联list
+# 串联list
 list_ = []
 list_.extend(a_list)
 ```
 
-### 字典
+## 字典
 
 这里的defaultdict(function_factory)构建的是一个类似dictionary的对象，其中keys的值，自行确定赋值，但是values的类型，是function_factory的类实例，而且具有默认值。比如default(int)则创建一个类似dictionary对象，里面任何的values都是int的实例，而且就算是一个不存在的key, d[key] 也有一个默认值，这个默认值是int()的默认值0.
 
