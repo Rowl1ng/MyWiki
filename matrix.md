@@ -136,6 +136,7 @@ $$\left(
 行列にスカラー値（いわゆる普通の一つの数）を掛けるときは、各成分にその値を掛けます
 
 例:  
+
 $$2\cdot \left(
   \begin{array}{ccc}
     2 & 3 & 4\\
@@ -150,6 +151,7 @@ $$2\cdot \left(
 \right)$$
 
 例:  
+
 $$\left(
   \begin{array}{ccc}
     2 & 3 & 4\\
