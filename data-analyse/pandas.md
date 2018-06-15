@@ -2,7 +2,7 @@
 
 ## 写csv
 
-```
+```python
 data_lines = []
 label_lines = ['pid','seriesUID','studyUID']
 
