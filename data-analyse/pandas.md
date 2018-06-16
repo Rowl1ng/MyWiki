@@ -9,14 +9,17 @@ label_lines = ['pid','seriesUID','studyUID']
 data_lines.append([pid,seriesUID,studyUID])
 label_file = pd.DataFrame(columns=label_lines, data=data_lines)
 ```
+
 ## 统计
 
 ```
 label_file.groupby(['类型']).size()
 ```
+
 ## 逻辑运算
 
 使用符号`|`和`&`，记得加`（）`
+
 ```
 calc_label = label_file[(label_file[u'病灶分布']=='') | (label_file[u'钙化形态']=='') | (label_file[u'良恶性']=='')]
 ```
@@ -63,3 +66,6 @@ pd.merge(df2,df1,how='left',on=['key1','key2'])
 ```
 data = data.drop_duplicates()
 ```
+
+
+
