@@ -4,7 +4,6 @@
 
 ## 编程
 
-
 * [Python笔记本](README.md)
   * [基础](basics.md)
   * [多线程](multiproccessing.md)
@@ -81,9 +80,6 @@
 * [Introduction](README 2.md)
 * [第0章 数学准备](chapter1.md)
   * [卷积](convolution.md)
-* [实践](practice.md)
-  * [车道线识别](lane.md)
-  * [RoadNN](roadnn.md)
 * [python编程](pythonbian-cheng.md)
   * [opencv](pythonbian-cheng/opencv.md)
   * [matplotlib](pythonbian-cheng/matplotlib.md)
@@ -91,6 +87,9 @@
   * [平滑化](ping-hua-hua.md)
   * [对比度](tu-xiang-jun-heng-hua.md)
   * [阈值](yu-zhi.md)
+* [实践](practice.md)
+  * [车道线识别](lane.md)
+  * [RoadNN](roadnn.md)
 * [医疗图像](yi-liao-tu-xiang.md)
 * [feature](feature.md)
 
