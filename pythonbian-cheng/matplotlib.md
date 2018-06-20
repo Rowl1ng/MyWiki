@@ -4,7 +4,7 @@ Matplotlib的方便之处在于使用Jupyter notebook时能实时画图并显示
 
 ## 柱状图 bar
 
-```
+```python
 plt.bar(range(len(mean_hist)), mean_hist, width=1.0, linewidth=1)
 plt.xlim([0,256])
 #设置横坐标的文字说明
@@ -49,7 +49,7 @@ plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 ## 在图上画框 Rectangle
 
 
-```
+```python
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
@@ -66,4 +66,5 @@ ax1.add_patch(
 )
 plt.imshow(image)
 ```
+
 [3]: http://static.zybuluo.com/sixijinling/ufzbesntpuybr1rsiy6bbtyy/%E6%95%A3%E7%82%B9%E5%9B%BE.png
