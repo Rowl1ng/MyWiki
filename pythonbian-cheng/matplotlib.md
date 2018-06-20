@@ -17,7 +17,7 @@ plt.show()
 ```
 ## 散点图 plot
 
-```
+```python
 plot(X(pos, 1), X(pos, 2), 'k+', 'LineWidth', 2, 'MarkerSize')
 ```
 k-black
@@ -37,7 +37,7 @@ k-black
                                h     hexagram
 ![散点图.png-38.8kB][3]
 
-```
+```python
 pos = find(y==1);
 neg = find(y==0);
 
