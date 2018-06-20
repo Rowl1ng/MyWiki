@@ -15,6 +15,7 @@ img = cv2.imread('13.jpg',0)
 ```
 
 判断图片是否损坏：
+
 ```python
 for i, image_path in enumerate(train_image_list):
     test_image = cv2.imread(image_path.encode('utf-8'))
@@ -26,7 +27,9 @@ for i, image_path in enumerate(train_image_list):
         print image_path
         print("shape not found")
 ```
+
 或者
+
 ```
 im = cv2.imread(roidb[i]['image'])
 assert im is not None, \
@@ -50,7 +53,8 @@ cv2.resize(image, dsize=(width, height),
 ```
 
 ### 矩：Moments
-图像矩可以计算图像的质心，面积等等。 
+
+图像矩可以计算图像的质心，面积等等。
 
 ```
 # 根据图像的矩计算重心 
@@ -71,13 +75,16 @@ def find_center(contour):
 ### 获得bbox
 
 注意：输入是int型哦~
+
 ```
 label_array = np.array(points, dtype=np.int32) #（n, 2）
 x1, y1, w, h = cv2.boundingRect(label_array[:, np.newaxis, :]) # (n, 1, 2)
 ```
 
 ### 边缘检测：FindContours
-[代码示例][1]
+
+[代码示例](https://github.com/makelove/OpenCV-Python-Tutorial/blob/master/ch21-%E8%BD%AE%E5%BB%93Contours/21-findContour.py)
+
 ```python
 ver = (cv2.__version__).split('.')
 if int(ver[0]) < 3:
@@ -97,10 +104,11 @@ area = cv2.contourArea(cnt)
 
 ### 斑点检测：BlobDetector
 
-[代码示例][2]
+[代码示例](https://github.com/makelove/OpenCV-Python-Tutorial/blob/master/ch25-%E6%96%91%E7%82%B9%E6%A3%80%E6%B5%8B/%E6%96%91%E7%82%B9%E6%A3%80%E6%B5%8BSimpleBlobDetector.py)
 
-    detector = cv2.SimpleBlobDetector()
+```
+detector = cv2.SimpleBlobDetector()
+```
 
 
-  [1]: https://github.com/makelove/OpenCV-Python-Tutorial/blob/master/ch21-%E8%BD%AE%E5%BB%93Contours/21-findContour.py
-  [2]: https://github.com/makelove/OpenCV-Python-Tutorial/blob/master/ch25-%E6%96%91%E7%82%B9%E6%A3%80%E6%B5%8B/%E6%96%91%E7%82%B9%E6%A3%80%E6%B5%8BSimpleBlobDetector.py
+
