@@ -8,6 +8,8 @@ pip install torch==0.3.1 --user
 
 ### 加载模型
 
+针对`invalid device ordinal`错误，解决方案是`map_location`
+
 ```python
 checkpoint = torch.load(self.model_path, map_location=lambda storage, loc: storage)
 self.model.load_state_dict(checkpoint['model'], strict=False)
