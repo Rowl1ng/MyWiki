@@ -20,6 +20,12 @@ self.model.load_state_dict(checkpoint['model'], strict=False)
 model.cuda() #RAM + 0.9G
 ```
 
+如果输入图片大小一致：
+
+```python
+torch.backends.cudnn.benchmark = True
+```
+
 ## 资源
 
 * [pytorch-practice](https://github.com/napsternxg/pytorch-practice)
