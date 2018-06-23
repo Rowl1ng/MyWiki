@@ -14,6 +14,11 @@ pip install torch==0.3.1 --user
 checkpoint = torch.load(self.model_path, map_location=lambda storage, loc: storage)
 self.model.load_state_dict(checkpoint['model'], strict=False)
 ```
+## cuda
+
+```python
+model.cuda() #RAM + 0.9G
+```
 
 ## 资源
 
