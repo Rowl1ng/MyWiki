@@ -1,3 +1,13 @@
+移动文件
+```python
+import shutil
+
+if not os.path.exists(target_path):
+    os.makedirs(target_path)
+name = target_path + '/{}'.format(view)
+print name
+shutil.copyfile(dicom_path, name)
+```
 # 文件
 
 - 删除文件:  os.remove()
@@ -56,4 +66,14 @@ l = f.readlines()#返回列表
 print l#输出列表
 print "---------------------------------------"
 pprint.pprint(l)#每项为一行显示，而且是文件对象自动关闭的方法，所以无f.close()
+```
+
+## json
+
+```python
+def read_json(json_file):
+    f = open(json_file, 'r')
+    data = json.load(f)
+    f.close()
+    return data
 ```
