@@ -18,6 +18,10 @@ pdb.set_trace()
 ## assert
 
 ```python
+assert expression
+```
+等价于
+```python
 if not expression:
     raise AssertionError
 ```
