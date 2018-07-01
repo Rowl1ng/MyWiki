@@ -4,6 +4,14 @@
 pip install torch==0.3.1 --user
 ```
 
+## debug
+
+```python
+fms = model(Variable(torch.randn(1,1,256,256)))
+for fm in fms:
+    print(fm.size())
+```
+
 ## 模型
 
 ### 加载模型
