@@ -103,12 +103,12 @@ $$
 
 但是，当某些情况发生时，计算函数值就出问题了：
 
- - $c$极其大，导致分子计算$e^c$时上溢出
- - $c$ 为负数，且$|c|$很大，此时分母是一个极小的正数，有可能四舍五入为0，导致下溢出
+ - $$c$$极其大，导致分子计算$$e^c$$时上溢出
+ - $$c$$ 为负数，且$$|c|$$很大，此时分母是一个极小的正数，有可能四舍五入为0，导致下溢出
 
-解决方法是，令$M=max(x_i),i=1,2,⋯,n$，即$ M$ 为所有 $x_i$ 中最大的值，那么我们只需要把算 $f(x)_i$的值，改为计算$f(x_i−M)$的值，就可以解决上溢出、下溢出的问题了，并且，计算结果理论上仍然和 $f(x)_i$保持一致。
+解决方法是，令$$M=max(x_i),i=1,2,⋯,n$$，即$ M$ 为所有 $$x_i$$ 中最大的值，那么我们只需要把算 $f(x)_i$的值，改为计算$$f(x_i−M)$$的值，就可以解决上溢出、下溢出的问题了，并且，计算结果理论上仍然和 $$f(x)_i$$保持一致。
 
-在实现时也犯了一个低级错误：激活函数一开始弄错成了$1／1-e^{-x}$，发现交叉熵是26上下，忽略了全蒙（weight、bias全零）情况是$\log(250)\approx 5$。
+在实现时也犯了一个低级错误：激活函数一开始弄错成了$$1／1-e^{-x}$$，发现交叉熵是26上下，忽略了全蒙（weight、bias全零）情况是$$\log(250)\approx 5$$。
 
 ### ReLU
 
@@ -118,23 +118,23 @@ $$
 论文：修正非线性改进神经网络声学模型（Rectifier Nonlinearities Improve Neural Network Acoustic Models ）  
 论文：线性修正单元改进受限玻尔兹曼机（Rectified Linear Units Improve Restricted Boltzmann Machines  ）
 
-## Cost Functions
+# Cost Functions
 
 * a good choice for the criterion is maximum likelihood regularized with dropout, possibly also with weight decay.
 
-### 分类交叉熵损失（Categorical Cross-Entropy Loss）
+## 分类交叉熵损失（Categorical Cross-Entropy Loss）
 
 分类交叉熵损失也被称为负对数似然（negative log likelihood）。这是一种用于解决分类问题的流行的损失函数，可用于测量两种概率分布（通常是真实标签和预测标签）之间的相似性。它可用 $$L = -\sum(y * \log(y_{prediction}))$$ 表示，其中 y 是真实标签的概率分布（通常是一个one-hot vector），$$y_{prediction} $$是预测标签的概率分布，通常来自于一个 softmax。
 
-### 负对数似然（NLL：Negative Log Likelihood）
+## 负对数似然（NLL：Negative Log Likelihood）
 
 参见分类交叉熵损失（Categorical Cross-Entropy Loss）。
 
-#### Optimization Procedure
+# Optimization Procedure
 
 * a good choice for the optimization algorithm for a feed-forward network is usually stochastic gradient descent with momentum.
 
-#### 6.3.2 Loss Function and Conditional Log-Likelihood
+# Loss Function and Conditional Log-Likelihood
 
 * In the 80’s and 90’s the most commonly used loss function was the squared error
 
@@ -177,7 +177,7 @@ $$
 
 * minimizing this negative log-likelihood is therefore equivalent to minimizing the squared error loss.
 
-* for discrete variables, the binomial negative log-likelihood cost func- tion corresponds to the conditional log-likelihood associated with the Bernoulli distribution \(also known as cross entropy\) with probability $p = {f}\_{θ}\(x\)$ of generating y = 1 given x =$$ x$$
+* for discrete variables, the binomial negative log-likelihood cost func- tion corresponds to the conditional log-likelihood associated with the Bernoulli distribution \(also known as cross entropy\) with probability $$p = {f}_{θ}(x)$$ of generating y = 1 given x =$$ x$$
 
 
   $$
