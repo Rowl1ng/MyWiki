@@ -11,6 +11,7 @@ pip install torch==0.3.1 --user
 查看feature map大小
 
 ```python
+import 
 from torch.autograd import Variable
 
 fms = model(Variable(torch.randn(1,1,256,256)))

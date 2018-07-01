@@ -14,3 +14,10 @@ python的浮点数算数错误
 import pdb
 pdb.set_trace()
 ```
+
+## assert
+
+```python
+if not expression:
+    raise AssertionError
+```
