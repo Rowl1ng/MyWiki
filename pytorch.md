@@ -1,5 +1,7 @@
 # Pytorch总结
 
+安装
+
 ```python
 pip install torch==0.3.1 --user
 ```
