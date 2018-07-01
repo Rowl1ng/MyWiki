@@ -6,6 +6,8 @@ pip install torch==0.3.1 --user
 
 ## debug
 
+查看feature map大小
+
 ```python
 from torch.autograd import Variable
 
