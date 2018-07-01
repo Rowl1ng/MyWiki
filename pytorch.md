@@ -7,6 +7,8 @@ pip install torch==0.3.1 --user
 ## debug
 
 ```python
+from torch.autograd import Variable
+
 fms = model(Variable(torch.randn(1,1,256,256)))
 for fm in fms:
     print(fm.size())
