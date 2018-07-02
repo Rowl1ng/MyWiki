@@ -69,8 +69,8 @@ data = data.drop_duplicates()
 
 ## 保存
 
-```
-
+```python
+data.to_csv("data.csv",index=False,header=False)
 ```
 
 
