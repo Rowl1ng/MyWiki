@@ -19,6 +19,7 @@
   * [错误和异常](error.md)
   * [cython](cython.md)
 * [工程化](gong-cheng-hua.md)
+* [linux](linux.md)
 
 ## Machine Learning
 

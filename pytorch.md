@@ -41,6 +41,10 @@ model.cuda() #RAM + 0.9G
 torch.backends.cudnn.benchmark = True
 ```
 
+僵尸进程占用gpu，kill的方法：
+```shell
+ps x |grep python|awk '{print $1}'|xargs kill
+```
 ## 资源
 
 * [pytorch-practice](https://github.com/napsternxg/pytorch-practice)
