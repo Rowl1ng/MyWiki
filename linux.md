@@ -12,5 +12,7 @@ du --max-depth=1 --human-readable / | sort --human-numeric-sort
 tar   zxvf    test.tgz  -C  指定目录
 
 tar.xz文件：
+```
 $xz -d ***.tar.xz
 $tar -xvf  ***.tar
+```
