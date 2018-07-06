@@ -55,6 +55,11 @@ concate_frame.sort_index(inplace=True)
 concate_frame
 ```
 
+修改列名：
+
+```
+df.columns = ['a', 'b', 'c', 'd', 'e']
+```
 横向匹配+拼接：
 
 ```
