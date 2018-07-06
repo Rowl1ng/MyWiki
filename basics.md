@@ -63,10 +63,13 @@ Python: TypeError: cannot concatenate 'str' and 'int' objects
 不定长append：固定size的numpy比灵活list存取快得多
 zip转list才能正常sort
 
-```
+```python
 # 串联list
 list_ = []
 list_.extend(a_list)
+# 打散list
+from random import shuffle
+shuffle(list_a)
 ```
 
 ## 字典
