@@ -17,7 +17,8 @@ logger = logging.getLogger(logger_name)
 - 使用JSON YAML等格式来配置logging，感觉比使用代码或者 ini格式看起来更方便
 
 简单的小应用中，单个日志文件，同时还要打印控制台
-```
+
+```python
 import logging
 
 logging.basicConfig(level=logging.DEBUG,
@@ -32,8 +33,10 @@ console.setFormatter(formatter)
 # add the handler to the root logger
 logging.getLogger('').addHandler(console)
 ```
+
 记录 Exception 的trace 信息（很有用哦)
-```
+
+```python
 try:
 open('/path/to/does/not/exist', 'rb')
 except (SystemExit, KeyboardInterrupt):
@@ -42,6 +45,7 @@ except Exception, e:
 logger.error('Failed to open file', exc_info=True)
 
 ```
+
 ```python
 logger.warning("consider setting layer size to a multiple of 4 for greater performance")
 
