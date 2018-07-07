@@ -70,6 +70,8 @@ list_.extend(a_list)
 # 打散list
 from random import shuffle
 shuffle(list_a)
+# 计数
+list_a.count(a)
 ```
 
 ## 字典
