@@ -67,4 +67,10 @@ ax1.add_patch(
 plt.imshow(image)
 ```
 
+## 保存图片
+
+```python
+plt.savefig('example.jpg')
+```
+
 [3]: http://static.zybuluo.com/sixijinling/ufzbesntpuybr1rsiy6bbtyy/%E6%95%A3%E7%82%B9%E5%9B%BE.png
