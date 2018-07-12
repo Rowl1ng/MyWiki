@@ -46,6 +46,7 @@
   * [支持向量机](svm.md)
   * [SMO](smo.md)
   * [条件随机场](crf.md)
+  * [normalization](normalization.md)
 * [第2章 神经网络入门](nnintro.md)
   * [函数](nnfunction.md)
   * [神经网络结构](nnstructure.md)
