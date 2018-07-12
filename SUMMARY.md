@@ -86,6 +86,7 @@
 * [python编程](pythonbian-cheng.md)
   * [opencv](pythonbian-cheng/opencv.md)
   * [matplotlib](pythonbian-cheng/matplotlib.md)
+  * [skimage](pythonbian-cheng/skimage.md)
 * [图像处理基础](tu-xiang-chu-li-ji-chu.md)
   * [平滑化](ping-hua-hua.md)
   * [对比度](tu-xiang-jun-heng-hua.md)

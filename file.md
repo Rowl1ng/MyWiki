@@ -9,6 +9,12 @@ name = target_path + '/{}'.format(view)
 print name
 shutil.copyfile(dicom_path, name)
 ```
+复制
+```python
+# 复制目录A_dir下的所有文件到B_dir，B_dir必须不存在
+shutil.copytree(A_dir, B_dir)
+```
+
 # 文件
 
 - 删除文件:  os.remove()
