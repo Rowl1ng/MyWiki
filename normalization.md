@@ -2,6 +2,7 @@
 The mean and variance of the pixels across the batch is calculated and then centered and scaled respectively. It’s said that it speeds up convergence.
 
 ## Local Contrast Normalization
+
 ```python
 def LocalContrastNorm(image,radius=9):
     """
