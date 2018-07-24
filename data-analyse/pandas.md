@@ -37,7 +37,7 @@ for iter_index in df.index:
 
 纵向拼接：
 
-```
+```python
 dfs = []
 mass_train = pd.read_csv(csv_dir+'Mass-Training-Description.csv')
 mass_test = pd.read_csv(csv_dir+'Mass-Test-Description.csv')
