@@ -163,8 +163,9 @@ return (once.rand(self.vector_size) - 0.5) / self.vector_size
 ```python
 >>> model = Word2Vec(sentences, size=100, window=5, min_count=5, workers=4)
 ```
-$\not 0$
+$$\not 0$$
 不继续训练的话，调用
+
 ```python
 model.init_sims(replace=True)
 ```
