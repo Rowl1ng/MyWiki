@@ -1,3 +1,16 @@
+# 时间
+
+```
+
+```
+
+# 文件
+获取最新文件
+```
+#!/bin/sh
+filename=`ls -t |head -n1|awk '{print $0}'`
+echo $filename
+```
 # 内存管理
 
 查看磁盘空间：df -hl
