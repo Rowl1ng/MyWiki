@@ -3,7 +3,6 @@
 ```python
 def if_in(predict, mask):
     x1, y1, w1, h1 = predict
-#     print mask[x1:x1+w1, y1:y1+h1, :].sum()
     if mask[y1:y1+h1,x1:x1+w1, :].sum() > 0:
         return True
     return False
