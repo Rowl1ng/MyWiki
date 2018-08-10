@@ -1,6 +1,13 @@
 # git
 
+## push更新
 
+```
+git pull origin breast
+git add .
+git commit -m 'message'
+git push origin breast
+```
 
 ## .gitignore
 
