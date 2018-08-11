@@ -5,6 +5,10 @@
 ```
 conda install opencv
 ```
+或者
+```
+pip install opencv-python
+```
 
 ## 读入图片
 
