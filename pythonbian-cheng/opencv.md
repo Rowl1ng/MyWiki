@@ -1,11 +1,11 @@
 ## OpenCV
 
-安装
+使用conda安装
 
 ```
 conda install opencv
 ```
-或者
+或者使用pip安装
 ```
 pip install opencv-python
 ```
