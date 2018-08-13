@@ -1,5 +1,7 @@
 # 基础知识
 
+[normalization概要](http://yeephycho.github.io/2016/08/03/Normalizations-in-neural-networks/)
+
 ## 1. 
 
 
