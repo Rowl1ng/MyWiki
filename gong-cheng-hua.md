@@ -1,5 +1,9 @@
 # git
 
+遇到 server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+```
+git config --global http.sslverify false
+```
 ## clone branch
 ```
 git clone -b breast https://.....

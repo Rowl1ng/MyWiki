@@ -36,6 +36,7 @@ for file in os.listdir(path):
 ```
 
 - 新建文件夹：os.makedirs(ret_dir)
+
 用变量命名：
 ouput=open(str1+".txt",'w')
 

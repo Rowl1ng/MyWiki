@@ -2,6 +2,10 @@
 
 Matplotlib的方便之处在于使用Jupyter notebook时能实时画图并显示，这样一来，远程即可看到服务器上的图。
 
+## 画子图
+
+
+
 ## 柱状图 bar
 
 ```python
