@@ -4,9 +4,17 @@
 ```
 git config --global http.sslverify false
 ```
-## clone branch
+## clone
+
+clone branch
+
 ```
 git clone -b breast https://.....
+```
+Git下放另一个git，在clone的时候：
+
+```
+git clone --recursive
 ```
 
 ## push更新
