@@ -77,6 +77,9 @@ data = data.drop_duplicates()
 ```python
 data.to_csv("data.csv",index=False,header=False)
 ```
-
+中文csv：
+```
+df.to_csv(“df.csv”, encoding=’utf_8_sig’) 
+```
 
 
