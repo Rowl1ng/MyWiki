@@ -2,8 +2,6 @@
 
 Matplotlib的方便之处在于使用Jupyter notebook时能实时画图并显示，这样一来，远程即可看到服务器上的图。
 
-## 画子图
-
 
 
 ## 柱状图 bar
@@ -50,7 +48,8 @@ plot(X(pos, 1), X(pos, 2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
 plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 ```
 
-## 在图上画框 Rectangle
+## 在图上画框 Rectangle + 画子图
+
 
 
 ```python

@@ -1,9 +1,12 @@
 # git
 
 遇到 server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+
 ```
 git config --global http.sslverify false
 ```
+git 退出nano界面：Ctrl + X然后输入y
+
 ## clone
 
 clone branch
@@ -11,6 +14,7 @@ clone branch
 ```
 git clone -b breast https://.....
 ```
+
 Git下放另一个git，在clone的时候：
 
 ```
@@ -29,6 +33,7 @@ git push origin breast
 ## .gitignore
 
 [A collection of useful .gitignore templates](https://github.com/github/gitignore)
+
 # requirements.txt
 
 ```
