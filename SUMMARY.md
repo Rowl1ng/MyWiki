@@ -49,6 +49,7 @@
   * [normalization](normalization.md)
 * [第2章 神经网络入门](nnintro.md)
   * [函数](nnfunction.md)
+  * [loss function](loss-function.md)
   * [神经网络结构](nnstructure.md)
   * [正则化网络](regulizer.md)
   * [循环神经网络](rnn.md)

@@ -6,6 +6,7 @@
 
 # 文件
 获取最新文件
+
 ```
 #!/bin/sh
 filename=`ls -t |head -n1|awk '{print $0}'`
@@ -16,6 +17,7 @@ echo $filename
 查看磁盘空间：df -hl
 查看当前文件夹大小：du -sh
 按大小排序：
+
 ```shell
 du --max-depth=1 --human-readable / | sort --human-numeric-sort
 ```

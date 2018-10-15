@@ -29,6 +29,15 @@ git add .
 git commit -m 'message'
 git push origin breast
 ```
+## pull
+
+```
+git pull
+```
+如果更新不能merge，需要stash
+```
+git stash
+```
 
 ## .gitignore
 
