@@ -64,7 +64,7 @@ $$
   {L}_{NLL}=−logP(y|x;θ)={−1}_{y=1}{logp−1}_{y=0}log(1−p)\\ =−ylog{f}_{θ}(x)−(1−y)log(1−{f}_{θ}(x))
   $$
 
-
-
+## Tukeys Loss
+[Robust Optimization for Deep Regression](https://arxiv.org/pdf/1505.06606.pdf)
 
 [TukeysBiweight](http://mathworld.wolfram.com/TukeysBiweight.html)
