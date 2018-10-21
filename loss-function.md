@@ -12,7 +12,7 @@
 
 ## Dice Loss
 
-常用于 
+常用于图像分割任务
 [Pytorch实现](https://github.com/milesial/Pytorch-UNet/blob/master/dice_loss.py)
 
 # Optimization Procedure
