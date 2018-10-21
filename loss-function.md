@@ -10,6 +10,11 @@
 
 参见分类交叉熵损失（Categorical Cross-Entropy Loss）。
 
+## Dice Loss
+
+常用于 
+[Pytorch实现](https://github.com/milesial/Pytorch-UNet/blob/master/dice_loss.py)
+
 # Optimization Procedure
 
 * a good choice for the optimization algorithm for a feed-forward network is usually stochastic gradient descent with momentum.
