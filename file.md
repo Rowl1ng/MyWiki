@@ -87,3 +87,11 @@ def read_json(json_file):
     f.close()
     return data
 ```
+
+## pickle
+```
+import pickle as pkl
+with open(result, 'rb') as f:
+    data = pkl.load(f)
+```
+
