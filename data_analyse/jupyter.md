@@ -1,5 +1,7 @@
 # Jupyter
 
+## 配置
+
 远程访问服务器上的jupyter需设置密码：
 
 ```
@@ -34,5 +36,12 @@ jupyter notebook --ip=192.168.8.150 --port=xxxx
 ```
 # 有中文
 XXX.decode('utf-8')
+```
+
+## 使用GPU
+
+```
+%env CUDA_DEVICE_ORDER=PCI_BUS_ID
+%env CUDA_VISIBLE_DEVICES=2
 ```
 
