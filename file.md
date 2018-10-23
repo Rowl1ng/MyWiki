@@ -1,3 +1,25 @@
+
+# 文件夹
+
+```python
+def mkdir_safe(d):
+    sub_dirs = d.split('/')
+    cur_dir = ''
+    max_check_time = 5
+    sleep_seconds_per_check = 0.001
+    for i in range(len(sub_dirs)):
+        cur_dir += sub_dirs[i] + '/'
+        for check_iter in range(max_check_time):
+            if not os.path.exists(cur_dir):
+                try:
+                    os.mkdir(cur_dir)
+                except Exception as e:
+                    print('[WARNING] ', str(e))
+                    time.sleep(sleep_seconds_per_check)
+                    continue
+            else:
+                break
+```
 ## 移动文件
 
 [Python 文件夹及文件操作](https://www.cnblogs.com/feeland/p/4463682.html)
