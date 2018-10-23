@@ -6,6 +6,13 @@
 pip install torch==0.3.1 --user
 ```
 
+查看版本
+
+```
+import torch
+print(torch.__version__)
+```
+
 ## debug
 
 查看feature map大小
