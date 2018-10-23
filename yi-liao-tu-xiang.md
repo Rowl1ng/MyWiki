@@ -49,7 +49,7 @@ def adjust_wc_ww(dicom_path, wc, ww, vis=False):
 ```
 ## 对齐左右侧
 
-```
+```python
 %env CUDA_DEVICE_ORDER=PCI_BUS_ID
 %env CUDA_VISIBLE_DEVICES=2
 import os
