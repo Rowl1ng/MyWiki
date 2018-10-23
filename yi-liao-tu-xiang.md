@@ -47,3 +47,29 @@ def adjust_wc_ww(dicom_path, wc, ww, vis=False):
         plt.imshow(img_8u, cmap='bone')
     return img_8u
 ```
+## 对齐左右侧
+
+```
+%env CUDA_DEVICE_ORDER=PCI_BUS_ID
+%env CUDA_VISIBLE_DEVICES=2
+import os
+import SimpleITK as sitk
+import cv2
+import numpy as np
+from skimage.filters.rank import entropy, bottomhat, tophat
+from skimage.morphology import disk
+from skimage.filters import threshold_li
+
+
+dcm_path = "/data2/mammogram/by3_b1/dicom/0079148/4889425/1.2.840.113681.2216073793.2474.3665280246.33.1/R_CC_2.dcm"
+os.path.exists(dcm_path)
+img_itk = sitk.ReadImage(dcm_path)
+img_np = sitk.GetArrayFromImage(img_itk).squeeze()
+h, w = np.array(img_np.shape)//10
+img2 = cv2.resize(img_np, (w, h))
+thresh1 = threshold_li(img2)
+img_thresh1 = img2> thresh1
+out = entropy(img2, disk(5))
+thresh2 = threshold_li(out)
+img_thresh2 = out> thresh2
+```
