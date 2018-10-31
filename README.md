@@ -8,6 +8,7 @@ conda config --set show_channel_urls yes
 
 安装使用：conda install keras会自动安装其他依赖包
 
+conda的env可以建多个python环境，在interpreter里把python路径配到envs目录下的python即可。
 多个python环境：
 
 ```
