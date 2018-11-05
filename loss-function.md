@@ -5,6 +5,8 @@
 ## Huber Loss
 
 $$
+\text{loss}(x, y) = \frac{1}{n} \sum_{i} z_{i} \\
+
 z_{i} =
 \begin{cases}
 0.5 (x_i - y_i)^2, & \text{if } |x_i - y_i| < 1 \\
