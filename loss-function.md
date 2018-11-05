@@ -4,6 +4,13 @@
 
 ## Huber Loss
 
+$$
+z_{i} =
+\begin{cases}
+0.5 (x_i - y_i)^2, & \text{if } |x_i - y_i| < 1 \\
+|x_i - y_i| - 0.5, & \text{otherwise }
+\end{cases}
+$$
 
 ## Tukeys Loss
 [Robust Optimization for Deep Regression](https://arxiv.org/pdf/1505.06606.pdf)
