@@ -2,6 +2,14 @@
 
 * a good choice for the criterion is maximum likelihood regularized with dropout, possibly also with weight decay.
 
+## Huber Loss
+
+
+## Tukeys Loss
+[Robust Optimization for Deep Regression](https://arxiv.org/pdf/1505.06606.pdf)
+
+[TukeysBiweight](http://mathworld.wolfram.com/TukeysBiweight.html)
+
 ## 分类交叉熵损失（Categorical Cross-Entropy Loss）
 
 分类交叉熵损失也被称为负对数似然（negative log likelihood）。这是一种用于解决分类问题的流行的损失函数，可用于测量两种概率分布（通常是真实标签和预测标签）之间的相似性。它可用 $$L = -\sum(y * \log(y_{prediction}))$$ 表示，其中 y 是真实标签的概率分布（通常是一个one-hot vector），$$y_{prediction} $$是预测标签的概率分布，通常来自于一个 softmax。
@@ -69,7 +77,3 @@ $$
   {L}_{NLL}=−logP(y|x;θ)={−1}_{y=1}{logp−1}_{y=0}log(1−p)\\ =−ylog{f}_{θ}(x)−(1−y)log(1−{f}_{θ}(x))
   $$
 
-## Tukeys Loss
-[Robust Optimization for Deep Regression](https://arxiv.org/pdf/1505.06606.pdf)
-
-[TukeysBiweight](http://mathworld.wolfram.com/TukeysBiweight.html)
