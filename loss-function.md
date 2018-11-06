@@ -14,6 +14,8 @@ z_{i} =
 \end{cases}
 $$
 
+[機器/深度學習: 損失函數(loss function)- Huber Loss和 Focal loss](https://medium.com/@chih.sheng.huang821/%E6%A9%9F%E5%99%A8-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E6%90%8D%E5%A4%B1%E5%87%BD%E6%95%B8-loss-function-huber-loss%E5%92%8C-focal-loss-bb757494f85e)
+
 ## Tukeys Loss
 [Robust Optimization for Deep Regression](https://arxiv.org/pdf/1505.06606.pdf)
 
