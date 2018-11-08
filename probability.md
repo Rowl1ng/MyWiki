@@ -1,3 +1,9 @@
+# 统计学
+
+## 假设检验
+
+### T检验
+![](http://www.algorithmdog.com/wp-content/uploads/2015/11/20130802172202-589762225.jpg)
 # 概率
 
 ## 0.5 概率 
