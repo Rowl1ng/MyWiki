@@ -13,6 +13,12 @@ import torch
 print(torch.__version__)
 ```
 
+## 设置GPU的方法
+
+```python
+torch.cuda.set_device(7)
+```
+
 ## debug
 
 查看feature map大小
