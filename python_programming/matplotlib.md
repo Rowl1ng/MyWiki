@@ -50,8 +50,6 @@ plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 
 ## 在图上画框 Rectangle + 画子图
 
-
-
 ```python
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches

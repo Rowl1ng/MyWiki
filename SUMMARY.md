@@ -102,7 +102,7 @@
 
 ## Math
 
-* [Probability Theory](probability-theory.md)
+* [Probability Theory](probability.md)
 * [Optimization](optimization.md)
 
 ## 英语
