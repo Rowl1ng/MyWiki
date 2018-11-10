@@ -90,7 +90,7 @@
   * [opencv](python_programming/opencv.md)
   * [matplotlib](python_programming/matplotlib.md)
   * [skimage](python_programming/skimage.md)
-* [图像处理基础](tu-xiang-chu-li-ji-chu.md)
+* [图像处理基础](image_basics.md)
   * [平滑化](ping-hua-hua.md)
   * [feature](feature.md)
   * [对比度](tu-xiang-jun-heng-hua.md)
