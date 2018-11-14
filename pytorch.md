@@ -42,6 +42,15 @@ for fm in fms:
 checkpoint = torch.load(self.model_path, map_location=lambda storage, loc: storage)
 self.model.load_state_dict(checkpoint['model'], strict=False)
 ```
+### 测试模型
+
+记得 `volatile=True`
+
+```
+input_img_var = torch.autograd.Variable(images.cuda(), volatile=True)
+input_mask_var = torch.autograd.Variable(masks.cuda(), volatile=True)
+```
+
 ## cuda
 
 ```python
