@@ -118,6 +118,10 @@ PPT：用于机器学习的神经网络 讲座6a
 
 ### 难例挖掘
 
+大致思路是只选较难的case进行loss计算，较难的定义是：容易错分成另一类的case，具体表现就是loss大，所以体现在代码中就是选loss最大的topk来反传梯度。
+
+最终效果是减少FP（如果对negative sample进行难例挖掘的话）。这里是pytorch实现：[Online Hard Example Mining on PyTorch](http://www.erogol.com/online-hard-example-mining-pytorch/)
+
 ```python
 import torch as th                                                                 
                                                                                    
@@ -146,4 +150,3 @@ class NLL_OHEM(th.nn.NLLLoss):
         return th.nn.functional.nll_loss(x_hn, y_hn)  
 ```
 
-[Online Hard Example Mining on PyTorch](http://www.erogol.com/online-hard-example-mining-pytorch/)
