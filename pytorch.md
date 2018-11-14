@@ -44,7 +44,7 @@ self.model.load_state_dict(checkpoint['model'], strict=False)
 ```
 ### 测试模型
 
-记得 `volatile=True`
+记得 `volatile=True`，否则容易爆显存。
 
 ```
 input_img_var = torch.autograd.Variable(images.cuda(), volatile=True)
