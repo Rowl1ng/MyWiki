@@ -55,12 +55,14 @@ torch.backends.cudnn.benchmark = True
 ```
 
 僵尸进程占用gpu，kill的方法：
+
 ```shell
 ps x |grep python|awk '{print $1}'|xargs kill
 ```
 ## 资源
 
 * [pytorch-practice](https://github.com/napsternxg/pytorch-practice)
+* [各种评价指标（meter）的pytorch实现](https://github.com/pytorch/tnt/tree/master/torchnet/meter)
 
 
 
