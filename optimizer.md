@@ -124,8 +124,7 @@ PPT：用于机器学习的神经网络 讲座6a
 
 ```python
 import torch as th                                                                 
-                                                                                   
-                                                                                   
+                                                                                                                                                                      
 class NLL_OHEM(th.nn.NLLLoss):                                                     
     """ Online hard example mining. 
     Needs input from nn.LogSotmax() """                                             

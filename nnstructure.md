@@ -3,6 +3,95 @@
 
 -------------
 
+## Multi-Layer Neural Network}
+A.3-layer network: Input Layer,Hidden Lyer,Output layer\\
+Except input units,each unit has a bias.
+## preassumption calculation}
+Hidden Layer:
+$$
+net_{j}=\sum_{i=1}^{d}x_{i}w_{ji}+w_{j0}=\sum_{i=0}^{d}x_{i}w_{ji}=w_{j}^{t}x
+$$
+Specifically, a signal $x_{i}$ at the input of synapse $i$ connected to nueron $j$ us multiplied by the synaptic weight $w_{ji}$\\
+$i$ refers input layer,$j$ refers hidden layer.$w_{j0}$ is the bias.$x_{0}=+1$\\
+
+- Each neuron is represented by a set of linear synaptic links, an externally applied bias,
+and a possibly nonlinear activation link.The bias is represented by a synaptic link connected to an input fixed at $+1$.
+- The synaptic links of a neuron weight their respective input signals.
+- The weighted sum of the input signals defines the induced local field of the neuron in
+question.
+- The activation link squashes the induced local field of the neuron to produce an output.
+
+Output layer:
+$$
+y_{j}=f(net_{j})
+$$
+$f()$ is the \emph{activation function}.It defines the output of a neuron in terms of
+the induced local field $net$ .
+
+$$
+\xymatrix {
+ %x_{0}=+1 \ar[ddr]|(0.6){w_{j0}} &  &\\
+ %x_{1} \ar[r]|(0.6){w_{j1}} & B & C\\
+ %x_{2} \ar[r]^(0.6){w_{j2}} & net_{j} \ar[r]^(0.6){f()} & y_{j} \\
+ x
+}
+$$
+
+For example:
+
+$$
+net_{k}=\sum_{j=1}^{n_{H}}y_{i}w_{kj}+w_{k0}=\sum_{j=0}^{n_{H}}x_{i}w_{ji}=w_{k}^{t}y
+$$
+
+$$n_{H}$$is the number of hidden layers.\\
+
+
+So:
+
+$$
+g_{k}(x)=f(\sum_{j=1}^{n_{H}}w_{kj}+f(\sum_{i=0}^{d}x_{i}w_{ji}+w_{j0})+w_{k0})
+$$
+
+The activate function of output layer can be different from hidden layer while each unit can have different activate function.
+
+## BP Algorithm
+
+The popularity of on-line learning for the supervised training of multilayer perceptrons
+has been further enhanced by the development of the back-propagation algorithm. 
+Backpropagation, an abbreviation for "backward propagation of errors",is the easiest way of supervised training.We need to generate output activations of each hidden layer.\\
+The partial derivative $\partial J /\partial w_{ji}$ represents a sensitivity factor, determining the
+direction of search in weight space for the synaptic weight $$ w_{ji}$$
+Learning:
+
+$$
+\mathcal T =\{ x(n),d(n)\}_{n=1}^{N}\\
+e_{j}(n)=d_{j}(n)-y_{j}(n)
+$$
+
+the instantaneous error energy of neuron $j$ is defined by
+
+$$
+J(w)=\frac 12 \sum_{k=1}^{c}(e_{k})^{2}=\frac 12||t-\delta||^{2} \\
+$$
+In the batch method of supervised learning, adjustments to the synaptic weights of the
+multilayer perceptron are performed \emph{after} the presentation of all the %N% examples in the
+training sample $\mathcal T$ that constitute one \emph{epoch} of training.  In other words, the cost function
+for batch learning is defined by the average error energy $J(w)$.
+
+- firstly define the training bias of output layer:
+
+$$
+\Delta w=-\eta\frac {\partial J(w)}{\partial w} \\
+w(m+1)=w(m)+/delta w(m)
+$$
+
+$$
+\frac {\partial J}{\partial w_{kj}}=\frac {\partial J}{\partial net_{k}}\frac {\partial net_{k}}{\partial w_{kj}} \\
+\frac {\partial J}{\partial net_{k}}= \frac {\partial J}{\partial \delta _{k}}\frac {\partial \delta _{k}}{\partial J}=-(t_{k}-\delta _{k})f'(net_{k}) \\
+\Delta w_{kj}=\eta \frac {\partial J}{\partial net_{k}}=\eta (t_{k}-\delta _{k}))f'(net_{k})y_{j} 
+$$
+
+- input->hidden
 ## 仿射层（Affine Layer）
 
 神经网络中的一个全连接层。仿射（Affine）的意思是前面一层中的每一个神经元都连接到当前层中的每一个神经元。在许多方面，这是神经网络的「标准」层。仿射层通常被加在卷积神经网络或循环神经网络做出最终预测前的输出的顶层。仿射层的一般形式为 y = f(Wx + b)，其中 x 是层输入，w 是参数，b 是一个偏差矢量，f 是一个非线性激活函数。
