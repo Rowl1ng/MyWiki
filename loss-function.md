@@ -2,6 +2,53 @@
 
 * a good choice for the criterion is maximum likelihood regularized with dropout, possibly also with weight decay.
 
+## Perceptual Loss
+
+感知损失：可以将卷积神经网络提取出的feature，作为目标函数的一部分，通过比较待生成的图片经过CNN的feature值与目标图片经过CNN的feature值，使得待生成的图片与目标图片在语义上更加相似(相对于Pixel级别的损失函数)。
+
+## Focal loss
+
+看ICCV那篇focal loss的论文[《Focal Loss for Dense Object Detection》](http://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper.pdf).
+
+不过这个pytorch版detectron还没实现，官方Detectron是集成在Caffe2里。可参考[Pytorch实现](https://github.com/marvis/pytorch-yolo2/blob/master/FocalLoss.py)。
+
+$$
+Loss(x, class) = - \alpha (1-softmax(x)_{[class]})^\gamma \log(softmax(x)_{[class]})
+$$
+
+```
+def focal_loss(inputs, targets):
+    gamma = 2
+    N = inputs.size(0)
+    C = inputs.size(1)
+    P = F.softmax(inputs) # softmax(x)
+
+    class_mask = inputs.data.new(N, C).fill_(0)
+    class_mask = Variable(class_mask)
+    ids = targets.view(-1, 1)
+    class_mask.scatter_(1, ids, 1.)
+    # print(class_mask)
+
+    probs = (P * class_mask).sum(1).view(-1, 1)# softmax(x)_class
+
+    log_p = probs.log()
+    # print('probs size= {}'.format(probs.size()))
+    # print(probs)
+
+    batch_loss = -(torch.pow((1 - probs), gamma)) * log_p
+    # print('-----bacth_loss------')
+    # print(batch_loss)
+
+    loss = batch_loss.mean()
+
+    return loss
+```
+
+- $$\alpha$$(1D Tensor, Variable) : the scalar factor for this criterion
+- $$\gamma$$(float, double) : $$\gamma > 0$$; reduces the relative loss for well-classiﬁed examples (p > .5), putting more focus on hard, misclassiﬁed examples
+- size_average(bool): By default, the losses are averaged over observations for each minibatch. However, if the field size_average is set to False, the losses are instead summed for each minibatch.
+                                
+
 ## Huber Loss
 
 $$
