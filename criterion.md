@@ -21,23 +21,3 @@ $$\frac {TP}{TP+FN}$$
 
 这样每一个decision threshhold，都有各自的TP、TN、FP、FN，都对应着曲线上的一个点
 
-[Luna官方说明][15]：The evaluation is performed by measuring the detection sensitivity of the algorithm and the corresponding false positive rate per scan. 
--  TP判定（hit criterion）：candidate必须是在standard reference 中以nodule center为中心的半径R（结节直径除2）之内。hit到一个正例之后就将这个例子从表中除去，保证不重复计数。也就是说，又有第二个预测点hit到这个结节时就被忽略，不算TP。
--  FP判定：在设定的半径距离内没有hit到任何reference结节. 
--  忽略的情况：Candidates that are detecting irrelevant findings (see Data section in this page for definition) are ignored during the evaluation and are not considered either false positives or true positives.
-
-最终的分数是取7个横座标点对应的纵座标（TPR）均值：
-
-- 横座标（FPR）： 1/8, 1/4, 1/2, 1, 2, 4, and 8 FPs per scan
--  完美是1，最低是0. Most CAD systems in clinical use today have their internal threshold set to operate somewhere between 1 to 4 false positives per scan on average. Some systems allow the user to vary the threshold. To make the task more challenging, we included low false positive rates in our evaluation. This determines if a system can also identify a significant percentage of nodules with very few false alarms, as might be needed for CAD algorithms that operate more or less autonomously.
-
-论文里关于FROC的说明：
-
-sensitivity是关于FPR平均值的函数：
-
- This means that the sensitivity (y) is plotted as a function of the average number of false positive markers per scan (). 
-
-- 计算FROC曲线：阈值为t，概率p≥ t则判定为结节，由此计算TPR、FPR，得到曲线上的一个点。
-- 图像ID号（seriesuid）：发现结果所在的scan的名字。
-- 三维坐标：浮点数（用小数点，不要用逗号）。注意：我们提供的数据的第一个体素（voxel） 的坐标是 (-128.6,-175.3,-298.3). Coordinates are given in world coordinates or millimeters. You can verify if you use the correct way of addressing voxels by checking the supplied coordinates for the example data, the locations should refer to locations that hold a nodule.
-- probability : 描述为真结节的可疑程度，浮点数。通过调节对它设定的**阈值**来计算 **FROC曲线**。
