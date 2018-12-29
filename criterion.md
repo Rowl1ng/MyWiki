@@ -9,7 +9,7 @@ $$\frac {TP}{TP+FP}$$
 而召回率是针对我们原来的样本而言的，它表示的是样本中的正例有多少被预测正确了。那也有两种可能，一种是把原来的正类预测成正类(TP)，另一种就是把原来的正类预测为负类(FN)。
 $$\frac {TP}{TP+FN}$$
 
-![](http://static.zybuluo.com/sixijinling/19kbgb66gbhj9yzropa03qm7/tp.png)
+![FROC](http://static.zybuluo.com/sixijinling/19kbgb66gbhj9yzropa03qm7/tp.png)
 
 FROC曲线（Free-response ROC）要从[ROC曲线](https://zh.m.wikipedia.org/wiki/%E9%9D%88%E6%95%8F%E5%BA%A6%E5%92%8C%E7%89%B9%E7%95%B0%E5%BA%A6)说起，和我们常用的accuracy和recall也可以联系起来看。主要是为了平衡两者：
 
