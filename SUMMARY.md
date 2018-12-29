@@ -56,6 +56,7 @@
   * [RNN](rnn.md)
   * [CNN](cnn.md)
   * [无监督学习](wu-jian-du-xue-xi.md)
+  * [criterion](criterion.md)
 * [第3章 神经网络编程](nnpractice.md)
   * [keras](keras.md)
   * [Theano](theano.md)
