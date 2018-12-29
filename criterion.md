@@ -10,6 +10,7 @@ $$\frac {TP}{TP+FP}$$
 $$\frac {TP}{TP+FN}$$
 
 ![](http://static.zybuluo.com/sixijinling/19kbgb66gbhj9yzropa03qm7/tp.png)
+
 FROC曲线（Free-response ROC）要从[ROC曲线](https://zh.m.wikipedia.org/wiki/%E9%9D%88%E6%95%8F%E5%BA%A6%E5%92%8C%E7%89%B9%E7%95%B0%E5%BA%A6)说起，和我们常用的accuracy和recall也可以联系起来看。主要是为了平衡两者：
 
 - TPR（True Positive Rate）/ **灵敏度** （Sensitivity） :在所有真的得了癌症的人中，我们要尽最大努力把这些病人都找出来，等同于正例的召回率。
