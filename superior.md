@@ -1,6 +1,13 @@
-# 高级特性
+# 迭代
 
-## 迭代
+通常我们使用`enumerate`：
+
+```python
+Count = -1
+for count,line in enumerate(open(thefilepath,‘rU’))： 
+    pass
+    Count += 1
+```
 
 如果给定一个list或tuple，我们可以通过for循环来遍历这个list或tuple，这种遍历我们称为迭代（Iteration）。
 在for循环中，Python将自动调用工厂函数iter()获得迭代器，自动调用next()获取元素，还完成了检查StopIteration异常的工作。
@@ -11,22 +18,15 @@
     group_member = next(iter(group))  
 ```
 
-### enumerate
-
+# 脚本编程与系统调用
+## 调用shell脚本
+比如这里通过在主函数中获取模型名来调用相应的测试脚本：
 ```python
-Count = -1 
-For count,line in enumerate(open(thefilepath,‘rU’))： 
-    Pass
-Count += 1
+import sys
+model_name = main()
+os.system('sh test_sample.sh {}'.format(model_name))
 ```
-
-## 抽象类
-
-abc.py 这个类库
-
-## 脚本编程与系统调用
-
-###　执行外部命令并获取它的输出
+##　执行外部命令并获取它的输出
 
 ```
 import subprocess
