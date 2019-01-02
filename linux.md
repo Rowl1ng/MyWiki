@@ -1,17 +1,3 @@
-# 时间
-
-```
-date
-```
-
-# 文件
-获取最新文件
-
-```
-#!/bin/sh
-filename=`ls -t |head -n1|awk '{print $0}'`
-echo $filename
-```
 # 内存管理
 
 查看磁盘空间：df -hl
@@ -22,7 +8,31 @@ echo $filename
 du --max-depth=1 --human-readable / | sort --human-numeric-sort
 ```
 
-# 解压
+# IO
+
+输出到文件 
+```
+sh XXX.sh > XXX.txt
+```
+输出到文件的同时打印到terminal：
+```
+sh XXX.sh | tee XXX.txt
+```
+# 文件
+
+获取最新文件
+
+```
+#!/bin/sh
+filename=`ls -t |head -n1|awk '{print $0}'`
+echo $filename
+```
+
+查看文件大小：
+```
+sudo du -sh * | sort -n
+```
+## 解压
 
 tar   zxvf    test.tgz  -C  指定目录
 
@@ -31,16 +41,13 @@ tar.xz文件：
 $xz -d ***.tar.xz
 $tar -xvf  ***.tar
 ```
-
- nohup:
-* 回车，回到命令行
+## 传输
 
 复制：cp
     * 目录：-ae
     * 目标目录存在时是把源目录拷过去
     * 目标目录不存在时是拷文件过去
-查看文件大小：
-* sudo du -sh * | sort -n
+
 
 1、mac上传文件到Linux服务器
 
@@ -83,3 +90,13 @@ linux下解压命令大全
 .tar.bz2
 解压：tar jxvf FileName.tar.bz2
 压缩：tar jcvf FileName.tar.bz2 DirName
+
+# 时间
+
+```
+date
+```
+# 其他
+
+nohup:
+* 回车，回到命令行
