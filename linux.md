@@ -10,6 +10,17 @@ du --max-depth=1 --human-readable / | sort --human-numeric-sort
 
 # IO
 
+## 输入
+比如`sh test_sample.sh Dec10-13-51-44_cac8_step`。
+
+参数可通过`$1`的方式读取到，`$0`是脚本的名字。
+
+```
+model_name=$1
+echo "Model: $model_name"
+```
+
+## 输出
 输出到文件 
 ```
 sh XXX.sh > XXX.txt
@@ -18,6 +29,7 @@ sh XXX.sh > XXX.txt
 ```
 sh XXX.sh | tee XXX.txt
 ```
+
 # 文件
 
 获取最新文件
