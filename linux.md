@@ -1,12 +1,3 @@
-# 内存管理
-
-查看磁盘空间：df -hl
-查看当前文件夹大小：du -sh
-按大小排序：
-
-```shell
-du --max-depth=1 --human-readable / | sort --human-numeric-sort
-```
 
 # IO
 
@@ -32,18 +23,31 @@ sh XXX.sh | tee XXX.txt
 
 # 文件
 
-获取最新文件
+## 查看文件大小：
+
+```
+sudo du -sh * | sort -n
+```
+查看磁盘空间：df -hl
+查看当前文件夹大小：du -sh
+按大小排序：
+
+```shell
+du --max-depth=1 --human-readable / | sort --human-numeric-sort
+```
+
+## 获取最新文件（夹）
 
 ```
 #!/bin/sh
 filename=`ls -t |head -n1|awk '{print $0}'`
 echo $filename
 ```
+获取最新文件夹
+```
+ls mydir -l |tail -n 1| awk '{print $9}'
+```
 
-查看文件大小：
-```
-sudo du -sh * | sort -n
-```
 ## 解压
 
 tar   zxvf    test.tgz  -C  指定目录
