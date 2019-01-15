@@ -106,6 +106,7 @@
 
 * [Probability Theory](probability.md)
 * [Optimization](optimization.md)
+  * [Introduction](optimization/introduction.md)
 
 ## 英语
 
