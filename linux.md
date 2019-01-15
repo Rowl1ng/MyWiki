@@ -1,4 +1,3 @@
-
 # IO
 
 ## 输入
@@ -64,7 +63,6 @@ $tar -xvf  ***.tar
     * 目标目录存在时是把源目录拷过去
     * 目标目录不存在时是拷文件过去
 
-
 1、mac上传文件到Linux服务器
 
 scp 文件名 用户名@服务器ip:目标路径
@@ -84,6 +82,11 @@ scp -r 用户名@服务器ip:文件路径 目标路径
 如：scp -r test@www.linuxidc.com:
 /test/testFolder /Users/test/
 
+从ftp服务器下载
+```
+wget -m -t0 http://XXX
+```
+## 解压
 linux下解压命令大全
 
 .tar 
