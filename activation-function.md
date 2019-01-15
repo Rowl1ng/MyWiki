@@ -89,7 +89,9 @@ ReLU 相对于 tanh 等函数的优势包括它们往往很稀疏（它们的激
 - 修正非线性改进神经网络声学模型（Rectifier Nonlinearities Improve Neural Network Acoustic Models ）  
 - 论文：线性修正单元改进受限玻尔兹曼机（Rectified Linear Units Improve Restricted Boltzmann Machines  ）
 
+## Lifting Layers
 
+出自 《[Lifting Layers: Analysis and Applications](https://arxiv.org/abs/1803.08660)》
 
 
 [7]: http://static.zybuluo.com/sixijinling/zcs7oxqe75t3aebzyld5mmu1/ScreenShot_20160426153615.png
