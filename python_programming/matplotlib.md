@@ -2,8 +2,6 @@
 
 Matplotlib的方便之处在于使用Jupyter notebook时能实时画图并显示，这样一来，远程即可看到服务器上的图。
 
-
-
 ## 柱状图 bar
 
 ```python
@@ -66,6 +64,10 @@ ax1.add_patch(
     )
 )
 plt.imshow(image)
+```
+不显示座标轴
+```
+plt.axis('off)
 ```
 
 ## 保存图片
