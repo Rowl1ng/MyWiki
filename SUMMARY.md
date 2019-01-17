@@ -29,6 +29,7 @@
   * [pandas](data_analyse/pandas.md)
   * [Jupyter](data_analyse/jupyter.md)
   * [numpy](data_analyse/numpy.md)
+    * [array](data_analyse/numpy/array.md)
 * [第0章 数学准备](chapter1.md)
   * [待整理](inbox0.md)
   * [函数](function.md)
