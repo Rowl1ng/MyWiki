@@ -2,7 +2,7 @@
 
 为了让神经网络能够学习复杂的决策边界（decision boundary），我们在其一些层应用一个非线性激活函数。最常用的函数包括  sigmoid、tanh、ReLU（Rectified Linear Unit 线性修正单元） 以及这些函数的变体。
 
-用来限制神经元的输入输出振幅。激活函数也称为压制函数，因为它的输出信号压制（限制）到允许范围之内的一定值。
+由于激活函数可用来限制神经元的输入输出振幅，它也称为压制函数，因为它的输出信号压制（限制）到允许范围之内的一定值。
 
 * affine transformation $$a = b+Wx$$, elementwise
 
@@ -18,7 +18,7 @@ Activation functions for the hidden units are needed to introduce **nonlinearity
 
 For backpropagation learning, the activation function must be differentiable, and it helps if the function is bounded; the sigmoidal functions such as **logistic** and **tanh** and the **Gaussian** function are the most common choices. Functions such as tanh or arctan that produce both positive and negative values tend to yield **faster** training than functions that produce only positive values such as logistic, because of better numerical conditioning (see ftp://ftp.sas.com/pub/neural/illcond/illcond.html).
 
-## what to choose
+## which one to choose？
 
 For hidden units, sigmoid activation functions are usually preferable to threshold activation functions. Networks with threshold units are difficult to train because the error function is **stepwise constant**, hence the gradient either does not exist or is zero, making it impossible to use backprop or more efficient gradient-based training methods. Even for training methods that do not use gradients--such as simulated annealing and genetic algorithms--sigmoid units are easier to train than threshold units. With sigmoid units, a small change in the weights will usually produce a change in the outputs, which makes it possible to tell whether that change in the weights is good or bad. With threshold units, a small change in the weights will often produce no change in the outputs.
 
