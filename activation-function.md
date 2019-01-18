@@ -40,21 +40,18 @@ f(x)=x
 $$
 ![](https://www.jqr.com/editor/670/721/670721337-5af94f1b7a147)
 
-## 阶跃函数
+## 阶跃函数(step function)
 
 $$
-\begin{equation}
-\varphi (v)=
-\begin{cases}
-1, &v\ge 0 \cr 
-0, &v<0
+\varphi (v)  = \begin{cases}  
+1, & v \ge 0 \\ 
+0, & v < 0
 \end{cases}
-\end{equation}
 $$
 
 ![ScreenShot_20160426153615.png-8.5kB][7]
 
-## Logistic函数
+## sigmoid函数/Logistic函数
 
 逻辑函数或逻辑曲线是一种常见的S形函数，它是皮埃尔·弗朗索瓦·韦吕勒在1844或1845年在研究它与人口增长的关系时命名的。广义Logistic曲线可以模仿一些情况人口增长（P）的S形曲线。起初阶段大致是指数增长；然后随着开始变得饱和，增加变慢；最后，达到成熟时增加停止。
 
@@ -64,9 +61,16 @@ $$
 P(t)=\frac 1{1+e^{-t}}
 $$
 
+Logistic函数也称逻辑激活函数（Logistic activation function）可以看作是对阶跃函数的平滑化拟合。
+- 计算sigmoid函数的导数非常简单。
+
+- 最常用于二元分类问题。
+- 梯度消失问题。在一定epoch数目之后，网络拒绝学习，或非常缓慢地学习，因为输入（X）导致输出（Y）中非常小的改动。这一函数更容易碰到后续层的饱和问题，导致训练变得困难。
+
+
 ![此处输入图片的描述][9]
 
-### sigmoid函数
+### 
 非线性且处处可微
 
 $$
