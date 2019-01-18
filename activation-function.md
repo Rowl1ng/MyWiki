@@ -49,6 +49,7 @@ $$
 \end{cases}
 \end{eqnarray}
 $$
+
 ![ScreenShot_20160426153615.png-8.5kB][7]
 
 ## Logistic函数
