@@ -44,7 +44,7 @@ $$
 \begin{eqnarray}
 \varphi (v)=
 \begin{cases}
-1, &v\ge 0 \cr \\
+1, &v\ge 0 \cr 
 0, &v<0
 \end{cases}
 \end{eqnarray}
