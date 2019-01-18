@@ -43,13 +43,13 @@ $$
 ## 阶跃函数
 
 $$
-\begin{eqnarray}
+\begin{equation}
 \varphi (v)=
 \begin{cases}
 1, &v\ge 0 \cr 
 0, &v<0
 \end{cases}
-\end{eqnarray}
+\end{equation}
 $$
 
 ![ScreenShot_20160426153615.png-8.5kB][7]
@@ -61,7 +61,7 @@ $$
 一个简单的Logistic函数可用下式表示：
 
 $$
-P(t)=\frac 1{1+e^-t}
+P(t)=\frac 1{1+e^{-t}}
 $$
 
 ![此处输入图片的描述][9]
