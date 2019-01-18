@@ -6,6 +6,7 @@
 
 * affine transformation $$a = b+Wx$$, elementwise
 
+![](http://upload-images.jianshu.io/upload_images/1667471-6d3b43bce94b33de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
   $$
   h=\phi (a)⇔{ h }_{ i }=\phi ({ a }_{ i })=\phi ({ b }_{ i }+{ W }_{ i,: }x)
@@ -37,7 +38,8 @@ For the output units, you should choose an activation function suited to the dis
 $$
 f(x)=x
 $$
-![](http://upload-images.jianshu.io/upload_images/1667471-6d3b43bce94b33de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://www.jqr.com/editor/670/721/670721337-5af94f1b7a147)
+
 ## 阶跃函数
 
 $$
@@ -57,7 +59,11 @@ $$
 逻辑函数或逻辑曲线是一种常见的S形函数，它是皮埃尔·弗朗索瓦·韦吕勒在1844或1845年在研究它与人口增长的关系时命名的。广义Logistic曲线可以模仿一些情况人口增长（P）的S形曲线。起初阶段大致是指数增长；然后随着开始变得饱和，增加变慢；最后，达到成熟时增加停止。
 
 一个简单的Logistic函数可用下式表示：
-$$P(t)=\frac 1{1+e^-t}$$
+
+$$
+P(t)=\frac 1{1+e^-t}
+$$
+
 ![此处输入图片的描述][9]
 
 ### sigmoid函数
