@@ -1,3 +1,17 @@
+# 装饰器（decorator）
+
+```
+@a
+@b
+@c
+def f ():
+    pass
+```
+等同于
+```
+f = a(b(c(f)))
+```
+
 # 迭代
 
 通常我们使用`enumerate`：
@@ -19,6 +33,7 @@ for count,line in enumerate(open(thefilepath,‘rU’))：
 ```
 
 # 脚本编程与系统调用
+
 ## 调用shell脚本
 比如这里通过在主函数中获取模型名来调用相应的测试脚本：
 ```python
