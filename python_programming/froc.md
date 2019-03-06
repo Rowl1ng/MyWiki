@@ -100,4 +100,23 @@ def load_FP_TP(file_name):
     from six.moves import cPickle as pickle
     result = pickle.load(open(save_dir + file_name, 'rb'))
     return result[0], result[1]
+def plotFROC(tpr, fpr):
+    fpr1, tpr1 = load_result('rec')
+    fpr2, tpr2 = load_result('vgg16_4')
+    fpr3, tpr3 = load_result('vgg16_8')
+    fig = plt.figure()
+    plt.xlabel('False Positive per Image', fontsize=12)
+    plt.xlim((0.1,100))
+    plt.ylabel('Recall', fontsize=12)
+    fig.suptitle('FROC on in-house dataset', fontsize=12)
+    line1, = plt.semilogx(fpr1, tpr1, '-', color='b', label="Proposed")
+    line2, = plt.semilogx(fpr2, tpr2, '-', color='r', label="VGG16/4")
+    line3, = plt.semilogx(fpr3, tpr3, '-', color='g', label="VGG16/8")
+#     plt.semilogx(fpr, tpr, '-', color='k', label="VGG16_8")
+#     legend1 = plt.legend(handles=[line1], loc=4)
+#     ax = plt.gca().add_artist(legend1)
+    plt.legend(handles=[line1, line2, line3], loc=4)
+    plt.grid(True, which='both')
+    plt.savefig('FROC_domestic.eps', format='eps')
+    plt.show()
 ```
