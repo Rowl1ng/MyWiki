@@ -1,6 +1,6 @@
 # 可视化
 
-```
+```python
 fig = plt.figure(figsize=(10,10))
 image = cv2.imread(image_path.replace('origin_sym', 'origin'))
 ax1 = fig.add_subplot(111, aspect='equal')
