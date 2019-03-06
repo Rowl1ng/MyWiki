@@ -1,5 +1,9 @@
 # pandas
 
+## 读入
+```
+df = pd.DataFrame(pd.read_csv('../val.csv'))
+```
 ## 写csv
 
 ```python
@@ -9,7 +13,10 @@ label_lines = ['pid','seriesUID','studyUID']
 data_lines.append([pid,seriesUID,studyUID])
 label_file = pd.DataFrame(columns=label_lines, data=data_lines)
 ```
-
+设置索引
+```python
+indexed = label_file.set_index(['batch', 'pid', 'seriesUID', 'studyUID', 'slice_index'])
+```
 ## 统计
 
 ```
@@ -27,7 +34,6 @@ calc_label = label_file[(label_file[u'病灶分布']=='') | (label_file[u'钙化
 ## 遍历csv
 
 ```
-df = pd.DataFrame(pd.read_csv('../val.csv'))
 for iter_index in df.index:
     filename = df.loc[iter_index,'filepath']
     label = df.loc[iter_index,'label']
@@ -78,11 +84,11 @@ data = data.drop_duplicates()
 data.to_csv("data.csv",index=False,header=False)
 ```
 中文csv：
-```
-df.to_csv(“df.csv”, encoding=’utf_8_sig’) 
+```python
+df.to_csv(“df.csv”, encoding=’utf_8_sig’,index=False) 
 ```
 导出xlsx
-```
+```python
 writer = pd.ExcelWriter('/Users/lhl/Desktop/quanlitycontrol/诊断意见/500_double.xlsx')
 result.to_excel(writer,'500ran')
 ```
