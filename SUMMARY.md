@@ -96,6 +96,7 @@
   * [opencv](python_programming/opencv.md)
   * [matplotlib](python_programming/matplotlib.md)
   * [skimage](python_programming/skimage.md)
+  * [visualize](python_programming/visualize.md)
 * [图像处理基础](image_basics.md)
   * [平滑化](ping-hua-hua.md)
   * [feature](feature.md)
