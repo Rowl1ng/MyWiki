@@ -1,5 +1,10 @@
 # 可视化
 
+随机 
+```python
+random.shuffle(images)
+```
+
 ```python
 fig = plt.figure(figsize=(10,10))
 image = cv2.imread(image_path.replace('origin_sym', 'origin'))

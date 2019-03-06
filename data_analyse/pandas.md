@@ -81,5 +81,9 @@ data.to_csv("data.csv",index=False,header=False)
 ```
 df.to_csv(“df.csv”, encoding=’utf_8_sig’) 
 ```
-
+导出xlsx
+```
+writer = pd.ExcelWriter('/Users/lhl/Desktop/quanlitycontrol/诊断意见/500_double.xlsx')
+result.to_excel(writer,'500ran')
+```
 
