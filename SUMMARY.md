@@ -20,6 +20,7 @@
   * [cython](cython.md)
 * [工程化](engineering.md)
 * [linux](linux.md)
+  * [train&test](linux/trainandtest.md)
 
 ## Machine Learning
 
