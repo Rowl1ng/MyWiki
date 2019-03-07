@@ -74,3 +74,22 @@ def vis_detect(image_name, thresh=0.0):
 
     ax2.imshow(image,cmap='gray')
 ```
+
+```python
+def vis_detections(im, dets, CONF_THRESH = 0.23):
+    """Draw boxes around detected cancer."""   
+    fig,ax=plt.subplots(figsize=(8,10))
+    ax.imshow(im,cmap='gray_r')
+    inds = np.where(dets[:, -1] >= CONF_THRESH)[0]
+    
+    for i in inds:
+        bbox = dets[i, :4]
+        score = dets[i, -1]
+        ax.add_patch(
+            plt.Rectangle((bbox[0], bbox[1]),
+                          bbox[2] - bbox[0],
+                          bbox[3] - bbox[1], fill=False, linestyle ='dashed',
+                          edgecolor=(0.95, 0.95, 0.5), linewidth=3))
+    plt.axis('off')
+    plt.tight_layout()
+```
