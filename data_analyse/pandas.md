@@ -93,3 +93,9 @@ writer = pd.ExcelWriter('/Users/lhl/Desktop/quanlitycontrol/诊断意见/500_dou
 result.to_excel(writer,'500ran')
 ```
 
+## Reference
+
+* [Pandas & Seaborn - A guide to handle & visualize data in Python\][2]
+
+[2]: [https://tryolabs.com/blog/2017/03/16/pandas-seaborn-a-guide-to-handle-visualize-data-elegantly/](https://tryolabs.com/blog/2017/03/16/pandas-seaborn-a-guide-to-handle-visualize-data-elegantly/)
+
