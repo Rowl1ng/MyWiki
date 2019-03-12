@@ -2,7 +2,7 @@
 
 * [Read me](read-me.md)
 
-## 编程
+## Programming
 
 * [Python笔记本](README.md)
   * [基础](basics.md)
@@ -116,9 +116,9 @@
 * [Nonliner Optimization](optimization.md)
   * [Introduction](optimization/introduction.md)
 
-## 英语
+## Language
 
-* [Introduction](README 4.md)
+* [English](README 4.md)
   * [suffix](suffix.md)
   * [prefix](prefix.md)
   * [verb](verb.md)
@@ -126,4 +126,5 @@
   * [math](math.md)
   * [material](material.md)
   * [others](others.md)
+* [日本語](ri-ben-yu.md)
 
