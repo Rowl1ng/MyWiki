@@ -43,6 +43,13 @@ git stash
 
 [A collection of useful .gitignore templates](https://github.com/github/gitignore)
 
+# diff
+
+# reset
+```
+git log
+git reset --hard XXXXXXX
+```
 # requirements.txt
 
 ```
