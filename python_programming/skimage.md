@@ -18,6 +18,12 @@ Compute threshold value by Li’s iterative Minimum Cross Entropy method.
 thresh = filters.threshold_li(img)
 ```
 
+### Ostu
+
+```
+thresh = filters.threshold_otsu(img)
+```
+
 ## 连通区域
 
 ```
