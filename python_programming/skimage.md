@@ -9,7 +9,10 @@ pip install scikit-image
 ```
 from skimage import filters
 ```
-
+### Li
+```
+thresh = filters.threshold_li(img)
+```
 
 ## 连通区域
 
