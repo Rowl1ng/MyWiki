@@ -11,6 +11,9 @@ pip install scikit-image
 from skimage import filters
 ```
 ### Li
+
+Compute threshold value by Li’s iterative Minimum Cross Entropy method.
+
 ```
 thresh = filters.threshold_li(img)
 ```
