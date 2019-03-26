@@ -97,7 +97,7 @@
 * [python编程](python_programming.md)
   * [opencv](python_programming/opencv.md)
   * [matplotlib](python_programming/matplotlib.md)
-  * [skimage](python_programming/skimage.md)
+  * [scikit-image](python_programming/skimage.md)
   * [visualize](python_programming/visualize.md)
   * [FROC](python_programming/froc.md)
   * [patch](python_programming/patch.md)
