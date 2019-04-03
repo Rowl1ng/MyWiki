@@ -131,3 +131,7 @@
   * [others](others.md)
 * [日本語](ri-ben-yu.md)
 
+## Music
+
+* [古琴](music/gu-qin.md)
+
