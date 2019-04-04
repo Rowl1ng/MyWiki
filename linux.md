@@ -122,3 +122,7 @@ date
 
 nohup:
 * 回车，回到命令行
+
+# Reference
+
+- [速查工具tldr](https://tldr.ostera.io/scp)
