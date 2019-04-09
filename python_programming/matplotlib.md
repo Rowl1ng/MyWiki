@@ -61,13 +61,16 @@ image = cv2.imread(png_dir + image_name + '.png')
 fig1 = plt.figure()
 ax1 = fig1.add_subplot(111, aspect='equal')
 ax1.imshow(image)
+x1,y1,w,h = box
 ax1.add_patch(
     patches.Rectangle(
-        (bbox[0], bbox[1]),   # (x,y)
-        bbox[2],          # width
-        bbox[3],          # height
+            (x1, y1),   # (x,y)
+            w,          # width
+            h,          # height
+            linewidth=1,edgecolor='r',facecolor='none'
     )
 )
+plt.text(x1, y1,str(score)[:5], color='w')
 plt.imshow(image)
 ```
 不显示座标轴
