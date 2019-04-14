@@ -131,6 +131,10 @@
   * [others](others.md)
 * [日本語](ri-ben-yu.md)
 
+## 画画
+
+* [color](hua-hua/color.md)
+
 ## Music
 
 * [古琴](music/gu-qin.md)
