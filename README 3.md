@@ -1,7 +1,8 @@
 # 我的第一本机器学习书
 
 记一些杂七杂八的东西，边学边慢慢整理。
-Learn and record and share.
+
+> Learn and record and share.
 
 ## Reference
 
