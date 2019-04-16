@@ -32,4 +32,4 @@ Tzeng et al. take this a step further and try to simultaneously optimize a loss 
 ## Reference
 
 - How transferable are features in deep neural networks，Jason Yosinski关于transfer learning的论文，2014，NIPS
--  Tzeng, Eric, et al. Simultaneous deep transfer across domains and tasks. ICCV. 2015.
+-  Tzeng, Eric, et al. Simultaneous deep transfer across domains and tasks. ICCV. 2015.:加上对抗的思路，使不同domain的representation不可分
