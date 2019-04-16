@@ -64,6 +64,7 @@
   * [问题](wen-ti.md)
     * [transfer learning](wen-ti/transfer-learning.md)
     * [样本不均衡](wen-ti/yang-ben-bu-jun-heng.md)
+    * few-shot learning
 * [第3章 神经网络编程](nnpractice.md)
   * [keras](keras.md)
   * [Theano](theano.md)
