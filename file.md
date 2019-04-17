@@ -102,12 +102,18 @@ pprint.pprint(l)#每项为一行显示，而且是文件对象自动关闭的方
 
 ## json
 
+读入
 ```python
 def read_json(json_file):
     f = open(json_file, 'r')
     data = json.load(f)
     f.close()
     return data
+```
+写文件
+```
+with open(os.path.join(save_dir, a_index+'.txt'), 'w') as outfile:
+    json.dump(data, outfile)
 ```
 
 ## pickle
