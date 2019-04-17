@@ -1,5 +1,5 @@
 # 图片
-控制大小
+控制大小+图片居中
 ```
 \begin{figure*}
 % \begin{overpic}
