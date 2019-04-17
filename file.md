@@ -100,7 +100,7 @@ print "---------------------------------------"
 pprint.pprint(l)#每项为一行显示，而且是文件对象自动关闭的方法，所以无f.close()
 ```
 
-## json
+# json
 
 读入
 ```python
@@ -116,7 +116,7 @@ with open(os.path.join(save_dir, a_index+'.txt'), 'w') as outfile:
     json.dump(data, outfile)
 ```
 
-## pickle
+# pickle
 ```
 import pickle as pkl
 with open(result, 'rb') as f:
