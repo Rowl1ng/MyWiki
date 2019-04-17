@@ -111,7 +111,7 @@ def read_json(json_file):
     return data
 ```
 写文件
-```
+```python
 with open(os.path.join(save_dir, a_index+'.txt'), 'w') as outfile:
     json.dump(data, outfile)
 ```
