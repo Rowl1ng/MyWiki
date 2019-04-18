@@ -10,10 +10,9 @@
 
 ### assert
 
-断言语句
+断言语句：assert 表達式 [, 參數]
 
 ```
 assert expression [, arguments]
-assert 表達式 [, 參數]
 ```
 
