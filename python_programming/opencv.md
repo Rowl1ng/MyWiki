@@ -46,6 +46,12 @@ assert im is not None, \
 cv2.circle(image_,(1251, 2661),5,(255,255,0),2)
 cv2.imwrite('test_1.png', image_)
 ```
+画contour
+```python
+segm = np.array(bounds).reshape((-1,1,2)).astype(np.int32)
+cv2.drawContours(image, segm, -1, (0,255,0), 8)
+```
+
 
 ### Resize
 

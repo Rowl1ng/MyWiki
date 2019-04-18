@@ -73,11 +73,7 @@ ax1.add_patch(
 plt.text(x1, y1,str(score)[:5], color='w')
 plt.imshow(image)
 ```
-画contour
-```python
-segm = np.array(bounds).reshape((-1,1,2)).astype(np.int32)
-cv2.drawContours(image, segm, -1, (0,255,0), 8)
-```
+
 不显示座标轴
 ```python
 plt.axis('off)
