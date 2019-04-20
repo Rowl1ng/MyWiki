@@ -137,6 +137,7 @@
 ## 画画
 
 * [color](hua-hua/color.md)
+* [light](hua-hua/light.md)
 
 ## Music
 
