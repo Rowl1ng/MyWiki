@@ -105,6 +105,8 @@
   * [visualize](python_programming/visualize.md)
   * [FROC](python_programming/froc.md)
   * [patch](python_programming/patch.md)
+* 任务
+  * [segmentation](segmentation.md)
 * [图像处理基础](image_basics.md)
   * [平滑化](ping-hua-hua.md)
   * [feature](feature.md)
