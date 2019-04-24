@@ -15,4 +15,8 @@ a.flatten()
 a = np.array(randn(4, 4))
 b = 1 * (a > 0) # 返回0、1矩阵
 a_list = a.ravel().tolist() # 返回list
+### 逻辑组合
+
+
 ```
+
