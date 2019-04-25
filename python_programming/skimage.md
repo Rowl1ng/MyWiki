@@ -26,7 +26,7 @@ thresh = filters.threshold_otsu(img)
 
 ## 连通区域
 
-```
+```pyhton
 from skimage import measure
 single_labels = measure.label(connected_mask, connectivity=2)
 single_regions = measure.regionprops(single_labels)
