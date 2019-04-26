@@ -42,6 +42,15 @@ for fm in fms:
 checkpoint = torch.load(self.model_path, map_location=lambda storage, loc: storage)
 self.model.load_state_dict(checkpoint['model'], strict=False)
 ```
+针对python2到python3的迁移：
+
+```
+from functools import partial
+import pickle
+pickle.load = partial(pickle.load, encoding="latin1")
+pickle.Unpickler = partial(pickle.Unpickler, encoding="latin1")
+model = torch.load(model_file, map_location=lambda storage, loc: storage, pickle_module=pickle)
+```
 ### 测试模型
 
 记得 `volatile=True`，否则容易爆显存。
