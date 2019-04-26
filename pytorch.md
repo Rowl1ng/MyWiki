@@ -44,7 +44,7 @@ self.model.load_state_dict(checkpoint['model'], strict=False)
 ```
 针对python2到python3的迁移：
 
-```
+```python
 from functools import partial
 import pickle
 pickle.load = partial(pickle.load, encoding="latin1")
@@ -55,7 +55,7 @@ model = torch.load(model_file, map_location=lambda storage, loc: storage, pickle
 
 记得 `volatile=True`，否则容易爆显存。
 
-```
+```python
 input_img_var = torch.autograd.Variable(images.cuda(), volatile=True)
 input_mask_var = torch.autograd.Variable(masks.cuda(), volatile=True)
 ```
