@@ -41,11 +41,18 @@ shutil.copytree(A_dir, B_dir)
 
 # 文件
 
-- 删除文件:  os.remove()
+
+```python
+##- 删除文件:  
+os.remove()
+## 删除文件夹
+imprt shutil
+shutil.rmtree()
+```
 
 - 文件重命名：
 
-```
+```python
 import os
 path = 'D:\\图片\\'
 for file in os.listdir(path):
