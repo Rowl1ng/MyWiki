@@ -76,7 +76,7 @@ plt.imshow(image)
 
 不显示座标轴
 ```python
-plt.axis('off)
+plt.axis('off')
 ```
 
 ## 保存图片
