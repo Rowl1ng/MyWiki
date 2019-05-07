@@ -1,8 +1,4 @@
-# 矩阵相关
-变形
-```
-imgs = image.view(-1,1,256,256).repeat(1,3,1,1)
-```
+# 准备工作
 
 安装
 
@@ -16,6 +12,14 @@ pip install torch==0.3.1 --user
 import torch
 print(torch.__version__)
 ```
+
+
+# 矩阵相关
+变形
+```
+imgs = image.view(-1,1,256,256).repeat(1,3,1,1)
+```
+
 
 ## 设置GPU的方法
 
