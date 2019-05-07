@@ -30,7 +30,7 @@ thresh = filters.threshold_otsu(img)
 找最大连通区域：
 ```python
 from skimage import measure
-def get_max_bbbox():
+def get_max_bbbox(mask):
     single_labels = measure.label(mask, connectivity=2)
     single_regions = measure.regionprops(single_labels)
     if not single_regions:
