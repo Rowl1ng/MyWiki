@@ -15,6 +15,7 @@ print(torch.__version__)
 
 # 矩阵相关
 变形
+
 ```
 imgs = image.view(-1,1,256,256).repeat(1,3,1,1)
 ```
