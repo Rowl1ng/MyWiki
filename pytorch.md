@@ -1,4 +1,8 @@
-# Pytorch总结
+# 矩阵相关
+变形
+```
+imgs = image.view(-1,1,256,256).repeat(1,3,1,1)
+```
 
 安装
 
@@ -77,6 +81,7 @@ torch.backends.cudnn.benchmark = True
 ```shell
 ps x |grep python|awk '{print $1}'|xargs kill
 ```
+
 ## 资源
 
 * [pytorch-practice](https://github.com/napsternxg/pytorch-practice)
