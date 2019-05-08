@@ -43,7 +43,7 @@ shutil.copytree(A_dir, B_dir)
 
 
 ```python
-##- 删除文件:  
+## 删除文件:  
 os.remove()
 ## 删除文件夹
 imprt shutil
