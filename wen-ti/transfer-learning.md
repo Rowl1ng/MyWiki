@@ -4,23 +4,27 @@ Finetune经验
 论文：How transferable are features in deep neural networks? 
 应用场景： domain A有标注数据， domain B有标注数据，期望在A上训练的模型能帮助B的训练。
 经验：
-	Fine-tune 对深度迁移有着非常好的促进作用
-	迁移特征能够增强模型在大型数据集上的表现
-	数据集A和B之间关系越强，迁移效果越好
-	随着可迁移层数的增加，模型性能下降。比如论文中使用前三层可以取得不错的迁移效果，但随着迁移层数上升，效果反而下降。通常经验是：使用大型数据集pretrain的模型在迁移到小型数据集时，固定前几个block，之后几层的学习率逐层增加，最后几层正常训练。
+
+- Fine-tune 对深度迁移有着非常好的促进作用
+- 迁移特征能够增强模型在大型数据集上的表现
+- 数据集A和B之间关系越强，迁移效果越好
+- 随着可迁移层数的增加，模型性能下降。比如论文中使用前三层可以取得不错的迁移效果，但随着迁移层数上升，效果反而下降。通常经验是：使用大型数据集pretrain的模型在迁移到小型数据集时，固定前几个block，之后几层的学习率逐层增加，最后几层正常训练。
 
 迁移学习方法：
-Domain adaptation：
-论文：
--	Simultaneous Deep Transfer Across Domains and Tasks
--	Adversarial Discriminative Domain Adaptation
 
-应用场景：source domain 有标注数据，target domain无标注数据 
-思路：目的类似MMD，手法类似GAN。 加入针对representation的domain classifier，计算domain confusion loss，从而最小化的类别间距离（domain discrepency）。换句话说，就是让target domain和source domain共享同一个映射函数，来和domain classifier对抗
-Borrowing data
+## Domain adaptation：
+
+论文：Simultaneous Deep Transfer Across Domains and Tasks；Adversarial Discriminative Domain Adaptation
+
+- 应用场景：source domain 有标注数据，target domain无标注数据 
+- 思路：目的类似MMD，手法类似GAN。 加入针对representation的domain classifier，计算domain confusion loss，从而最小化的类别间距离（domain discrepency）。换句话说，就是让target domain和source domain共享同一个映射函数，来和domain classifier对抗
+
+## Borrowing data
+
 论文：Borrowing Treasures from the Wealthy: Deep Transfer Learning through Selective Joint Fine-Tuning
-应用场景：target domain有标注数据很少，而source domain数据量庞大。Source domain包含target domain的相关内容。
-思路：构造特征提取器，度量图片的相似度，从而在source domain找到更适合target domain任务的图片。训练的时候对hard sample就从sourcce domain多选一些和它相似的图。
+
+- 应用场景：target domain有标注数据很少，而source domain数据量庞大。Source domain包含target domain的相关内容。
+- 思路：构造特征提取器，度量图片的相似度，从而在source domain找到更适合target domain任务的图片。训练的时候对hard sample就从sourcce domain多选一些和它相似的图。
 区别于domain融合的思路，这里更偏重颜色、形态上的相似，更像是数据增强的方法。和domain融合相同的是，中间目的都是让source domain和target domain上当前任务都取得好效果，只不过这里是source domain的subset。
 
 
