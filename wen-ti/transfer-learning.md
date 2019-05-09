@@ -10,8 +10,6 @@ Finetune经验
 - 数据集A和B之间关系越强，迁移效果越好
 - 随着可迁移层数的增加，模型性能下降。比如论文中使用前三层可以取得不错的迁移效果，但随着迁移层数上升，效果反而下降。通常经验是：使用大型数据集pretrain的模型在迁移到小型数据集时，固定前几个block，之后几层的学习率逐层增加，最后几层正常训练。
 
-迁移学习方法：
-
 ## Domain adaptation：
 
 论文：Simultaneous Deep Transfer Across Domains and Tasks；Adversarial Discriminative Domain Adaptation
