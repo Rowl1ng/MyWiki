@@ -5,7 +5,7 @@
 
 小trick：os.path.split(filepath)把路径分成两部分：文件名前面的所有+文件名。现在想根据路径重新命名文件，就需要filepath.split(‘/')
 
-小trick：用read读txt的时候，去掉换行符：line.strip(‘\n’)
+
 
 ##  赋值、引用、拷贝、作用域
 ### 赋值 引用

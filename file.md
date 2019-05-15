@@ -69,6 +69,10 @@ for file in os.listdir(path):
 用变量命名：
 ouput=open(str1+".txt",'w')
 
+## 读写
+
+小trick：用read读txt的时候，去掉换行符：line.strip(‘\n’)
+
 ```python
 #write(string)
 f = open("readwrite.txt",'w')
