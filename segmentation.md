@@ -41,6 +41,9 @@ $$
     - 5次迭代即可收敛，再增加可能导致vanishing和exploding gradient problems。
 : 实现Bilateral filter 的bilateral_lattices_和实现Spatial filter的spatial_lattice
 
+### 6. Related Work
+
+- 《*Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials*》
 
 ## DeepLabv3
 
