@@ -1,6 +1,4 @@
-# 优化
-
-## 算法
+# 算法
 
 深度学习的优化算法，说白了就是梯度下降。每次的参数更新有两种方式：
 
@@ -10,13 +8,33 @@
 
 为了克服两种方法的缺点，现在一般采用的是一种折中手段，**mini-batch gradient decent**，小批的梯度下降，这种方法把数据分为若干个批，按批来更新参数，这样，**一个批中的一组数据共同决定了本次梯度的方向**，下降起来就不容易跑偏，减少了随机性。另一方面因为批的样本数与整个数据集相比小了很多，计算量也不是很大。
 
-### 随机梯度下降（SGD：Stochastic Gradient Descent）
+
+
+## 随机梯度下降（SGD：Stochastic Gradient Descent）
 
 随机梯度下降是一种被用在训练阶段学习网络参数的基于梯度的优化算法。梯度通常使用反向传播算法计算。在实际应用中，人们使用微小批量版本的 SGD，其中的参数更新基于批案例而非单个案例进行执行，这能增加计算效率。vanilla SGD 存在许多扩展，包括动量（Momentum）、Adagrad、rmsprop、Adadelta 或 Adam。
 
 论文：用于在线学习和随机优化的自适应次梯度方法（Adaptive Subgradient Methods for Online Learning and Stochastic Optimization）  
 技术博客：斯坦福CS231n：优化算法（[http://cs231n.github.io/neural-networks-3/）](http://cs231n.github.io/neural-networks-3/）)  
 技术博客：梯度下降优化算法概述（[http://sebastianruder.com/optimizing-gradient-descent/）](http://sebastianruder.com/optimizing-gradient-descent/）)
+
+此处主要说下SGD的缺点：（正因为有这些缺点才让这么多大神发展出了后续的各种算法）
+
+- 选择合适的learning rate比较困难
+- 对所有的参数更新使用同样的learningrate。对于稀疏数据或者特征，有时我们可能想更新快一些对于不经常出现的特征，对于常出现的特征更新慢一些，这时候SGD就不太能满足要求了
+- SGD容易收敛到局部最优，并且容易被困在鞍点
+
+
+
+损失平面等高线：
+
+![损失平面等高线][19]
+
+在鞍点处的比较：
+
+![在鞍点处的比较][20]
+
+在Deep Learning中，往往loss function是非凸的，没有解析解，我们需要通过优化方法来求解。solver的主要作用就是交替调用前向（forward)算法和后向（backward)算法来更新参数，从而最小化loss，实际上就是一种迭代的优化算法。
 
 ### 动量（Momentum）
 
@@ -149,3 +167,5 @@ class NLL_OHEM(th.nn.NLLLoss):
         return th.nn.functional.nll_loss(x_hn, y_hn)  
 ```
 
+  [19]: http://img.blog.csdn.net/20160824161755284
+  [20]: http://img.blog.csdn.net/20160824161815758
