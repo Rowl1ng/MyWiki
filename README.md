@@ -18,4 +18,13 @@ conda info --envs
 source activate det3
 pip install -r requirements.txt
 ```
-
+代码规范：Readable、reusable、robust；
+- 代码做好单元测试、变量命名 减少混淆；
+- 不要用from mypkg import *;
+- 利用中间变量控制行的长度，使用'\’换行； 
+- with open(‘file.txt) as f: for ling in f: print line使用context manager减少资源消耗；
+- 函数定义input和output，参数类型、内容；
+- avoid giant function，each function should do one thing and do it well；
+- avoid duplicate code；
+- unittest，有明确输入输出的；
+- 开源代码质量往往很高，学着写
