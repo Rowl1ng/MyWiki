@@ -1,8 +1,6 @@
-* 字符串分割是split，分成字符是strip
- 大乌龙：filepath.replace(‘lung’,’nodule’)想的是只替换文件名，结果前面的路径里也出现了’lung’，就找不到文件了
-* numpy.zeros((size),dtype=XXX)
-* numpy乘法，
-* functools.partial()相当于对函数和传入的关键字参数进行“打包”，返回一个可调用对象
+
+
+- functools.partial()相当于对函数和传入的关键字参数进行“打包”，返回一个可调用对象
 
 ## Anaconda
 

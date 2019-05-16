@@ -3,6 +3,9 @@
 
 - `pass` ：占位的，啥也不干
 
+* 字符串分割是split，分成字符是strip
+ 大乌龙：filepath.replace(‘lung’,’nodule’)想的是只替换文件名，结果前面的路径里也出现了’lung’，就找不到文件了
+
 小trick：os.path.split(filepath)把路径分成两部分：文件名前面的所有+文件名。现在想根据路径重新命名文件，就需要filepath.split(‘/')
 
 

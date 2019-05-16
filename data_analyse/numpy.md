@@ -8,6 +8,7 @@ aa.index(max(aa))
 
 # numpy
 
+
 ## 中位数
 
 ```python
