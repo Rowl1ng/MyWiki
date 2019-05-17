@@ -107,6 +107,7 @@
   * [patch](python_programming/patch.md)
 * 任务
   * [segmentation](segmentation.md)
+  * detection
 * [图像处理基础](image_basics.md)
   * [平滑化](ping-hua-hua.md)
   * [feature](feature.md)
@@ -116,7 +117,7 @@
   * [车道线识别](lane.md)
   * [RoadNN](roadnn.md)
   * [mammogram](mammogram.md)
-* [医疗图像](yi-liao-tu-xiang.md)
+  * [医疗图像](yi-liao-tu-xiang.md)
 
 ## Math
 
