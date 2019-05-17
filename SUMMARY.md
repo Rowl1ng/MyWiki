@@ -105,7 +105,7 @@
   * [visualize](python_programming/visualize.md)
   * [FROC](python_programming/froc.md)
   * [patch](python_programming/patch.md)
-* 任务
+* [任务](ren-wu.md)
   * [segmentation](segmentation.md)
   * detection
 * [图像处理基础](image_basics.md)
