@@ -1,6 +1,7 @@
 
 
 - functools.partial()相当于对函数和传入的关键字参数进行“打包”，返回一个可调用对象
+- python的map(func, seq)方法：对seq中的item依次执行func，结果也作为一个list返回
 
 ## Anaconda
 
