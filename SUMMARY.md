@@ -82,7 +82,7 @@
   * [AlphaGo](alphago.md)
   * [Terms](termsmd.md)
   * [boost](boost.md)
-* 应用
+* [应用](ying-yong.md)
   * [语音](ying-yong/yu-yin.md)
     * [应用于安全领域的语音技术](ying-yong/yu-yin/ying-yong-yu-an-quan-ling-yu-de-yu-yin-ji-zhu.md)
     * [内容无关](ying-yong/yu-yin/std.md)
