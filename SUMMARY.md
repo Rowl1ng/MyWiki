@@ -27,11 +27,11 @@
 
 * [Introduction](README 3.md)
 * [第-1章 数据分析](data_analyse.md)
-  * [scikit-learn](data_analyse/scikit-learn.md)
-  * [pandas](data_analyse/pandas.md)
-  * [Jupyter](data_analyse/jupyter.md)
-  * [numpy](data_analyse/numpy.md)
-    * [array](data_analyse/numpy/array.md)
+  * [scikit-learn](data_analysis/scikit-learn.md)
+  * [pandas](data_analysis/pandas.md)
+  * [Jupyter](data_analysis/jupyter.md)
+  * [numpy](data_analysis/numpy.md)
+    * [array](data_analysis/numpy/array.md)
 * [第0章 数学准备](chapter1.md)
   * [待整理](inbox0.md)
   * [函数](function.md)
@@ -62,10 +62,10 @@
   * [criterion](criterion.md)
   * [backbone](backbone.md)
   * [问题](wen-ti.md)
-    * [transfer learning](wen-ti/transfer-learning.md)
-    * [样本不均衡](wen-ti/yang-ben-bu-jun-heng.md)
-    * [few-shot learning](wen-ti/few-shot-learning.md)
-    * [normalization](wen-ti/normalization.md)
+    * [transfer learning](problems/transfer-learning.md)
+    * [样本不均衡](problems/imbalance.md)
+    * [few-shot learning](problems/few-shot-learning.md)
+    * [normalization](problems/normalization.md)
     * [无监督学习](wu-jian-du-xue-xi.md)
 * [第3章 神经网络编程](nnpractice.md)
   * [keras](keras.md)
@@ -83,15 +83,15 @@
   * [Terms](termsmd.md)
   * [boost](boost.md)
 * [应用](ying-yong.md)
-  * [语音](ying-yong/yu-yin.md)
-    * [应用于安全领域的语音技术](ying-yong/yu-yin/ying-yong-yu-an-quan-ling-yu-de-yu-yin-ji-zhu.md)
-    * [内容无关](ying-yong/yu-yin/std.md)
-    * [内容相关](ying-yong/yu-yin/yin-su.md)
-    * [待整理](ying-yong/yu-yin/dai-zheng-li.md)
-  * [安全](ying-yong/an-quan.md)
-    * [恶意代码检测](ying-yong/an-quan/e-yi-dai-ma-jian-ce.md)
-    * [脆弱性检测](ying-yong/an-quan/zi-dong-lou-dong-wa-jue.md)
-    * [自动漏洞挖掘](ying-yong/an-quan/zi-dong-lou-dong-wa-jue.md)
+  * [语音](application/yu-yin.md)
+    * [应用于安全领域的语音技术](application/yu-yin/ying-yong-yu-an-quan-ling-yu-de-yu-yin-ji-zhu.md)
+    * [内容无关](application/yu-yin/std.md)
+    * [内容相关](application/yu-yin/yin-su.md)
+    * [待整理](application/yu-yin/dai-zheng-li.md)
+  * [安全](application/an-quan.md)
+    * [恶意代码检测](application/an-quan/e-yi-dai-ma-jian-ce.md)
+    * [脆弱性检测](application/an-quan/zi-dong-lou-dong-wa-jue.md)
+    * [自动漏洞挖掘](application/an-quan/zi-dong-lou-dong-wa-jue.md)
 
 ## Computer Vision
 
@@ -139,8 +139,8 @@
 
 ## 画画
 
-* [color](hua-hua/color.md)
-* [light](hua-hua/light.md)
+* [color](art/color.md)
+* [light](art/light.md)
 
 ## Music
 
