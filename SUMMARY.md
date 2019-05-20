@@ -51,6 +51,7 @@
   * [SMO](smo.md)
   * [条件随机场](crf.md)
   * [normalization](normalization.md)
+  * [regularization](regularization.md)
 * [第2章 神经网络入门](nnintro.md)
   * [函数](nnfunction.md)
     * [activation function](activation-function.md)
