@@ -114,6 +114,11 @@ $$
 
 * $${f}_{\theta}(x)$$ to be strictly between 0 to 1: use the sigmoid as non-linearity for the output layer\(matches well with the binomial negative log-likelihood cost function\)
 
+
+The mean is halved（$$\frac 12$$）as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the（$$\frac 12$$\) term.
+
+
+
 ##### Learning a Conditional Probability Model
 
 * loss function as corresponding to a conditional log-likelihood, i.e., the negative log-likelihood \(NLL\) cost function

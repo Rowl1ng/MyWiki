@@ -1,3 +1,13 @@
+## 分批标准化（BN：Batch Normalization）
+
+分批标准化是一种按小批量的方式标准化层输入的技术。它能加速训练过程，允许使用更高的学习率，还可用作规范器（regularizer）。人们发现，分批标准化在卷积和前馈神经网络中应用时非常高效，但尚未被成功应用到循环神经网络上。
+
+论文：分批标准化：通过减少内部协变量位移（Covariate Shift）加速深度网络训练（Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift）  
+论文：使用分批标准化的循环神经网络（Batch Normalized Recurrent Neural Networks）
+
+Two techniques to help with this are **feature scaling **and **mean normalization**. Feature scaling involves dividing the input values by the range \(i.e. the maximum value minus the minimum value\) of the input variable, resulting in a new range of just 1. Mean normalization involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
+
+
 ## Simplified Whitening
 The mean and variance of the pixels across the batch is calculated and then centered and scaled respectively. It’s said that it speeds up convergence.
 

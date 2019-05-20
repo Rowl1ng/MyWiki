@@ -6,26 +6,15 @@
   * 回归
   * 分类 
 * 强化学习：输出是动作/动作序列，唯一的监督信号是偶然的常量反馈。
-  \`- 反馈通常有延迟，所以不知道什么时候开始错\对了。 
+  * 反馈通常有延迟，所以不知道什么时候开始错\对了。 
   * 常量反馈本身没有多少信息量。
 * 无监督学习：创造输入的内部表示，帮助接下来的监督学习和强化学习
-
-## Cost Function
-
-The mean is halved（$$\frac 12$$）as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the（$$\frac 12$$\) term.
 
 ## 信道（Channel）
 
 深度学习模型的输入数据可以有多个信道。图像就是个典型的例子，它有红、绿和蓝三个颜色信道。一个图像可以被表示成一个三维的张量（Tensor），其中的维度对应于信道、高度和宽度。自然语言数据也可以有多个信道，比如在不同类型的嵌入（embedding）形式中。
 
-## 分批标准化（BN：Batch Normalization）
 
-分批标准化是一种按小批量的方式标准化层输入的技术。它能加速训练过程，允许使用更高的学习率，还可用作规范器（regularizer）。人们发现，分批标准化在卷积和前馈神经网络中应用时非常高效，但尚未被成功应用到循环神经网络上。
-
-论文：分批标准化：通过减少内部协变量位移（Covariate Shift）加速深度网络训练（Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift）  
-论文：使用分批标准化的循环神经网络（Batch Normalized Recurrent Neural Networks）
-
-Two techniques to help with this are **feature scaling **and **mean normalization**. Feature scaling involves dividing the input values by the range \(i.e. the maximum value minus the minimum value\) of the input variable, resulting in a new range of just 1. Mean normalization involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
 
 ## 经验风险最小化
 
