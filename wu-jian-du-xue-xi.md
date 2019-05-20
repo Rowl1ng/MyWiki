@@ -51,6 +51,6 @@ RBM也相当于一个编解码器 :
 
 ## Reference
 
-- [Energy-Based Models](https://cs.nyu.edu/~yann/research/ebm/)
+- [Energy-Based Models https://cs.nyu.edu/~yann/research/ebm/](https://cs.nyu.edu/~yann/research/ebm/)
 - Hopfield Network：[ http://page.mi.fu-berlin.de/rojas/neural/chapter/K13.pdf ]
 - [ http://www.scholarpedia.org/article/Boltzmann_machine ]
