@@ -1,5 +1,9 @@
 # Transfer Learning
 
+微调（Fine-Tuning）
+
+Fine-Tuning 这种技术是指使用来自另一个任务（例如一个无监督训练网络）的参数初始化网络，然后再基于当前任务更新这些参数。比如，自然语言处理架构通常使用 word2vec 这样的预训练的词向量（word embeddings），然后这些词向量会在训练过程中基于特定的任务（如情感分析）进行更新。
+
 Finetune经验
 论文：How transferable are features in deep neural networks? 
 应用场景： domain A有标注数据， domain B有标注数据，期望在A上训练的模型能帮助B的训练。
