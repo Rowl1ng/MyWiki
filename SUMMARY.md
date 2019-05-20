@@ -65,7 +65,6 @@
     * [transfer learning](problems/transfer-learning.md)
     * [样本不均衡](problems/imbalance.md)
     * [few-shot learning](problems/few-shot-learning.md)
-    * [normalization](problems/normalization.md)
     * [无监督学习](wu-jian-du-xue-xi.md)
 * [第3章 神经网络编程](nnpractice.md)
   * [keras](keras.md)

@@ -7,6 +7,8 @@
 
 Two techniques to help with this are **feature scaling **and **mean normalization**. Feature scaling involves dividing the input values by the range \(i.e. the maximum value minus the minimum value\) of the input variable, resulting in a new range of just 1. Mean normalization involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
 
+[adaBN：Batch normalization和Instance normalization的对比](https://www.zhihu.com/question/68730628)
+
 
 ## Simplified Whitening
 The mean and variance of the pixels across the batch is calculated and then centered and scaled respectively. It’s said that it speeds up convergence.
