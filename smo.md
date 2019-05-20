@@ -47,13 +47,13 @@ $$
 $$
 L(w,b,\alpha)=\frac 12{||w||}^2+\sum_{i=1}^N\alpha_i(1-y_i(w^\mathrm{T}x_i+b))
 $$
-其中$\alpha=(\alpha_1;\alpha_2;\dots;\alpha_m)$。令$L(w,b,\alpha)$中的$w$和$b$的偏导为0可得
+其中$$\alpha=(\alpha_1;\alpha_2;\dots;\alpha_m)$$。令$$L(w,b,\alpha)$$中的$$w$$和$$b$$的偏导为0可得
 
 $$
 w=\sum_{i=1}^N\alpha_iy_ix_i,\\
 0=\sum_{i=1}^N\alpha_iy_i.
 $$
-即可将$L(w,b,\alpha)$中的$w$和$b$消去，得到对偶问题
+即可将$$L(w,b,\alpha)$$中的$$w$$和$$b$$消去，得到对偶问题
 $$
 D(\alpha)=\sum _{i=1}^N \alpha_i-\frac12 \sum _{i=1}^N \sum _{j=1}^N \alpha_i \alpha_j y_i y_j \mathbf x_i^{\mathrm T} \mathbf x_j \\
 s.t. \sum _{i=1}^N \alpha_i y_i=0, \alpha_i>0, i=1,\dots,N
@@ -67,11 +67,11 @@ $$
 \alpha_{i^*}y_{i^*} +\alpha_{j^*}y_{j^*}=c,\alpha_{i^*}\geq 0,\alpha_{j^*}\geq 0\\
 c=-\sum _{k \neq i^*,j^*}\alpha_k y_k
 $$
-用上式中的$c$消去$D(\alpha)$中的$\alpha _j$：
+用上式中的$$c$$消去$$D(\alpha)$$中的$$\alpha _j$$：
 $$
 \alpha_{j^*}=(c-\alpha_{i^*}y_{i^*})y_{j^*}
 $$
-假设$i^*=1$，$j^*=2$：
+假设$$i^*=1$$，$$j^*=2$$：
 $$
 \alpha_2=(c-\alpha_1y_1)y_2=\gamma-s\alpha_1
 $$
@@ -82,18 +82,18 @@ $$
 K_{ij}=K(\mathbf x_i,\mathbf x_i),f(x_i)=\sum_{j=1}^N y_j\alpha_jK_{ij}+b,\\
 v_i=f(x_i)-\sum_{j=1}^2y_j\alpha_jK_{ij}-b
 $$
-固定$\alpha_1$、$\alpha_2$,得到：
+固定$$\alpha_1$$、$$\alpha_2$$,得到：
 $$
 D(\alpha)=\alpha_1+\alpha_2-\frac 12K_{11}\alpha_1^2-\frac 12K_{22}{\alpha_2}^2-y_{1}y_{2}K_{12}\alpha_1\alpha_2-y_1\alpha_1v_1-y_2\alpha_2v_2+constant
 $$
-取$\alpha_1$为变量，则得到一个关于$\alpha_1$的单变量二次规划问题，仅有的约束是$\alpha_1\geq 0$：
+取$$\alpha_1$$为变量，则得到一个关于$$\alpha_1$$的单变量二次规划问题，仅有的约束是$$\alpha_1\geq 0$$：
 
 $$
 D(\alpha_1)=\alpha_1+\gamma-s\alpha_1-\frac 12K_{11}\alpha_1^2-\frac 12K_{22}(\gamma-s\alpha_1)^2-sK_{12}\alpha_1(\gamma-s\alpha_1)\\
 -y_1\alpha_1v_1-y_2(\gamma-s\alpha_1)v_2+constant
 $$
 
-对$\alpha_1$求偏导以求得最大值，有
+对$$\alpha_1$$求偏导以求得最大值，有
 $$
 \frac {\partial W(\alpha_1)}{\partial \alpha_1}=1-s-K_{11}\alpha_1+sK_{22}\gamma-K_{22}\alpha_1-sK_{12}\gamma+2K_{12}\alpha_1-y_1v_1+y_1v_2=0
 $$
@@ -128,7 +128,7 @@ L=max(0,\alpha_1-\alpha_2),H=max(C,C+\alpha_1+\alpha_2)&$y_1 \neq y_2$\\
 L=max(0,\alpha_1+\alpha_2-C),H=max(C,\alpha_1-\alpha_2)&$y_1 = y_2$
 }
 $$
-假设$s=y_1y_2$，则新的$\alpha_2^{new}$为
+假设$$s=y_1y_2$$，则新的$$\alpha_2^{new}$$为
 $$
 \alpha_2^{new}=\alpha_2^{old}+s(\alpha_1^{old}-\alpha_1^{new,clipped})
 $$
