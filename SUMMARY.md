@@ -44,9 +44,7 @@
   * [术语](term.md.md)
 * [第1章 基础知识](basic.md)
   * [方法概论](generality.md)
-  * [优化算法](optimizer.md)
   * [基础学习算法](svm.md)
-  * [SMO](smo.md)
   * [条件随机场](crf.md)
   * [normalization](normalization.md)
   * [regularization](regularization.md)
@@ -122,6 +120,8 @@
 * [Probability Theory](probability.md)
 * [Nonliner Optimization](optimization.md)
   * [Introduction](optimization/introduction.md)
+  * [SMO](smo.md)
+  * [优化算法](optimizer.md)
 
 ## Language
 
