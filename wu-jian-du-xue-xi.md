@@ -1,7 +1,7 @@
 # Energy Based Model
 
 
-[Energy-Based Models](https://cs.nyu.edu/~yann/research/ebm/)
+
 
 > 这部分的内容来自NNML第十一周及接下来好几周的课程，由于平常对Hopfield网络和受限波尔兹曼机接触得就较少，理解起来总是很多地方弄不明白，必须得查阅中文辅助资料才能略通一二。前面课程的内容多多少少都在其他资料中反复见到，唯独这部分可以说是零起点，也算是看到了“新世界”。
 
@@ -51,5 +51,6 @@ RBM也相当于一个编解码器 :
 
 ## Reference
 
+- [Energy-Based Models](https://cs.nyu.edu/~yann/research/ebm/)
 - Hopfield Network：[ http://page.mi.fu-berlin.de/rojas/neural/chapter/K13.pdf ]
 - [ http://www.scholarpedia.org/article/Boltzmann_machine ]
