@@ -42,15 +42,15 @@ $$
 \end{cases}
 $$
 
-条件随机场（conditional random field，以下简称**CRF**）：假定我们关心的概率分布$p$可以通过$A$个形如$\varPsi_a(\mathbf y_a)$的因子（factor）的乘积来表示。
+条件随机场（conditional random field，以下简称**CRF**）：假定我们关心的概率分布$$p$$可以通过$$A$$个形如$$\varPsi_a(\mathbf y_a)$$的因子（factor）的乘积来表示。
 
 $$
 p(\mathbf y)=\frac 1Z \prod_{a=1}^A\varPsi_a(\mathbf y_a)
 $$
 
-其中$Z$为规一化因子，使得$p(\mathbf y)$在0~1。
+其中$$Z$$为规一化因子，使得$$p(\mathbf y)$$在0~1。
 
-这些factor也称做`local function`或`compatibility function`。而在图中，与因子节点（factor node）$\varPsi_a$相连的所有变量节点（variable node）$$Y_s$$都是$$\varPsi_a$$的参数之一。所以factor graph描述的是分布$p$分解为一系列`local function`的方式。
+这些factor也称做`local function`或`compatibility function`。而在图中，与因子节点（factor node）$\varPsi_a$相连的所有变量节点（variable node）$$Y_s$$都是$$\varPsi_a$$的参数之一。所以factor graph描述的是分布$$p$$分解为一系列`local function`的方式。
 
 ### 2.2 判别式模型和产生式模型
 

@@ -42,8 +42,8 @@ assert im is not None, \
 
 ### 画图
 
-```
-cv2.circle(image_,(1251, 2661),5,(255,255,0),2)
+```python
+cv2.circle(image_,(1251, 2661),5,(255,255,0),2) #(x,y)
 cv2.imwrite('test_1.png', image_)
 ```
 画contour
