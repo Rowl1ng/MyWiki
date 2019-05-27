@@ -1,4 +1,3 @@
-# scikit-image
 
 ## 安装
 
@@ -24,8 +23,7 @@ thresh = filters.threshold_li(img)
 ```
 thresh = filters.threshold_otsu(img)
 ```
-
-## 连通区域
+# 连通区域：regionprops
 
 找最大连通区域：
 ```python
