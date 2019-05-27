@@ -29,7 +29,7 @@ thresh = filters.threshold_otsu(img)
 属性名称    类型  描述
 area    int     区域内像素点总数
 bbox    tuple   边界外接框(min_row, min_col, max_row, max_col)
-centroid    array　　     质心坐标
+centroid    array　　     质心坐标（y,x）
 convex_area     int     凸包内像素点总数
 convex_image    ndarray     和边界外接框同大小的凸包　　
 coords  ndarray     区域内像素点坐标
