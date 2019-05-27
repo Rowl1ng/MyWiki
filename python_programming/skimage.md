@@ -56,3 +56,6 @@ def get_max_bbbox(mask):
     return box
 ```
 
+# Reference
+
+- [https://www.cnblogs.com/denny402/p/5166258.html](https://www.cnblogs.com/denny402/p/5166258.html)
