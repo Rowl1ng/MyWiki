@@ -45,7 +45,7 @@
 * [Part 1 Basic Concepts](basic.md)
   * [方法概论](generality.md)
   * [基础学习算法](svm.md)
-  * [条件随机场](crf.md)
+  * [CRF](crf.md)
   * [normalization](normalization.md)
   * [regularization](regularization.md)
 * [第2章 神经网络入门](nnintro.md)
