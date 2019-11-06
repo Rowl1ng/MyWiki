@@ -4,7 +4,8 @@
 
 ## Programming
 
-* [Python笔记本](README.md)
+* [工程化](engineering.md)
+* [Python Handbook](README.md)
   * [基础](basics.md)
   * [多线程](multiproccessing.md)
   * [数据库](database.md)
@@ -18,7 +19,6 @@
   * [cython](cython.md)
   * [高级特性](superior.md)
   * [函数式编程](functional.md)
-* [工程化](engineering.md)
 * [linux](linux.md)
   * [train&test](linux/trainandtest.md)
 * [Latex](latex.md)
@@ -26,13 +26,13 @@
 ## Machine Learning
 
 * [Introduction](README 3.md)
-* [第-1章 数据分析](data_analyse.md)
+* [Part -1 Data Analysis](data_analyse.md)
   * [scikit-learn](data_analysis/scikit-learn.md)
   * [pandas](data_analysis/pandas.md)
   * [Jupyter](data_analysis/jupyter.md)
   * [numpy](data_analysis/numpy.md)
     * [array](data_analysis/numpy/array.md)
-* [第0章 数学准备](chapter1.md)
+* [Part 0 Math Basics](chapter1.md)
   * [待整理](inbox0.md)
   * [函数](function.md)
   * [微分](differential.md)
@@ -42,14 +42,14 @@
   * [Metrics](metrics.md)
   * [距离](distance.md)
   * [术语](term.md.md)
-* [第1章 基础知识](basic.md)
+* [Part 1 Basic Concepts](basic.md)
   * [方法概论](generality.md)
   * [基础学习算法](svm.md)
   * [条件随机场](crf.md)
   * [normalization](normalization.md)
   * [regularization](regularization.md)
 * [第2章 神经网络入门](nnintro.md)
-  * [函数](nnfunction.md)
+  * [functions](nnfunction.md)
     * [activation function](activation-function.md)
     * [loss function](loss-function.md)
   * [神经网络结构](nnstructure.md)
@@ -125,6 +125,7 @@
 
 ## Language
 
+* [others](others.md)
 * [English](README 4.md)
   * [suffix](suffix.md)
   * [prefix](prefix.md)
@@ -132,7 +133,6 @@
   * [synonym](synonym.md)
   * [math](math.md)
   * [material](material.md)
-  * [others](others.md)
 * [日本語](ri-ben-yu.md)
 
 ## Art
