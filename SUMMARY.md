@@ -52,7 +52,7 @@
   * [functions](nnfunction.md)
     * [activation function](activation-function.md)
     * [loss function](loss-function.md)
-  * [神经网络结构](nnstructure.md)
+  * [NN Structure](nnstructure.md)
   * [正则化网络](regulizer.md)
   * [RNN](rnn.md)
   * [CNN](cnn.md)
@@ -114,6 +114,11 @@
   * [RoadNN](roadnn.md)
   * [mammogram](mammogram.md)
   * [医疗图像](yi-liao-tu-xiang.md)
+
+## Computer Graphics
+
+* [3D Model](computer-graphics/3d-model.md)
+* [Virtual Reality](computer-graphics/virtual-reality.md)
 
 ## Math
 
