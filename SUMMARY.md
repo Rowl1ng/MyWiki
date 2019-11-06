@@ -92,7 +92,7 @@
 ## Computer Vision
 
 * [Introduction](README 2.md)
-* [第0章 数学准备](chapter1.md)
+* [Part 0 Math Basics](chapter1.md)
   * [卷积](convolution.md)
 * [python编程](python_programming.md)
   * [opencv](python_programming/opencv.md)
