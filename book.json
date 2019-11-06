@@ -5,7 +5,7 @@
         }
     },
     "plugins": [
-                "mathjax-update-cdn",
+                "mathjax",
                 "mermaid-gb3@2.1.0",
                 "expandable-chapters-small@^0.1.7",
                 "anchor-navigation-ex@0.1.8",
