@@ -135,7 +135,7 @@
   * [others](others.md)
 * [日本語](ri-ben-yu.md)
 
-## 画画
+## Art
 
 * [color](art/color.md)
 * [light](art/light.md)
