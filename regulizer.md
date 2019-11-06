@@ -23,10 +23,10 @@ f(\mathbf x)=\sum _{i=0}^n w_i \varphi _i(\mathbf w_i ^\mathrm{T}\mathbf x)$$，
 
 ### （2）
 
-- 拟合能力：正则化网络只要有足够多的隐藏单元，可以以任意精度逼近定义在$\mathbb R^m$的compact subset上的任意多元连续函数。
+- 拟合能力：正则化网络只要有足够多的隐藏单元，可以以任意精度逼近定义在$$\mathbb R^m$$的compact subset上的任意多元连续函数。
 
 ### （3）
 
-正则化网络中的参数个数为$(m+1)N$，因此估计其VC维为$(m+1)N$。
+正则化网络中的参数个数为$$(m+1)N$$，因此估计其VC维为$$(m+1)N$$。
   [1]: http://static.zybuluo.com/sixijinling/gpjtud0u0otjxdqk6eof7ymx/image_1akks50c01qel9hmrs8rb1192sp.png
   [2]: http://static.zybuluo.com/sixijinling/oe8laxsr1vumyoujqkz6895o/image_1akkrfrb7ksfa9b12bn19jk1agm1j.png
