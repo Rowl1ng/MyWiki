@@ -94,7 +94,7 @@
 * [Introduction](README 2.md)
 * [Part 0 Math Basics](chapter1.md)
   * [卷积](convolution.md)
-* [python编程](python_programming.md)
+* [python programming](python_programming.md)
   * [opencv](python_programming/opencv.md)
   * [matplotlib](python_programming/matplotlib.md)
   * [scikit-image](python_programming/skimage.md)
@@ -109,11 +109,11 @@
   * [feature](feature.md)
   * [对比度](tu-xiang-jun-heng-hua.md)
   * [阈值](yu-zhi.md)
-* [实践](practice.md)
-  * [车道线识别](lane.md)
-  * [RoadNN](roadnn.md)
+* [practices](practice.md)
+  * [Medical Image Analysis](yi-liao-tu-xiang.md)
   * [mammogram](mammogram.md)
-  * [医疗图像](yi-liao-tu-xiang.md)
+  * [RoadNN](roadnn.md)
+  * [车道线识别](lane.md)
 
 ## Computer Graphics
 
