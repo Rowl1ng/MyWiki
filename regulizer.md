@@ -9,8 +9,9 @@ f(\mathbf x)=\sum _{i=0}^n w_i \varphi _i(\mathbf w_i ^\mathrm{T}\mathbf x)$$，
 
 
 ### （1）
-输入信号：$\mathbf x_i \in \mathbb R^m, i=1,2,\dots ,N$
-预期输出：$d_i \in \mathbb R ,i=1,2,\dots ,N$
+
+输入信号：$$\mathbf x_i \in \mathbb R^m, i=1,2,\dots ,N$$
+预期输出：$$d_i \in \mathbb R ,i=1,2,\dots ,N$$
 
 #### 感知器网络:
 ![image_1akks50c01qel9hmrs8rb1192sp.png-205kB][1]
