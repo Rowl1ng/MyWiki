@@ -1,5 +1,3 @@
-<script src="//cdn.bootcss.com/mathjax/2.7.0-beta.0/MathJax.js"></script>
-
 # 微分
 
 ### 0.2.1 微分とは
