@@ -30,6 +30,8 @@ Benchmark:
 Example 3D sketches (one example per class, shown in one view) of our Kinect300 dataset.
  Example 3D models in the targe 3D model dataset of the SHREC13STB benchmark.
  
+  [5]: http://segeval.cs.princeton.edu/
+  [6]: https://github.com/timzhang642/3D-Machine-Learning/raw/master/imgs/Princeton%20Shape%20Benchmark%20(2003).jpeg
   [7]: http://ikea.csail.mit.edu/
   [8]: http://modelnet.cs.princeton.edu/#
   [9]: https://camo.githubusercontent.com/f1dbf1e2ff7a45cc574c2094253cdcc1b0fd8d59/687474703a2f2f3364766973696f6e2e7072696e6365746f6e2e6564752f70726f6a656374732f323031342f4d6f64656c4e65742f7468756d626e61696c2e6a7067
