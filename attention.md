@@ -1,4 +1,4 @@
-# 注意机制（Attention Mechanism）
+# Attention Mechanism
 
 ## Neural Turing Machines
 
