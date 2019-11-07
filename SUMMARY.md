@@ -23,6 +23,10 @@
   * [train&test](linux/trainandtest.md)
 * [Latex](latex.md)
 
+## Research
+
+* [writing papers](research/writing-papers.md)
+
 ## Machine Learning
 
 * [Introduction](README 3.md)
