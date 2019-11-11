@@ -1,5 +1,13 @@
 # 3D Model
 
+## Intro
+
+- voxel
+- point cloud
+- volume
+
+
+
 ## Datasets
 
 Target Dataset:
