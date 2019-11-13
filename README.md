@@ -10,8 +10,9 @@ Windows：
 
 
 
-```
-\path\to\env\Scripts\activate
+```shell
+vitualenv env # create a virtualenv
+\path\to\env\Scripts\activate # activate
 ```
 
 
