@@ -4,6 +4,19 @@
 - python的map(func, seq)方法：对seq中的item依次执行func，结果也作为一个list返回
 - python中文注释： # -*- coding: utf-8 -*
 
+## virtualenv
+
+Windows：
+
+
+
+```
+\path\to\env\Scripts\activate
+```
+
+
+
+
 ## Anaconda
 
 ```
