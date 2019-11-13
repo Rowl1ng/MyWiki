@@ -12,7 +12,7 @@ Windows：
 
 ```shell
 vitualenv env # create a virtualenv
-\path\to\env\Scripts\activate # activate
+\path\to\env\Scripts\activate # activate the created virtualenv, usually in \env\Scripts\activate
 ```
 
 
