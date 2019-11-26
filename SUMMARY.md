@@ -60,6 +60,7 @@
   * [Regularized Networks](regulizer.md)
   * [RNN](rnn.md)
   * [CNN](cnn.md)
+  * [VAE](vae.md)
   * [criterion](criterion.md)
   * [backbone](backbone.md)
   * [Problems](wen-ti.md)
