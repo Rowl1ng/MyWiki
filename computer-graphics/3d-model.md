@@ -6,7 +6,14 @@
 - point cloud
 - volume
 
+## File Format
 
+### off
+
+
+### obj
+
+### fbx
 
 ## Datasets
 
@@ -35,8 +42,6 @@ Benchmark:
     - a 3D Sketch Dataset, with 300 3D Sketches. 30 classes, each with 10 sketches by utilizing a Kinect-based virtual 3D drawing system
     - format: .off
 
-Example 3D sketches (one example per class, shown in one view) of our Kinect300 dataset.
- Example 3D models in the targe 3D model dataset of the SHREC13STB benchmark.
  
   [5]: http://segeval.cs.princeton.edu/
   [6]: https://github.com/timzhang642/3D-Machine-Learning/raw/master/imgs/Princeton%20Shape%20Benchmark%20(2003).jpeg
