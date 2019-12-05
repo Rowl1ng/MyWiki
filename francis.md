@@ -4,19 +4,30 @@
 
 |Genders and purals|nouns|a|adjectives|
 |--|--|--|--|
-|`m.`: masculine|**le** eg. le café|un|enchanté|
-|`f.`: feminine|**la **eg. la gare|une|enchantée|
+|`m.`: masculine|**le** eg. le café|**un** ordinateur|enchanté|
+|`f.`: feminine|**la **eg. la gare|**une** voiture|enchantée|
 |begin with `h`/vowel(a,e,i,o,u)|**l'** eg. l'hôtel||
-|`p.`: plural|**les** eg. les cafés, les gares, les hôtels||enchantés/enchantées|
+|`p.`: plural|**les** eg. les cafés, les gares, les hôtels|**des** voitures|enchantés/enchantées|
 
+- **des** means `any` in questions. eg. Vous avez des enfants?
+- after negative: des->**de**. eg. Je n'ai pas de sœurs
+    - begin with `h`/vowel: de->**d'**. eg. Nous n'avons pas d'enfants.
 
 # Basic Words
 
 - et: and
 - de: of, from
+- mais: but
 
 # Adj.
 
+## nationality
+
+- ends in `-en`+**ne** : canadien->canadienne;italien
+- +**e** : anglais->angalaise; allemand; américain; écossais(Scottish); espagnol; français; gallois(Welsh); irlandais(Irish); japonais; portugais
+- ends in `e`: the same: suisse->suisse(Swiss)
+
+## possessive
 
 |possessive|je|tu(familiar)|il/elle|nous|vous(pl./politely singular)|ils/elles|
 |--|--|--|--|
@@ -55,6 +66,7 @@
 
 # Sentence Pattern
 
+- je viens de :I come from
 - il **fait** beau …… ：it is fine, sunny
 
 
