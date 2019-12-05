@@ -143,7 +143,7 @@
   * [math](math.md)
   * [material](material.md)
 * [日本語](ri-ben-yu.md)
-* Francis
+* [Francis](francis.md)
 * [others](others.md)
 
 ## Art
