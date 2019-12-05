@@ -1,6 +1,6 @@
-# Francis
+法语发音很多时候是鼻音。`r`经常不发音，词尾的`t`等爆破音不发音。
 
-## Numbers
+# Numbers
 
 |1-10|10-20|20-30|_0|70-80|80-90|90-100|
 |--|--|--|--|--|
@@ -16,3 +16,7 @@
 |10: dix|20: vingt|30: trent|100: cent|80: quatre-vingts|90: quate-vingt-dix|100: cent|
 
 
+# Sentence Pattern
+
+- there is …… ：il y a ……
+- ther is/sre not ……：il n'y a pas de ……
