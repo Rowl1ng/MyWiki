@@ -135,7 +135,6 @@
 
 ## Language
 
-* [others](others.md)
 * [English](README 4.md)
   * [suffix](suffix.md)
   * [prefix](prefix.md)
@@ -144,6 +143,8 @@
   * [math](math.md)
   * [material](material.md)
 * [日本語](ri-ben-yu.md)
+* Francis
+* [others](others.md)
 
 ## Art
 
