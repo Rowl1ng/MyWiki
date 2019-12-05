@@ -1,8 +1,14 @@
 - **发音**: 很多时候是鼻音。`r`经常不发音，词尾的`t`等爆破音不发音。
 - **性别**：
-    - `m.`: masculine
-    - `f.`: feminine
-    - `p.`: plural
+
+
+|possessive||
+|--|--|--|--|
+|`m.`: masculine eg. le café|le|
+|`f.`: feminine eg. la gare|la|
+|h+vowel(a,e,i,o,u) eg. l'hôtel|l'|
+|`p.`: plural eg. les cafés, les gares, les hôtels|les|
+
 
 # Basic Words
 
@@ -16,8 +22,8 @@
 |--|--|--|--|
 |le mari (m.)|**mon** mari|
 |le femme (f.)|**ma** femme|
-|les enfants (m. pl.)| mes enfants|
-|les sœurs (f. pl.)|mes sœurs|
+|les enfants (m. pl.)| **mes** enfants|
+|les sœurs (f. pl.)|**mes** sœurs|
 
 # Verbs
 
@@ -48,11 +54,11 @@
 
 # Sentence Pattern
 
-- il y a …… :there is …… 
 - il **fait** beau …… ：it is fine, sunny
 
 
 - ne … pas: negative of verb, ne常常和后面的动词缩写在一起。比如：
-    - il n'y a pas **de** …… :ther is/sre not ……
-    - il n'a pas de ……
+    - ça va -> ça ne va pas
+    - il y a …… -> il n'y a pas **de** …… 
+    - il a …… -> il n'a pas de ……
     - ils n'habitant pas ……
