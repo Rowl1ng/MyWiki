@@ -7,7 +7,7 @@
 
 # Verbs
 
-|verb|je|tu|il/elle|nous|vous|ils/elles|
+|verb|je|tu(familiar)|il/elle|nous|vous(plural/politely singular)|ils/elles|
 |--|--|--|--|
 |être: to be|suis|es|est|sommes|êtes|sont|
 |avoir: to have|j'ai|as|a|avons|avez|ont|
