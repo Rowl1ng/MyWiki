@@ -1,5 +1,18 @@
 法语发音很多时候是鼻音。`r`经常不发音，词尾的`t`等爆破音不发音。
 
+# Basic Words
+
+- et: and
+- de: of, from
+
+# Verb
+
+|verb|je|tu|il/elle|nous|vous|ils/elles|
+|--|--|--|--|
+|être: to be|suis|es|est|sommes|êtes|sont|
+|avoir: to have|j'ai|as|a|avons|avez|ont|
+
+
 # Numbers
 
 |1-10|10-20|20-30|_0|70-80|80-90|90-100|
@@ -18,5 +31,11 @@
 
 # Sentence Pattern
 
-- there is …… ：il y a ……
-- ther is/sre not ……：il n'y a pas de ……
+
+
+
+- ne … pas: negative of verb
+- j'ai XXX ans
+
+- il y a …… :there is …… 
+- il n'y a pas de …… :ther is/sre not ……：
