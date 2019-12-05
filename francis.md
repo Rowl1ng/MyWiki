@@ -4,9 +4,9 @@
 
 |1-10|10-20|20-30|_0|70-80
 |--|--|--|
-|1: un|11: onze|21: vingt et un|10: dix|71: soixante et onze
-|2: deux|12: douze|22: vingt-deux|20: vingt|72: soixante-douze
-|3: trois|13: treize|23: vingt-trois|30: trent|73: 
+|1: un|11: onze|21: vingt et un|10: dix|71: soixante et onze|
+|2: deux|12: douze|22: vingt-deux|20: vingt|72: soixante-douze|
+|3: trois|13: treize|23: vingt-trois|30: trent|73: s
 |4: quatre|14: quatorze|24: vingt-quatre|40: quarante|
 |5: cinq|15: quinze|25: vingt-cinq|50: cinquante|
 |6: six|16: seize|26: vingt-six|60: soixante|
