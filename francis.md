@@ -12,6 +12,9 @@
 |être: to be|suis|es|est|sommes|êtes|sont|
 |avoir: to have|j'ai|as|a|avons|avez|ont|
 
+- j'ai XXX ans
+
+
 
 # Numbers
 
@@ -34,8 +37,6 @@
 
 
 
-- ne … pas: negative of verb
-- j'ai XXX ans
-
-- il y a …… :there is …… 
-- il n'y a pas de …… :ther is/sre not ……：
+- ne … pas: negative of verb, ne常常和后面的动词缩写在一起。比如：
+    - il y a …… :there is …… 
+    - il n'y a pas **de** …… :ther is/sre not ……：
