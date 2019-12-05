@@ -2,12 +2,12 @@
 - **性别**：
 
 
-|possessive||
+|Genders and purals|nouns|a|adjectives|
 |--|--|--|--|
-|`m.`: masculine eg. le café|le|
-|`f.`: feminine eg. la gare|la|
-|h+vowel(a,e,i,o,u) eg. l'hôtel|l'|
-|`p.`: plural eg. les cafés, les gares, les hôtels|les|
+|`m.`: masculine|**le** eg. le café|un|enchanté|
+|`f.`: feminine|**la **eg. la gare|une|enchantée|
+|begin with `h`/vowel(a,e,i,o,u)|**l'** eg. l'hôtel||
+|`p.`: plural|**les** eg. les cafés, les gares, les hôtels||enchantés/enchantées|
 
 
 # Basic Words
@@ -18,12 +18,13 @@
 # Adj.
 
 
-|possessive|je|tu(familiar)|il/elle|nous|vous(plural/politely singular)|ils/elles|
+|possessive|je|tu(familiar)|il/elle|nous|vous(pl./politely singular)|ils/elles|
 |--|--|--|--|
 |le mari (m.)|**mon** mari|
 |le femme (f.)|**ma** femme|
 |les enfants (m. pl.)| **mes** enfants|
 |les sœurs (f. pl.)|**mes** sœurs|
+|singular & begin with `h`/vowel|**mon** hôtel|
 
 # Verbs
 
@@ -62,3 +63,4 @@
     - il y a …… -> il n'y a pas **de** …… 
     - il a …… -> il n'a pas de ……
     - ils n'habitant pas ……
+    - je n'ai pas **de** ……
