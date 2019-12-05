@@ -5,7 +5,7 @@
 - et: and
 - de: of, from
 
-# Verb
+# Verbs
 
 |verb|je|tu|il/elle|nous|vous|ils/elles|
 |--|--|--|--|
