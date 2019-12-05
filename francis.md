@@ -1,13 +1,27 @@
-法语发音很多时候是鼻音。`r`经常不发音，词尾的`t`等爆破音不发音。
+- **发音**: 很多时候是鼻音。`r`经常不发音，词尾的`t`等爆破音不发音。
+- **性别**：
+    - `m.`: masculine
+    - `f.`: feminine
+    - `p.`: plural
 
 # Basic Words
 
 - et: and
 - de: of, from
 
+# Adj.
+
+
+|possessive|je|tu(familiar)|il/elle|nous|vous(plural/politely singular)|ils/elles|
+|--|--|--|--|
+|le mari (m.)|**mon** mari|
+|le femme (f.)|**ma** femme|
+|les enfants (m. pl.)| mes enfants|
+|les sœurs (f. pl.)|mes sœurs|
+
 # Verbs
 
-|verb|je|tu(familiar)|il/elle|nous|vous(plural/politely singular)|ils/elles|
+|verb|je|tu(f.)|il/elle|nous|vous(pl./politely singular)|ils/elles|
 |--|--|--|--|
 |être: to be|suis|es|est|sommes|êtes|sont|
 |avoir: to have|j'ai|as|a|avons|avez|ont|
@@ -35,6 +49,7 @@
 # Sentence Pattern
 
 - il y a …… :there is …… 
+- il **fait** beau …… ：it is fine, sunny
 
 
 - ne … pas: negative of verb, ne常常和后面的动词缩写在一起。比如：
