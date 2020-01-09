@@ -28,8 +28,8 @@ Target Dataset:
 
 - [Dataset for IKEA 3D models and aligned images (2013)][7]: 759 images and 219 models including Sketchup (skp) and Wavefront (obj) files, good for pose estimation.
 - [ModelNet (2015)][8]: 127915 3D CAD models from 662 categories
-ModelNet10: 4899 models from 10 categories
-ModelNet40: 12311 models from 40 categories, all are uniformly orientated
+    - ModelNet10: 4899 models from 10 categories
+    - ModelNet40: 12311 models from 40 categories, all are uniformly orientated
 
 ![此处输入图片的描述][9]
 
