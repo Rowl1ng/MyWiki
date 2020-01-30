@@ -60,9 +60,9 @@ pickle.load = partial(pickle.load, encoding="latin1")
 pickle.Unpickler = partial(pickle.Unpickler, encoding="latin1")
 model = torch.load(model_file, map_location=lambda storage, loc: storage, pickle_module=pickle)
 ```
-### 测试模型
+### test model
 
-记得 `volatile=True`，否则容易爆显存。
+记得设置 `volatile=True`，否则容易爆显存。
 
 ```python
 input_img_var = torch.autograd.Variable(images.cuda(), volatile=True)
