@@ -29,6 +29,12 @@ sh XXX.sh | tee XXX.txt
 
 # 文件
 
+## Rename
+
+```
+mv (option) filename1.ext filename2.ext
+```
+
 ## 查看文件大小：
 
 ```
