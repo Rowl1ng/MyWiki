@@ -21,11 +21,11 @@
   * [函数式编程](functional.md)
 * [linux](linux.md)
   * [train&test](linux/trainandtest.md)
-* [Latex](latex.md)
 
 ## Research
 
 * [writing papers](research/writing-papers.md)
+* [Latex](latex.md)
 
 ## Machine Learning
 
