@@ -94,13 +94,11 @@ scp -r 用户名@服务器ip:文件路径 目标路径
 wget -m -t0 http://XXX
 ```
 ## 解压
-linux下解压命令大全
 
 .tar 
 解包：tar xvf FileName.tar
 打包：tar cvf FileName.tar DirName
 （注：tar是打包，不是压缩！）
-———————————————
 .gz
 解压1：gunzip FileName.gz
 解压2：gzip -d FileName.gz
@@ -108,14 +106,17 @@ linux下解压命令大全
 .tar.gz 和 .tgz
 解压：tar zxvf FileName.tar.gz
 压缩：tar zcvf FileName.tar.gz DirName
-———————————————
-.bz2
-解压1：bzip2 -d FileName.bz2
-解压2：bunzip2 FileName.bz2
-压缩： bzip2 -z FileName
-.tar.bz2
-解压：tar jxvf FileName.tar.bz2
-压缩：tar jcvf FileName.tar.bz2 DirName
+
+# tmux
+
+启动新会话：
+tmux [new -s 会话名 -n 窗口名]
+恢复会话：
+tmux at [-t 会话名]
+列出所有会话：
+tmux ls
+关闭会话：
+tmux kill-session -t 会话名
 
 # 时间
 
