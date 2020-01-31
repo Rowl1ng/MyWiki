@@ -1,12 +1,12 @@
-# Cost Functions
+A good choice for the criterion is maximum likelihood regularized with dropout, possibly also with weight decay.
 
-* a good choice for the criterion is maximum likelihood regularized with dropout, possibly also with weight decay.
+# Sofmax Loss
 
-## Perceptual Loss
+# Perceptual Loss
 
 感知损失：可以将卷积神经网络提取出的feature，作为目标函数的一部分，通过比较待生成的图片经过CNN的feature值与目标图片经过CNN的feature值，使得待生成的图片与目标图片在语义上更加相似(相对于Pixel级别的损失函数)。
 
-## Focal loss
+# Focal loss
 
 看ICCV那篇focal loss的论文[《Focal Loss for Dense Object Detection》](http://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper.pdf).
 
@@ -116,8 +116,6 @@ $$
 
 
 The mean is halved（$$\frac 12$$）as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the（$$\frac 12$$\) term.
-
-
 
 ##### Learning a Conditional Probability Model
 
