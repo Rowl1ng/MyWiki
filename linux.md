@@ -117,15 +117,38 @@ wget -m -t0 http://XXX
 # tmux
 
 启动新会话：
-tmux [new -s 会话名 -n 窗口名]
-恢复会话：
-tmux at [-t 会话名]
-列出所有会话：
-tmux ls
-关闭会话：
-tmux kill-session -t 会话名
 
-切换
+```
+tmux [new -s 会话名 -n 窗口名]
+```
+列出所有会话：
+
+```
+tmux ls
+```
+
+恢复会话：
+
+```
+tmux at [-t 会话名]
+```
+
+
+关闭会话：
+
+```
+tmux kill-session -t 会话名
+```
+
+以下操作需先按下ctrl+b：
+
+- 新建新窗口：c
+- 切换窗口：前p 后n
+- 关闭窗口：&
+
+窗格
+
+- 纵向分割：%
 
 # 时间
 
