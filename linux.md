@@ -86,10 +86,12 @@ scp 文件名 用户名@服务器ip:目标路径
 scp -r 文件夹目录 用户名@服务器ip:目标路径
 如：scp -r /Users/test/testFolder test@www.linuxidc.com:/test/
 pscp 命令 上传
+
 3、Linux服务器下载文件到mac
 
 scp 用户名@服务器ip:文件路径 目标路径
 如：scp test@www.linuxidc.com:/test/testFile /Users/test/
+
 4、Linux服务器下载文件夹到mac，与下载文件相比多加了-r
 
 scp -r 用户名@服务器ip:文件路径 目标路径

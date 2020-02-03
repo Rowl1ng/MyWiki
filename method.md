@@ -12,3 +12,12 @@ torch.max(input, axis) #return the max value
 torch.flatten(input, start_dim, end_dim)# flatten a continuous rang of dims in a tensor
 ```
 
+# 模型
+
+## 保存
+
+```
+def get_run_name():
+    """ A unique name for each run """
+    return datetime.now().strftime('%b%d-%H-%M-%S') + '_' + socket.gethostname()
+```
