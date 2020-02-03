@@ -102,17 +102,22 @@ wget -m -t0 http://XXX
 ```
 ## 解压
 
-.tar 
-解包：tar xvf FileName.tar
-打包：tar cvf FileName.tar DirName
+.tar ：
+
+- 解包：tar xvf FileName.tar
+- 打包：tar cvf FileName.tar DirName
 （注：tar是打包，不是压缩！）
-.gz
-解压1：gunzip FileName.gz
-解压2：gzip -d FileName.gz
-压缩：gzip FileName
+
+.gz：
+
+- 解压1：gunzip FileName.gz
+- 解压2：gzip -d FileName.gz
+- 压缩：gzip FileName
+
 .tar.gz 和 .tgz
-解压：tar zxvf FileName.tar.gz
-压缩：tar zcvf FileName.tar.gz DirName
+
+- 解压：tar zxvf FileName.tar.gz
+- 压缩：tar zcvf FileName.tar.gz DirName
 
 # tmux
 
