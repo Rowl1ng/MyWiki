@@ -1,4 +1,9 @@
-## 计算FROC
+# Precision Recall Curve
+
+
+
+# FROC
+
 ```python
 FROC_data = np.zeros((4, len(roidb)), dtype=np.object)      
 FP_summary = np.zeros((2, len(roidb)), dtype=np.object)
