@@ -43,6 +43,9 @@
 |--|--|--|--|
 |être: to be|suis|es|est|sommes|êtes|sont|
 |avoir: to have|j'ai|as|a|avons|avez|ont|
+|parl**er**: to speak||||parlons|parlez||
+
+
 
 - j'ai XXX ans
 
