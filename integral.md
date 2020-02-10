@@ -73,3 +73,16 @@ $$\int f(x)g'(x)dx = f(x)g(x)-\int f'(x)g(x)dx$$
 $$\int \int f(x, y) dx dy$$
 のように書きます。
 
+
+# Signal Representation
+## Useful orthogonality relations
+
+- cos mωt and cos nωt are sinusoids at a multiple of some fundamental frequency ω
+- If we integrate the various products of sin and cos over the period of the fundamental waveform then:
+    - cos mωt integrates to zero always 
+    - sin mωt integrates to zero always
+    - sin mωt . cos nωt  integrates to zero always
+    - cos mωt . cos nωt  integrates to zero when m≠n and to T/2 when m=n
+    - sin mωt . sin nωt  integrates to zero when m≠n and to T/2 when m=n
+
+
