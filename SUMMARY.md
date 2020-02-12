@@ -124,6 +124,7 @@
 
 * [3D Model](computer-graphics/3d-model.md)
 * [Virtual Reality](computer-graphics/virtual-reality.md)
+* [blender](computer-graphics/blender.md)
 
 ## Math
 
