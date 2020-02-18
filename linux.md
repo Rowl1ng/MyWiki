@@ -61,18 +61,6 @@ echo $filename
 ls mydir -l |tail -n 1| awk '{print $9}'
 ```
 
-## 解压
-
-```
-tar -xf archive.tar.gz
-tar   zxvf    test.tgz  -C  指定目录
-```
-
-tar.xz文件：
-```
-$xz -d ***.tar.xz
-$tar -xvf  ***.tar
-```
 ## 传输
 
 复制：cp
@@ -123,6 +111,12 @@ wget -m -t0 http://XXX
 
 - 解压：tar zxvf FileName.tar.gz
 - 压缩：tar zcvf FileName.tar.gz DirName
+
+tar.xz文件：
+```
+$xz -d ***.tar.xz
+$tar -xvf ***.tar
+```
 
 # tmux
 
