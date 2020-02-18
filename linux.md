@@ -63,7 +63,10 @@ ls mydir -l |tail -n 1| awk '{print $9}'
 
 ## 解压
 
+```
+tar -xf archive.tar.gz
 tar   zxvf    test.tgz  -C  指定目录
+```
 
 tar.xz文件：
 ```

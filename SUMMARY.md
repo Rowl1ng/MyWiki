@@ -21,6 +21,7 @@
   * [函数式编程](functional.md)
 * [linux](linux.md)
   * [train&test](linux/trainandtest.md)
+* [Windows](windows.md)
 
 ## Research
 
