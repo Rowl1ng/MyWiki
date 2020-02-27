@@ -71,6 +71,26 @@ ouput=open(str1+".txt",'w')
 
 ## 读写
 
+写入list到txt中：
+```python
+import codecs
+def save_string_list(file_path, l, is_utf8=False):
+    """
+    Save string list as mitok file
+    - file_path: file path
+    - l: list store strings
+    """
+    if is_utf8:
+        f = codecs.open(file_path, 'w', 'utf-8')
+    else:
+        f = open(file_path, 'w')
+    for item in l[:-1]:
+        f.write(item + '\n')
+    if len(l) >= 1:
+        f.write(l[-1])
+    f.close()
+```
+   
 小trick：用read读txt的时候，去掉换行符：line.strip(‘\n’)
 
 ```python
