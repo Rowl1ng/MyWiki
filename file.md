@@ -75,11 +75,6 @@ ouput=open(str1+".txt",'w')
 ```python
 import codecs
 def save_string_list(file_path, l, is_utf8=False):
-    """
-    Save string list as mitok file
-    - file_path: file path
-    - l: list store strings
-    """
     if is_utf8:
         f = codecs.open(file_path, 'w', 'utf-8')
     else:
