@@ -62,8 +62,8 @@
 |5: cinq|15: quinze|25: vingt-cinq|50: cinquante|75: soixante-quinze|85: quatre-vingt-cinq|95: quatre-vingt-quinze|
 |6: six|16: seize|26: vingt-six|60: soixante|76: soixante-seize|86: quatre-vingt-six|96: quatre-vingt-seize|
 |7: sept|17: dix-sept|27: vingt-sept|70: soixante-dix| 77: soixante-dix-sept|87: quatre-vingt-sept|97: quatre-vingt-dix-sept|
-|8: huit|18: dix-huit|28: vingt-huit|80: quarte-vingts|78: soixante-dix-huit|88: quatre-vingt-huit|98: quatre-vingt-dix-huit|
-|9: neuf|19: dix-neuf|29: vingt-neuf|90: quate-vingt-dix|79: soixante-dix-neuf|89: quatre-vingt-neuf|99: quatre-vingt-dix-neuf|
+|8: huit|18: dix-huit|28: vingt-huit|80: qquatre-vingts|78: soixante-dix-huit|88: quatre-vingt-huit|98: quatre-vingt-dix-huit|
+|9: neuf|19: dix-neuf|29: vingt-neuf|90: quatre-vingt-dix|79: soixante-dix-neuf|89: quatre-vingt-neuf|99: quatre-vingt-dix-neuf|
 |10: dix|20: vingt|30: trent|100: cent|80: quatre-vingts|90: quate-vingt-dix|100: cent|
 
 
