@@ -15,10 +15,15 @@ print(torch.__version__)
 
 # 矩阵相关
 
+numpy转tensor
+
+
 扩充维度：
 ```
 x1 = torch.zeros(10, 10)
 x2 = x1.unsqueeze(0)
+>>> print(x2.size())
+torch.Size([1, 10, 10])
 ```
 
 变形
