@@ -15,11 +15,13 @@ print(torch.__version__)
 
 # 矩阵相关
 
-numpy转tensor
-
+numpy转tensor： 
+```python
+torch.Tensor()
+```
 
 扩充维度：
-```
+```python
 x1 = torch.zeros(10, 10)
 x2 = x1.unsqueeze(0)
 >>> print(x2.size())
@@ -28,7 +30,7 @@ torch.Size([1, 10, 10])
 
 变形
 
-```
+```python
 imgs = image.view(-1,1,256,256).repeat(1,3,1,1)
 ```
 ## 上采样
