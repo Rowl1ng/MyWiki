@@ -15,6 +15,12 @@ print(torch.__version__)
 
 # 矩阵相关
 
+扩充维度：
+```
+x1 = torch.zeros(10, 10)
+x2 = x1.unsqueeze(0)
+```
+
 变形
 
 ```
@@ -30,15 +36,9 @@ resize_tensor = F.upsample(image_tensor, new_shape, mode='trilinear').data[0, 0]
 torch.max(input, axis) #return the max value
 
 torch.flatten(input, start_dim, end_dim)# flatten a continuous rang of dims in a tensor
-
+```
 
 # 其他
-
-## 设置GPU的方法
-
-```python
-torch.cuda.set_device(7)
-```
 
 ## debug
 
@@ -82,6 +82,12 @@ input_mask_var = torch.autograd.Variable(masks.cuda(), volatile=True)
 ```
 
 ## cuda
+
+设置GPU的方法
+
+```python
+torch.cuda.set_device(7)
+```
 
 ```python
 model.cuda() #RAM + 0.9G
