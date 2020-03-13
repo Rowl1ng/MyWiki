@@ -22,7 +22,13 @@ def mkdir_safe(d):
 ```
 ## 移动文件
 
+文件->文件夹
+```
+shutil.copy(file_A, dir_B)
+```
+
 [Python 文件夹及文件操作](https://www.cnblogs.com/feeland/p/4463682.html)
+
 
 ```python
 import shutil
