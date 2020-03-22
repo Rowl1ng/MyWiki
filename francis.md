@@ -39,12 +39,30 @@
 
 # Verbs
 
-|verb|je|tu(f.)|il/elle|nous|vous(pl./politely singular)|ils/elles|
+-er结尾：
+
+|verb|je|tu(f.)|il/elle/on|nous|vous(pl./politely singular)|ils/elles|
+|--|--|--|--|
+|aimer: to love|aime|aime**s**|aime|aim**ons**|aim**ez**|aim**ent**|
+|adorer: to like|adore|adores|adore|adorons|adorez|adorent|
+|parl**er**: to speak||||parlons|parlez||
+|détest**er**: to detest|||||||
+|préfé**er**: to prefer|||||||
+
+
+-oir结尾：
+
+|verb|je|tu(f.)|il/elle/on|nous|vous(pl./politely singular)|ils/elles|
+|--|--|--|--|
+|vouloir: to want|veux|veux|veut|voulons|voulez|voulent|
+|pouvoir: to be able to|peux|peux|peut|pouvons|pouvez|peuvent|
+
+其他：
+
+|verb|je|tu(f.)|il/elle/on|nous|vous(pl./politely singular)|ils/elles|
 |--|--|--|--|
 |être: to be|suis|es|est|sommes|êtes|sont|
 |avoir: to have|j'ai|as|a|avons|avez|ont|
-|parl**er**: to speak||||parlons|parlez||
-
 
 
 - j'ai XXX ans
@@ -67,7 +85,7 @@
 |10: dix|20: vingt|30: trent|100: cent|80: quatre-vingts|90: quate-vingt-dix|100: cent|
 
 
-# Sentence Pattern
+# Sentence Patterns
 
 - je viens de :I come from
 - il **fait** beau …… ：it is fine, sunny
