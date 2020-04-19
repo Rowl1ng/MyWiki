@@ -15,7 +15,8 @@
 平滑：
 
 ![](http://www.scipy-lectures.org/_images/plot_smooth_1.png)  
- 处处可导
+
+处处可导
 
 非平滑：
 
@@ -139,7 +140,7 @@ $g\(x\)$是quadratic$f\(x\)$的导数，求$f\(x\)$的极小点则是求$g\(x\)$
 
 #### 一维
 
-割线法\(secant\)  
+割线法(secant)  
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NewtonIteration_Ani.gif/300px-NewtonIteration_Ani.gif)
 
 
@@ -150,7 +151,7 @@ $$
 
 #### 推广至高维
 
-Hessian矩阵$\mathbf H=\nabla^2 f\(\mathbf x\)$
+Hessian矩阵$$\mathbf H=\nabla^2 f\(\mathbf x\)$$
 
 
 $$
@@ -196,10 +197,10 @@ $$
 
 #### BFGS
 
-\(Broyden-Fletcher-Goldfarb-Shanno算法\) 改进了每一步对Hessian的近似。
+(Broyden-Fletcher-Goldfarb-Shanno算法) 改进了每一步对Hessian的近似。
 
 **L-BFGS**:  
-限制内存的BFGS介于BFGS和共轭梯度之间: 在非常高的维度 \(&gt; 250\) 计算和翻转的Hessian矩阵的成本非常高。L-BFGS保留了低秩的版本。此外，scipy版本, [scipy.optimize.fmin\_l\_bfgs\_b\(\)](http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin_l_bfgs_b.html#scipy.optimize.fmin_l_bfgs_b), 包含箱边界:
+限制内存的BFGS介于BFGS和共轭梯度之间: 在非常高的维度 (&gt; 250) 计算和翻转的Hessian矩阵的成本非常高。L-BFGS保留了低秩的版本。此外，scipy版本, [scipy.optimize.fmin_l_bfgs_b()](http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin_l_bfgs_b.html#scipy.optimize.fmin_l_bfgs_b), 包含箱边界:
 
 #### Conjugate Gradients\(CG\)
 
@@ -298,7 +299,7 @@ $-1 &lt; x\_2 &lt; 1$
 * 求解$q\_k$极小值点作为下一次试探点
 * 先确定区域$\Delta k$，可选不同范数
 
-  * 无穷范数：$\max{\|x\_i\|}$ 
+  * 无穷范数：$$\max{\|x\_i\|}$$ 
 
 * $s\_k^c=-\tau\_k \frac{\Delta k}{\|\|g\_k\|\|}g\_k$
 
@@ -504,17 +505,17 @@ $$
 
 
 求解方程组得到  
-$d\_1=\frac 12,d\_2=\frac 94,\lambda\_1=\frac 34&gt;0$，即$\mathbf \lambda=\(\frac 34,0,0\)^\top$，$\mathbf x^2=\(\frac 12,\frac 94\)^\top$是最优解。
+$$d\_1=\frac 12,d\_2=\frac 94,\lambda\_1=\frac 34&gt;0$$，即$$\mathbf \lambda=(\frac 34,0,0)^\top$$，$$\mathbf x^2=(\frac 12,\frac 94)^\top$$是最优解。
 
 ### 3. 直接法
 
-1. $x\_1\in \mathbb R^n,d\_1,\dots,d\_n线性无关$
-2. $x\_1$沿$d\_1$线性搜索得$x\_2$，即$x\_2$是$f\(x\)$在${z\|z=x\_1+\alpha\_1 d\_1}$上的极小值点
+1. $$x_1\in \mathbb R^n,d\_1,\dots,d\_n线性无关$$
+2. $$x_1$$沿$d_1$线性搜索得$x\_2$，即$x\_2$是$f\(x\)$在${z\|z=x\_1+\alpha\_1 d\_1}$上的极小值点
 3. $\beta\_1,\dots,\beta\_n&gt;0,\nu^{\(1\)}=x\_2+\beta\_2d\_2$，令$d\_2=\nu^{\(2\)}-x\_2$，$\nu^{\(2\)}$是$f\(x\)$在${z\|z=\nu^{\(1\)}+\alpha\_1 d\_1}$上的极小值点
    * $\nabla f\(\nu^{\(1\)}\)^\top d\_1=0,\nabla f\(x\_2\)^\top d\_1=0$ 
    * $d\_2^\top Hd\_1=0$\(共轭，$d\_2=\nu^{\(2\)}-x\_2$\)
 4. 令$d\_3=\nu^{\(3\)}-x\_3$，则$\nu^{\(3\)}$是$f\(x\)$在${z\|z=x\_1+\alpha\_1 d\_1+\alpha\_2 d\_2}$上的极小值点
-5. $x_{k+1}$是$f\(x\)$在${z\|z=x\_1+\sum_{i=1}^k\alpha_i d\_i}$上的极小值点，令$d_{k+1}=\nu^{\(k+1\)}-x\_{k+1}$
+5. $$x_{k+1}$$是$f\(x\)$在${z\|z=x\_1+\sum_{i=1}^k\alpha_i d\_i}$上的极小值点，令$d_{k+1}=\nu^{\(k+1\)}-x\_{k+1}$
 
 ## Reference
 
@@ -546,9 +547,9 @@ In mathematical optimization, the **Karush–Kuhn–Tucker** \(KKT\) conditions 
 
 ## 编程
 
-\[Anaconda\]\[17\]
+[Anaconda][17]
 
-\[17\]: [http://www.jianshu.com/p/2f3be7781451](http://www.jianshu.com/p/2f3be7781451)
+[17]: [http://www.jianshu.com/p/2f3be7781451](http://www.jianshu.com/p/2f3be7781451)
 
 [^footnote1]: 《[2.7 数学优化：找到函数的最优解](https://wizardforcel.gitbooks.io/scipy-lecture-notes/content/12.html)》
 
