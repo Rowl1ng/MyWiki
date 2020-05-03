@@ -2,21 +2,21 @@
 - **性别**：
 
 
-|Genders and purals|nouns|a|adjectives|
+|Genders and purals|nouns|a|à|de|desadjectives|
 |--|--|--|--|
-|`m.`: masculine|**le** eg. le café|**un** ordinateur|enchanté|
-|`f.`: feminine|**la **eg. la gare|**une** voiture|enchantée|
-|begin with `h`/vowel(a,e,i,o,u)|**l'** eg. l'hôtel||
-|`p.`: plural|**les** eg. les cafés, les gares, les hôtels|**des** voitures|enchantés/enchantées|
+|`m.`: masculine|**le** eg. le café|**un** ordinateur|à + le = au||enchanté|
+|`f.`: feminine|**la **eg. la gare|**une** voiture||de + le = du|enchantée|
+|begin with `h`/vowel(a,e,i,o,u)|**l'** eg. l'hôtel||||
+|`p.`: plural|**les** eg. les cafés, les gares, les hôtels|**des** voitures|à + les = aux|de + les = des|enchantés/enchantées|
 
 - **des** means `any` in questions. eg. Vous avez des enfants?
 - after negative: des->**de**. eg. Je n'ai pas de sœurs
     - begin with `h`/vowel: de->**d'**. eg. Nous n'avons pas d'enfants.
 
-à + le = au
-à + les = aux
-de + le = du
-de + les = des
+
+
+
+
 
 # Basic Words
 
