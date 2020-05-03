@@ -13,6 +13,11 @@
 - after negative: des->**de**. eg. Je n'ai pas de sœurs
     - begin with `h`/vowel: de->**d'**. eg. Nous n'avons pas d'enfants.
 
+à + le = au
+à + les = aux
+de + le = du
+de + les = des
+
 # Basic Words
 
 - et: and
