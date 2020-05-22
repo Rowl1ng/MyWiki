@@ -136,6 +136,7 @@ pprint.pprint(l)#每项为一行显示，而且是文件对象自动关闭的方
 
 读入
 ```python
+import json
 def read_json(json_file):
     f = open(json_file, 'r')
     data = json.load(f)
