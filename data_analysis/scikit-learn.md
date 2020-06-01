@@ -14,7 +14,7 @@ split后，train和test中，都是A:B:C=1:2:3
 ```python
 from sklearn.model_selection import train_test_split
 
-pat_train, pat_test, labs_train, labs_test = train_test_split(
-    pat_train, pat_labs, stratify=pat_labs, test_size=test_size, random_state=12345)
+x_train, x_test, y_train, y_test = train_test_split(
+    x, y, stratify=y, test_size=0.2, random_state=12345)
 ```
 
