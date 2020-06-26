@@ -22,7 +22,7 @@ Replacing the squared error by an absolute value makes the neural network try to
 
 分类交叉熵损失（Categorical Cross-Entropy Loss）。
 
-* **交叉熵（cross entropy）目标函数 **: when y is a discrete label, i.e., for classification problems, other loss functions such as the Bernoulli negative log-likelihood4 have been found to be more appropriate than the squared error. \($$y∈{ \left\{ 0,1 \right\}  }$$\)
+**交叉熵（cross entropy）目标函数 **: when y is a **discrete** label, i.e., for classification problems, other loss functions such as the **Bernoulli negative log-likelihood** have been found to be more appropriate than the squared error. \($$y∈{ \left\{ 0,1 \right\}  }$$\)
 
 
 $$
@@ -30,7 +30,7 @@ L({ f }_{ θ }(x),y)=−ylog{ f }_{ θ }(x)−(1−y)log(1−{ f }_{ θ }(x))
 $$
 
 
-* $${f}_{\theta}(x)$$ to be strictly between 0 to 1: use the sigmoid as non-linearity for the output layer\(matches well with the binomial negative log-likelihood cost function\)
+$${f}_{\theta}(x)$$ to be strictly between 0 to 1: use the sigmoid as non-linearity for the output layer\(matches well with the binomial negative log-likelihood cost function\)
 
 
 The mean is halved（$$\frac 12$$）as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the（$$\frac 12$$\) term.
