@@ -115,7 +115,7 @@
   * [feature](feature.md)
   * [对比度](tu-xiang-jun-heng-hua.md)
   * [thresholding](yu-zhi.md)
-* [practices](practice.md)
+* [Practices](practice.md)
   * [Medical Image Analysis](yi-liao-tu-xiang.md)
   * [mammogram](mammogram.md)
   * [RoadNN](roadnn.md)
@@ -123,10 +123,13 @@
 
 ## Computer Graphics
 
+* [Introduction](computer-graphics/introduction.md)
 * [3D Model](computer-graphics/3d-model.md)
 * [Virtual Reality](computer-graphics/virtual-reality.md)
 * [blender](computer-graphics/blender.md)
 * [Data Analysis](computer-graphics/data-analysis.md)
+* [Tasks](computer-graphics/data-analysis/tasks.md)
+  * [Sketch-based modeling](computer-graphics/data-analysis/tasks/sketch-based-modeling.md)
 
 ## Math
 

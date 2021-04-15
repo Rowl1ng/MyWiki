@@ -12,8 +12,10 @@
 
 可以看到上述窗口大小使用的为11，当窗口越小的时候，得到的图像越细。想想一下，如果把窗口设置足够大以后（不能超过图像大小），那么得到的结果可能就和第二幅图像的相同了。
 
- 感觉不适合车道标线这种强调轮廓，忽视细节的对象
-''     `binImg = cv2.adaptiveThreshold( img , 1 , cv2.ADAPTIVE_THRESH_MEAN_C , cv2.THRESH_BINARY, 11 , 2 ) `
+```python
+binImg = cv2.adaptiveThreshold( img , 1 , cv2.ADAPTIVE_THRESH_MEAN_C , cv2.THRESH_BINARY, 11 , 2 ) 
+```
+
 该函数需要填6个参数：
 
 - 原始图像
