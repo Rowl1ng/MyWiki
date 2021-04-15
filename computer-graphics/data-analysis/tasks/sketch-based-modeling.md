@@ -1,3 +1,4 @@
+Typical input for 3D reconstruction: images and point clouds
 
 Task: converting rough, (abstract) **sketch** to clean, complete 3D shape
 
