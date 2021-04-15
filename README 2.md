@@ -8,3 +8,7 @@
 - 二值图：从二值图中，我们只能得到物体的轮廓。很难得到：1.物体表面的凹凸形状；2）物体在空间中的姿态。
 
 - Raster vs Vector：raster image（位图）和vector image（矢量图形）。JPEG和PNG都是属于raster image。最普遍的vector image的格式是SVG。Raster image和vector image的最大差别就是，当raster image的品质越好的时候，file size就会越大；而vector image没有这个问题。
+
+# Reference
+
+- 清华大学出版社的《图像处理与计算机视觉算法及应用(第0版) 》TP391.41/P121.
