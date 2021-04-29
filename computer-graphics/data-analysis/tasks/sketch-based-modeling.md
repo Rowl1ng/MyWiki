@@ -1,6 +1,6 @@
 Typical input for 3D reconstruction: images and point clouds
 
-Task: converting rough, (abstract) **sketch** to clean, complete 3D shape
+Task: converting rough, imprecise, (distorted compared to gt) **sketch** to clean, complete 3D shape
 
 - rough -> requiring interpretation of noisy signals
 
@@ -23,6 +23,10 @@ problem:
 
 # 3D sketch
 
+# Loss Functions
+
+- 2D: use differentiable renderer and measure inconsitencies in 2D
+- 3D: Chamfer / regularized Wasserterin
 
 # Terminology
 
