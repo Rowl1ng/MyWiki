@@ -125,6 +125,7 @@
 
 * [Introduction](computer-graphics/introduction.md)
 * [3D Model](computer-graphics/3d-model.md)
+  * [Shape Deformation](computer-graphics/3d-model/shape-deformation.md)
 * [Virtual Reality](computer-graphics/virtual-reality.md)
 * [blender](computer-graphics/blender.md)
 * [Data Analysis](computer-graphics/data-analysis.md)
