@@ -127,10 +127,11 @@
 * [3D Model](computer-graphics/3d-model.md)
   * [Shape Deformation](computer-graphics/3d-model/shape-deformation.md)
 * [Virtual Reality](computer-graphics/virtual-reality.md)
-* [blender](computer-graphics/blender.md)
 * [Data Analysis](computer-graphics/data-analysis.md)
 * [Tasks](computer-graphics/data-analysis/tasks.md)
   * [Sketch-based modeling](computer-graphics/data-analysis/tasks/sketch-based-modeling.md)
+* [Tools](computer-graphics/introduction/tools.md)
+  * [blender](computer-graphics/blender.md)
 
 ## Math
 
