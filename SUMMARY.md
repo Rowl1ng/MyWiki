@@ -2,6 +2,18 @@
 
 * [Read me](read-me.md)
 
+## Computer Graphics
+
+* [Introduction](computer-graphics/introduction.md)
+* [3D Model](computer-graphics/3d-model.md)
+  * [Shape Deformation](computer-graphics/3d-model/shape-deformation.md)
+* [Virtual Reality](computer-graphics/virtual-reality.md)
+* [Data Analysis](computer-graphics/data-analysis.md)
+* [Tasks](computer-graphics/data-analysis/tasks.md)
+  * [Sketch-based modeling](computer-graphics/data-analysis/tasks/sketch-based-modeling.md)
+* [Tools](computer-graphics/introduction/tools.md)
+  * [blender](computer-graphics/blender.md)
+
 ## Programming
 
 * [工程化](engineering.md)
@@ -121,18 +133,6 @@
   * [RoadNN](roadnn.md)
   * [车道线识别](lane.md)
 
-## Computer Graphics
-
-* [Introduction](computer-graphics/introduction.md)
-* [3D Model](computer-graphics/3d-model.md)
-  * [Shape Deformation](computer-graphics/3d-model/shape-deformation.md)
-* [Virtual Reality](computer-graphics/virtual-reality.md)
-* [Data Analysis](computer-graphics/data-analysis.md)
-* [Tasks](computer-graphics/data-analysis/tasks.md)
-  * [Sketch-based modeling](computer-graphics/data-analysis/tasks/sketch-based-modeling.md)
-* [Tools](computer-graphics/introduction/tools.md)
-  * [blender](computer-graphics/blender.md)
-
 ## Math
 
 * [Probability Theory](probability.md)
@@ -150,7 +150,7 @@
   * [synonym](synonym.md)
   * [math](math.md)
   * [material](material.md)
-* [日本語](ri-ben-yu.md)
+* [日本語](japanese.md)
 * [Francis](francis.md)
 * [others](others.md)
 
