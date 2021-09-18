@@ -4,18 +4,18 @@
 
 ## Math
 
-* [Probability Theory](probability.md)
+* [Probability Theory](math/probability.md)
 * [Nonliner Optimization](optimization.md)
-  * [Introduction](optimization/introduction.md)
-  * [SMO](smo.md)
-  * [优化算法](optimizer.md)
+  * [Introduction](math/optimization/introduction.md)
+  * [SMO](math/optimization/smo.md)
+  * [优化算法](math/optimization/optimizer.md)
 
 ## Programming
 
-* [工程化](engineering.md)
-* [Python Handbook](README.md)
-  * [基础](basics.md)
-  * [多线程](multiproccessing.md)
+* [工程化](programming/engineering.md)
+* [Python Handbook](programming/python/README.md)
+  * [基础](programming/python/basics.md)
+  * [多线程](programming/python/multiproccessing.md)
   * [数据库](database.md)
   * [编码](code.md)
   * [调试](debug.md)
