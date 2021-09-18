@@ -2,17 +2,13 @@
 
 * [Read me](read-me.md)
 
-## Computer Graphics
+## Math
 
-* [Introduction](computer-graphics/introduction.md)
-* [3D Model](computer-graphics/3d-model.md)
-  * [Shape Deformation](computer-graphics/3d-model/shape-deformation.md)
-* [Virtual Reality](computer-graphics/virtual-reality.md)
-* [Data Analysis](computer-graphics/data-analysis.md)
-* [Tasks](computer-graphics/data-analysis/tasks.md)
-  * [Sketch-based modeling](computer-graphics/data-analysis/tasks/sketch-based-modeling.md)
-* [Tools](computer-graphics/introduction/tools.md)
-  * [blender](computer-graphics/blender.md)
+* [Probability Theory](probability.md)
+* [Nonliner Optimization](optimization.md)
+  * [Introduction](optimization/introduction.md)
+  * [SMO](smo.md)
+  * [优化算法](optimizer.md)
 
 ## Programming
 
@@ -34,11 +30,6 @@
 * [linux](linux.md)
   * [train&test](linux/trainandtest.md)
 * [Windows](windows.md)
-
-## Research
-
-* [writing papers](research/writing-papers.md)
-* [Latex](latex.md)
 
 ## Machine Learning
 
@@ -133,17 +124,26 @@
   * [RoadNN](roadnn.md)
   * [车道线识别](lane.md)
 
-## Math
+## Computer Graphics
 
-* [Probability Theory](probability.md)
-* [Nonliner Optimization](optimization.md)
-  * [Introduction](optimization/introduction.md)
-  * [SMO](smo.md)
-  * [优化算法](optimizer.md)
+* [Introduction](computer-graphics/introduction.md)
+* [3D Model](computer-graphics/3d-model.md)
+  * [Shape Deformation](computer-graphics/3d-model/shape-deformation.md)
+* [Virtual Reality](computer-graphics/virtual-reality.md)
+* [Data Analysis](computer-graphics/data-analysis.md)
+* [Tasks](computer-graphics/data-analysis/tasks.md)
+  * [Sketch-based modeling](computer-graphics/data-analysis/tasks/sketch-based-modeling.md)
+* [Tools](computer-graphics/introduction/tools.md)
+  * [blender](computer-graphics/blender.md)
+
+## Research
+
+* [writing papers](research/writing-papers.md)
+* [Latex](latex.md)
 
 ## Language
 
-* [English](README 4.md)
+* [English](language/English/README.md)
   * [suffix](suffix.md)
   * [prefix](prefix.md)
   * [verb](verb.md)
