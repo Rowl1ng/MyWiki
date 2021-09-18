@@ -144,15 +144,15 @@
 ## Language
 
 * [English](language/English/README.md)
-  * [suffix](suffix.md)
-  * [prefix](prefix.md)
-  * [verb](verb.md)
-  * [synonym](synonym.md)
-  * [math](math.md)
-  * [material](material.md)
-* [日本語](japanese.md)
-* [Francis](francis.md)
-* [others](others.md)
+  * [suffix](language/English/suffix.md)
+  * [prefix](language/English/prefix.md)
+  * [verb](language/English/verb.md)
+  * [synonym](language/English/synonym.md)
+  * [math](language/English/math.md)
+  * [material](language/English/material.md)
+* [日本語](language/japanese.md)
+* [Francis](language/francis.md)
+* [others](language/others.md)
 
 ## Art
 
