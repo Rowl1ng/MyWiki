@@ -93,10 +93,10 @@
     * [内容无关](machine_learning/application/audio/std.md)
     * [内容相关](machine_learning/application/audio/yin-su.md)
     * [待整理](machine_learning/application/audio/dai-zheng-li.md)
-  * [安全](machine_learning/application/an-quan.md)
-    * [恶意代码检测](machine_learning/application/an-quan/e-yi-dai-ma-jian-ce.md)
-    * [脆弱性检测](machine_learning/application/an-quan/zi-dong-lou-dong-wa-jue.md)
-    * [自动漏洞挖掘](machine_learning/application/an-quan/zi-dong-lou-dong-wa-jue.md)
+  * [安全](machine_learning/application/safety/an-quan.md)
+    * [恶意代码检测](machine_learning/application/safety/e-yi-dai-ma-jian-ce.md)
+    * [脆弱性检测](machine_learning/application/safety/zi-dong-lou-dong-wa-jue.md)
+    * [自动漏洞挖掘](machine_learning/application/safety/zi-dong-lou-dong-wa-jue.md)
 
 ## Computer Vision
 

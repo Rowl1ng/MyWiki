@@ -78,7 +78,7 @@ fi
 git checkout -b $DEPLOY_BRANCH
 
 # Build site
-gitbook build --timing
+gitbook build
 
 # Delete and move files
 find . -maxdepth 1 ! -name '_book' ! -name '.git' ! -name 'CNAME' ! -name '.gitignore' -exec rm -rf {} \;
