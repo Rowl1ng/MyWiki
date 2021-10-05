@@ -1,6 +1,8 @@
 
-# 文件夹
+# 创建
 
+
+- 新建文件夹：os.makedirs(ret_dir)
 ```python
 def mkdir_safe(d):
     sub_dirs = d.split('/')
@@ -20,14 +22,17 @@ def mkdir_safe(d):
             else:
                 break
 ```
-## 移动文件
 
-文件->文件夹
+# 移动
 ```
+# 文件→文件夹
 shutil.copy(file_A, dir_B)
+
+# 复制目录A_dir下的所有文件到B_dir，B_dir必须不存在
+shutil.copytree(A_dir, B_dir)
 ```
 
-[Python 文件夹及文件操作](https://www.cnblogs.com/feeland/p/4463682.html)
+参考：[Python 文件夹及文件操作](https://www.cnblogs.com/feeland/p/4463682.html)
 
 
 ```python
@@ -35,17 +40,12 @@ import shutil
 
 if not os.path.exists(target_path):
     os.makedirs(target_path)
+
 name = target_path + '/{}'.format(view)
-print name
 shutil.copyfile(dicom_path, name)
 ```
-复制
-```python
-# 复制目录A_dir下的所有文件到B_dir，B_dir必须不存在
-shutil.copytree(A_dir, B_dir)
-```
 
-# 文件
+# 删除
 
 
 ```python
@@ -56,7 +56,7 @@ imprt shutil
 shutil.rmtree()
 ```
 
-- 文件重命名：
+# 重命名
 
 ```python
 import os
@@ -70,12 +70,10 @@ for file in os.listdir(path):
 #        print file.split('.')[-1]
 ```
 
-- 新建文件夹：os.makedirs(ret_dir)
-
 用变量命名：
 ouput=open(str1+".txt",'w')
 
-## 读写
+# 读写
 
 写入list到txt中：
 ```python
@@ -131,8 +129,8 @@ print l#输出列表
 print "---------------------------------------"
 pprint.pprint(l)#每项为一行显示，而且是文件对象自动关闭的方法，所以无f.close()
 ```
-
-# json
+# 常用文件类型
+## json
 
 读入
 ```python
@@ -149,8 +147,8 @@ with open(os.path.join(save_dir, a_index+'.txt'), 'w') as outfile:
     json.dump(data, outfile)
 ```
 
-# pickle
-```
+## pickle
+```python
 import pickle as pkl
 with open(result, 'rb') as f:
     data = pkl.load(f)

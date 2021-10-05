@@ -4,6 +4,8 @@
 
 ### 0.4.1 行列の定義
 
+[Dear linear algebra students, This is what matrices (and matrix manipulation) really look like](https://www.youtube.com/watch?v=4csuTO7UTMo)
+
 Dimension of matrix : number of rows\(行\) x number of columns\(列\)
 
 $$\left(

@@ -13,7 +13,18 @@ import torch
 print(torch.__version__)
 ```
 
-# 矩阵相关
+
+## Dataloader
+
+```python
+DataLoader(dataset, batch_size=1, shuffle=False, sampler=None,
+           batch_sampler=None, num_workers=0, collate_fn=None,
+           pin_memory=False, drop_last=False, timeout=0,
+           worker_init_fn=None, *, prefetch_factor=2,
+           persistent_workers=False)
+```
+
+## 矩阵相关
 
 numpy转tensor： 
 ```python
@@ -45,9 +56,9 @@ torch.max(input, axis) #return the max value
 torch.flatten(input, start_dim, end_dim)# flatten a continuous rang of dims in a tensor
 ```
 
-# 其他
+## 其他
 
-## debug
+## Debug
 
 查看feature map大小
 
@@ -88,7 +99,7 @@ input_img_var = torch.autograd.Variable(images.cuda(), volatile=True)
 input_mask_var = torch.autograd.Variable(masks.cuda(), volatile=True)
 ```
 
-## cuda
+## cuda memory
 
 设置GPU的方法
 
@@ -112,6 +123,8 @@ torch.backends.cudnn.benchmark = True
 ps x |grep python|awk '{print $1}'|xargs kill
 ```
 
+[Memory Leakage with PyTorch](https://medium.com/@raghadalghonaim/memory-leakage-with-pytorch-23f15203faa4)
+
 ## 资源
 
 * [pytorch-practice](https://github.com/napsternxg/pytorch-practice)
@@ -119,3 +132,18 @@ ps x |grep python|awk '{print $1}'|xargs kill
 
 
 
+
+# Pytorch lightning
+
+## pl.LightningModule
+
+```python
+def configure_optimizers(self):
+    #     # Make sure to filter the parameters based on `requires_grad`
+    optimizer = torch.optim.SGD(filter(lambda p: p.requires_grad, self.parameters()), lr=self.hparams.lr, momentum=0.9)
+    lr_scheduler = {
+         'scheduler': torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9995),
+         'name': 'lr'
+         }
+    return [optimizer], [lr_scheduler]
+```

@@ -15,11 +15,11 @@
 * [工程化](programming/engineering.md)
 * [Python Handbook](programming/python/README.md)
   * [基础](programming/python/basics.md)
+  * [文件](programming/python/file.md)
   * [多线程](programming/python/multiproccessing.md)
   * [数据库](programming/python/database.md)
   * [编码](programming/python/code.md)
   * [调试](programming/python/debug.md)
-  * [文件](programming/python/file.md)
   * [日志](programming/python/log.md)
   * [模块](programming/python/module.md)
   * [面向对象编程](programming/python/OOP.md)
@@ -33,7 +33,7 @@
 
 ## Machine Learning
 
-* [Introduction](machine_learning/README 3.md)
+* [Introduction](machine_learning/README.md)
 * [Part -1 Data Analysis](machine_learning/data_analysis/data_analyse.md)
   * [scikit-learn](machine_learning/data_analysis/scikit-learn.md)
   * [pandas](machine_learning/data_analysis/pandas.md)
@@ -53,6 +53,7 @@
 * [Part 1 Basic Concepts](machine_learning/basics/basic.md)
   * [方法概论](machine_learning/basics/generality.md)
   * [基础学习算法](machine_learning/basics/svm.md)
+  * [卷积](machine_learning/basics/convolution.md)
   * [CRF](machine_learning/basics/crf.md)
   * [normalization](machine_learning/basics/normalization.md)
   * [regularization](machine_learning/basics/regularization.md)
@@ -88,21 +89,19 @@
   * [Explore DL](machine_learning/application/deeplearning.md)
   * [word2vec](machine_learning/application/word2vec.md)
   * [AlphaGo](machine_learning/application/alphago.md)
-  * [语音](machine_learning/application/audio.md)
-    * [应用于安全领域的语音技术](application/audio/ying-yong-yu-an-quan-ling-yu-de-yu-yin-ji-zhu.md)
-    * [内容无关](machine_learning/application/audio/std.md)
-    * [内容相关](machine_learning/application/audio/yin-su.md)
-    * [待整理](machine_learning/application/audio/dai-zheng-li.md)
-  * [安全](machine_learning/application/safety/an-quan.md)
-    * [恶意代码检测](machine_learning/application/safety/e-yi-dai-ma-jian-ce.md)
-    * [脆弱性检测](machine_learning/application/safety/zi-dong-lou-dong-wa-jue.md)
-    * [自动漏洞挖掘](machine_learning/application/safety/zi-dong-lou-dong-wa-jue.md)
+
+  * [自动漏洞挖掘](machine_learning/application/automated_vulnerability_detection.md)
+
+## Natural Language Processing
+
+* [语音](NLP/audio.md)
+  * [内容无关](machine_learning/application/audio/std.md)
+  * [内容相关](machine_learning/application/audio/yin-su.md)
+  * [待整理](machine_learning/application/audio/dai-zheng-li.md)
 
 ## Computer Vision
 
-* [Introduction](computer_vision/README 2.md)
-* [Part 0 Math Basics](computer_vision/chapter1.md)
-  * [卷积](computer_vision/convolution.md)
+* [Introduction](computer_vision/README.md)
 * [python programming](python_programming.md)
   * [opencv](computer_vision/python_programming/opencv.md)
   * [matplotlib](computer_vision/python_programming/matplotlib.md)
@@ -112,33 +111,35 @@
   * [patch](computer_vision/python_programming/patch.md)
 * [Problems](computer_vision/problems/ren-wu.md)
   * [segmentation](computer_vision/problems/segmentation.md)
-  * detection
+  * [detection](computer_vision/problems/detection.md)
 * [Image Processing Basics](computer_vision/basics/image_basics.md)
-  * [平滑化](computer_vision/basics/ping-hua-hua.md)
+  * [filter](computer_vision/basics/filter.md)
   * [feature](computer_vision/basics/feature.md)
-  * [对比度](computer_vision/basics/tu-xiang-jun-heng-hua.md)
-  * [thresholding](computer_vision/basics/yu-zhi.md)
+  * [image normalization](computer_vision/basics/image_normalization.md)
+  * [thresholding](computer_vision/basics/thresholding.md)
 * [Practices](computer_vision/applications/practice.md)
-  * [Medical Image Analysis](computer_vision/applications/yi-liao-tu-xiang.md)
+  * [Medical Image Analysis](computer_vision/applications/medical_image_analysis.md)
   * [mammogram](computer_vision/applications/mammogram.md)
   * [RoadNN](computer_vision/applications/roadnn.md)
-  * [车道线识别](computer_vision/applications/lane.md)
+  * [Road Lane Recognition](computer_vision/applications/lane.md)
 
 ## Computer Graphics
 
-* [Introduction](computer-graphics/introduction.md)
-* [3D Model](computer-graphics/3d-model.md)
-  * [Shape Deformation](computer-graphics/3d-model/shape-deformation.md)
-* [Virtual Reality](computer-graphics/virtual-reality.md)
-* [Data Analysis](computer-graphics/data-analysis.md)
-* [Tasks](computer-graphics/data-analysis/tasks.md)
-  * [Sketch-based modeling](computer-graphics/data-analysis/tasks/sketch-based-modeling.md)
-* [Tools](computer-graphics/introduction/tools.md)
-  * [blender](computer-graphics/blender.md)
+* [Introduction](computer_graphics/introduction.md)
+* [3D Model](computer_graphics/3d-model.md)
+* [Data Analysis](computer_graphics/data_analysis/README.md)
+  * [Visualization](computer_graphics/data_analysis/visualization.md)
+  * [blender](computer_graphics/data_analysis/blender.md)
+* [Tasks](computer_graphics/tasks/tasks.md)
+  * [Shape Deformation](computer_graphics/3d-model/shape-deformation.md)
+  * [Shape retrieval](computer_graphics/tasks/shape_retrieval.md)
+  * [Sketch-based modeling](computer_graphics/tasks/sketch_based_-_modeling.md)
+* Application
+  * [Virtual Reality](computer_graphics/virtual-reality.md) 
 
 ## Research
 
-* [writing papers](research/writing-papers.md)
+* [writing papers](research/writing_papers.md)
 * [Latex](research/latex.md)
 
 ## Language
@@ -161,5 +162,5 @@
 
 ## Music
 
-* [古琴](music/gu-qin.md)
+* [古琴](music/guqin.md)
 

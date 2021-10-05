@@ -1,14 +1,16 @@
+# Linux 工具
+
 查看显卡情况：nvidia-smi
 
 vim的替换操作：:%s#A#B#(把所有行的A替换成B)
 
-# 执行
+## 执行
 
 同时执行多个命令，使用`&`
 
-# IO
+## IO
 
-## 输入
+### 输入
 比如`sh test_sample.sh Dec10-13-51-44_cac8_step`。
 
 参数可通过`$1`的方式读取到，`$0`是脚本的名字。
@@ -18,7 +20,7 @@ model_name=$1
 echo "Model: $model_name"
 ```
 
-## 输出
+### 输出
 输出到文件 
 ```
 sh XXX.sh > XXX.txt
@@ -28,15 +30,15 @@ sh XXX.sh > XXX.txt
 sh XXX.sh | tee XXX.txt
 ```
 
-# 文件
+## 文件
 
-## Rename
+### Move & Rename
 
 ```
 mv (option) filename1.ext filename2.ext
 ```
 
-## 查看文件大小：
+### 查看文件大小
 
 ```
 sudo du -sh * | sort -n
@@ -49,7 +51,7 @@ sudo du -sh * | sort -n
 du --max-depth=1 --human-readable / | sort --human-numeric-sort
 ```
 
-## 获取最新文件（夹）
+### 获取最新文件（夹）
 
 ```
 #!/bin/sh
@@ -61,7 +63,7 @@ echo $filename
 ls mydir -l |tail -n 1| awk '{print $9}'
 ```
 
-## 传输
+### 传输
 
 复制：cp
     * 目录：-ae
@@ -93,7 +95,7 @@ scp -r 用户名@服务器ip:文件路径 目标路径
 ```
 wget -m -t0 http://XXX
 ```
-## 解压
+### 解压
 
 .tar ：
 
@@ -117,8 +119,22 @@ tar.xz文件：
 $xz -d ***.tar.xz
 $tar -xvf ***.tar
 ```
+## 时间
 
-# tmux
+```
+date
+```
+## 其他
+
+nohup:
+
+* 回车，回到命令行
+
+## Reference
+
+- [速查工具tldr](https://tldr.ostera.io/scp)
+
+# Tmux
 
 启动新会话：
 
@@ -137,7 +153,6 @@ tmux ls
 tmux at [-t 会话名]
 ```
 
-
 关闭会话：
 
 ```
@@ -154,16 +169,86 @@ tmux kill-session -t 会话名
 
 - 纵向分割：%
 
-# 时间
+```
+c  创建新窗口
+w  列出所有窗口
+n  后一个窗口
+p  前一个窗口
+f  查找窗口
+,  重命名当前窗口
+&  关闭当前窗口
+%  垂直分割
+"  水平分割
+o  交换窗格
+x  关闭窗格
+⍽  左边这个符号代表空格键 - 切换布局
+q 显示每个窗格是第几个，当数字出现的时候按数字几就选中第几个窗格
+{ 与上一个窗格交换位置
+} 与下一个窗格交换位置
+z 切换窗格最大化/最小化
+```
+
+# git
+
+遇到 server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
 
 ```
-date
+git config --global http.sslverify false
 ```
-# 其他
+git 退出nano界面：Ctrl + X然后输入y
 
-nohup:
-* 回车，回到命令行
+## clone
 
-# Reference
+clone branch
 
-- [速查工具tldr](https://tldr.ostera.io/scp)
+```
+git clone -b breast https://.....
+```
+
+Git下放另一个git，在clone的时候：
+
+```
+git clone --recursive
+```
+
+## push更新
+
+```
+git pull origin breast
+git add .
+git commit -m 'message'
+git push origin breast
+```
+## pull
+
+```
+git pull
+```
+如果更新不能merge，需要stash
+```
+git stash
+```
+
+## .gitignore
+
+[A collection of useful .gitignore templates](https://github.com/github/gitignore)
+
+## diff
+
+## reset
+```
+git log
+git reset --hard XXXXXXX
+```
+
+```
+#查看远程分支
+git branch -a
+#查看当前分支所属
+git branch -vv
+git push origin main
+
+# 将远程主机origin的master分支拉取过来，与本地的branchtest分支合并。
+git pull origin master:branchtest
+```
+
