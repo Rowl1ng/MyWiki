@@ -1,18 +1,41 @@
-# 3D Data Format
 
-## Mesh
-
-## Point Cloud 
+# Projects
 
 [Learning3D: A Modern Library for Deep Learning on 3D Point Clouds Data.](https://github.com/vinits5/learning3d)
 
-### Sampling
+# Distance Metrics
 
-#### Sampling from mesh
+## Chamfer Distance
+```python
 
-#### Sampling from point cloud
+```
+## Earth Mover Distance
+```python
 
-### Normalization
+```
+## F-score
+
+```python
+
+```
+
+# Sampling
+
+## Sampling from mesh
+
+```python
+
+```
+
+## Sampling from point cloud
+
+farthest point sampling
+
+```python
+
+```
+
+# Normalization
 
 ```python
 def normalize_to_box(input):

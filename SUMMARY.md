@@ -95,9 +95,9 @@
 ## Natural Language Processing
 
 * [语音](NLP/audio.md)
-  * [内容无关](machine_learning/application/audio/std.md)
-  * [内容相关](machine_learning/application/audio/yin-su.md)
-  * [待整理](machine_learning/application/audio/dai-zheng-li.md)
+  * [内容无关](NLP/audio/std.md)
+  * [内容相关](NLP/audio/phoneme.md)
+* [待整理](NLP/inbox.md)
 
 ## Computer Vision
 
