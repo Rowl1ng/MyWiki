@@ -126,7 +126,9 @@
 ## Computer Graphics
 
 * [Introduction](computer_graphics/introduction.md)
-* [3D Model](computer_graphics/3d-model.md)
+* [Basics](computer_graphics/basics/3d-model.md)
+  * [point cloud](computer_graphics/basics/point_cloud.md)
+  * [Voxel based](computer_graphics/basics/voxel.md)
 * [Data Analysis](computer_graphics/data_analysis/README.md)
   * [Visualization](computer_graphics/data_analysis/visualization.md)
   * [blender](computer_graphics/data_analysis/blender.md)
