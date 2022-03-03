@@ -26,6 +26,11 @@ DataLoader(dataset, batch_size=1, shuffle=False, sampler=None,
 
 ## 矩阵相关
 
+新建tensor
+```python
+shape = torch.randn([3,2,3])
+```
+
 numpy转tensor： 
 ```python
 torch.Tensor()
@@ -39,11 +44,27 @@ x2 = x1.unsqueeze(0)
 torch.Size([1, 10, 10])
 ```
 
-变形
+复制元素：
+```python
+B = 3
 
+torch.repeat_interleave(shape, torch.ones(B, dtype=torch.long)*B, dim=0) #[A,A,A,B,B,B,C,C,C]
+
+shape.repeat(B, 1, 1) # [A,B,C,A,B,C,A,B,C]
+```
+
+选择元素：
+```python
+index = torch.tensor([[0], [1], [2]])
+tensor_p = tensor_0.gather(1, index)
+print(tensor_p)
+```
+
+变形
 ```python
 imgs = image.view(-1,1,256,256).repeat(1,3,1,1)
 ```
+
 ## 上采样
 
 ```python
@@ -59,6 +80,7 @@ torch.flatten(input, start_dim, end_dim)# flatten a continuous rang of dims in a
 ## 其他
 
 ## Debug
+
 
 查看feature map大小
 

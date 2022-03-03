@@ -47,16 +47,33 @@ a)中的三种方法是在数据各个维度不相关的假设下，利用数据
 定义： 欧氏距离（ Euclidean distance）是一个通常采用的距离定义，它是在m维空间中两个点之间的真实距离。
 
 在二维和三维空间中的欧式距离的就是两点之间的距离，二维的公式是 
+
 $$d = \sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
+
 三维的公式是 
+
 $$d=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2+(z_1-z_2)^2}$$ 
+
 推广到$$n$$维空间，欧式距离的公式是 
-$$d=\sqrt{ \sum(x_{i1}-x_{i2})^2 }$$ 这里i=1,2..n 
-$$x_{i1}$$表示第一个点的第$$i$$维坐标,$$x_{i2}$$表示第二个点的第$$i$$维坐标.
+
+$$d=\sqrt{ \sum(x_{i1}-x_{i2})^2 }$$ 
+
+这里i=1,2..n , $$x_{i1}$$表示第一个点的第$$i$$维坐标,$$x_{i2}$$表示第二个点的第$$i$$维坐标.
 $$n$$维欧氏空间是一个点集,它的每个点可以表示为$$(x_1,x_2,\dots ,x_n)$$,其中$$x_i,(i=1,2\dots,n)$$是实数,称为$$x$$的第$$i$$个坐标,两个点$$x$$和$$y=(y_1,y_2,\dots ,y_n)$$之间的距离$$d(x,y)$$定义为上面的公式. 
 
 欧氏距离看作信号的相似程度。 距离越近就越相似，就越容易相互干扰，误码率就越高。
 
+```python
+import torch.nn.functional as F
+feat = torch.tensor([[-1.,-1.], [1.,1.]])
+
+feat_norm = F.normalize(feat, p=2, dim=1)
+B=1
+sketch_feat, shape_feat = torch.split(feat_norm, [B, B])
+
+
+embedding_distance = torch.cdist(sketch_feat, shape_feat, p=2)
+```
 
 
   [1]: http://images.cnitblog.com/blog/533521/201308/07220530-1c87c470c5984305932cb5f5fc91656f.png

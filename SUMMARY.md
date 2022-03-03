@@ -85,11 +85,10 @@
   * [matlab](machine_learning/programming/matlab.md)
   * [Pytorch](machine_learning/programming/pytorch.md)
   * [method](machine_learning/programming/method.md)
-* [Part 6 Applications](machine_learning/application/ying-yong.md)
+* [Part 6 Applications]
   * [Explore DL](machine_learning/application/deeplearning.md)
   * [word2vec](machine_learning/application/word2vec.md)
   * [AlphaGo](machine_learning/application/alphago.md)
-
   * [自动漏洞挖掘](machine_learning/application/automated_vulnerability_detection.md)
 
 ## Natural Language Processing
