@@ -64,9 +64,7 @@ For discrete variables, the binomial negative log-likelihood cost function corre
 
 分类交叉熵损失也被称为负对数似然（negative log likelihood）。这是一种用于解决分类问题的流行的损失函数，可用于测量两种概率分布（通常是真实标签和预测标签）之间的相似性。它可用 $$L = -\sum(y * \log(y_{prediction}))$$ 表示，其中 y 是真实标签的概率分布（通常是一个one-hot vector），$$y_{prediction} $$是预测标签的概率分布，通常来自于一个 softmax。
 
-# Triplet Loss
 
-$$\$$
 
 ## Tukeys Loss
 
@@ -96,7 +94,7 @@ $$
 Loss(x, class) = - \alpha (1-softmax(x)_{[class]})^\gamma \log(softmax(x)_{[class]})
 $$
 
-```
+```python
 def focal_loss(inputs, targets):
     gamma = 2
     N = inputs.size(0)

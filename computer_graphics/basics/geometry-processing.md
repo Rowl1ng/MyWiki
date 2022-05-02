@@ -3,11 +3,20 @@
 
 [3D Transformation](https://www.tutorialspoint.com/computer_graphics/3d_transformation.htm)
 [Spatial Transformation on Matrices](https://www.brainvoyager.com/bv/doc/UsersGuide/CoordsAndTransforms/SpatialTransformationMatrices.html)
-# Intro
 
-- voxel
-- point cloud
-- volume
+# Representations
+
+## voxel
+discretization
+
+## point cloud
+discretization of surface into 3D points
+does not model connectivity
+
+## Meshes
+discretization into vertices and faces
+
+
 
 # File Format
 

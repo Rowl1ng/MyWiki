@@ -1,4 +1,4 @@
-## OpenCV
+# OpenCV
 
 使用conda安装
 
@@ -40,7 +40,7 @@ assert im is not None, \
     'Failed to read image \'{}\''.format(roidb[i]['image'])
 ```
 
-### 画图
+## 画图
 
 ```python
 cv2.circle(image_,(1251, 2661),5,(255,255,0),2) #(x,y)
@@ -53,7 +53,7 @@ cv2.drawContours(image, segm, -1, (0,255,0), 8)
 ```
 
 
-### Resize
+## Resize
 
 注意size的顺序是反的
 
@@ -62,7 +62,7 @@ cv2.resize(image, dsize=(width, height),
                                  interpolation=cv2.INTER_CUBIC)
 ```
 
-### 矩：Moments
+## 矩：Moments
 
 图像矩可以计算图像的质心，面积等等。
 
@@ -82,7 +82,7 @@ def find_center(contour):
     return cx, cy
 ```
 
-### 获得bbox
+## 获得bbox
 
 注意：输入是int型哦~
 
@@ -91,7 +91,7 @@ label_array = np.array(points, dtype=np.int32) #（n, 2）
 x1, y1, w, h = cv2.boundingRect(label_array[:, np.newaxis, :]) # (n, 1, 2)
 ```
 
-### 边缘检测：FindContours
+## 边缘检测：FindContours
 
 [代码示例](https://github.com/makelove/OpenCV-Python-Tutorial/blob/master/ch21-%E8%BD%AE%E5%BB%93Contours/21-findContour.py)
 
@@ -106,13 +106,13 @@ else:
     rx,ry,rw,rh = cv2.boundingRect(contours[idx])
 ```
 
-计算面积
+## 计算面积
 
 ```
 area = cv2.contourArea(cnt)
 ```
 
-### 斑点检测：BlobDetector
+## 斑点检测：BlobDetector
 
 [代码示例](https://github.com/makelove/OpenCV-Python-Tutorial/blob/master/ch25-%E6%96%91%E7%82%B9%E6%A3%80%E6%B5%8B/%E6%96%91%E7%82%B9%E6%A3%80%E6%B5%8BSimpleBlobDetector.py)
 

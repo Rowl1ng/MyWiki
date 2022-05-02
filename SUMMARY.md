@@ -71,11 +71,12 @@
   * [Terms](machine_learning/nn/termsmd.md)
   * [boost](machine_learning/nn/boost.md)
   * [Attention](machine_learning/nn/attention.md)
-* [Part 3 Problems](machine_learning/problems/wen-ti.md)
+* [Part 3 Problems](machine_learning/problems/README.md)
   * [transfer learning](machine_learning/problems/transfer-learning.md)
   * [few-shot learning](machine_learning/problems/few-shot-learning.md)
   * [sample imbalance](machine_learning/problems/imbalance.md)
-  * [unsupervised learning](machine_learning/problems/wu-jian-du-xue-xi.md)
+  * [unsupervised learning](machine_learning/problems/unsupervised-learning.md)
+  * [Metric Laerning](machine_learning/problems/metric-learning.md)
 * [Part 4 NN Programming](machine_learning/programming/nnpractice.md)
   * [keras](machine_learning/programming/keras.md)
   * [Theano](machine_learning/programming/theano.md)
@@ -85,7 +86,7 @@
   * [matlab](machine_learning/programming/matlab.md)
   * [Pytorch](machine_learning/programming/pytorch.md)
   * [method](machine_learning/programming/method.md)
-* [Part 6 Applications]
+* [Part 6 Applications](machine_learning/application/README.md)
   * [Explore DL](machine_learning/application/deeplearning.md)
   * [word2vec](machine_learning/application/word2vec.md)
   * [AlphaGo](machine_learning/application/alphago.md)
@@ -93,15 +94,21 @@
 
 ## Natural Language Processing
 
-* [语音](NLP/audio.md)
+* [语音](NLP/audio/audio.md)
   * [内容无关](NLP/audio/std.md)
   * [内容相关](NLP/audio/phoneme.md)
+* [Code Analysis](NLP/code_analysis.md)
 * [待整理](NLP/inbox.md)
 
 ## Computer Vision
 
 * [Introduction](computer_vision/README.md)
-* [python programming](python_programming.md)
+* [Image Processing Basics](computer_vision/basics/image_basics.md)
+  * [filter](computer_vision/basics/filter.md)
+  * [feature](computer_vision/basics/feature.md)
+  * [image normalization](computer_vision/basics/image_normalization.md)
+  * [thresholding](computer_vision/basics/thresholding.md)
+* [python programming](computer_vision/python_programming/python_programming.md)
   * [opencv](computer_vision/python_programming/opencv.md)
   * [matplotlib](computer_vision/python_programming/matplotlib.md)
   * [scikit-image](computer_vision/python_programming/skimage.md)
@@ -111,15 +118,10 @@
 * [Problems](computer_vision/problems/ren-wu.md)
   * [segmentation](computer_vision/problems/segmentation.md)
   * [detection](computer_vision/problems/detection.md)
-* [Image Processing Basics](computer_vision/basics/image_basics.md)
-  * [filter](computer_vision/basics/filter.md)
-  * [feature](computer_vision/basics/feature.md)
-  * [image normalization](computer_vision/basics/image_normalization.md)
-  * [thresholding](computer_vision/basics/thresholding.md)
 * [Practices](computer_vision/applications/practice.md)
   * [Medical Image Analysis](computer_vision/applications/medical_image_analysis.md)
-  * [mammogram](computer_vision/applications/mammogram.md)
-  * [RoadNN](computer_vision/applications/roadnn.md)
+  * [Mammogram](computer_vision/applications/mammogram.md)
+  * [Road Crack Detection](computer_vision/applications/roadnn.md)
   * [Road Lane Recognition](computer_vision/applications/lane.md)
 
 ## Computer Graphics
@@ -132,11 +134,10 @@
   * [Visualization](computer_graphics/data_analysis/visualization.md)
   * [blender](computer_graphics/data_analysis/blender.md)
 * [Tasks](computer_graphics/tasks/tasks.md)
-  * [Shape Deformation](computer_graphics/3d-model/shape-deformation.md)
-  * [Shape retrieval](computer_graphics/tasks/shape_retrieval.md)
-  * [Sketch-based modeling](computer_graphics/tasks/sketch_based_-_modeling.md)
-* Application
-  * [Virtual Reality](computer_graphics/virtual-reality.md) 
+  * [Shape Deformation](computer_graphics/3d-model/shape_deformation.md)
+  * [Shape Retrieval](computer_graphics/tasks/shape_retrieval.md)
+  * [Sketch-based Modeling](computer_graphics/tasks/sketch_based_modeling.md)
+  * [VR Sketch](computer_graphics/tasks/VR_Sketch.md)
 
 ## Research
 
