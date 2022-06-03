@@ -9,7 +9,7 @@ $$。
 
 SVM使用一种非线性映射，把原训练数据映射到较高的维。在新的维上，搜索最佳分离超平面，两个类的数据总可以被超平面分开。
 
-## 1. 线性可分
+# 线性可分
 
 要找到具有“最大间隔”的划分超平面，即
 $$
@@ -23,9 +23,7 @@ s.t. y_i(w^\mathrm{T}x_i+b)\geq 1,i=1,2,\dots,N.
 $$
 
 
-## 2. 线性不可分
-
-
+# 线性不可分
 
 线性可分问题的支持向量机学习方法，对线性不可分训练数据是不适用的，为了满足函数间隔大于1的约束条件，可以对每个样本$(\mathbf x_i,y_i)$引进一个松弛变量$ξ_i≥0$，使函数间隔加上松弛变量大于等于1：
 $$
@@ -42,7 +40,7 @@ $$
 s.t.  y_i(w \cdot x_i +b)\geq 1-\xi_i,i=1,2,\dots,N,\xi_i\geq0,i=1,2,\dots,N
 $$
 
-## 3. 对偶问题
+# 对偶问题
 使用拉格朗日乘子法得到其“对偶问题”：
 $$
 L(w,b,\alpha)=\frac 12{||w||}^2+\sum_{i=1}^N\alpha_i(1-y_i(w^\mathrm{T}x_i+b))
@@ -60,7 +58,7 @@ s.t. \sum _{i=1}^N \alpha_i y_i=0, \alpha_i>0, i=1,\dots,N
 $$
 
 
-## 4. SMO算法
+# SMO算法
 
 约束$$\sum _{i=1}^N \alpha_i y_i=0$$重写为：
 $$
@@ -112,6 +110,7 @@ $$
 $$
 再考虑限制条件$$0\leq \alpha_i \leq c$$，$$(\alpha_1,\alpha_2)$$的取值只能为直线$$\alpha_1y_1+\alpha_2y_2=\gamma$$落在$$[0,C]\times [0,C]$$矩形中的部分。
 ![此处输入图片的描述][1]
+
 因此需要检查$$\alpha_2^{new}$$的值以确认这个值落在约束区间之内：
 $$
 \alpha_1^{new,clipped}= \left\{ \begin{array}{ll}
@@ -121,6 +120,7 @@ L, & \textrm{$\alpha_1^{new}< L$}
 \end{array} \right.
 $$
 其中
+
 $$
 \cases
 {
@@ -128,6 +128,7 @@ L=max(0,\alpha_1-\alpha_2),H=max(C,C+\alpha_1+\alpha_2)&$y_1 \neq y_2$\\
 L=max(0,\alpha_1+\alpha_2-C),H=max(C,\alpha_1-\alpha_2)&$y_1 = y_2$
 }
 $$
+
 假设$$s=y_1y_2$$，则新的$$\alpha_2^{new}$$为
 $$
 \alpha_2^{new}=\alpha_2^{old}+s(\alpha_1^{old}-\alpha_1^{new,clipped})

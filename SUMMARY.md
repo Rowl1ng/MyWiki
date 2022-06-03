@@ -2,6 +2,27 @@
 
 * [Read me](README.md)
 
+## Research
+
+* [writing papers](research/writing_papers.md)
+* [Latex](research/latex.md)
+
+## Computer Graphics
+
+* [Introduction](computer_graphics/README.md)
+* [Basics](computer_graphics/basics/README.md)
+  * [Geometry Processing](computer_graphics/basics/geometry-processing.md)
+  * [3D Vison](computer_graphics/basics/3D-vision.md)
+* [Data Analysis](computer_graphics/programming/README.md)
+  * [Visualization](computer_graphics/programming/visualization.md)
+  * [blender](computer_graphics/programming/blender.md)
+  * [Point Cloud](computer_graphics/programming/point-cloud.md)
+* [Tasks](computer_graphics/tasks/tasks.md)
+  * [Shape Deformation](computer_graphics/tasks/shape_deformation.md)
+  * [Shape Retrieval](computer_graphics/tasks/shape_retrieval.md)
+  * [Sketch-based Modeling](computer_graphics/tasks/sketch_based_modeling.md)
+  * [VR Sketch](computer_graphics/tasks/VR_Sketch.md)
+
 ## Math
 
 * [Probability Theory](math/probability.md)
@@ -51,9 +72,9 @@
   * [Distance](machine_learning/math/distance.md)
   * [Terminology](machine_learning/math/term.md.md)
 * [Part 1 Basic Concepts](machine_learning/basics/basic.md)
-  * [方法概论](machine_learning/basics/generality.md)
+  * [Overview](machine_learning/basics/generality.md)
   * [基础学习算法](machine_learning/basics/svm.md)
-  * [卷积](machine_learning/basics/convolution.md)
+  * [Convolution](machine_learning/basics/convolution.md)
   * [CRF](machine_learning/basics/crf.md)
   * [normalization](machine_learning/basics/normalization.md)
   * [regularization](machine_learning/basics/regularization.md)
@@ -65,15 +86,15 @@
   * [Regularized Networks](machine_learning/nn/regulizer.md)
   * [RNN](machine_learning/nn/rnn.md)
   * [CNN](machine_learning/nn/cnn.md)
-  * [VAE](machine_learning/nn/vae.md)
-  * [criterion](machine_learning/nn/criterion.md)
-  * [backbone](machine_learning/nn/backbone.md)
+  * [Criterion](machine_learning/nn/criterion.md)
+  * [Backbone](machine_learning/nn/backbone.md)
   * [Terms](machine_learning/nn/termsmd.md)
   * [boost](machine_learning/nn/boost.md)
   * [Attention](machine_learning/nn/attention.md)
 * [Part 3 Problems](machine_learning/problems/README.md)
-  * [transfer learning](machine_learning/problems/transfer-learning.md)
-  * [few-shot learning](machine_learning/problems/few-shot-learning.md)
+  * [Generative Model](machine_learning/problems/generative-model.md)
+  * [Transfer Learning](machine_learning/problems/transfer-learning.md)
+  * [Few-shot Learning](machine_learning/problems/few-shot-learning.md)
   * [sample imbalance](machine_learning/problems/imbalance.md)
   * [unsupervised learning](machine_learning/problems/unsupervised-learning.md)
   * [Metric Laerning](machine_learning/problems/metric-learning.md)
@@ -124,25 +145,7 @@
   * [Road Crack Detection](computer_vision/applications/roadnn.md)
   * [Road Lane Recognition](computer_vision/applications/lane.md)
 
-## Computer Graphics
 
-* [Introduction](computer_graphics/introduction.md)
-* [Basics](computer_graphics/basics/3d-model.md)
-  * [point cloud](computer_graphics/basics/point_cloud.md)
-  * [Voxel based](computer_graphics/basics/voxel.md)
-* [Data Analysis](computer_graphics/data_analysis/README.md)
-  * [Visualization](computer_graphics/data_analysis/visualization.md)
-  * [blender](computer_graphics/data_analysis/blender.md)
-* [Tasks](computer_graphics/tasks/tasks.md)
-  * [Shape Deformation](computer_graphics/3d-model/shape_deformation.md)
-  * [Shape Retrieval](computer_graphics/tasks/shape_retrieval.md)
-  * [Sketch-based Modeling](computer_graphics/tasks/sketch_based_modeling.md)
-  * [VR Sketch](computer_graphics/tasks/VR_Sketch.md)
-
-## Research
-
-* [writing papers](research/writing_papers.md)
-* [Latex](research/latex.md)
 
 ## Language
 

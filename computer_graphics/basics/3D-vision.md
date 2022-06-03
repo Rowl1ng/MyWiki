@@ -1,4 +1,4 @@
-REcovering thee underlying structure from iamges
+Recovering thee underlying structure from images
 
 Pose Estimation
 
