@@ -15,7 +15,6 @@
                 "favicon",
                 "code",
                 "advanced-emoji",
-                "lightbox",
                 "-lunr", "-search", "search-pro"],
     "pluginsConfig": {
             "donate": {
