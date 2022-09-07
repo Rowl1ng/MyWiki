@@ -1,6 +1,13 @@
-# GAN
+
+
+
+# Generative Adversarial Network (GAN)
 GAN models are known for potentially unstable training and less diversity in generation due to their adversarial training nature.
 
+
+## Conditional GAN
+
+consider learning a conditional mapping function $$G: \mathcal X \rightarrow \mathcal Y$$ which generates an output $$\mathbf y \in \mathcal Y$$. Our goal is to learn a multi-modal mapping $$G: \mathcal X \times \mathcal Z \rightarrow \mathcal Y$$ such that an input $x$ can be mapped to 
 # VAE
 VAE relies on a surrogate loss.
 

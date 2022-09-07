@@ -6,6 +6,8 @@
 
 * [writing papers](research/writing_papers.md)
 * [Latex](research/latex.md)
+* [Presentation](research/presentation.md)
+* [Projects](research/projects.md)
 
 ## Computer Graphics
 

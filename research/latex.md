@@ -1,3 +1,10 @@
+# Maths
+
+
+- \mathcal 花体： $$\mathcal X$$
+- \mathbf 粗体: $$\mathbf y$$
+
+
 # 图片
 控制大小+图片居中
 ```
