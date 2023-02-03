@@ -7,22 +7,6 @@
 
 [Learning3D: A Modern Library for Deep Learning on 3D Point Clouds Data.](https://github.com/vinits5/learning3d)
 
-# Distance Metrics
-
-## Chamfer Distance
-```python
-
-```
-## Earth Mover Distance
-```python
-
-```
-## F-score
-
-```python
-
-```
-
 # Sampling
 
 ## Sampling from mesh

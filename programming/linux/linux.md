@@ -199,6 +199,12 @@ git 退出nano界面：Ctrl + X然后输入y
 
 ## clone
 
+查看远程仓库地址
+
+```
+git remote -v
+```
+
 clone branch
 
 ```

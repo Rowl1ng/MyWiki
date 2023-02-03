@@ -8,6 +8,12 @@ How to Write a Great Research Paper, and Get it Accepted by a Good Journal:
 
 avoid mentioning new concepts if reader can't perceive it immediately.
 
+
+# Figures
+
+- Tools: InkScape
+- Format: pdf
+
 # Review pipeline
 
 

@@ -1,14 +1,13 @@
 
+# Generation
 
-
-# Generative Adversarial Network (GAN)
+## Generative Adversarial Network (GAN)
 GAN models are known for potentially unstable training and less diversity in generation due to their adversarial training nature.
 
 
-## Conditional GAN
 
-consider learning a conditional mapping function $$G: \mathcal X \rightarrow \mathcal Y$$ which generates an output $$\mathbf y \in \mathcal Y$$. Our goal is to learn a multi-modal mapping $$G: \mathcal X \times \mathcal Z \rightarrow \mathcal Y$$ such that an input $x$ can be mapped to 
-# VAE
+
+## VAE
 VAE relies on a surrogate loss.
 
 
@@ -18,14 +17,23 @@ VAE relies on a surrogate loss.
 - [Paper List](https://github.com/matthewvowels1/Awesome-VAEs)
 
 
-# Flow-based Model
+## Flow-based Model
 Flow models have to use specialized architectures to construct reversible transform.
 
-# Diffusion Model
+Normalizing flows is a class of generative models focusing on mapping a complex probability distribution to
+a simple distribution such as a Gaussian. 
+
+## Diffusion Model
 
 ![overviews of different generative models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/generative-overview.png)
 
 
-# Reference
+## Reference
 
 - [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
+
+# Conditional Generation
+
+consider learning a conditional mapping function $$G: \mathcal X \rightarrow \mathcal Y$$ which generates an output $$\mathbf y \in \mathcal Y$$. Our goal is to learn a multi-modal mapping $$G: \mathcal X \times \mathcal Z \rightarrow \mathcal Y$$ such that an input $x$ can be mapped to multiple and diverse ouputs in $\mathcal Y$ depending on the latent factors encoded in $\mathbf z \in \mathcal Z$. 
+
+offen suffers from mode-collapse problem.

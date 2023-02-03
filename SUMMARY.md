@@ -15,6 +15,7 @@
 * [Basics](computer_graphics/basics/README.md)
   * [Geometry Processing](computer_graphics/basics/geometry-processing.md)
   * [3D Vison](computer_graphics/basics/3D-vision.md)
+  * [metrics](computer_graphics/basics/metrics.md)
 * [Data Analysis](computer_graphics/programming/README.md)
   * [Visualization](computer_graphics/programming/visualization.md)
   * [blender](computer_graphics/programming/blender.md)
@@ -22,7 +23,6 @@
 * [Tasks](computer_graphics/tasks/tasks.md)
   * [Shape Deformation](computer_graphics/tasks/shape_deformation.md)
   * [Shape Retrieval](computer_graphics/tasks/shape_retrieval.md)
-  * [Sketch-based Modeling](computer_graphics/tasks/sketch_based_modeling.md)
   * [VR Sketch](computer_graphics/tasks/VR_Sketch.md)
 
 ## Math
@@ -121,7 +121,7 @@
   * [内容无关](NLP/audio/std.md)
   * [内容相关](NLP/audio/phoneme.md)
 * [Code Analysis](NLP/code_analysis.md)
-* [待整理](NLP/inbox.md)
+<!-- * [待整理](NLP/inbox.md) -->
 
 ## Computer Vision
 
