@@ -32,14 +32,14 @@ $$
 $$
 
 
-1. local minimun $$\Longrightarrow \nabla f(x)=0, \nabla ^2 f(x) \geq 0$$ 
+1. local minimun $\Longrightarrow \nabla f(x)=0, \nabla ^2 f(x) \geq 0$
 2. $\nabla f(x)=\nabla ^2 f(x)\Longrightarrow  $ local minimum ,eg. $y=x^3$
 
 ## 迭代下降优化算法
 
-寻找一个搜索方向$$d_k$$使得每次迭代时函数值减小。
+寻找一个搜索方向$d_k$使得每次迭代时函数值减小。
 
-首先选取初始点$$x0$$_，  
+首先选取初始点$x_0$，  
 loop until $x_{k+1}$满足终止条件：
 
 * 构造搜索方向$d_k$

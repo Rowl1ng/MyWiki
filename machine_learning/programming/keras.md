@@ -71,10 +71,10 @@ model.add(Convolution2D(64, 3, 3, border_mode='same', input_shape=(3, 256, 256))
 > * ‘th’模式下，输入形如（samples,channels，rows，cols）的4D张量
 > * ‘tf’模式下，输入形如（samples，rows，cols，channels）的4D张量
 
-所以现在model.output\_shape == \(None, 64, 256, 256\)
+所以现在model.output_shape == (None, 64, 256, 256)
 
 * subsample：长为2的tuple，输出对输入的下采样因子，更普遍的称呼是“strides”
-* border\_mode＝‘full’，same,valid
+* border_mode＝‘full’，same,valid
 
 ![](http://images2015.cnblogs.com/blog/736761/201509/736761-20150918171130070-2129954644.png)
 
@@ -167,7 +167,7 @@ for j in xrange(epochs):#开始迭代
         print "Epoch {0} complete".format(j)
 ```
 
-这里又用到了update\_mini\_batch方法，它直接把更新w和b的过程单独抽象了出来，这个函数是梯度下降的代码，而只有加上这个函数前面的代码才能叫随机梯度下降。过会我们再来分析这个函数，在迭代完一次（一个epoch）之后，我们使用了测试数据来检验我们的神经网络（已经根据mini-batch学习到了权值和偏置）的识别数字准确率。这里调用了一个函数叫evaluate，它定义为：
+这里又用到了update_mini_batch方法，它直接把更新w和b的过程单独抽象了出来，这个函数是梯度下降的代码，而只有加上这个函数前面的代码才能叫随机梯度下降。过会我们再来分析这个函数，在迭代完一次（一个epoch）之后，我们使用了测试数据来检验我们的神经网络（已经根据mini-batch学习到了权值和偏置）的识别数字准确率。这里调用了一个函数叫evaluate，它定义为：
 
 ```
 def evaluate(self,test_data):
@@ -175,12 +175,12 @@ def evaluate(self,test_data):
     return sum(int(x==y) for (x,y) in test_results)
 ```
 
-这个函数的主要作用就是返回识别正确的样本个数。其中np.argmax\(a\)是返回a中最大值的下标，这里我们可以看到self.feedforward\(x\)，其中x是test\_data中的输入图像，然后神经网络计算出最终的结果是分类数字的标签，它是一个shape=\(1,10\)矩阵，比如数字5表示为\[0,0,0,0,0,1,0,0,0,0\]，这时1最大，就返回下标5，其实也就表示了数字5。然后将这个结果和test\_data中的y作比较，如果相等就表示识别正确，sum就是用来计数的。
+这个函数的主要作用就是返回识别正确的样本个数。其中np.argmax(a)是返回a中最大值的下标，这里我们可以看到self.feedforward(x)，其中x是test_data中的输入图像，然后神经网络计算出最终的结果是分类数字的标签，它是一个shape=(1,10)矩阵，比如数字5表示为\[0,0,0,0,0,1,0,0,0,0\]，这时1最大，就返回下标5，其实也就表示了数字5。然后将这个结果和test_data中的y作比较，如果相等就表示识别正确，sum就是用来计数的。
 
 ### 梯度下降算法
 
-$\Delta \nabla\_b,\Delta \nabla\_w, \nabla\_b,\nabla\_w$  
-下面来看看梯度下降的代码update\_mini\_batch:
+$\Delta \nabla_b,\Delta \nabla_w, \nabla_b,\nabla_w$  
+下面来看看梯度下降的代码update_mini_batch:
 
 ```
 def update_mini_batch(self,mini_batch,eta):
@@ -203,7 +203,7 @@ self.biases=[b-(eta/len(mini_batch)) * nb for b,nb in zip(self.biases,nabla_b)]
 
 原始梯度下降是针对每个样本都计算出一个梯度，然后沿着这个梯度移动。
 
-而随机梯度下降是针对多个样本（一个mini\_batch）计算出一个平均梯度，然后这个梯度移动，那么这个epochs就是权值和偏置更新的次数了。
+而随机梯度下降是针对多个样本（一个mini_batch）计算出一个平均梯度，然后这个梯度移动，那么这个epochs就是权值和偏置更新的次数了。
 
 随机梯度下降学习算法的重点又在这个BP算法了：
 
@@ -232,8 +232,8 @@ activations.append(activation)
 delta=self.cost_derivative(activations[-1],y) * sigmoid_prime_vec(zs[-1])
 ```
 
-因为这里的$C=\frac12\sum\_j\(y\_j-a\_j\)^2$,（单个训练样本的损失函数），所以$\frac{\partial C}{\partial y\_j^L}=a\_j-y\_j$  
-于是下面的cost\_derivative就直接返回了这个式子。
+因为这里的$C=\frac 12 \sum_j(y_j-a_j)^2$,（单个训练样本的损失函数），所以$\frac{\partial C}{\partial y_j^L}=a_j-y_j$  
+于是下面的cost_derivative就直接返回了这个式子。
 
 这里我们使用了2个辅助函数：
 
@@ -247,7 +247,7 @@ def sigmoid_prime(z): #sigmoid函数的导数
 
 其中zs\[-1\]表示最后一层神经元的输入，上述delta对应BP算法中的式子：  
 $  
-\delta\_j^L=\frac{\partial C}{\partial y\_j^L}\sigma'z\_j^L  
+\delta_j^L=\frac{\partial C}{\partial y_j^L}\sigma'z_j^L  
 $  
 delta就是指最后一层的残差。代码接下来：
 
@@ -255,14 +255,14 @@ delta就是指最后一层的残差。代码接下来：
 nabla_b[-1]=delta #对应式子BP3：
 ```
 
-$\frac{\partial C}{\partial b\_j^L}=\delta\_j^l$
+$\frac{\partial C}{\partial b_j^L}=\delta_j^l$
 
 ```
 nabla_w[-1]=np.dot(delta,activations[-2].transpose())#对应式子BP4：
 ```
 
 $  
-\frac{\partial C}{\partial a\_{jk}^L}=a\_k^{l-1}\delta\_j^l  
+\frac{\partial C}{\partial a_{jk}^L}=a_k^{l-1}\delta_j^l  
 $  
 以上算的是最后一层的相关变量。下面是反向计算前一层的梯度根据最后一层的梯度。
 
@@ -316,13 +316,13 @@ sudo apt-get install python-h5py
 
 ## Layer
 
-layers模块包含了core、convolutional、recurrent、advanced\_activations、normalization、embeddings这几种layer。
+layers模块包含了core、convolutional、recurrent、advanced_activations、normalization、embeddings这几种layer。
 
-其中core里面包含了flatten\(CNN的全连接层之前需要把二维特征图flatten成为一维的\)、reshape（CNN输入时将一维的向量弄成二维的）、dense\(就是隐藏层，dense是稠密的意思\),还有其他的就不介绍了。convolutional层基本就是Theano的Convolution2D的封装。
+其中core里面包含了flatten(CNN的全连接层之前需要把二维特征图flatten成为一维的)、reshape（CNN输入时将一维的向量弄成二维的）、dense(就是隐藏层，dense是稠密的意思),还有其他的就不介绍了。convolutional层基本就是Theano的Convolution2D的封装。
 
 * Convolution1D
-  * `nb_filter`: Number of convolution kernels to use \(dimensionality of the output\). 
-  * `filter_length`: The extension \(spatial or temporal\) of each filter.
+  * `nb_filter`: Number of convolution kernels to use (dimensionality of the output). 
+  * `filter_length`: The extension (spatial or temporal) of each filter.
 * MaxPooling1D
   * `pool_length`: factor by which to downscale. 2 will halve the input. 
 
@@ -336,11 +336,11 @@ layers模块包含了core、convolutional、recurrent、advanced\_activations、
 
 ### Lambda层
 
-* keras.layers.core.Lambda\(function, output\_shape=None, arguments={}\)
+* keras.layers.core.Lambda(function, output_shape=None, arguments={})
   本函数用以对上一层的输入实现任何Theano/TensorFlow表达式
 
 * function：要实现的函数，该函数仅接受一个变量，即上一层的输出
-* output\_shape：函数应该返回的值的shape，可以是一个tuple，也可以是一个根据输入shape计算输出shape的函数
+* output_shape：函数应该返回的值的shape，可以是一个tuple，也可以是一个根据输入shape计算输出shape的函数
 * arguments：可选，字典，用来记录向函数中传递的其他关键字参数
   全连接网络
 
@@ -350,7 +350,7 @@ layers模块包含了core、convolutional、recurrent、advanced\_activations、
 keras.layers.core.TimeDistributedDense(output_dim, init='glorot_uniform', activation='linear', weights=None, W_regularizer=None, b_regularizer=None, activity_regularizer=None, W_constraint=None, b_constraint=None, bias=True, input_dim=None, input_length=None)
 ```
 
-为输入序列的每个时间步信号（即维度1）建立一个全连接层，当RNN网络设置为return\_sequence=True时尤其有用
+为输入序列的每个时间步信号（即维度1）建立一个全连接层，当RNN网络设置为return_sequence=True时尤其有用
 
 # Preprocessing
 
@@ -387,18 +387,18 @@ model = Sequential()
 
 #### Compilation
 
-* an `optimizer`. This could be the string identifier of an existing optimizer \(such as rmsprop or adagrad\), or an instance of the Optimizer class. See: optimizers.
-* a loss function. This is the objective that the model will try to minimize. It can be the string identifier of an existing loss function \(such as categorical\_crossentropy or mse\), or it can be an objective function. See: objectives.
-* a list of metrics. For any classification problem you will want to set this to metrics=\['accuracy'\]. A metric could be the string identifier of an existing metric \(only accuracy is supported at this point\), or a custom metric function.
+* an `optimizer`. This could be the string identifier of an existing optimizer (such as rmsprop or adagrad), or an instance of the Optimizer class. See: optimizers.
+* a loss function. This is the objective that the model will try to minimize. It can be the string identifier of an existing loss function (such as categorical_crossentropy or mse), or it can be an objective function. See: objectives.
+* a list of metrics. For any classification problem you will want to set this to metrics=\['accuracy'\]. A metric could be the string identifier of an existing metric (only accuracy is supported at this point), or a custom metric function.
   \`\`\`python
-    model.compile\(
+    model.compile(
   ```
     loss='binary_crossentropy',
     optimizer='adam',
     class_mode='binary',
   ```
 
-    \)
+    )
 
 ```
 # 优化器(Optimizer)
@@ -407,7 +407,7 @@ model = Sequential()
         Keras包含了很多优化方法。比如最常用的随机梯度下降法(SGD)，还有Adagrad、Adadelta、RMSprop、Adam等,一些新的方法以后也会被不断添加进来。
 ```
 
-keras.optimizers.SGD\(lr=0.01, momentum=0.9, decay=0.9, nesterov=False\)
+keras.optimizers.SGD(lr=0.01, momentum=0.9, decay=0.9, nesterov=False)
 
 ```
 上面的代码是SGD的使用方法，lr表示学习速率,momentum表示动量项，decay是学习速率的衰减系数(每个epoch衰减一次),Nesterov的值是False或者True，表示使不使用Nesterov momentum。其他的请参考文档。
@@ -435,7 +435,7 @@ epsilon :float>=0
 这里binary_crossentropy 和 categorical_crossentropy也就是logloss
 ```
 
-model.compile\(loss='mean\_squared\_error', optimizer='sgd'\)
+model.compile(loss='mean_squared_error', optimizer='sgd')
 
 ```
 这段代码已经见过很多次了。可以通过传递一个函数名。也可以传递一个为每一块数据返回一个标量的Theano symbolic function。而且该函数的参数是以下形式：
@@ -476,44 +476,44 @@ from keras.engine import Layer
 ### 使用theano/tensorflow的内置函数简单地编写激活函数
 ```
 
-def sigmoid\_relu\(x\):  
+def sigmoid_relu(x):  
     """  
-    f\(x\) = x for x&gt;0  
-    f\(x\) = sigmoid\(x\)-0.5 for x&lt;=0  
+    f(x) = x for x&gt;0  
+    f(x) = sigmoid(x)-0.5 for x&lt;=0  
     """  
-    return K.relu\(x\)-K.relu\(0.5-K.sigmoid\(x\)\)
+    return K.relu(x)-K.relu(0.5-K.sigmoid(x))
 
 ```
 ### 使用Lambda
 ```
 
-def lambda\_activation\(x\):  
+def lambda_activation(x):  
     """  
-    f\(x\) = max\(relu\(x\),sigmoid\(x\)-0.5\)  
+    f(x) = max(relu(x),sigmoid(x)-0.5)  
     """  
-    return K.maximum\(K.relu\(x\),K.sigmoid\(x\)-0.5\)
+    return K.maximum(K.relu(x),K.sigmoid(x)-0.5)
 
 ```
 ### 编写自己的layer（这个例子中参数theta,alpha1,alpha2是固定的超参数，不需要train，故没定义build）
 ```
 
-class My_activation\(Layer\):  
+class My_activation(Layer):  
     """  
-    f\(x\) = x for x&gt;0  
-    f\(x\) = alpha1  x for theta&lt;x&lt;=0  
-    f\(x\) = alpha2  x for x&lt;=theta  
+    f(x) = x for x&gt;0  
+    f(x) = alpha1  x for theta&lt;x&lt;=0  
+    f(x) = alpha2  x for x&lt;=theta  
     """  
-    def **init**\(self,theta=-5.0,alpha1=0.2,alpha2=0.1,\*\*kwargs\):  
+    def **init**(self,theta=-5.0,alpha1=0.2,alpha2=0.1,\*\*kwargs):  
         self.theta = theta  
         self.alpha1 = alpha1  
         self.alpha2 = alpha2  
-        super\(Myactivation,self\).\_\_init_\(_\*kwargs\)  
-    def call\(self,x,mask=None\):  
-        fx\_0 = K.relu\(x\) \#for x&gt;0  
-        fx\_1 = self.alpha1_x_K.cast\(x&gt;self.theta,K.floatx\(\)\)_K.cast\(x&lt;=0.0,K.floatx\(\)\) \#for theta&lt;x&lt;=0  
-        fx\_2 = self.alpha2_x_K.cast\(x&lt;=self.theta,K.floatx\(\)\)\#for x&lt;=theta  
-        return fx\_0+fx\_1+fx\_2  
-    def get\_output\_shape\_for\(self, input\_shape\):
+        super(Myactivation,self).__init_(_\*kwargs)  
+    def call(self,x,mask=None):  
+        fx_0 = K.relu(x) \#for x&gt;0  
+        fx_1 = self.alpha1_x_K.cast(x&gt;self.theta,K.floatx())_K.cast(x&lt;=0.0,K.floatx()) \#for theta&lt;x&lt;=0  
+        fx_2 = self.alpha2_x_K.cast(x&lt;=self.theta,K.floatx())\#for x&lt;=theta  
+        return fx_0+fx_1+fx_2  
+    def get_output_shape_for(self, input_shape):
 
 ```
     #we don't change the input shape
@@ -522,26 +522,26 @@ class My_activation\(Layer\):
 
 # alpha1,alpha2是可学习超参数
 
-class Trainable_activation\(Layer\):  
+class Trainable_activation(Layer):  
     """  
-    f\(x\) = x for x&gt;0  
-    f\(x\) = alpha1  x for theta&lt;x&lt;=0  
-    f\(x\) = alpha2  x for x&lt;=theta  
+    f(x) = x for x&gt;0  
+    f(x) = alpha1  x for theta&lt;x&lt;=0  
+    f(x) = alpha2  x for x&lt;=theta  
     """  
-    def **init**\(self,init='zero',theta=-5.0,\*\*kwargs\):  
-        self.init = initializations.get\(init\)  
+    def **init**(self,init='zero',theta=-5.0,\*\*kwargs):  
+        self.init = initializations.get(init)  
         self.theta = theta  
-        super\(Trainableactivation,self\).\_\_init_\(_\*kwargs\)  
-    def build\(self,input\_shape\):  
-        self.alpha1 = self.init\(input\_shape\[1:\],name='alpha1'\)\#init alpha1 and alpha2 using ''zero''  
-        self.alpha2 = self.init\(input\_shape\[1:\],name='alpha2'\)  
-        self.trainable\_weights = \[self.alpha1,self.alpha2\]  
-    def call\(self,x,mask=None\):  
-        fx\_0 = K.relu\(x\) \#for x&gt;0  
-        fx\_1 = self.alpha1_x_K.cast\(x&gt;self.theta,K.floatx\(\)\)_K.cast\(x&lt;=0.0,K.floatx\(\)\) \#for theta&lt;x&lt;=0  
-        fx\_2 = self.alpha2_x_K.cast\(x&lt;=self.theta,K.floatx\(\)\)\#for x&lt;=theta  
-        return fx\_0+fx\_1+fx\_2  
-    def get\_output\_shape\_for\(self, input\_shape\):
+        super(Trainableactivation,self).__init_(_\*kwargs)  
+    def build(self,input_shape):  
+        self.alpha1 = self.init(input_shape\[1:\],name='alpha1')\#init alpha1 and alpha2 using ''zero''  
+        self.alpha2 = self.init(input_shape\[1:\],name='alpha2')  
+        self.trainable_weights = \[self.alpha1,self.alpha2\]  
+    def call(self,x,mask=None):  
+        fx_0 = K.relu(x) \#for x&gt;0  
+        fx_1 = self.alpha1_x_K.cast(x&gt;self.theta,K.floatx())_K.cast(x&lt;=0.0,K.floatx()) \#for theta&lt;x&lt;=0  
+        fx_2 = self.alpha2_x_K.cast(x&lt;=self.theta,K.floatx())\#for x&lt;=theta  
+        return fx_0+fx_1+fx_2  
+    def get_output_shape_for(self, input_shape):
 
 ```
     #we don't change the input shape
@@ -552,10 +552,10 @@ class Trainable_activation\(Layer\):
 使用时：
 ```
 
-model.add\(Activation\(sigmoid\_relu\)\)  
-model.add\(Lambda\(lambda\_activation\)\)  
-model.add\(My\_activation\(theta=-5.0,alpha1=0.2,alpha2=0.1\)\)  
-model.add\(Trainable\_activation\(init='normal',theta=-5.0\)\)
+model.add(Activation(sigmoid_relu))  
+model.add(Lambda(lambda_activation))  
+model.add(My_activation(theta=-5.0,alpha1=0.2,alpha2=0.1))  
+model.add(Trainable_activation(init='normal',theta=-5.0))
 
 ```
 # 初始化（Initializations）
@@ -567,15 +567,15 @@ model.add\(Trainable\_activation\(init='normal',theta=-5.0\)\)
 ### ModelCheckpoint
 ```
 
-keras.callbacks.ModelCheckpoint\(filepath,verbose=0, save\_best\_only=False\)  
+keras.callbacks.ModelCheckpoint(filepath,verbose=0, save_best_only=False)  
 \`\`\`  
-用户每次epoch之后保存模型数据。如果save\_best\_only=True，则最近验证误差最好的模型数据会被保存下来。filepath是由epoch和logs的键构成的。比如filepath=weights.{epoch:02d}-{val\_loss:.2f}.hdf5，那么会保存很多带有epoch和val\_loss信息的文件；当然也可以是某个路径。
+用户每次epoch之后保存模型数据。如果save_best_only=True，则最近验证误差最好的模型数据会被保存下来。filepath是由epoch和logs的键构成的。比如filepath=weights.{epoch:02d}-{val_loss:.2f}.hdf5，那么会保存很多带有epoch和val_loss信息的文件；当然也可以是某个路径。
 
 ## history
 
 Returns a history object. Its `history` attribute is a record of  
         training loss values at successive epochs,  
-        as well as validation loss values \(if applicable\).
+        as well as validation loss values (if applicable).
 
 # Arguments
 
@@ -619,9 +619,9 @@ Returns a history object. Its `history` attribute is a record of
 
 这些层有三个关键字参数以施加正则项：
 
-* W\_regularizer：施加在权重上的正则项，为WeightRegularizer对象
-* b\_regularizer：施加在偏置向量上的正则项，为WeightRegularizer对象
-* activity\_regularizer：施加在输出上的正则项，为ActivityRegularizer对象
+* W_regularizer：施加在权重上的正则项，为WeightRegularizer对象
+* b_regularizer：施加在偏置向量上的正则项，为WeightRegularizer对象
+* activity_regularizer：施加在输出上的正则项，为ActivityRegularizer对象
 
 
 

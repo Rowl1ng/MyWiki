@@ -39,19 +39,19 @@ $$
 
 1. 负梯度方向，“速”非快
 
-   $$
-   d_k=-\frac {\nabla f(x_k)^T}{||\nabla f(x_k)||}
-   $$
+$$
+d_k=-\frac {\nabla f(x_k)^T}{||\nabla f(x_k)||}
+$$
 
-2. 一维搜索求$$\lambda_k$$，使得
+2. 一维搜索求$\lambda_k$，使得
 
 
-   $$
-   \begin{aligned}
-   \varphi(\lambda)=f(x_k+\lambda d_k) \\
-   f(x_k+\lambda_kd_k)=\min_{\lambda\geq 0}f(x_k+\lambda  d_k)
-   \end{aligned}
-   $$
+$$
+\begin{aligned}
+\varphi(\lambda)=f(x_k+\lambda d_k) \\
+f(x_k+\lambda_kd_k)=\min_{\lambda\geq 0}f(x_k+\lambda  d_k)
+\end{aligned}
+$$
 
 3. 最速下降法适用于寻优过程的前期迭代或作为间插步骤，当接近极值点时，宜选用收敛快的算法.
 
@@ -64,16 +64,16 @@ $$
 
 首先理解特征值：
 
-* 线性变换$$\mathcal L$$ 
-* $$n \times 1$$向量$$u$$ $$\Longrightarrow$$ 特征向量
-* 比例引子$$\lambda$$ $$\Longrightarrow$$ 特征值
+* 线性变换$\mathcal L$
+* $n \times 1$向量$u$ $\Longrightarrow$ 特征向量
+* 比例引子$\lambda$ $\Longrightarrow$ 特征值
 
   $$
   \mathcal Lu=\lambda u, u\neq 0
   $$
 
 
-  也就是经过一个线性变换后，在沿着$$u$$的方向上只发生了缩放，原来的方向不变，就好像这个方向是枚“定海神针”，牢牢定义了这个线性变换。
+  也就是经过一个线性变换后，在沿着$u$的方向上只发生了缩放，原来的方向不变，就好像这个方向是枚“定海神针”，牢牢定义了这个线性变换。
   ![](http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104515332-924434508.png)
   ![](http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104611192-1570042504.png)
   ![](http://images2015.cnblogs.com/blog/609274/201610/609274-20161005104718020-1578473912.png)
@@ -86,14 +86,14 @@ M=U \Sigma U^T
 $$
 
 
-* 第一步：旋转 $$U^T$$
-* 第二步：$$\Sigma$$对角矩阵，相当于进行缩放
-* 第三步：旋转 $$U$$，转回去
+* 第一步：旋转 $U^T$
+* 第二步：$\Sigma$对角矩阵，相当于进行缩放
+* 第三步：旋转 $U$，转回去
 
 #### 什么是共轭
 
 * $G$:  $n \times n$对称正定矩阵
-* ${p\_0,p\_1,\ldots,p\_k}$: 非零向量组合
+* ${p_0,p_1,\ldots,p_k}$: 非零向量组合
 
 若满足
 
@@ -108,7 +108,7 @@ $$
 * 所谓共轭方向方法即是所有使用共轭向量作为梯度更新方向的算法。
 * 共轭梯度算法则是在迭代过程中利用梯度下降法来更新共轭向量组。
 
-从任意点$x\_0$出发，沿任意下降方向$p\_i$做直线搜索得到$x\_1$，接着沿与$p\_i$共轭的$p\_j$方向搜索，反复迭代
+从任意点$x_0$出发，沿任意下降方向$p_i$做直线搜索得到$x_1$，接着沿与$p_i$共轭的$p_j$方向搜索，反复迭代
 
 ### 2. Newton Method
 
@@ -134,7 +134,7 @@ The genuinely quadratic durface is the quadratic approximation to the true surfa
 
 
 $$
-f(x)=\frac 12 x^TAx+b^Tx
+f(x)=\frac 12 x^T Ax+b^T x
 $$
 
 
@@ -206,7 +206,7 @@ $$
 (Broyden-Fletcher-Goldfarb-Shanno算法) 改进了每一步对Hessian的近似。
 
 **L-BFGS**:  
-限制内存的BFGS介于BFGS和共轭梯度之间: 在非常高的维度 (&gt; 250) 计算和翻转的Hessian矩阵的成本非常高。L-BFGS保留了低秩的版本。此外，scipy版本, [scipy.optimize.fmin_l_bfgs_b()](http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin_l_bfgs_b.html#scipy.optimize.fmin_l_bfgs_b), 包含箱边界:
+限制内存的BFGS介于BFGS和共轭梯度之间: 在非常高的维度 (\gt 250) 计算和翻转的Hessian矩阵的成本非常高。L-BFGS保留了低秩的版本。此外，scipy版本, [scipy.optimize.fmin_l_bfgs_b()](http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin_l_bfgs_b.html#scipy.optimize.fmin_l_bfgs_b), 包含箱边界:
 
 #### Conjugate Gradients(CG)
 
@@ -222,8 +222,8 @@ $$
 
 ### 3.线性搜索
 
-* 搜索方向$d\_k$
-* 步长因子$\alpha\_k$
+* 搜索方向$d_k$
+* 步长因子$\alpha_k$
 
   $$
   \begin{aligned}
@@ -232,7 +232,7 @@ $$
   \end{aligned}
   $$
 
-目标就转化成了$\phi(\alpha\_k)&lt;\phi(0)$。
+目标就转化成了$\phi(\alpha_k) \lt \phi(0)$。
 
 #### 精确线性搜索
 
@@ -242,13 +242,13 @@ $$
 $$
 
 
-目标在于沿着$d\_k$方向让目标函数达到极小。这样得到的$\alpha\_k$叫**精确步长因子**。
+目标在于沿着$d_k$方向让目标函数达到极小。这样得到的$\alpha_k$叫**精确步长因子**。
 
 * $A$ : 半正定对称矩阵
 
 
 $$
-f(x)=\frac 12 x^TAx+b^Tx
+f(x)=\frac 12 x^T Ax+b^Tx
 $$
 
 
@@ -293,35 +293,35 @@ L(x,\mathbf \lambda)=f(x)-\sum_{i=1}^m\lambda_i c_i(x)
 $$
 
 
-* $\mathbf c(x)=(c\_1(x),\ldots,c\_n(x))^\top$
-* $\mathbf \lambda=(\lambda\_1,\ldots,\lambda\_n)^\top$
-* $\nabla\_xL(x,\mathbf \lambda)=\nabla f(x)-\mathbf \lambda^\top \nabla \mathbf c(x)=0$
-* $\nabla\_\lambda L(x,\mathbf \lambda)=-\mathbf c(x)=0$
+* $\mathbf c(x)=(c_1(x),\ldots,c_n(x))^\top$
+* $\mathbf \lambda=(\lambda_1,\ldots,\lambda_n)^\top$
+* $\nabla_xL(x,\mathbf \lambda)=\nabla f(x)-\mathbf \lambda^\top \nabla \mathbf c(x)=0$
+* $\nabla_\lambda L(x,\mathbf \lambda)=-\mathbf c(x)=0$
 
 ![](http://www.scipy-lectures.org/_images/plot_constraints_1.png)
 
-$-1 &lt; x\_1 &lt; 1$  
-$-1 &lt; x\_2 &lt; 1$
+$-1 \lt x_1 \lt 1$  
+$-1 \lt x_2 \lt 1$
 
 ### 1. 信赖域
 
-* 当前点，用二次函数近似当前函数：$q\_k(\cdot)\approx f(x)$
-* 求解$q\_k$极小值点作为下一次试探点
+* 当前点，用二次函数近似当前函数：$q_k(\cdot)\approx f(x)$
+* 求解$q_k$极小值点作为下一次试探点
 * 先确定区域$\Delta k$，可选不同范数
 
-  * 无穷范数：$$\max{\|x\_i\|}$$ 
+  * 无穷范数：$\max{\|x_i\|}$
 
-* $s\_k^c=-\tau\_k \frac{\Delta k}{\|\|g\_k\|\|}g\_k$
+* $s_k^c=-\tau_k \frac{\Delta k}{||g_k||}g_k$
 
-* $\tau\_k=\begin{cases}
-  1, &g\_k^\top B\_kg\_k\leq0\cr \min{\frac{\|\|g\_k\|\|^3}{\Delta kg\_k^\top B\_kg\_k},1}, &otherwise
+* $\tau_k=\begin{cases}
+  1, &g_k^\top B_kg_k\leq 0\cr \min{\frac{||g_k||^3}{\Delta kg_k^\top B_kg_k},1}, &otherwise
   \end{cases}$
 
 动态调整
 
 #### 折线法
 
-$\Delta\_k=\frac 12$，第$k$步求解子问题时用双折线法求解
+$\Delta_k=\frac 12$，第$k$步求解子问题时用双折线法求解
 
 
 $$
@@ -329,11 +329,16 @@ f(x)=x_1^4+x_1^2+x_2^2
 $$
 
 
-由于$\mathbf x\_k=(1,1)^\top$，则$g\_k=\nabla f(\mathbf x\_k)=\left\[  
+由于$\mathbf x_k=(1,1)^\top$，则
+
+```
+$g_k=\nabla f(\mathbf x_k)=\left[  
 \begin{matrix}  
-4x\_1^3+2x\_1\2x\_2  
+4x_1^3+2x_1\2x_2  
 \end{matrix}  
-\right\]$，从而得到$g\_k=(6,2)^\top$。  
+\right]$
+```
+，从而得到$g_k=(6,2)^\top$。  
 同理可得：
 
 
@@ -361,7 +366,7 @@ s_k^c=-\frac {||g_k||_2^2}{g_k^\top G_kg_k} g_k\approx(-0.469,-0.156)^\top
 $$
 
 
-由于$\|\|s\_k^c\|\|\cong 0.496 &lt; \Delta\_k$，从而需要计算牛顿步$s\_k^{\hat N}$，有
+由于$||s_k^c||\cong 0.496 \Delta_k$，从而需要计算牛顿步$s_k^{\hat N}$，有
 
 
 $$
@@ -378,7 +383,7 @@ s_k^{\hat N}=\eta s_k^N \cong \left[
 $$
 
 
-由于$\|\|s\_k^{\hat N}\|\|&gt;\Delta\_k$，故取双折线步长为$s\_k=s\_k^c+\lambda(s\_k^{\hat N}-s\_k^c),\lambda \in (0,1)$，使得$\|s\_k^{\hat N}\|\|=\Delta\_k$。  
+由于$\|\|s_k^{\hat N}\|\|\gt\Delta_k$，故取双折线步长为$s_k=s_k^c+\lambda(s_k^{\hat N}-s_k^c),\lambda \in (0,1)$，使得$\|s_k^{\hat N}\|\|=\Delta_k$。  
 解二次方程：
 
 
@@ -410,23 +415,28 @@ $$
 
 ### 2. 积极集法
 
-* $y\in {y\|\nabla\_ic(x^\*)^\top y=0,\forall i}$在$c(x)=0$这个超平面上，等价于在无约束情况$y\in \mathbb R^n$。
+```
+* $y\in {y|\nabla_ic(x^*)^\top y=0,\forall i}$在$c(x)=0$这个超平面上，等价于在无约束情况$y\in \mathbb R^n$。
 * 用脚标的集合表示哪些到达边界约束。
-  * $x^_$处的积极集：$I(x^_)={i\|c_i(x^)=0}\Longleftrightarrow \exists \lambda\_0,\ldots,\lambda\_n\geq0  s.t. \lambda\_0\nabla f(x^)-\sum_{i=1}^m \lambda\_i^_ \nabla\_ic\_i(x^_)=0$ 
-  * 如果$\nabla c_i(x^)(i\in f(x^))$线性无关，则存在向量$\mathbf \lambda^$，使得$\nabla f(x^)-\sum_{i=1}^m \lambda\_i^_ \nabla\_ic\_i(x^_)=0,\lambda\_i^_\geq0对偶变量,\lambda\_i^_c\_i(x^\*)=0互补松弛条件$
-  * 带约束问题$\rightarrow$方程组求解
-* 目标函数下降方向集合$F={d\|\nabla f(x)^\top d&lt;0}$
-* 可行方向：$D={d\|\nabla c\_i(x)^\top d\geq0,i\in I(x)}$
 
+  * $x^_$处的积极集：$I(x^_)={i\|c_i(x^)=0}\Longleftrightarrow \exists \lambda_0,\ldots,\lambda_n\geq0  s.t. \lambda_0\nabla f(x^)-\sum_{i=1}^m \lambda_i^_ \nabla_ic_i(x^_)=0$ 
+  * 如果$\nabla c_i(x^)(i\in f(x^))$线性无关，则存在向量$\mathbf \lambda^$，使得$\nabla f(x^)-\sum_{i=1}^m \lambda_i^_ \nabla_ic_i(x^_)=0,\lambda_i^_\geq0$对偶变量,$\lambda_i^_c_i(x^*)=0$互补松弛条件$
+
+  * 带约束问题$\rightarrow$方程组求解
+* 目标函数下降方向集合$F={d\|\nabla f(x)^\top d\lt0}$
+* 可行方向：$D={d|\nabla c_i(x)^\top d\geq0,i\in I(x)}$
+```
 
 $$
 \begin{cases}
-\nabla f(x)^\top d<0\cr -\nabla c_i(x)^\top d\leq0
+\nabla f(x)^\top d<0\cr -\nabla c_i(x)^\top d\leq 0
 \end{cases}\text{无解}\Longleftrightarrow F_{x^*}\cap D_{x^*}=\phi
 $$
 
 
-> Gordan定理：$\mathbf A\mathbf x&gt;0$有解$\Longleftrightarrow$不存在$\mathbf y\geq0$使得$\mathbf A^\top \mathbf y=0$
+```
+Gordan定理：$\mathbf A\mathbf x \gt 0$有解$\Longleftrightarrow$不存在$\mathbf y \geq 0$使得$\mathbf A^\top \mathbf y=0$
+```
 
 举例：用积极集法求解
 
@@ -444,7 +454,8 @@ $$
 
 
 $$
-\min x_1^2-x_1x_2+2x_2^2-x_1-10x_2$$
+\min x_1^2-x_1x_2+2x_2^2-x_1-10x_2
+$$
 $$
 s.t. 3x_1+2x_2\leq 6,-x_1\leq0,-x_2\leq 0
 $$
@@ -488,9 +499,9 @@ b=
 \end{aligned}
 $$
 
-
-计算$\nabla f(\mathbf x)=(2x\_1-x\_2-1,4x\_2-x\_1-10)^\top$。因为$\mathbf x^1=(\frac 27,\frac {18}7)^\top$，所以有效约束$I(\mathbf x^1)={1}$，$\nabla f(\mathbf x^1)=(-3,0)^\top$，相应的等式约束问题为
-
+```
+计算$\nabla f(\mathbf x)=(2x_1-x_2-1,4x_2-x_1-10)^\top$。因为$\mathbf x^1=(\frac 27,\frac {18}7)^\top$，所以有效约束$I(\mathbf x^1)={1}$，$\nabla f(\mathbf x^1)=(-3,0)^\top$，相应的等式约束问题为
+```
 
 $$
 \min d_1^2-d_1d_2+2d_2^2-d_1-10d_2, 
@@ -524,19 +535,22 @@ d_1\\ d_2\\ \lambda_1
 \end{aligned}
 $$
 
-
+```
 求解方程组得到  
-$d\_1=\frac 12,d\_2=\frac 94,\lambda\_1=\frac 34$，即$\mathbf \lambda=(\frac 34,0,0)^\top$，$\mathbf x^2=(\frac 12,\frac 94)^\top$是最优解。
+$d_1=\frac 12,d_2=\frac 94,\lambda_1=\frac 34$，即$\mathbf \lambda=(\frac 34,0,0)^\top$，$\mathbf x^2=(\frac 12,\frac 94)^\top$是最优解。
+```
 
 ### 3. 直接法
 
-1. $x_1\in \mathbb R^n,d\_1,\ldots,d\_n线性无关$
-2. $x_1$沿$d_1$线性搜索得$x\_2$，即$x\_2$是$f(x)$在${z\|z=x\_1+\alpha\_1 d\_1}$上的极小值点
-3. $\beta\_1,\ldots,\beta\_n,\nu^{(1)}=x\_2+\beta\_2d\_2$，令$d\_2=\nu^{(2)}-x\_2$，$\nu^{(2)}$是$f(x)$在${z\|z=\nu^{(1)}+\alpha\_1 d\_1}$上的极小值点
-   * $\nabla f(\nu^{(1)})^\top d\_1=0,\nabla f(x\_2)^\top d\_1=0$ 
-   * $d\_2^\top Hd\_1=0$(共轭，$d\_2=\nu^{(2)}-x\_2$)
-4. 令$d\_3=\nu^{(3)}-x\_3$，则$\nu^{(3)}$是$f(x)$在${z\|z=x\_1+\alpha\_1 d\_1+\alpha\_2 d\_2}$上的极小值点
-5. $x_{k+1}$是$f(x)$在${z\|z=x\_1+\sum_{i=1}^k\alpha_i d\_i}$上的极小值点，令$d_{k+1}=\nu^{(k+1)}-x\_{k+1}$
+```
+1. $x_1\in \mathbb R^n,d_1,\ldots,d_n线性无关$
+2. $x_1$沿$d_1$线性搜索得$x_2$，即$x_2$是$f(x)$在${z\|z=x_1+\alpha_1 d_1}$上的极小值点
+3. $\beta_1,\ldots,\beta_n,\nu^{(1)}=x_2+\beta_2d_2$，令$d_2=\nu^{(2)}-x_2$，$\nu^{(2)}$是$f(x)$在${z\|z=\nu^{(1)}+\alpha_1 d_1}$上的极小值点
+   * $\nabla f(\nu^{(1)})^\top d_1=0,\nabla f(x_2)^\top d_1=0$ 
+   * $d_2^\top Hd_1=0$(共轭，$d_2=\nu^{(2)}-x_2$)
+4. 令$d_3=\nu^{(3)}-x_3$，则$\nu^{(3)}$是$f(x)$在${z\|z=x_1+\alpha_1 d_1+\alpha_2 d_2}$上的极小值点
+5. $x_{k+1}$是$f(x)$在${z\|z=x_1+\sum_{i=1}^k\alpha_i d_i}$上的极小值点，令$d_{k+1}=\nu^{(k+1)}-x_{k+1}$
+```
 
 ## Reference
 

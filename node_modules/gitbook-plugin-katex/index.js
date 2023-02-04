@@ -27,7 +27,20 @@ module.exports = {
                 var output = katex.renderToString(tex, {
                     displayMode: !isInline
                 });
-
+                return output;
+            }
+        },
+        math_inline: {
+            shortcuts: {
+                parsers: ["markdown", "asciidoc", "restructuredtext"],
+                start: "$",
+                end: "$"
+            },
+            process: function(blk) {
+                var tex = blk.body;
+                var output = katex.renderToString(tex, {
+                    displayMode: false
+                });
                 return output;
             }
         }

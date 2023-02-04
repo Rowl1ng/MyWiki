@@ -22,7 +22,8 @@ Replacing the squared error by an absolute value makes the neural network try to
 
 分类交叉熵损失（Categorical Cross-Entropy Loss）。
 
-**交叉熵（cross entropy）目标函数 **: when y is a **discrete** label, i.e., for classification problems, other loss functions such as the **Bernoulli negative log-likelihood** have been found to be more appropriate than the squared error. ($y\in{ \left{ 0,1 \right}  }$)
+**交叉熵（cross entropy）目标函数 **: 
+when y is a **discrete** label, i.e., for classification problems, other loss functions such as the **Bernoulli negative log-likelihood** have been found to be more appropriate than the squared error. ($y\in{ { 0,1 }  }$)
 
 
 $$

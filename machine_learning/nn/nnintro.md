@@ -262,10 +262,10 @@ $$
 
 对训练样例$(x,y)$,若当前感知机的输出为$\hat y$,则感知机权重将这样调整：
 $
-\begin{eqnarray}
+\begin{aligned}
 w_i \leftarrow w_i+\Delta w_i  \\
 \Delta w_i=\eta(y-\hat y)x_i
-\end{eqnarray}
+\end{aligned}
 $
 其中$\eta \in (0,1)$称为学习率（learning rate），通常设置一个较小正数，如0.1.
 
