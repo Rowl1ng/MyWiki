@@ -24,12 +24,14 @@ Github : [CRF-RNN for Semantic Image Segmentation][5]
 
 ### Iterable Mean-field = RNN
 
-- $$Q_{in}$$：an estimation marginal probability from the previous iteration:
+- $Q_{in}$：an estimation marginal probability from the previous iteration:
 
 $$
+\begin{aligned}
 f_{\theta}(U,Q_{in},I) \\
 \theta=\{\omega^{(m)},\mu(l,l')\},\\
-m\in \{1,\dots,M\},l,l' \in \{l_1,\dots,l_L\}
+m\in \{1,\ldots,M\},l,l' \in \{l_1,\ldots,l_L\}
+\end{aligned}
 $$
 
 迭代结构等同于RNN，假设迭代T次：

@@ -54,33 +54,35 @@ Softmax 函数通常被用于将原始分数（raw score）的矢量转换成用
   p=softmax(a)\Longleftrightarrow { p }_{ i }=\frac { { e }^{ { a }_{ i } } }{ \sum { _{ j }^{  }{ { e }^{ { a }_{ j } } } }  }
   $$
 
-* consider the gradient with respect to the scores $$a$$.
+* consider the gradient with respect to the scores $a$.
 
   $$
-  \frac { ∂ }{ ∂{ a }_{ k } } { L }_{ NLL }(p,y)=\frac { ∂ }{ ∂{ a }_{ k } } (−log{ p }_{ y })=\frac { ∂ }{ ∂{ a }_{ k } } ({ −a }_{ y }+log\sum _{ j }^{  }{ { e }^{ { a }_{ j } } } )\\ ={ −1 }_{ y=k }+\frac { { e }^{ { a }_{ k } } }{ \sum _{ j }^{  }{ { e }^{ { a }_{ j } } }  } ={ p }_{ k }-{1}_{y=k}
+  \begin{aligned}
+  \frac { \delta }{ \delta{ a }_{ k } } { L }_{ NLL }(p,y)=\frac { \delta }{ \delta{ a }_{ k } } (-log{ p }_{ y })=\frac { \delta }{ \delta{ a }_{ k } } ({ -a }_{ y }+log\sum _{ j }^{  }{ { e }^{ { a }_{ j } } } )\\ ={ -1 }_{ y=k }+\frac { { e }^{ { a }_{ k } } }{ \sum _{ j }^{  }{ { e }^{ { a }_{ j } } }  } ={ p }_{ k }-{1}_{y=k}
+  \end{aligned}
   $$
 
 
   or
 
   $$
-  \frac { ∂ }{ ∂{ a }_{ k } } { L }_{ NLL }(p,y)=(p-{e}_{y})
+  \frac { \delta }{ \delta{ a }_{ k } } { L }_{ NLL }(p,y)=(p-{e}_{y})
   $$
 
 
 在实现softmax函数的时候，为了防溢出有一个小trick：减去最大值。softmax函数如下：
 $$
-f(x)_i=\frac{e^{x_i}}{\sum_{j=1}^ne^{x_j}},j=1,2,\dots,n
+f(x)_i=\frac{e^{x_i}}{\sum_{j=1}^ne^{x_j}},j=1,2,\ldots,n
 $$
 
 通常情况下，计算softmax函数值不会出现什么问题，但是，当某些情况发生时，计算函数值就出问题了：
 
- - $$c$$极其大，导致分子计算$$e^c$$时上溢出
- - $$c$$ 为负数，且$$|c|$$很大，此时分母是一个极小的正数，有可能四舍五入为0，导致下溢出
+ - $c$极其大，导致分子计算$e^c$时上溢出
+ - $c$ 为负数，且$|c|$很大，此时分母是一个极小的正数，有可能四舍五入为0，导致下溢出
 
-解决方法是，令$$M=max(x_i),i=1,2,⋯,n$$，即$ M$ 为所有 $$x_i$$ 中最大的值，那么我们只需要把算 $$f(x)_i$$的值，改为计算$$f(x_i−M)$$的值，就可以解决上溢出、下溢出的问题了，并且，计算结果理论上仍然和 $$f(x)_i$$保持一致。
+解决方法是，令$M=max(x_i),i=1,2,⋯,n$，即$ M$ 为所有 $x_i$ 中最大的值，那么我们只需要把算 $f(x)_i$的值，改为计算$f(x_i-M)$的值，就可以解决上溢出、下溢出的问题了，并且，计算结果理论上仍然和 $f(x)_i$保持一致。
 
-在实现时也犯了一个低级错误：激活函数一开始弄错成了$$1／1-e^{-x}$$，发现交叉熵是26上下，忽略了全蒙（weight、bias全零）情况是$$\log(250)\approx 5$$。
+在实现时也犯了一个低级错误：激活函数一开始弄错成了$1／1-e^{-x}$，发现交叉熵是26上下，忽略了全蒙（weight、bias全零）情况是$\log(250)\approx 5$。
 
 
 

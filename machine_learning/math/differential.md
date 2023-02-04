@@ -71,20 +71,24 @@ $$(a^x)'=\ln a \cdot a^x$$
 
 一般の $$f(x) = a^x$$のような関数に対しては、$$a^x = e^{x \cdot log_e a}$$ という式変形を行って、$$f'(x)=\log_e a \cdot e^{x \cdot \log_e a} = \log_e a \cdot a^x$$ のように計算します（分からない人は合成関数の微分と対数関数の公式を確認してください）。
 
-$$e$$を底とする対数関数 $$\log_e x$$はよく使うので特別に自然対数と呼ばれていて、 $$\ln x$$のように書きます。（底を省略して単に $$\log x$$と書く場合もありますが、底を省略した場合の底は分野によってバラバラで、$$e$$や10や2などの可能性があります。混乱を避けるため私は自然対数を $$\ln$$と表記することに決めています。）
+$$e$$を底とする対数関数 $$\log_e x$$はよく使うので特別に自然対数と呼ばれていて、 $$\ln x$$のように書きます。（底を省略して単に $$\log x$$と書く場合もありますが、底を省略した場合の底は分野によってバラバラで、$$e$$や10や2などの可能性があります。混乱を避けるため私は自然対数を $\ln$と表記することに決めています。）
 
-また、$$e^x$$のことを $$\exp{x}$$ のように書くことも多いです。
+また、$$e^x$$のことを $\exp{x}$ のように書くことも多いです。
 
 これらの表記を理解すれば $$(a^x)'=\ln a \cdot a^x$$ の意味も分かると思います。
 
 ところで、 $$f'(x)=e^x$$  になるような都合の良い数は本当に存在するのでしょうか？$$e$$がどんな数なのか調べるために $$f(x)=a^x$$ の微分を定義通り計算してみることにします。  
 $$(a^x)' = \lim_{h \to 0 } \frac{a^{x+h}-a^x}{h} = a^x \lim_{h \to 0} \frac{a^h-1}{h}$$  
 ここで $$\frac{1}{t} = a^h-1$$ となるような $$t$$ を使うと、$$h= \log_a (1+\frac{1}{t})$$ となります。また $$\lim_{h \to 0}$$ は $$\lim_{t \to \infty}$$ に置き換えられます。よって、  
-$$(a^x)' =~ a^x \lim_{h \to 0} \frac{a^h-1}{h} \\
+$$
+\begin{aligned}
+(a^x)' =~ a^x \lim_{h \to 0} \frac{a^h-1}{h} \\
 = a^x \lim_{t \to \infty} \frac{1}{t \log_a (1+\frac{1}{t})} \\
 = a^x \lim_{t \to \infty} \frac{1}{\log_a (1+\frac{1}{t})^t} \\
-= a^x \frac{1}{\log_a \lim_{t \to \infty} (1+\frac{1}{t})^t} $$  
-が成り立ちます。よって $$(a^x)'=a^x$$ となるためには$$a =  \lim_{t \to \infty} (1+\frac{1}{t})^t$$ であればよいことが分かります。この $$\lim_{t \to \infty} (1+\frac{1}{t})^t$$ が$$e$$の定義となります。
+= a^x \frac{1}{\log_a \lim_{t \to \infty} (1+\frac{1}{t})^t} 
+\end{aligned}
+$$  
+が成り立ちます。よって $(a^x)'=a^x$ となるためには$$a =  \lim_{t \to \infty} (1+\frac{1}{t})^t$$ であればよいことが分かります。この $$\lim_{t \to \infty} (1+\frac{1}{t})^t$$ が$$e$$の定義となります。
 
 （参考: ネイピア数 e をいかにして自然に導入するか [http://tsujimotter-sub.hatenablog.com/entry/2015/08/10/015436）](http://tsujimotter-sub.hatenablog.com/entry/2015/08/10/015436）)
 
@@ -96,9 +100,12 @@ $$(\ln x)' = \frac{1}{x}$$
 となります。
 
 定義に従って計算すると  
-$$(\log_a x)' = \lim_{h \to 0} \frac{\log_a(x+h)-\log_a x}{h} \\
+$$\begin{aligned}
+(\log_a x)' = \lim_{h \to 0} \frac{\log_a(x+h)-\log_a x}{h} \\
 = \lim_{h \to 0} \frac{1}{x} \log_a(1+\frac{h}{x})^{\frac{h}{x}} \\
-= \frac{1}{x}\log_a e $$  
+= \frac{1}{x}\log_a e 
+\end{aligned}
+$$  
 となるので成立します。
 
 ### 微分と極値
@@ -110,12 +117,12 @@ $$(\log_a x)' = \lim_{h \to 0} \frac{\log_a(x+h)-\log_a x}{h} \\
 
 ## 偏微分
 
-複数の変数を入力とする関数を多変数関数と呼びます。多変数関数についてある一つの変数に注目して微分したものを偏微分と呼び、$$\frac{\partial f}{\partial x}$$ のように書きます。
+複数の変数を入力とする関数を多変数関数と呼びます。多変数関数についてある一つの変数に注目して微分したものを偏微分と呼び、$\frac{\partial f}{\partial x}$ のように書きます。
 
 例:  
-$$f(x, y) = x^2+xy+y^3$$ を$$x$$について偏微分すると、  
-$$\frac{\partial f}{\partial x} = 2x + y$$  
-となります。このとき$$y$$は定数のように扱うのがポイントです。$$y$$についての偏微分は  
-$$\frac{\partial f}{\partial y} = x + 3y^2$$  
+$f(x, y) = x^2+xy+y^3$ を$x$について偏微分すると、  
+$\frac{\partial f}{\partial x} = 2x + y$ 
+となります。このとき$y$は定数のように扱うのがポイントです。$y$についての偏微分は  
+$\frac{\partial f}{\partial y} = x + 3y^2$  
 です。
 

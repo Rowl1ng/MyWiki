@@ -6,7 +6,7 @@
         }
     },
     "plugins": [
-                "mathjax",
+                "katex",
                 "expandable-chapters-small",
                 "anchor-navigation-ex@0.1.8",
                 "todo",

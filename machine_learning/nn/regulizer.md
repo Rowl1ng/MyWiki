@@ -10,16 +10,16 @@ f(\mathbf x)=\sum _{i=0}^n w_i \varphi _i(\mathbf w_i ^\mathrm{T}\mathbf x)$$，
 
 ### （1）
 
-输入信号：$$\mathbf x_i \in \mathbb R^m, i=1,2,\dots ,N$$
-预期输出：$$d_i \in \mathbb R ,i=1,2,\dots ,N$$
+输入信号：$\mathbf x_i \in \mathbb R^m, i=1,2,\ldots ,N$
+预期输出：$d_i \in \mathbb R ,i=1,2,\ldots ,N$
 
 #### 感知器网络:
 ![image_1akks50c01qel9hmrs8rb1192sp.png-205kB][1]
 #### 广义正则化网络:
 ![image_1akkrfrb7ksfa9b12bn19jk1agm1j.png-212kB][2]
 
-- 输入层：共$$m$$个结点，$$m$$为输入向量$$\mathbf x$$的维数。
-- 隐藏层：共$$N$$个结点，每一个数据点$$\mathbf x_i$$，$$i=1,2,\dots ,N$$都对应一个隐藏层结点，$$N$$为样本数量。第$$i$$个结点的输出为$$G(\mathbf x,\mathbf x_i)$$。
+- 输入层：共$m$个结点，$m$为输入向量$\mathbf x$的维数。
+- 隐藏层：共$N$个结点，每一个数据点$\mathbf x_i$，$$i=1,2,\ldots ,N$$都对应一个隐藏层结点，$$N$$为样本数量。第$$i$$个结点的输出为$$G(\mathbf x,\mathbf x_i)$$。
 - 输出层：和隐藏层全连接的单个线性单元。
 
 ### （2）

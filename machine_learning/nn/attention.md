@@ -114,7 +114,7 @@ $$
  相当于做两次BiRNN：横向和纵向，再concate
 
  
-
+```
  $$
 
  a\_i=
@@ -136,6 +136,7 @@ $$
 \right)
 
  $$
+```
 
 - concate: forward+backward :
 

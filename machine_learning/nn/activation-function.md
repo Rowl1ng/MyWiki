@@ -4,12 +4,12 @@
 
 由于激活函数可用来限制神经元的输入输出振幅，它也称为压制函数，因为它的输出信号压制（限制）到允许范围之内的一定值。
 
-* affine transformation $$a = b+Wx$$, elementwise
+* affine transformation $a = b+Wx$, elementwise
 
 ![](http://upload-images.jianshu.io/upload_images/1667471-6d3b43bce94b33de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
   $$
-  h=\phi (a)⇔{ h }_{ i }=\phi ({ a }_{ i })=\phi ({ b }_{ i }+{ W }_{ i,: }x)
+  h=\phi (a)\leftrightarrow { h }_{ i }=\phi ({ a }_{ i })=\phi ({ b }_{ i }+{ W }_{ i,: }x)
   $$
 
 
@@ -62,7 +62,7 @@ P(t)=\frac 1{1+e^{-t}}
 $$
 
 Logistic函数也称逻辑激活函数（Logistic activation function）可以看作是对阶跃函数的平滑化拟合。
-- 计算sigmoid函数的导数非常简单。$$f'(x)=f(x)(1-f(x))$$
+- 计算sigmoid函数的导数非常简单。$f'(x)=f(x)(1-f(x))$
 - 最常用于二元分类问题。
 - 梯度消失问题。在一定epoch数目之后，网络拒绝学习，或非常缓慢地学习，因为输入（X）导致输出（Y）中非常小的改动。这一函数更容易碰到后续层的饱和问题，导致训练变得困难。
 

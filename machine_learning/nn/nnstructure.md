@@ -26,6 +26,7 @@ $$
 $f()$ is the \emph{activation function}.It defines the output of a neuron in terms of
 the induced local field $net$ .
 
+```
 $$
 \xymatrix {
  %x_{0}=+1 \ar[ddr]|(0.6){w_{j0}} &  &\\
@@ -34,6 +35,7 @@ $$
  x
 }
 $$
+```
 
 For example:
 
@@ -41,7 +43,7 @@ $$
 net_{k}=\sum_{j=1}^{n_{H}}y_{i}w_{kj}+w_{k0}=\sum_{j=0}^{n_{H}}x_{i}w_{ji}=w_{k}^{t}y
 $$
 
-$$n_{H}$$is the number of hidden layers.\\
+$n_{H}$is the number of hidden layers.\\
 
 
 So:
@@ -62,14 +64,16 @@ direction of search in weight space for the synaptic weight $$ w_{ji}$$
 Learning:
 
 $$
+\begin{aligned}
 \mathcal T =\{ x(n),d(n)\}_{n=1}^{N}\\
 e_{j}(n)=d_{j}(n)-y_{j}(n)
+\end{aligned}
 $$
 
 the instantaneous error energy of neuron $j$ is defined by
 
 $$
-J(w)=\frac 12 \sum_{k=1}^{c}(e_{k})^{2}=\frac 12||t-\delta||^{2} \\
+J(w)=\frac 12 \sum_{k=1}^{c}(e_{k})^{2}=\frac 12||t-\delta||^{2} 
 $$
 In the batch method of supervised learning, adjustments to the synaptic weights of the
 multilayer perceptron are performed \emph{after} the presentation of all the %N% examples in the
@@ -79,14 +83,18 @@ for batch learning is defined by the average error energy $J(w)$.
 - firstly define the training bias of output layer:
 
 $$
+\begin{aligned}
 \Delta w=-\eta\frac {\partial J(w)}{\partial w} \\
 w(m+1)=w(m)+/delta w(m)
+\end{aligned}
 $$
 
 $$
+\begin{aligned}
 \frac {\partial J}{\partial w_{kj}}=\frac {\partial J}{\partial net_{k}}\frac {\partial net_{k}}{\partial w_{kj}} \\
 \frac {\partial J}{\partial net_{k}}= \frac {\partial J}{\partial \delta _{k}}\frac {\partial \delta _{k}}{\partial J}=-(t_{k}-\delta _{k})f'(net_{k}) \\
 \Delta w_{kj}=\eta \frac {\partial J}{\partial net_{k}}=\eta (t_{k}-\delta _{k}))f'(net_{k})y_{j} 
+\end{aligned}
 $$
 
 - input->hidden
@@ -111,7 +119,7 @@ $$
 论文：Backpropagation Through Time: What It Does and How to Do It
 
 
-给定训练集$$D=\{(x_1,y_1)，(x_2,y_2)，\dots,(x_m,y_m)\}$$,$$x_i \in \mathbb R^d$$,$$y_i \in \mathbb R^c$$，即输入实例由d个属性描述，输出$c$维实值向量.
+给定训练集$D=\{(x_1,y_1), (x_2,y_2)，\ldots,(x_m,y_m)\}$,$x_i \in \mathbb R^d$,$y_i \in \mathbb R^c$，即输入实例由d个属性描述，输出$c$维实值向量.
 
 下图给出了一个拥有$$d$$个输入神经元、$$m$$个隐层神经元、$$c$$个输出神经元的多层前馈网络结构：
 
@@ -129,27 +137,27 @@ P(t)=\frac 1{1+e^{-t}}
 $$
 
 
-以串行为例，对训练样本$$（x_k,y_k）$$,假定神经网络的输出为$$\hat y_k=（\hat y_1^k,\hat y_2^k,\dots,\hat y_c^k）$$,即
+以串行为例，对训练样本$(x_k,y_k)$,假定神经网络的输出为$\hat y_k=(\hat y_1^k,\hat y_2^k,\ldots,\hat y_c^k)$,即
 $$
 \hat y_j^k=f(\beta_j-\theta_j),
 $$
-则网络在$$（x_k,y_k）$$上的均方误差（LMS算法）为
+则网络在$(x_k,y_k)$上的均方误差（LMS算法）为
 $$
 E_k=\frac 12\sum_{j=1}^c(\hat y_j^k-y_j^k)^2.
 $$
-根据广义的感知机学习规则对参数进行更新，任意参数$$v$$的更新估计式为
+根据广义的感知机学习规则对参数进行更新，任意参数$v$的更新估计式为
 $$
 v \leftarrow v+\Delta v
 $$
-BP算法基于梯度下降策略，对误差$$E_k$$,给定学习率$$\eta$$,有
+BP算法基于梯度下降策略，对误差$E_k$,给定学习率$\eta$,有
 $$
 \Delta w_{hj}=-\eta \frac {\partial E_k}{\partial w_{hj}}
 $$
-考虑到$$w_{hj}$$先影响到第$$j$$个输出层神经元的输入值$$\beta_j$$，再影响到其输出值$$\hat y_j^k$$,最后影响到$$E_k$$,有
+考虑到$w_{hj}$先影响到第$j$个输出层神经元的输入值$\beta_j$，再影响到其输出值$\hat y_j^k$,最后影响到$E_k$,有
 $$
 \frac {\partial E_k}{\partial w_{hj}}=\frac {\partial E_k}{\partial \hat y_j^k}\frac {\partial \hat y_j^k}{\partial \beta _j}\frac {\partial \beta _j}{\partial w_{hj}}
 $$
-根据$$\beta_j$$的定义，显然有
+根据$\beta_j$的定义，显然有
 $$
 \frac {\partial \beta _j}{\partial w_{hj}}=b_h
 $$

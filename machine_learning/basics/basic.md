@@ -9,11 +9,11 @@
 
 这组记录的集合称为一个“数据集”（data set）,其中每条记录是关于一个事件或对象的描述，称为一个“示例”（instance）或“样本”（sample）。反映事件或对象在某方面的表现或性质的事项，例如权限、api，称为“属性”（attribute）或“特征”（feature）；属性上的取值，例如申请了打电话的权限则该项属性为1（二值表示的话），称为“属性值”（attribute value）。属性张成的空间称为“属性空间”(attribute space)、“样本空间”（sample space）或“输入空间”。例如我们把“通话权限”“位置权限”“通讯录权限”作为三个坐标轴，则它们张成一个用于描述应用程序的三维空间，每个应用都可以在这个空间中找到自己的坐标位置。由于空间中的每个点对应一个坐标向量，因此我们也把示例称为一个“特征向量”。
 
-一般地，令$D=\{x_1,x_2,\dots,x_m\}$表示包含$m$个示例的数据集，每个示例由$d$个属性描述，则每个示例$x_i=(x_{i1};x_{i2};\dots;x_{id})$是$d$维样本空间$\mathcal X$中的一个向量，$x_i\in \mathcal X$,其中$x_{ij}$是$x_i$在第$j$个属性上的取值，$d$称为样本$x_i$的维数（dimensionality）。
+一般地，令$D=\{x_1,x_2,\ldots,x_m\}$表示包含$m$个示例的数据集，每个示例由$d$个属性描述，则每个示例$x_i=(x_{i1};x_{i2};\ldots;x_{id})$是$d$维样本空间$\mathcal X$中的一个向量，$x_i\in \mathcal X$,其中$x_{ij}$是$x_i$在第$j$个属性上的取值，$d$称为样本$x_i$的维数（dimensionality）。
 
 如果希望能学得一个帮助判断是否是恶意程序的模型，就需要建立关于“预测”（prediction）的模型，我们需要获得训练样本的结果信息，例如“恶意程序”，称为“标记”（label）；拥有了标记信息的示例，则称为“样例”（example）。一般的，用$（\mathbf x_i,y_i）$，其中$y_i\in \mathcal Y$是示例$\mathbf x_i$的标记，$\mathcal Y$是所有标记的集合，亦称“标记空间”（label space）或“输出空间”。
 
-若我们预测的是离散值，例如“良性应用”“恶意应用”，此类学习任务称为“**分类**”（classification）；若想要预测连续值，例如应用的威胁程度0.12、0.95，此类学习任务称为“**回归**”（regression）。对只涉及两个类别的“二分类”（binary classification）任务，通常称其中一个为“正类”（positive class），另一个为“反类”（negative class）；涉及多个类别时，则称为“多分类”（multi-class classification）任务。一般的，预测任务是希望通过对训练集$\{(\mathbf x_1,y_1),(\mathbf x_2,y_2),\dots,(\mathbf x_m,y_m)\}$进行学习，建立一个从输入空间$\mathcal X$到输出空间$\mathcal Y$的映射$f:\mathcal X \mapsto \mathcal Y$。 对于二分类任务，通常令$\mathcal Y=\{-1,+1\}$或$\{0,1\}$；对多分类任务，$|\mathcal Y|>2$；对回归任务，$\mathcal Y=\mathbb R$，$\mathbb R$为实数集。
+若我们预测的是离散值，例如“良性应用”“恶意应用”，此类学习任务称为“**分类**”（classification）；若想要预测连续值，例如应用的威胁程度0.12、0.95，此类学习任务称为“**回归**”（regression）。对只涉及两个类别的“二分类”（binary classification）任务，通常称其中一个为“正类”（positive class），另一个为“反类”（negative class）；涉及多个类别时，则称为“多分类”（multi-class classification）任务。一般的，预测任务是希望通过对训练集$\{(\mathbf x_1,y_1),(\mathbf x_2,y_2),\ldots,(\mathbf x_m,y_m)\}$进行学习，建立一个从输入空间$\mathcal X$到输出空间$\mathcal Y$的映射$f:\mathcal X \mapsto \mathcal Y$。 对于二分类任务，通常令$\mathcal Y=\{-1,+1\}$或$\{0,1\}$；对多分类任务，$|\mathcal Y|>2$；对回归任务，$\mathcal Y=\mathbb R$，$\mathbb R$为实数集。
 
 我们还可以对应用程序做“**聚类**”（clustering）,即将训练集中的应用程序分成若干组，每组称为一个"簇"（cluster）；这些自动形成的簇可能对应一些潜在的概念划分，譬如应用自动分为“通讯类”“娱乐类”。这样的学习过程有助于我们了解数据内在的规律，能为更深入地分析数据建立基础，需说明的是，在聚类学习中，类似“通讯类”“娱乐类”这样的概念我们预先并不知道，而且学习过程中使用的训练样本通常不具标记信息。
 
@@ -43,8 +43,10 @@ $$
 $$
 定义正定核$K$诱导上的$H_k$的内积：
 $$
+\begin{aligned}
 f(x)=K\alpha\\
 ||f||_{H'}^2=\sum_{i=1}^n\sum_{j=1}^n \alpha_i \alpha_j K(\mathbf x_i,\mathbf x_j)=\alpha ^T K \alpha 
+\end{aligned}
 $$
 原问题变为：
 $$
@@ -58,6 +60,8 @@ f(x)=\sum_{i=1}^n \alpha_i K(x,x_i)
 $$
 求梯度，令之为$0$，可以获得
 $$
+\begin{aligned}
 \alpha =(\mathbf K+\lambda \cdot I_n)^{-1}\cdot y\\
 f=K \cdot \alpha=K \cdot(K+\lambda \cdot I_n)^{-1}\cdot y
+\end{aligned}
 $$
