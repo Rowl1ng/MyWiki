@@ -6,7 +6,7 @@ measures the minimum distance from the sampled points of the predicted to the su
 
 point-wise distance.
 
-## Chamfer distance (CD)
+## Points-to-points distance: Chamfer distance (CD)
 
 measures the bidirectional shortest distance between the point samples of the predicted and the ground truth.
 

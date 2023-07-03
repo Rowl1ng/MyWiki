@@ -18,10 +18,10 @@ VAE relies on a surrogate loss.
 
 
 ## Flow-based Model
+
 Flow models have to use specialized architectures to construct reversible transform.
 
-Normalizing flows is a class of generative models focusing on mapping a complex probability distribution to
-a simple distribution such as a Gaussian. 
+Normalizing flows is a class of generative models focusing on mapping a complex probability distribution to a simple distribution such as a Gaussian. 
 
 ## Diffusion Model
 

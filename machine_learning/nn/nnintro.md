@@ -18,7 +18,7 @@ Specifically, a signal $x_{i}$ at the input of synapse $i$ connected to nueron $
 $i$ refers input layer,$j$ refers hidden layer.$w_{j0}$ is the bias.$x_{0}=+1$.
 
 - Each neuron is represented by a set of linear synaptic links, an externally applied bias,
-and a possibly nonlinear activation link.The bias is represented by a synaptic link connected to an input fixed at $$+1$$.
+and a possibly nonlinear activation link.The bias is represented by a synaptic link connected to an input fixed at $+1$.
 - The synaptic links of a neuron weight their respective input signals.
 - The weighted sum of the input signals defines the induced local field of the neuron in
 question.
@@ -61,8 +61,8 @@ g_{k}(x)=f(\sum_{j=1}^{n_{H}}w_{kj}+f(\sum_{i=0}^{d}x_{i}w_{ji}+w_{j0})+w_{k0})
 $$
 The activate function of output layer can be different from hidden layer while each unit can have different activate function.
 
-%%                  BP Algorithm                        %%
 ### BP Algorithm
+
 The popularity of on-line learning for the supervised training of multilayer perceptrons
 has been further enhanced by the development of the back-propagation algorithm.
 Backpropagation, an abbreviation for "backward propagation of errors",is the easiest way of supervised training.We need to generate output activations of each hidden layer.
@@ -75,16 +75,16 @@ $$
 e_{j}(n)=d_{j}(n)-y_{j}(n)
 \end{aligned}
 $$
-the instantaneous error energy of neuron $$j$$ is defined by
+the instantaneous error energy of neuron $j$ is defined by
 $$
 \begin{aligned}
 J(w)=\frac 12 \sum_{k=1}^{c}(e_{k})^{2}=\frac 12||t-\delta||^{2} \\
 \end{aligned}
 $$
 In the batch method of supervised learning, adjustments to the synaptic weights of the
-multilayer perceptron are performed \emph{after} the presentation of all the $$N$$ examples in the
-training sample $$\mathcal T$$ that constitute one \emph{epoch} of training.  In other words, the cost function
-for batch learning is defined by the average error energy $$J(w)$$.
+multilayer perceptron are performed **after** the presentation of all the $N$ examples in the
+training sample $\mathcal T$ that constitute one **epoch** of training.  In other words, the cost function
+for batch learning is defined by the average error energy $J(w)$.
 
 - firstly define the training bias of output layer:
 $$

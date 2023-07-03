@@ -4,26 +4,10 @@
 
 ## Research
 
-* [writing papers](research/writing_papers.md)
+* [Writing papers](research/writing_papers.md)
 * [Latex](research/latex.md)
 * [Presentation](research/presentation.md)
 * [Projects](research/projects.md)
-
-## Computer Graphics
-
-* [Introduction](computer_graphics/README.md)
-* [Basics](computer_graphics/basics/README.md)
-  * [Geometry Processing](computer_graphics/basics/geometry-processing.md)
-  * [3D Vison](computer_graphics/basics/3D-vision.md)
-  * [metrics](computer_graphics/basics/metrics.md)
-* [Data Analysis](computer_graphics/programming/README.md)
-  * [Visualization](computer_graphics/programming/visualization.md)
-  * [blender](computer_graphics/programming/blender.md)
-  * [Point Cloud](computer_graphics/programming/point-cloud.md)
-* [Tasks](computer_graphics/tasks/tasks.md)
-  * [Shape Deformation](computer_graphics/tasks/shape_deformation.md)
-  * [Shape Retrieval](computer_graphics/tasks/shape_retrieval.md)
-  * [VR Sketch](computer_graphics/tasks/VR_Sketch.md)
 
 ## Math
 
@@ -32,27 +16,6 @@
   * [Introduction](math/optimization/introduction.md)
   * [SMO](math/optimization/smo.md)
   * [优化算法](math/optimization/optimizer.md)
-
-## Programming
-
-* [工程化](programming/engineering.md)
-* [Python Handbook](programming/python/README.md)
-  * [基础](programming/python/basics.md)
-  * [文件](programming/python/file.md)
-  * [多线程](programming/python/multiproccessing.md)
-  * [数据库](programming/python/database.md)
-  * [编码](programming/python/code.md)
-  * [调试](programming/python/debug.md)
-  * [日志](programming/python/log.md)
-  * [模块](programming/python/module.md)
-  * [面向对象编程](programming/python/OOP.md)
-  * [错误和异常](programming/python/error.md)
-  * [cython](programming/python/cython.md)
-  * [高级特性](programming/python/superior.md)
-  * [函数式编程](programming/python/functional.md)
-* [linux](programming/linux/linux.md)
-  * [train&test](programming/linux/trainandtest.md)
-* [Windows](programming/windows.md)
 
 ## Machine Learning
 
@@ -115,13 +78,21 @@
   * [AlphaGo](machine_learning/application/alphago.md)
   * [自动漏洞挖掘](machine_learning/application/automated_vulnerability_detection.md)
 
-## Natural Language Processing
+## Computer Graphics
 
-* [语音](NLP/audio/audio.md)
-  * [内容无关](NLP/audio/std.md)
-  * [内容相关](NLP/audio/phoneme.md)
-* [Code Analysis](NLP/code_analysis.md)
-<!-- * [待整理](NLP/inbox.md) -->
+* [Introduction](computer_graphics/README.md)
+* [Basics](computer_graphics/basics/README.md)
+  * [Geometry Processing](computer_graphics/basics/geometry-processing.md)
+  * [3D Vison](computer_graphics/basics/3D-vision.md)
+  * [metrics](computer_graphics/basics/metrics.md)
+* [Data Analysis](computer_graphics/programming/README.md)
+  * [Visualization](computer_graphics/programming/visualization.md)
+  * [blender](computer_graphics/programming/blender.md)
+  * [Point Cloud](computer_graphics/programming/point-cloud.md)
+* [Tasks](computer_graphics/tasks/tasks.md)
+  * [Shape Deformation](computer_graphics/tasks/shape_deformation.md)
+  * [Shape Retrieval](computer_graphics/tasks/shape_retrieval.md)
+  * [VR Sketch](computer_graphics/tasks/VR_Sketch.md)
 
 ## Computer Vision
 
@@ -147,6 +118,34 @@
   * [Road Crack Detection](computer_vision/applications/roadnn.md)
   * [Road Lane Recognition](computer_vision/applications/lane.md)
 
+<!-- ## Natural Language Processing
+
+* [语音](NLP/audio/audio.md)
+  <!-- * [内容无关](NLP/audio/std.md)
+  * [内容相关](NLP/audio/phoneme.md) -->
+<!-- * [Code Analysis](NLP/code_analysis.md)
+* [待整理](NLP/inbox.md) --> 
+
+## Programming
+
+* [工程化](programming/engineering.md)
+* [Python Handbook](programming/python/README.md)
+  * [基础](programming/python/basics.md)
+  * [文件](programming/python/file.md)
+  * [多线程](programming/python/multiproccessing.md)
+  * [数据库](programming/python/database.md)
+  * [编码](programming/python/code.md)
+  * [调试](programming/python/debug.md)
+  * [日志](programming/python/log.md)
+  * [模块](programming/python/module.md)
+  * [面向对象编程](programming/python/OOP.md)
+  * [错误和异常](programming/python/error.md)
+  * [cython](programming/python/cython.md)
+  * [高级特性](programming/python/superior.md)
+  * [函数式编程](programming/python/functional.md)
+* [linux](programming/linux/linux.md)
+  * [train&test](programming/linux/trainandtest.md)
+* [Windows](programming/windows.md)
 
 
 ## Language

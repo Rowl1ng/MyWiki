@@ -6,17 +6,34 @@
         }
     },
     "plugins": [
+                "theme-hqbook",
+                "chapter-fold",
+                "prism",
                 "katex",
                 "expandable-chapters-small",
-                "anchor-navigation-ex@0.1.8",
                 "todo",
                 "donate",
-                "insert-logo",
                 "favicon",
                 "code",
                 "advanced-emoji",
                 "-lunr", "-search", "search-pro"],
     "pluginsConfig": {
+            "theme-hqbook": {
+                "favicon": "https://rowl1ng.com/blog/style/favicons/favicon.ico",
+                "logo":"https://rowl1ng.com/blog/style/images/logo-rowl1ng.png",
+                "search-placeholder":"Search",
+                "copyButtons": true,
+                "copyLines": true,
+                "dragSplitter": true,
+                "hide-elements": [
+                    ".summary .gitbook-link"
+                ]
+            },
+            "prism": {
+                "css": [
+                  "gitbook-plugin-theme-hqbook/_themes/prism-vs.css"
+                ]
+              },
             "donate": {
                    "wechat":"http://static.zybuluo.com/sixijinling/3mhqbsdz9a24mrhdgj348e9x/image_1cfuoqam86g5197d1cnt12k211s823.png",
                         "alipay": "http://static.zybuluo.com/sixijinling/3fnxywa4rs75f25kinu5ahnn/image_1cfuh8j65mc41k3q28cp431679.png",
@@ -36,11 +53,6 @@
                 "url": "https://rowl1ng.com/blog/style/images/logo-rowl1ng.png",
                 "style": "background: none; max-width: 100px"
             },
-            "favicon": {
-                "shortcut": "https://rowl1ng.com/blog/style/favicons/favicon.ico",
-                "bookmark": "https://rowl1ng.com/blog/style/favicons/favicon.ico",
-                "appleTouch": "https://rowl1ng.com/blog/style/favicons/favicon.ico"
-                    },
             "lightbox": {
                 "includeJQuery": false,
                 "sameUuid": true,

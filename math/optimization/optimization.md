@@ -442,11 +442,11 @@ Gordan定理：$\mathbf A\mathbf x \gt 0$有解$\Longleftrightarrow$不存在$\m
 
 
 $$
-\min x_1^2-x_1x_2+2x_2^2-x_1-10x_2$$
-$$
-s.t. -3x_1-2x_2\geq -6$$
-$$
+\begin{aligned}
+\min x_1^2-x_1x_2+2x_2^2-x_1-10x_2 \\
+s.t. -3x_1-2x_2\geq -6 \\
 x_1\geq0,x_2\geq 0
+\end{aligned}
 $$
 
 
@@ -454,10 +454,10 @@ $$
 
 
 $$
-\min x_1^2-x_1x_2+2x_2^2-x_1-10x_2
-$$
-$$
+\begin{aligned}
+\min x_1^2-x_1x_2+2x_2^2-x_1-10x_2 \\
 s.t. 3x_1+2x_2\leq 6,-x_1\leq0,-x_2\leq 0
+\end{aligned}
 $$
 
 
@@ -535,9 +535,12 @@ d_1\\ d_2\\ \lambda_1
 \end{aligned}
 $$
 
+
 ```
-求解方程组得到  
-$d_1=\frac 12,d_2=\frac 94,\lambda_1=\frac 34$，即$\mathbf \lambda=(\frac 34,0,0)^\top$，$\mathbf x^2=(\frac 12,\frac 94)^\top$是最优解。
+求解方程组得到$d_1=\frac 12, d_2=\frac 94,\lambda_1=\frac 34$，
+
+
+即$\mathbf \lambda=(\frac 34,0,0)^\top$，$\mathbf x^2=(\frac 12,\frac 94)^\top$是最优解。
 ```
 
 ### 3. 直接法

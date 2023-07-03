@@ -2,15 +2,15 @@
 -------------
 
 ## Multi-Layer Neural Network}
-A.3-layer network: Input Layer,Hidden Lyer,Output layer\\
+A.3-layer network: Input Layer,Hidden Lyer,Output layer
 Except input units,each unit has a bias.
 ## preassumption calculation}
 Hidden Layer:
 $$
 net_{j}=\sum_{i=1}^{d}x_{i}w_{ji}+w_{j0}=\sum_{i=0}^{d}x_{i}w_{ji}=w_{j}^{t}x
 $$
-Specifically, a signal $x_{i}$ at the input of synapse $i$ connected to nueron $j$ us multiplied by the synaptic weight $w_{ji}$\\
-$i$ refers input layer,$j$ refers hidden layer.$w_{j0}$ is the bias.$x_{0}=+1$\\
+Specifically, a signal $x_i$ at the input of synapse $i$ connected to nueron $j$ us multiplied by the synaptic weight $w_{ji}$
+$i$ refers input layer,$j$ refers hidden layer.$w_{j0}$ is the bias.$x_{0}=+1$
 
 - Each neuron is represented by a set of linear synaptic links, an externally applied bias,
 and a possibly nonlinear activation link.The bias is represented by a synaptic link connected to an input fixed at $+1$.
@@ -23,7 +23,7 @@ Output layer:
 $$
 y_{j}=f(net_{j})
 $$
-$f()$ is the \emph{activation function}.It defines the output of a neuron in terms of
+$f()$ is the **activation function**.It defines the output of a neuron in terms of
 the induced local field $net$ .
 
 ```
@@ -43,7 +43,7 @@ $$
 net_{k}=\sum_{j=1}^{n_{H}}y_{i}w_{kj}+w_{k0}=\sum_{j=0}^{n_{H}}x_{i}w_{ji}=w_{k}^{t}y
 $$
 
-$n_{H}$is the number of hidden layers.\\
+$n_{H}$is the number of hidden layers.
 
 
 So:
@@ -58,7 +58,7 @@ The activate function of output layer can be different from hidden layer while e
 
 The popularity of on-line learning for the supervised training of multilayer perceptrons
 has been further enhanced by the development of the back-propagation algorithm. 
-Backpropagation, an abbreviation for "backward propagation of errors",is the easiest way of supervised training.We need to generate output activations of each hidden layer.\\
+Backpropagation, an abbreviation for "backward propagation of errors",is the easiest way of supervised training.We need to generate output activations of each hidden layer.
 The partial derivative $\partial J /\partial w_{ji}$ represents a sensitivity factor, determining the
 direction of search in weight space for the synaptic weight $$ w_{ji}$$
 Learning:
@@ -76,7 +76,7 @@ $$
 J(w)=\frac 12 \sum_{k=1}^{c}(e_{k})^{2}=\frac 12||t-\delta||^{2} 
 $$
 In the batch method of supervised learning, adjustments to the synaptic weights of the
-multilayer perceptron are performed \emph{after} the presentation of all the %N% examples in the
+multilayer perceptron are performed \emph{after} the presentation of all the $N$ examples in the
 training sample $\mathcal T$ that constitute one \emph{epoch} of training.  In other words, the cost function
 for batch learning is defined by the average error energy $J(w)$.
 
@@ -97,7 +97,8 @@ $$
 \end{aligned}
 $$
 
-- input->hidden
+input->hidden
+
 ## 仿射层（Affine Layer）
 
 神经网络中的一个全连接层。仿射（Affine）的意思是前面一层中的每一个神经元都连接到当前层中的每一个神经元。在许多方面，这是神经网络的「标准」层。仿射层通常被加在卷积神经网络或循环神经网络做出最终预测前的输出的顶层。仿射层的一般形式为 y = f(Wx + b)，其中 x 是层输入，w 是参数，b 是一个偏差矢量，f 是一个非线性激活函数。
@@ -121,17 +122,18 @@ $$
 
 给定训练集$D=\{(x_1,y_1), (x_2,y_2)，\ldots,(x_m,y_m)\}$,$x_i \in \mathbb R^d$,$y_i \in \mathbb R^c$，即输入实例由d个属性描述，输出$c$维实值向量.
 
-下图给出了一个拥有$$d$$个输入神经元、$$m$$个隐层神经元、$$c$$个输出神经元的多层前馈网络结构：
+下图给出了一个拥有$d$个输入神经元、$m$个隐层神经元、$c$个输出神经元的多层前馈网络结构：
 
 ![ann.png-36.3kB][1]
 
-- 隐层第$$h$$个神经元的阈值用$$\gamma _h$$表示，
-- 输出层第$$j$$个神经元的阈值用$$\theta_j$$表示。
-- 输入层第$$i$$个神经元与隐层第$$h$$个神经元之间的连接权为$$v_{ih}$$;
-- 隐层第$$h$$个神经元与输出层第$$j$$个神经元之间的连接权为$$w_{hj}$$;
-- 记隐层第$$h$$个神经元接收到的输入为$$\alpha_h=\sum_{i=1}^dv_{ih}x_i$$;
-- 输出层第$$j$$个神经元接收到的输入为$$\beta_j=\sum_{h=1}^mw_{hj}b_h$$, 其中$$b_h$$为隐层第$$h$$个神经元的输出;
+- 隐层第$h$个神经元的阈值用$\gamma _h$表示，
+- 输出层第$j$个神经元的阈值用$\theta_j$表示。
+- 输入层第$i$个神经元与隐层第$h$个神经元之间的连接权为$v_{ih}$;
+- 隐层第$h$个神经元与输出层第$j$个神经元之间的连接权为$w_{hj}$;
+- 记隐层第$h$个神经元接收到的输入为$\alpha_h=\sum_{i=1}^dv_{ih}x_i$;
+- 输出层第$j$个神经元接收到的输入为$\beta_j=\sum_{h=1}^mw_{hj}b_h$, 其中$b_h$为隐层第$h$个神经元的输出;
 - 假设隐层和输出层神经元都使用Logistic函数：
+
 $$
 P(t)=\frac 1{1+e^{-t}}
 $$
@@ -169,7 +171,7 @@ $$
 $$
 g_j=-\frac {\partial E_k}{\partial \hat y_j^k}\frac {\partial \hat y_j^k}{\partial \beta _j} =-(\hat y_j^k-y_j^k)f'(\beta _j-\theta _j)=\hat y_j^k(1-\hat y_j^k)(y_j^k-\hat y_j^k).
 $$
-于是得到了BP算法中关于$$w_{hj}$$的更新公式
+于是得到了BP算法中关于$w_{hj}$的更新公式
 $$
 \Delta w_{hj}=\eta g_j b_h
 $$
@@ -183,15 +185,15 @@ $$
 &=-\eta g_j
 \end{aligned}
 $$
-$$b_h$$为第$$h$$个隐层神经元的输出，即
+$b_h$为第$h$个隐层神经元的输出，即
 $$
 b_h=f(\alpha _h-\gamma _h)
 $$
-考虑到$$v_{ih}$$先影响到第$$h$$个隐层神经元的输入值$$\alpha_h$$，再影响到其输出值$$b_h$$,最后影响到$$E_k$$,有
+考虑到$v_{ih}$先影响到第$h$个隐层神经元的输入值$\alpha_h$，再影响到其输出值$b_h$,最后影响到$E_k$,有
 $$
 \frac {\partial E_k}{\partial v_{ih}}=\frac {\partial E_k}{\partial b_h}\cdot\frac {\partial b_h}{\partial \alpha _h}\cdot\frac {\partial \alpha_h}{\partial v_{ih}}
 $$
-类似（2）中的$$g_j$$，有
+类似（2）中的$g_j$，有
 $$
 \begin{aligned}
 e_h&=-\frac {\partial E_k}{\partial b_h}\cdot\frac {\partial b_h}{\partial \alpha _h}\\
@@ -204,7 +206,7 @@ $$
 $$
 \Delta v_{ih}=\eta e_h x_i
 $$
-另外,类似$$\Delta \theta _j$$
+另外,类似$\Delta \theta _j$
 $$
 \Delta \gamma_h=-\eta e_h
 $$

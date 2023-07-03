@@ -6,9 +6,6 @@
  - 广度：减少需要模拟的落子选项 
     - imitating expert moves(supervised learning)
     - 强化学习（self-plays）
-
-、
-
  - 深度：Board Evaluation
 
 > 搜索的本义，是寻找罗马的过程而非罗马本身！
@@ -19,10 +16,15 @@
 ——梅俏竹
 
 深度优先搜索/广度优先搜索
+
 A*search
+
 minmax algorithm
+
 Alpha-beta剪枝
+
 精确的局势评估:静态->动态搜索
+
 Crazy Stone 、Zen
 
 ## Monte Carlo Tree Search
@@ -36,8 +38,6 @@ Crazy Stone 、Zen
 
 **multi-armed bandit**,UCB策略->UCT(UCB applied to trees)
  
-### 4月9号更新
-用Pycharm直接从
 
 ## 环境
 
@@ -84,9 +84,11 @@ Six is a Python 2 and 3 compatibility library. It provides utility functions for
     
 
 ## 开始下棋辣
+
 今天（2016.3.16）看纪录片《围棋》第五集才知道"气"的英文是“liberty”
 
 ## go.py
+
 基本的设置
     WHITE = -1
     BLACK = +1
