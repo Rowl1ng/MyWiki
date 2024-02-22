@@ -75,6 +75,8 @@ check references formats:
     - Are they cited in the text? Are they cited with correct index?
 - check if the pdf is submitted in the submission system.
 
+# How to Write Your Thesis
+
 
 
 # Tools

@@ -219,9 +219,14 @@ git clone --recursive
 
 ## push更新
 
+
 ```
 git pull origin breast
 git add .
+
+# remove git history
+git rm -r —cached ./
+
 git commit -m 'message'
 git push origin breast
 ```

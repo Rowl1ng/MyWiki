@@ -1,4 +1,4 @@
-\chapter{引言}
+## 引言
 
 
 在许多加密应用中都需要随机和为随机数，比如通用的加密系统都使用随机生成的密钥。许多加密协议也要求在各个点使用伪随机输入，比如生成数字签名的附加部分，或者认证协议生成挑战。
@@ -20,7 +20,7 @@ def sus(x): return (x - 0.5) ** 2
 def sq(x): return int(x) ** 2
 def logo(x): return x * np.log(x)
 \end{python}
-\section{单比特频数检测}\index{First ideas}
+## 单比特频数检测}\index{First ideas}
 该测试关注的是序列中0、1的占比。目的是验证序列是否和真正的随机序列一样，0和1几乎数量相同。
     因此，该测试评估1的占比与$\frac 12$的接近程度，也就是序列中0和1的均衡程度。
 \begin{python}
@@ -32,7 +32,7 @@ def monobitfrequencytest(binin):
     pval = spc.erfc(sobs / np.sqrt(2))
     return pval
 \end{python}
-\section{块内频数检测}\index{Hypothesis}
+## 块内频数检测}\index{Hypothesis}
 此检验主要是看M位的子块中“1”码的比例。该检验的目的是判定$M$位的子块内“1”码的频率是否像随机假设下所预期的那样，近似于$M/2$。当$M=1$时，该检测相当于检测1位，即频数（一位）检验。
 \begin{python}
 def blockfrequencytest(binin, nu=128):
@@ -44,7 +44,7 @@ def blockfrequencytest(binin, nu=128):
     pval = spc.gammaincc(len(tt) / 2.0, chisqr / 2.0)
     return pval
 \end{python}
-\section{游程检验}\index{Hypothesis}
+## 游程检验}\index{Hypothesis}
   此检验主要是看游程的总数，游程指的是一个没有间断的相同数序列，即游程或者是“$1111\ldots$”或者是“$0000\ldots$„”。一个长度为$k$ 的游程包含$k$ 个相同的位。游程检测的目的是判定不同长度的“1”游程的数目以及“0”游程的数目是否跟理想的随机序列的期望值相一致。具体的讲，就是该检验手段判定在这样的“0”“1”子块之间的振荡是否太快或太慢。
 \begin{python}
 def runstest(binin):
@@ -57,7 +57,7 @@ def runstest(binin):
     		/ (2 * pi * (1 - pi) * np.sqrt(2*n)))
     return pval
 \end{python}
-\section{块内最长游程检验}\index{Hypothesis}
+## 块内最长游程检验}\index{Hypothesis}
 该检验主要是看长度为$M$-bits的子块中的最长“1”游程。这项检验的目的是判定待检验序列的最长“1”游程的长度是否同随机序列的相同。注意：最长“1”游程长度上的一个不规则变化意味着相应的“0”游程长度上也有一个不规则变化，因此，仅仅对“1”游程进行检验室足够的。
 \begin{python}
 def longestrunones8(binin):
@@ -81,7 +81,7 @@ def longestrunones8(binin):
     return pval
 \end{python}
 
-\section{离散傅里叶变换检验}\index{Hypothesis}
+## 离散傅里叶变换检验}\index{Hypothesis}
 本检验主要是看对序列进行分步傅里叶变换后的峰值高度。目的是探测待检验信号的周期性，以此揭示其与相应的随机信号之间的偏差程度。做法是观察超过 95%阈值的峰值数目与低于 5%峰值的数目是否有显著不同。
 \begin{python}
 def spectraltest(binin):
@@ -97,7 +97,7 @@ def spectraltest(binin):
     pval = spc.erfc(abs(d)/np.sqrt(2))
     return pval
 \end{python}
-\section{非重叠模块匹配检验}\index{Hypothesis}
+## 非重叠模块匹配检验}\index{Hypothesis}
 此检测主要是看提前设置好的目标数据串发生地次数。目的是探测那些产生太多给出的非周期模式的发生器。对于非重叠模块匹配检验以及后面会谈到的重叠模块匹配检验方法，我们都是使用一个 m-bit 的窗口来搜素一个特定的 m-bit 模式。如果这个模式没有被找到，则窗口向后移动一位。如果模式被发现，则窗口移动到一发现的模式的后一位，重复前面的步骤继续搜素下一个模式。
 \begin{python}
 def nonoverlappingtemplatematchingtest(binin, mat="000000001", num=8):
@@ -112,7 +112,7 @@ def nonoverlappingtemplatematchingtest(binin, mat="000000001", num=8):
     pval = spc.gammaincc(1.0 * len(blocks) / 2, chisqr / 2)
     return pval
 \end{python}
-\section{重叠模块匹配检验}\index{Hypothesis}
+## 重叠模块匹配检验}\index{Hypothesis}
 该检验主要是看提前设定的目标模块发生地数目。检验步骤同非重叠模块匹配检验方法大致一样，不同点在于，发现目标模块后，窗口仅向后移动1位，而后继续搜索。 
 \begin{python}
 def occurances(string, sub):
@@ -142,7 +142,7 @@ def overlappingtemplatematchingtest(binin,mat="111111111",num=1032,numi=5):
     pval = spc.gammaincc(0.5*numi, 0.5*chisqr)
     return pval
 \end{python}
-\section{Maurer 的通用统计检验}\index{Hypothesis}
+## Maurer 的通用统计检验}\index{Hypothesis}
 检验主要是看匹配模块间的bit数。目的是检验序列能否在没有信息损耗的条件下被大大的压缩。一个能被大大压缩的序列被认为是一个非随机序列。
 \begin{python}
 def maurersuniversalstatistictest(binin,l=7,q=1280):
@@ -179,7 +179,7 @@ def maurersuniversalstatistictest(binin,l=7,q=1280):
     pval = spc.erfc(abs(fn-ru[l-1][0]) / (np.sqrt(2)*sigma))
     return pval
 \end{python}
-\section{Lempel-Ziv压缩检验}\index{Hypothesis}
+## Lempel-Ziv压缩检验}\index{Hypothesis}
 \begin{python}
 def lempelzivcompressiontest1(binin):
     i = 1
@@ -200,7 +200,7 @@ def lempelzivcompressiontest1(binin):
     pval = 0.5*spc.erfc((mu-wobs)/np.sqrt(2.0*sigma))
     return pval
 \end{python}
-\section{线性复杂度检验}\index{Hypothesis}
+## 线性复杂度检验}\index{Hypothesis}
 本检验手段主要是看线性反馈移位寄存器的长度。检验的目的是判定序列的复杂程度是否达到可视为是随 机序列的程度。随机序列的特点是有较长的线性反馈移位寄存器。一个线性反馈移位寄存器太小的话意味着序列非随机。
 \begin{python}
 def linearcomplexitytest(binin,m=500):
@@ -245,7 +245,7 @@ def lincomplex(binin):
         n+=1
     return l
 \end{python}
-\section{二元矩阵秩检验}\index{Hypothesis}
+## 二元矩阵秩检验}\index{Hypothesis}
 \begin{python}
 def binarymatrixranktest(binin,m=32,q=32):
     p1 = 1.0
@@ -288,7 +288,7 @@ def mrank(matrix): # matrix rank as defined in the NIST specification
     return ra
 \end{python}
 
-\section{近似熵检验}\index{Hypothesis}
+## 近似熵检验}\index{Hypothesis}
 同序列检验一样，近似熵检验主要看的也是整个序列中所有可能的重叠 m-bit 模式的频率。目的是将两相邻长度(m和m+1)的重叠子块的频数与随机情况下预期的频数相比较。
 \begin{python}
 def aproximateentropytest(binin, m=10):
@@ -306,7 +306,7 @@ def aproximateentropytest(binin, m=10):
     pval = spc.gammaincc(2 ** (m - 1), chisqr / 2.0)
     return pval
 \end{python}
-\section{累加和检验}\index{Hypothesis}
+## 累加和检验}\index{Hypothesis}
 该检验主要是看随机游动的最大偏移。随机游动被定义为序列中调整后的-1，+1的累加和。检验的目的是判定序列的累加和相对于预期的累加和过大还是过小。这个累加和可被看做随机游动。对于随机序列，随机游动的偏离应该在0附近。而对于非随机序列，这个随机游动偏离将会比0大很多。
 \begin{python}
 def cumultativesumstest(binin):
@@ -332,7 +332,7 @@ def cumultativesumstest(binin):
 
     return pval
 \end{python}
-\section{序列检验}\index{Hypothesis}
+## 序列检验}\index{Hypothesis}
 本检验主要是看整个序列中所有可能的重叠m-bit模式的频率，目的是判定$2^m$个m-bit重叠模式的数目是否跟随机情况下预期的值相近似。随机序列具有均匀性也就是说对于每个m-bit模式其出现的概率应该是一样的。当$m=1$时等价于频数检验。
 \begin{python}
 def serialtest(binin, m=16):
@@ -365,7 +365,7 @@ def serialtest(binin, m=16):
     pval2 = spc.gammaincc(2 ** (m - 3), d2 / 2.0)
     return [pval1, pval2]
 \end{python}
-\section{随机游动检验}\index{Hypothesis}
+## 随机游动检验}\index{Hypothesis}
 本检验主要是看一个累加和随机游动中具有 K 个节点的循环的个数。累加和随机游动由于将关于“0”，“1”的部分和序列转化成适当的“-1”、“+1”序列产生的。一个随机游动循环由单位步长的一个序列组成，这个序列的起点和终点均是 0。该检验的目的是确定在一个循环内的特殊状态对应的节点数是否与在随机序列中预计达到的节点数相背离。实际上，这个检验由八个检验（和结论）组成，一个检验和结论对应着一个特定的状态：-4，-3，-2，-1和+1，+2，+3，+4 。
 \begin{python}
 def randomexcursionstest(binin):
@@ -392,7 +392,7 @@ def randomexcursionstest(binin):
     pval=([spc.gammaincc(2.5,cs/2.0) for cs in chitab])
     return pval
 \end{python}
-\section{随机游动状态频数检验}\index{Hypothesis}
+## 随机游动状态频数检验}\index{Hypothesis}
 该检验主要是看累计和随机游动中经历的特殊状态的总数。检验目的是判定随机游动中实际经历多个状态的值与预期值之间的偏离程度。该检验实际上是十八个检验（和结论），每个状态对应着一个检验和一个结论。这些状态分别是：-9，-8，-7，-6，-5，-4，-3，-2，-1和+1，+2，+3，+4，+5，+6，+7，+8。
 \begin{python}
 def randomexcursionsvarianttest(binin):
