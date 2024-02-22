@@ -1,0 +1,2275 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>functions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-hqbook/theme.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="activation-function.html" />
+    
+    
+    <link rel="prev" href="nnintro.html" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="" alt="logo">
+        </div>
+        <span class="title"></span>
+
+        <!-- Search -->
+        
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <!--<div class="book-summary-title">文档目录</div>-->
+        
+        
+        <nav role="navigation">
+            
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://rowl1ng.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://rowl1ng.com/blog" target="_blank" class="custom-link">Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Read me
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Research</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../research/writing_papers.html">
+            
+                <a href="../../research/writing_papers.html">
+            
+                    
+                    Writing papers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../research/latex.html">
+            
+                <a href="../../research/latex.html">
+            
+                    
+                    Latex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../research/presentation.html">
+            
+                <a href="../../research/presentation.html">
+            
+                    
+                    Presentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../research/projects.html">
+            
+                <a href="../../research/projects.html">
+            
+                    
+                    Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Math</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../math/probability.html">
+            
+                <a href="../../math/probability.html">
+            
+                    
+                    Probability Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../math/optimization/optimization.html">
+            
+                <a href="../../math/optimization/optimization.html">
+            
+                    
+                    Nonliner Optimization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../math/optimization/introduction.html">
+            
+                <a href="../../math/optimization/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../math/optimization/smo.html">
+            
+                <a href="../../math/optimization/smo.html">
+            
+                    
+                    SMO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../math/optimization/optimizer.html">
+            
+                <a href="../../math/optimization/optimizer.html">
+            
+                    
+                    优化算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Machine Learning</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../data_analysis/data_analyse.html">
+            
+                <a href="../data_analysis/data_analyse.html">
+            
+                    
+                    Part -1 Data Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../data_analysis/scikit-learn.html">
+            
+                <a href="../data_analysis/scikit-learn.html">
+            
+                    
+                    scikit-learn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../data_analysis/pandas.html">
+            
+                <a href="../data_analysis/pandas.html">
+            
+                    
+                    pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../data_analysis/jupyter.html">
+            
+                <a href="../data_analysis/jupyter.html">
+            
+                    
+                    Jupyter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../data_analysis/numpy.html">
+            
+                <a href="../data_analysis/numpy.html">
+            
+                    
+                    numpy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.4.1" data-path="../data_analysis/numpy/array.html">
+            
+                <a href="../data_analysis/numpy/array.html">
+            
+                    
+                    array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../math/chapter1.html">
+            
+                <a href="../math/chapter1.html">
+            
+                    
+                    Part 0 Math Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../math/inbox0.html">
+            
+                <a href="../math/inbox0.html">
+            
+                    
+                    inbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../math/function.html">
+            
+                <a href="../math/function.html">
+            
+                    
+                    functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="../math/differential.html">
+            
+                <a href="../math/differential.html">
+            
+                    
+                    Derivatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="../math/integral.html">
+            
+                <a href="../math/integral.html">
+            
+                    
+                    Integrals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="../math/matrix.html">
+            
+                <a href="../math/matrix.html">
+            
+                    
+                    matrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.6" data-path="../math/probability.md">
+            
+                <span>
+            
+                    
+                    Probability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.7" data-path="../math/metrics.html">
+            
+                <a href="../math/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.8" data-path="../math/distance.html">
+            
+                <a href="../math/distance.html">
+            
+                    
+                    Distance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.9" data-path="../math/term.md.html">
+            
+                <a href="../math/term.md.html">
+            
+                    
+                    Terminology
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../basics/basic.html">
+            
+                <a href="../basics/basic.html">
+            
+                    
+                    Part 1 Basic Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../basics/generality.html">
+            
+                <a href="../basics/generality.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="../basics/svm.html">
+            
+                <a href="../basics/svm.html">
+            
+                    
+                    基础学习算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="../basics/convolution.html">
+            
+                <a href="../basics/convolution.html">
+            
+                    
+                    Convolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.4" data-path="../basics/crf.html">
+            
+                <a href="../basics/crf.html">
+            
+                    
+                    CRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.5" data-path="../basics/normalization.html">
+            
+                <a href="../basics/normalization.html">
+            
+                    
+                    normalization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.6" data-path="../basics/regularization.html">
+            
+                <a href="../basics/regularization.html">
+            
+                    
+                    regularization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="nnintro.html">
+            
+                <a href="nnintro.html">
+            
+                    
+                    Part 2 NN from scratch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.5.1" data-path="nnfunction.html">
+            
+                <a href="nnfunction.html">
+            
+                    
+                    functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1.1" data-path="activation-function.html">
+            
+                <a href="activation-function.html">
+            
+                    
+                    activation function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.1.2" data-path="loss-function.html">
+            
+                <a href="loss-function.html">
+            
+                    
+                    loss function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="nnstructure.html">
+            
+                <a href="nnstructure.html">
+            
+                    
+                    NN Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="regulizer.html">
+            
+                <a href="regulizer.html">
+            
+                    
+                    Regularized Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.4" data-path="rnn.html">
+            
+                <a href="rnn.html">
+            
+                    
+                    RNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.5" data-path="cnn.html">
+            
+                <a href="cnn.html">
+            
+                    
+                    CNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.6" data-path="criterion.html">
+            
+                <a href="criterion.html">
+            
+                    
+                    Criterion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.7" data-path="backbone.html">
+            
+                <a href="backbone.html">
+            
+                    
+                    Backbone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.8" data-path="termsmd.html">
+            
+                <a href="termsmd.html">
+            
+                    
+                    Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.9" data-path="boost.html">
+            
+                <a href="boost.html">
+            
+                    
+                    boost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.10" data-path="attention.html">
+            
+                <a href="attention.html">
+            
+                    
+                    Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../problems/">
+            
+                <a href="../problems/">
+            
+                    
+                    Part 3 Problems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../problems/generative-model.html">
+            
+                <a href="../problems/generative-model.html">
+            
+                    
+                    Generative Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="../problems/transfer-learning.html">
+            
+                <a href="../problems/transfer-learning.html">
+            
+                    
+                    Transfer Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="../problems/few-shot-learning.html">
+            
+                <a href="../problems/few-shot-learning.html">
+            
+                    
+                    Few-shot Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="../problems/imbalance.html">
+            
+                <a href="../problems/imbalance.html">
+            
+                    
+                    sample imbalance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.5" data-path="../problems/unsupervised-learning.html">
+            
+                <a href="../problems/unsupervised-learning.html">
+            
+                    
+                    unsupervised learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.6" data-path="../problems/metric-learning.html">
+            
+                <a href="../problems/metric-learning.html">
+            
+                    
+                    Metric Laerning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../programming/nnpractice.html">
+            
+                <a href="../programming/nnpractice.html">
+            
+                    
+                    Part 4 NN Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="../programming/keras.html">
+            
+                <a href="../programming/keras.html">
+            
+                    
+                    keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="../programming/theano.html">
+            
+                <a href="../programming/theano.html">
+            
+                    
+                    Theano
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.3" data-path="../programming/tensorflow.html">
+            
+                <a href="../programming/tensorflow.html">
+            
+                    
+                    Tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.4" data-path="../programming/caffe.html">
+            
+                <a href="../programming/caffe.html">
+            
+                    
+                    caffe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.5" data-path="../programming/layer.html">
+            
+                <a href="../programming/layer.html">
+            
+                    
+                    layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.6" data-path="../programming/matlab.html">
+            
+                <a href="../programming/matlab.html">
+            
+                    
+                    matlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.7" data-path="../programming/pytorch.html">
+            
+                <a href="../programming/pytorch.html">
+            
+                    
+                    Pytorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.8" data-path="../programming/method.html">
+            
+                <a href="../programming/method.html">
+            
+                    
+                    method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../application/">
+            
+                <a href="../application/">
+            
+                    
+                    Part 6 Applications
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.1" data-path="../application/deeplearning.html">
+            
+                <a href="../application/deeplearning.html">
+            
+                    
+                    Explore DL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.2" data-path="../application/word2vec.md">
+            
+                <span>
+            
+                    
+                    word2vec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.3" data-path="../application/alphago.html">
+            
+                <a href="../application/alphago.html">
+            
+                    
+                    AlphaGo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.4" data-path="../application/automated_vulnerability_detection.html">
+            
+                <a href="../application/automated_vulnerability_detection.html">
+            
+                    
+                    自动漏洞挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Computer Graphics</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../computer_graphics/">
+            
+                <a href="../../computer_graphics/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../computer_graphics/basics/">
+            
+                <a href="../../computer_graphics/basics/">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../computer_graphics/basics/geometry-processing.html">
+            
+                <a href="../../computer_graphics/basics/geometry-processing.html">
+            
+                    
+                    Geometry Processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../computer_graphics/basics/3D-vision.html">
+            
+                <a href="../../computer_graphics/basics/3D-vision.html">
+            
+                    
+                    3D Vison
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../../computer_graphics/basics/metrics.html">
+            
+                <a href="../../computer_graphics/basics/metrics.html">
+            
+                    
+                    metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../computer_graphics/programming/">
+            
+                <a href="../../computer_graphics/programming/">
+            
+                    
+                    Data Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../../computer_graphics/programming/visualization.html">
+            
+                <a href="../../computer_graphics/programming/visualization.html">
+            
+                    
+                    Visualization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../computer_graphics/programming/blender.html">
+            
+                <a href="../../computer_graphics/programming/blender.html">
+            
+                    
+                    blender
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../../computer_graphics/programming/point-cloud.html">
+            
+                <a href="../../computer_graphics/programming/point-cloud.html">
+            
+                    
+                    Point Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../computer_graphics/tasks/tasks.html">
+            
+                <a href="../../computer_graphics/tasks/tasks.html">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../computer_graphics/tasks/shape_deformation.html">
+            
+                <a href="../../computer_graphics/tasks/shape_deformation.html">
+            
+                    
+                    Shape Deformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../computer_graphics/tasks/shape_retrieval.html">
+            
+                <a href="../../computer_graphics/tasks/shape_retrieval.html">
+            
+                    
+                    Shape Retrieval
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../computer_graphics/tasks/VR_Sketch.html">
+            
+                <a href="../../computer_graphics/tasks/VR_Sketch.html">
+            
+                    
+                    VR Sketch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Computer Vision</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../computer_vision/">
+            
+                <a href="../../computer_vision/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../computer_vision/basics/image_basics.html">
+            
+                <a href="../../computer_vision/basics/image_basics.html">
+            
+                    
+                    Image Processing Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../../computer_vision/basics/filter.html">
+            
+                <a href="../../computer_vision/basics/filter.html">
+            
+                    
+                    filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../../computer_vision/basics/feature.html">
+            
+                <a href="../../computer_vision/basics/feature.html">
+            
+                    
+                    feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../../computer_vision/basics/image_normalization.html">
+            
+                <a href="../../computer_vision/basics/image_normalization.html">
+            
+                    
+                    image normalization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.4" data-path="../../computer_vision/basics/thresholding.html">
+            
+                <a href="../../computer_vision/basics/thresholding.html">
+            
+                    
+                    thresholding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../computer_vision/python_programming/python_programming.html">
+            
+                <a href="../../computer_vision/python_programming/python_programming.html">
+            
+                    
+                    python programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="../../computer_vision/python_programming/opencv.html">
+            
+                <a href="../../computer_vision/python_programming/opencv.html">
+            
+                    
+                    opencv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="../../computer_vision/python_programming/matplotlib.html">
+            
+                <a href="../../computer_vision/python_programming/matplotlib.html">
+            
+                    
+                    matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="../../computer_vision/python_programming/skimage.html">
+            
+                <a href="../../computer_vision/python_programming/skimage.html">
+            
+                    
+                    scikit-image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.4" data-path="../../computer_vision/python_programming/visualize.html">
+            
+                <a href="../../computer_vision/python_programming/visualize.html">
+            
+                    
+                    visualize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.5" data-path="../../computer_vision/python_programming/froc.html">
+            
+                <a href="../../computer_vision/python_programming/froc.html">
+            
+                    
+                    FROC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.6" data-path="../../computer_vision/python_programming/patch.html">
+            
+                <a href="../../computer_vision/python_programming/patch.html">
+            
+                    
+                    patch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../computer_vision/problems/ren-wu.html">
+            
+                <a href="../../computer_vision/problems/ren-wu.html">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="../../computer_vision/problems/segmentation.html">
+            
+                <a href="../../computer_vision/problems/segmentation.html">
+            
+                    
+                    segmentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="../../computer_vision/problems/detection.html">
+            
+                <a href="../../computer_vision/problems/detection.html">
+            
+                    
+                    detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../computer_vision/applications/practice.html">
+            
+                <a href="../../computer_vision/applications/practice.html">
+            
+                    
+                    Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../computer_vision/applications/medical_image_analysis.html">
+            
+                <a href="../../computer_vision/applications/medical_image_analysis.html">
+            
+                    
+                    Medical Image Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../computer_vision/applications/mammogram.html">
+            
+                <a href="../../computer_vision/applications/mammogram.html">
+            
+                    
+                    Mammogram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../computer_vision/applications/roadnn.html">
+            
+                <a href="../../computer_vision/applications/roadnn.html">
+            
+                    
+                    Road Crack Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../computer_vision/applications/lane.html">
+            
+                <a href="../../computer_vision/applications/lane.html">
+            
+                    
+                    Road Lane Recognition
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Programming</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../programming/engineering.html">
+            
+                <a href="../../programming/engineering.html">
+            
+                    
+                    工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../programming/python/">
+            
+                <a href="../../programming/python/">
+            
+                    
+                    Python Handbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../../programming/python/basics.html">
+            
+                <a href="../../programming/python/basics.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.2" data-path="../../programming/python/file.html">
+            
+                <a href="../../programming/python/file.html">
+            
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.3" data-path="../../programming/python/multiproccessing.html">
+            
+                <a href="../../programming/python/multiproccessing.html">
+            
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.4" data-path="../../programming/python/database.html">
+            
+                <a href="../../programming/python/database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.5" data-path="../../programming/python/code.html">
+            
+                <a href="../../programming/python/code.html">
+            
+                    
+                    编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.6" data-path="../../programming/python/debug.html">
+            
+                <a href="../../programming/python/debug.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.7" data-path="../../programming/python/log.html">
+            
+                <a href="../../programming/python/log.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.8" data-path="../../programming/python/module.html">
+            
+                <a href="../../programming/python/module.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.9" data-path="../../programming/python/OOP.html">
+            
+                <a href="../../programming/python/OOP.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.10" data-path="../../programming/python/error.html">
+            
+                <a href="../../programming/python/error.html">
+            
+                    
+                    错误和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.11" data-path="../../programming/python/cython.html">
+            
+                <a href="../../programming/python/cython.html">
+            
+                    
+                    cython
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.12" data-path="../../programming/python/superior.html">
+            
+                <a href="../../programming/python/superior.html">
+            
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.13" data-path="../../programming/python/functional.html">
+            
+                <a href="../../programming/python/functional.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../programming/linux/linux.html">
+            
+                <a href="../../programming/linux/linux.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.3.1" data-path="../../programming/linux/trainandtest.html">
+            
+                <a href="../../programming/linux/trainandtest.html">
+            
+                    
+                    train&test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../programming/windows.md">
+            
+                <span>
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Language</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../language/English/">
+            
+                <a href="../../language/English/">
+            
+                    
+                    English
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../../language/English/suffix.html">
+            
+                <a href="../../language/English/suffix.html">
+            
+                    
+                    suffix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../../language/English/prefix.html">
+            
+                <a href="../../language/English/prefix.html">
+            
+                    
+                    prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../../language/English/verb.html">
+            
+                <a href="../../language/English/verb.html">
+            
+                    
+                    verb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4" data-path="../../language/English/synonym.html">
+            
+                <a href="../../language/English/synonym.html">
+            
+                    
+                    synonym
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.5" data-path="../../language/English/math.html">
+            
+                <a href="../../language/English/math.html">
+            
+                    
+                    math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.6" data-path="../../language/English/material.html">
+            
+                <a href="../../language/English/material.html">
+            
+                    
+                    material
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../language/japanese.html">
+            
+                <a href="../../language/japanese.html">
+            
+                    
+                    日本語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../language/francis.html">
+            
+                <a href="../../language/francis.html">
+            
+                    
+                    Francis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../../language/others.html">
+            
+                <a href="../../language/others.html">
+            
+                    
+                    others
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Art</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../art/color.html">
+            
+                <a href="../../art/color.html">
+            
+                    
+                    color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../../art/light.html">
+            
+                <a href="../../art/light.html">
+            
+                    
+                    light
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Music</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../../music/guqin.html">
+            
+                <a href="../../music/guqin.html">
+            
+                    
+                    古琴
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+        </nav>
+        
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <!--<div class="book-anchor-title">在这篇文章中:</div>-->
+        <div class="book-anchor-body">
+
+        </div>
+    </div>
+
+    <div class="book-body">
+        
+        <div class="body-inner">
+            
+            
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >functions</a>
+    </h1>
+</div>
+
+
+
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                    <section class="normal markdown-section">
+                        
+                        <h1 id="&#x51FD;&#x6570;&#x5BB6;&#x65CF;">&#x51FD;&#x6570;&#x5BB6;&#x65CF;</h1>
+<hr>
+<h2 id="&#x795E;&#x7ECF;&#x5143;&#x6A21;&#x578B;">&#x795E;&#x7ECF;&#x5143;&#x6A21;&#x578B;</h2>
+<p>&#x4ECE;&#x6700;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x8D77;&#xFF1A;&#x7EBF;&#x6027;&#x795E;&#x7ECF;&#x5143;</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>b</mi><mo>+</mo><munder><mo>&#x2211;</mo><mi>i</mi></munder><msub><mi>x</mi><mi>i</mi></msub><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">
+ { y }=b +\sum_i { x}_{ i }{ w }_{ i }
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.327674em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0500050000000003em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">x</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>McCulloch-Pitts&#x63A5;&#x7740;&#x63D0;&#x51FA;&#x4E86;&#x4E8C;&#x503C;&#x7684;&#xFF0C;&#x5FC5;&#x987B;&#x8FBE;&#x5230;&#x9608;&#x503C;&#x624D;&#x53D1;&#x9001;&#x4E00;&#x5B9A;&#x91CF;&#x7684;&#x51B2;&#x6FC0;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E4B;&#x540E;&#x7684;Rectified Linear Neurons(Linear threshold neuron)&#x8D85;&#x51FA;&#x9608;&#x503C;&#x7684;&#x90E8;&#x5206;&#x4ECD;&#x662F;&#x7EBF;&#x6027;&#x7684;&#x3002;</p>
+<p>Simoid neurons&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x7528;&#x8FDE;&#x7EED;&#x51FD;&#x6570;&#x7248;&#x7684;&#x4E8C;&#x503C;&#xFF0C;&#x901A;&#x5E38;&#x4F7F;&#x7528;Logistic&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#x6C42;&#x5BFC;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x53C8;&#x6709;&#x4E86;Stochastic&#x7684;&#x5904;&#x7406;&#xFF0C;&#x8F93;&#x51FA;&#xFF08;0~1&#xFF09;&#x4F5C;&#x4E3A;&#x4EA7;&#x751F;&#x51B2;&#x6FC0;&#xFF08;1&#xFF09;&#x7684;&#x6982;&#x7387;</p>
+<h6 id="rectifier-or-rectified-linear-unit-relu-or-positive-part">Rectifier or rectified linear unit (ReLU) or positive part</h6>
+<h6 id="hyperbolic-tangent">Hyperbolic tangent</h6>
+<h6 id="sigmoid">Sigmoid</h6>
+<h6 id="softmax">Softmax</h6>
+<h6 id="radial-basis-function-or-rbf">Radial basis function or RBF</h6>
+<h6 id="softplus">Softplus</h6>
+<h6 id="hard-tanh">Hard tanh</h6>
+<h6 id="absolute-value-rectification">Absolute value rectification</h6>
+<h6 id="maxout">Maxout</h6>
+<ul>
+<li>the structure (also called architecture) of the family of input-output functions can be varied in many ways: 
+<em>convolutional networks</em>, 
+<em>recurrent networks</em></li>
+</ul>
+<h3 id="softmax">Softmax</h3>
+<p>Softmax &#x51FD;&#x6570;&#x901A;&#x5E38;&#x88AB;&#x7528;&#x4E8E;&#x5C06;&#x539F;&#x59CB;&#x5206;&#x6570;&#xFF08;raw score&#xFF09;&#x7684;&#x77E2;&#x91CF;&#x8F6C;&#x6362;&#x6210;&#x7528;&#x4E8E;&#x5206;&#x7C7B;&#x7684;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x7684;&#x8F93;&#x51FA;&#x5C42;&#x4E0A;&#x7684;&#x7C7B;&#x6982;&#x7387;&#xFF08;class probability&#xFF09;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x5BF9;&#x5F52;&#x4E00;&#x5316;&#x5E38;&#x6570;&#xFF08;normalization constant&#xFF09;&#x8FDB;&#x884C;&#x6307;&#x6570;&#x5316;&#x548C;&#x76F8;&#x9664;&#x8FD0;&#x7B97;&#x800C;&#x5BF9;&#x5206;&#x6570;&#x8FDB;&#x884C;&#x89C4;&#x8303;&#x5316;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x5904;&#x7406;&#x5927;&#x91CF;&#x7684;&#x7C7B;&#xFF0C;&#x4F8B;&#x5982;&#x673A;&#x5668;&#x7FFB;&#x8BD1;&#x4E2D;&#x7684;&#x5927;&#x91CF;&#x8BCD;&#x6C47;&#xFF0C;&#x8BA1;&#x7B97;&#x5F52;&#x4E00;&#x5316;&#x5E38;&#x6570;&#x662F;&#x5F88;&#x6602;&#x8D35;&#x7684;&#x3002;&#x6709;&#x8BB8;&#x591A;&#x79CD;&#x53EF;&#x4EE5;&#x8BA9;&#x8BA1;&#x7B97;&#x66F4;&#x9AD8;&#x6548;&#x7684;&#x66FF;&#x4EE3;&#x9009;&#x62E9;&#xFF0C;&#x5305;&#x62EC;&#x5206;&#x5C42; Softmax&#xFF08;Hierarchical Softmax&#xFF09;&#x6216;&#x4F7F;&#x7528;&#x57FA;&#x4E8E;&#x53D6;&#x6837;&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#xFF0C;&#x5982; NCE&#x3002;</p>
+<ul>
+<li><p>designed for the purpose of specifying <strong>multinoulli distributions</strong>:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>s</mi><mi>o</mi><mi>f</mi><mi>t</mi><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>&#x27FA;</mo><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mfrac><msup><mi>e</mi><msub><mi>a</mi><mi>i</mi></msub></msup><mrow><mo>&#x2211;</mo><mrow><msubsup><mrow></mrow><mi>j</mi><mrow></mrow></msubsup><msup><mi>e</mi><msub><mi>a</mi><mi>j</mi></msub></msup></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+  p=softmax(a)\Longleftrightarrow { p }_{ i }=\frac { { e }^{ { a }_{ i } } }{ \sum { _{ j }^{  }{ { e }^{ { a }_{ j } } } }  }
+  </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">t</span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x27FA;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">p</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.4403639999999998em;vertical-align:-1.0989719999999998em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.341392em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">&#x2211;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.4231360000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span style="top:-3.0448000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.4129719999999999em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathdefault">e</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6064620000000001em;"><span style="top:-3.0050700000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathdefault">e</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.0989719999999998em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li><p>consider the gradient with respect to the scores $a$.</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable rowspacing="0.24999999999999992em" columnalign="right" columnspacing=""><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mfrac><mi>&#x3B4;</mi><mrow><mi>&#x3B4;</mi><msub><mi>a</mi><mi>k</mi></msub></mrow></mfrac><msub><mi>L</mi><mrow><mi>N</mi><mi>L</mi><mi>L</mi></mrow></msub><mo stretchy="false">(</mo><mi>p</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mi>&#x3B4;</mi><mrow><mi>&#x3B4;</mi><msub><mi>a</mi><mi>k</mi></msub></mrow></mfrac><mo stretchy="false">(</mo><mo>&#x2212;</mo><mi>l</mi><mi>o</mi><mi>g</mi><msub><mi>p</mi><mi>y</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mfrac><mi>&#x3B4;</mi><mrow><mi>&#x3B4;</mi><msub><mi>a</mi><mi>k</mi></msub></mrow></mfrac><mo stretchy="false">(</mo><msub><mrow><mo>&#x2212;</mo><mi>a</mi></mrow><mi>y</mi></msub><mo>+</mo><mi>l</mi><mi>o</mi><mi>g</mi><munderover><mo>&#x2211;</mo><mi>j</mi><mrow></mrow></munderover><msup><mi>e</mi><msub><mi>a</mi><mi>j</mi></msub></msup><mo stretchy="false">)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mo>=</mo><msub><mrow><mo>&#x2212;</mo><mn>1</mn></mrow><mrow><mi>y</mi><mo>=</mo><mi>k</mi></mrow></msub><mo>+</mo><mfrac><msup><mi>e</mi><msub><mi>a</mi><mi>k</mi></msub></msup><mrow><munderover><mo>&#x2211;</mo><mi>j</mi><mrow></mrow></munderover><msup><mi>e</mi><msub><mi>a</mi><mi>j</mi></msub></msup></mrow></mfrac><mo>=</mo><msub><mi>p</mi><mi>k</mi></msub><mo>&#x2212;</mo><msub><mn>1</mn><mrow><mi>y</mi><mo>=</mo><mi>k</mi></mrow></msub></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">
+  \begin{aligned}
+  \frac { \delta }{ \delta{ a }_{ k } } { L }_{ NLL }(p,y)=\frac { \delta }{ \delta{ a }_{ k } } (-log{ p }_{ y })=\frac { \delta }{ \delta{ a }_{ k } } ({ -a }_{ y }+log\sum _{ j }^{  }{ { e }^{ { a }_{ j } } } )\\ ={ -1 }_{ y=k }+\frac { { e }^{ { a }_{ k } } }{ \sum _{ j }^{  }{ { e }^{ { a }_{ j } } }  } ={ p }_{ k }-{1}_{y=k}
+  \end{aligned}
+  </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:5.848427000000001em;vertical-align:-2.6742135000000005em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.1742135000000005em;"><span style="top:-5.1742135000000005em;"><span class="pstrut" style="height:3.3714399999999998em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord"><span class="mord mathdefault">L</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="mord mathdefault mtight">L</span><span class="mord mathdefault mtight">L</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span class="mord">&#x2212;</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord"><span class="mord"><span class="mord mathdefault">p</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord">&#x2212;</span><span class="mord mathdefault">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3500050000000006em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.4137769999999998em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathdefault">e</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span><span style="top:-2.1190444999999993em;"><span class="pstrut" style="height:3.3714399999999998em;"></span><span class="mord"><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord"><span class="mord">&#x2212;</span><span class="mord">1</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span><span class="mrel mtight">=</span><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.341392em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">&#x2211;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.5029em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.43581800000000004em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathdefault">e</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6064620000000001em;"><span style="top:-3.0050700000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathdefault">e</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3487714285714287em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15122857142857138em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.1218180000000002em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">p</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord"><span class="mord">1</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span><span class="mrel mtight">=</span><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:2.6742135000000005em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+</ul>
+<p>  or</p>
+<p>  <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>&#x3B4;</mi><mrow><mi>&#x3B4;</mi><msub><mi>a</mi><mi>k</mi></msub></mrow></mfrac><msub><mi>L</mi><mrow><mi>N</mi><mi>L</mi><mi>L</mi></mrow></msub><mo stretchy="false">(</mo><mi>p</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>p</mi><mo>&#x2212;</mo><msub><mi>e</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">
+  \frac { \delta }{ \delta{ a }_{ k } } { L }_{ NLL }(p,y)=(p-{e}_{y})
+  </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.20744em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">&#x3B4;</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mord"><span class="mord mathdefault">L</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="mord mathdefault mtight">L</span><span class="mord mathdefault mtight">L</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">e</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>&#x5728;&#x5B9E;&#x73B0;softmax&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E3A;&#x4E86;&#x9632;&#x6EA2;&#x51FA;&#x6709;&#x4E00;&#x4E2A;&#x5C0F;trick&#xFF1A;&#x51CF;&#x53BB;&#x6700;&#x5927;&#x503C;&#x3002;softmax&#x51FD;&#x6570;&#x5982;&#x4E0B;&#xFF1A;
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><msub><mo stretchy="false">)</mo><mi>i</mi></msub><mo>=</mo><mfrac><msup><mi>e</mi><msub><mi>x</mi><mi>i</mi></msub></msup><mrow><munderover><mo>&#x2211;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>e</mi><msub><mi>x</mi><mi>j</mi></msub></msup></mrow></mfrac><mo separator="true">,</mo><mi>j</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mo>&#x2026;</mo><mo separator="true">,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">
+f(x)_i=\frac{e^{x_i}}{\sum_{j=1}^ne^{x_j}},j=1,2,\ldots,n
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.471502em;vertical-align:-1.1301100000000002em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.341392em;"><span style="top:-2.305708em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">&#x2211;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.43581800000000004em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6064620000000001em;"><span style="top:-3.0050700000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.1301100000000002em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span></span></span></span></span></p>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BA1;&#x7B97;softmax&#x51FD;&#x6570;&#x503C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x5F53;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x8BA1;&#x7B97;&#x51FD;&#x6570;&#x503C;&#x5C31;&#x51FA;&#x95EE;&#x9898;&#x4E86;&#xFF1A;</p>
+<ul>
+<li>$c$&#x6781;&#x5176;&#x5927;&#xFF0C;&#x5BFC;&#x81F4;&#x5206;&#x5B50;&#x8BA1;&#x7B97;$e^c$&#x65F6;&#x4E0A;&#x6EA2;&#x51FA;</li>
+<li>$c$ &#x4E3A;&#x8D1F;&#x6570;&#xFF0C;&#x4E14;$|c|$&#x5F88;&#x5927;&#xFF0C;&#x6B64;&#x65F6;&#x5206;&#x6BCD;&#x662F;&#x4E00;&#x4E2A;&#x6781;&#x5C0F;&#x7684;&#x6B63;&#x6570;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x56DB;&#x820D;&#x4E94;&#x5165;&#x4E3A;0&#xFF0C;&#x5BFC;&#x81F4;&#x4E0B;&#x6EA2;&#x51FA;</li>
+</ul>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x4EE4;$M=max(x_i),i=1,2,&#x22EF;,n$&#xFF0C;&#x5373;$ M$ &#x4E3A;&#x6240;&#x6709; $x_i$ &#x4E2D;&#x6700;&#x5927;&#x7684;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x628A;&#x7B97; $f(x)_i$&#x7684;&#x503C;&#xFF0C;&#x6539;&#x4E3A;&#x8BA1;&#x7B97;$f(x_i-M)$&#x7684;&#x503C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x4E0A;&#x6EA2;&#x51FA;&#x3001;&#x4E0B;&#x6EA2;&#x51FA;&#x7684;&#x95EE;&#x9898;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x7406;&#x8BBA;&#x4E0A;&#x4ECD;&#x7136;&#x548C; $f(x)_i$&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x5728;&#x5B9E;&#x73B0;&#x65F6;&#x4E5F;&#x72AF;&#x4E86;&#x4E00;&#x4E2A;&#x4F4E;&#x7EA7;&#x9519;&#x8BEF;&#xFF1A;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x4E00;&#x5F00;&#x59CB;&#x5F04;&#x9519;&#x6210;&#x4E86;$1&#xFF0F;1-e^{-x}$&#xFF0C;&#x53D1;&#x73B0;&#x4EA4;&#x53C9;&#x71B5;&#x662F;26&#x4E0A;&#x4E0B;&#xFF0C;&#x5FFD;&#x7565;&#x4E86;&#x5168;&#x8499;&#xFF08;weight&#x3001;bias&#x5168;&#x96F6;&#xFF09;&#x60C5;&#x51B5;&#x662F;$\log(250)\approx 5$&#x3002;</p>
+
+                        
+                    </section>
+                    
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        <a href="nnintro.html"
+           class="navigation navigation-prev "
+           aria-label="Previous page: Part 2 NN from scratch">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="activation-function.html"
+           class="navigation navigation-next "
+           aria-label="Next page: activation function">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
+        
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"functions","level":"4.5.1","depth":2,"next":{"title":"activation function","level":"4.5.1.1","depth":3,"path":"machine_learning/nn/activation-function.md","ref":"machine_learning/nn/activation-function.md","articles":[]},"previous":{"title":"Part 2 NN from scratch","level":"4.5","depth":1,"path":"machine_learning/nn/nnintro.md","ref":"machine_learning/nn/nnintro.md","articles":[{"title":"functions","level":"4.5.1","depth":2,"path":"machine_learning/nn/nnfunction.md","ref":"machine_learning/nn/nnfunction.md","articles":[{"title":"activation function","level":"4.5.1.1","depth":3,"path":"machine_learning/nn/activation-function.md","ref":"machine_learning/nn/activation-function.md","articles":[]},{"title":"loss function","level":"4.5.1.2","depth":3,"path":"machine_learning/nn/loss-function.md","ref":"machine_learning/nn/loss-function.md","articles":[]}]},{"title":"NN Structure","level":"4.5.2","depth":2,"path":"machine_learning/nn/nnstructure.md","ref":"machine_learning/nn/nnstructure.md","articles":[]},{"title":"Regularized Networks","level":"4.5.3","depth":2,"path":"machine_learning/nn/regulizer.md","ref":"machine_learning/nn/regulizer.md","articles":[]},{"title":"RNN","level":"4.5.4","depth":2,"path":"machine_learning/nn/rnn.md","ref":"machine_learning/nn/rnn.md","articles":[]},{"title":"CNN","level":"4.5.5","depth":2,"path":"machine_learning/nn/cnn.md","ref":"machine_learning/nn/cnn.md","articles":[]},{"title":"Criterion","level":"4.5.6","depth":2,"path":"machine_learning/nn/criterion.md","ref":"machine_learning/nn/criterion.md","articles":[]},{"title":"Backbone","level":"4.5.7","depth":2,"path":"machine_learning/nn/backbone.md","ref":"machine_learning/nn/backbone.md","articles":[]},{"title":"Terms","level":"4.5.8","depth":2,"path":"machine_learning/nn/termsmd.md","ref":"machine_learning/nn/termsmd.md","articles":[]},{"title":"boost","level":"4.5.9","depth":2,"path":"machine_learning/nn/boost.md","ref":"machine_learning/nn/boost.md","articles":[]},{"title":"Attention","level":"4.5.10","depth":2,"path":"machine_learning/nn/attention.md","ref":"machine_learning/nn/attention.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-hqbook","chapter-fold","prism","katex","expandable-chapters-small","todo","donate","favicon","code","advanced-emoji","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["gitbook-plugin-theme-hqbook/_themes/prism-vs.css"]},"todo":{},"search-pro":{},"code":{"copyButtons":true},"donate":{"alipay":"http://static.zybuluo.com/sixijinling/3fnxywa4rs75f25kinu5ahnn/image_1cfuh8j65mc41k3q28cp431679.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"http://static.zybuluo.com/sixijinling/3mhqbsdz9a24mrhdgj348e9x/image_1cfuoqam86g5197d1cnt12k211s823.png","wechatText":"微信打赏"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{},"lightbox":{"includeJQuery":false,"sameUuid":true,"options":{"resizeDuration":500,"wrapAround":false}},"theme-hqbook":{"copyButtons":true,"copyLines":true,"dragSplitter":true,"favicon":"https://rowl1ng.com/blog/style/favicons/favicon.ico","flexible-linkcard":{"hrefUrl":"../../demo/demo.html","imgClass":"","imgSrc":"../../images/home/logo.png","target":"_blank","title":"Converts blockquotes into beautiful linkcard, custom nice links"},"logo":"https://rowl1ng.com/blog/style/images/logo-rowl1ng.png","search-placeholder":"Search","hide-elements":[".summary .gitbook-link"]},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://rowl1ng.com/blog/style/images/logo-rowl1ng.png","style":"background: none; max-width: 100px"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Home":"http://rowl1ng.com","Blog":"http://rowl1ng.com/blog"}},"gitbook":"*"},"file":{"path":"machine_learning/nn/nnfunction.md","mtime":"2023-07-03T08:36:23.031Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-22T08:13:47.333Z"},"basePath":"../..","book":{"language":""}})
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-hqbook/theme.js"></script>
+        
+    
+
+    </body>
+</html>
+
