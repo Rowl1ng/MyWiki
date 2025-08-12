@@ -36,6 +36,11 @@ super(MyClass,self).__init__()
 > 对比：
     - Java总是会去调用基类的构造器；
     - C++通过在构造子类的构造器时，在声明后加冒号和要用的所有基类构造器。
+  
+
+# Inbox
+
+python OOP组合、继承
 
 
 

@@ -67,5 +67,6 @@ js.display(m, smooth=False)
 
 ## Rendering
 
+  * visualization using Pytorch3d’s renderer
 - [Point Cloud Renderer](https://github.com/zekunhao1995/PointFlowRenderer)
   - ![example](https://github.com/zekunhao1995/PointFlowRenderer/raw/master/mitsuba_scene.png)

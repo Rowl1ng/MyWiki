@@ -147,5 +147,8 @@ $$
 [機器/深度學習: 損失函數(loss function)- Huber Loss和 Focal loss](https://medium.com/@chih.sheng.huang821/%E6%A9%9F%E5%99%A8-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E6%90%8D%E5%A4%B1%E5%87%BD%E6%95%B8-loss-function-huber-loss%E5%92%8C-focal-loss-bb757494f85e)
 
 
+# Inbox
 
-
+  * Efficient Optimization for Rank-based Loss
+  * FID：本质上是利用训好的特征提取器的最后一层输出embedding的分布来计算相似度，2-Wassertein distance
+  * Wassertein distance/EMD：distance metric defined between probability distributions. 基于微积分的“运土”代价计算，起源于optimal transport planning of good and materials（也许是苏联计划经济时期？）

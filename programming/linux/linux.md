@@ -50,7 +50,8 @@ sudo du -sh * | sort -n
 ```shell
 du --max-depth=1 --human-readable / | sort --human-numeric-sort
 ```
-
+  * trashbin没法清空（可能是空间塞满了）：直接查看文件大小发现/.Trash-290037最大，直接删掉文件夹就好
+  
 ### 获取最新文件（夹）
 
 ```

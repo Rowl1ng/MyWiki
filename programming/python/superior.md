@@ -1,5 +1,7 @@
 # 装饰器（decorator）
 
+python的@property；装饰器（decorators）：函数的函数
+
 [理解 Python 装饰器看这一篇就够了](https://foofish.net/python-decorator.html)
 
 ```

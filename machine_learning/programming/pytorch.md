@@ -13,6 +13,11 @@ import torch
 print(torch.__version__)
 ```
 
+    * - pytorch-ligntning：打包好的训练框架 
+
+## Variable
+
+* Pytorch手册：Variable的两个属性：requires_grad和volatile；cuda sematics
 
 ## Dataloader
 
@@ -93,9 +98,9 @@ for fm in fms:
     print(fm.size())
 ```
 
-## 模型
+# 模型
 
-### 加载模型
+## 加载模型
 
 针对`invalid device ordinal`错误，解决方案是`map_location`
 
@@ -112,7 +117,9 @@ pickle.load = partial(pickle.load, encoding="latin1")
 pickle.Unpickler = partial(pickle.Unpickler, encoding="latin1")
 model = torch.load(model_file, map_location=lambda storage, loc: storage, pickle_module=pickle)
 ```
-### test model
+## optimizer
+    * multiple optimizer分组更新
+## test model
 
 记得设置 `volatile=True`，否则容易爆显存。
 
@@ -120,7 +127,7 @@ model = torch.load(model_file, map_location=lambda storage, loc: storage, pickle
 input_img_var = torch.autograd.Variable(images.cuda(), volatile=True)
 input_mask_var = torch.autograd.Variable(masks.cuda(), volatile=True)
 ```
-
+    * model.eval()的作用只是调整model中受eval影响的层，（比如Adaptive batchnorm？），gradient还是会正常更新
 ## cuda memory
 
 设置GPU的方法

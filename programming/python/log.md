@@ -1,5 +1,7 @@
 # 日志 logging
 
+
+
 [python logging模块使用教程][11]
 [logging basic tutorial][12]
 ![此处输入图片的描述][13]
@@ -50,3 +52,8 @@ logger.error('Failed to open file', exc_info=True)
 logger.warning("consider setting layer size to a multiple of 4 for greater performance")
 
 ```
+
+
+# Inbox
+
+python的logging模块：`__name__`

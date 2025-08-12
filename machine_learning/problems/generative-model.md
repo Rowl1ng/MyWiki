@@ -22,9 +22,13 @@ VAE relies on a surrogate loss.
 Flow models have to use specialized architectures to construct reversible transform.
 
 Normalizing flows is a class of generative models focusing on mapping a complex probability distribution to a simple distribution such as a Gaussian. 
-
+ * normalizing flow的正向和逆向是完全一一对应的可逆过程，不需要在base和target distribution重复可视化
+  - 李宏毅：Flow-based Generative Model
+  
 ## Diffusion Model
 
+  * Diffusion model：独立高斯分布可加性
+  
 ![overviews of different generative models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/generative-overview.png)
 
 

@@ -18,4 +18,6 @@
 * 可视化教程 https://geometryprocessing.github.io/
 * 一些b站up主：自动驾驶之心，GAMES Webinar，李宏毅，跟李沐学AI
 * YouTube：volume rendering https://www.youtube.com/watch?v=y4KdxaMC69w
-* 训练模型的辅助：wandb tutorial
+* 🧑🏻‍🏫GAMES203: 三维重建和理解 by 黄其兴，德州大学奥斯丁分校
+*   * 🧑🏻‍🏫GAMES Webinar 230-几何专题-李瑞辉
+*   * 现代计算机图形学入门-闫令琪

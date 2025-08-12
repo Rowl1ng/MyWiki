@@ -1,5 +1,7 @@
 # 卷积神经网络（CNN/ConvNet：Convolutional Neural Network）
 
+  * 卷积网络和傅立叶变换之间的联系
+  
 CNN 使用卷积连接从输入的局部区域中提取的特征。大部分 CNN 都包含了卷积层、池化层和仿射层的组合。CNN 尤其凭借其在视觉识别任务的卓越性能表现而获得了普及，它已经在该领域保持了好几年的领先。
 
 推荐[可视化卷积过程：stride+padding+dilation](https://github.com/vdumoulin/conv_arithmetic)

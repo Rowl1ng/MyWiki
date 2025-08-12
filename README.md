@@ -6,3 +6,6 @@ This is where I keep and share everything I know and learn. It's more of a const
 
 # 一起来写GitBook吧/Let's make our own GitBook!
 [book.json 参考](https://gitbook.zhangjikai.com/bookjson.html)
+
+  * Gitbook的代码渲染：从mathjax迁移到katex，花了好大力气才把格式都改过来
+  *   * gitbook：通过git rm -r —cached来清理git里的node_modules目录。

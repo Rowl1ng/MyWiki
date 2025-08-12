@@ -103,7 +103,9 @@ $$
 $$=-ylog{f}_{\theta}(x)-(1-y)log(1-{f}_{\theta}(x))
 $$
 
-## 假设检验
+# Inbox
 
-### T检验
-![](http://www.algorithmdog.com/wp-content/uploads/2015/11/20130802172202-589762225.jpg)
+  * marginal distribution vs. conditional distribution: marginal（边缘）的说法可能源于看的是表格的边缘（在表格中，边缘是行或者列的累计），这样就是只考虑单个factor的情况下的概率分布
+
+ * 独立多元正态分布和相关多元正态分布
+ *   * 反直觉：高维Gaussian的sample更靠近“表皮”而不是“果核”

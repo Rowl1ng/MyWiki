@@ -51,5 +51,10 @@ problem:
 -【artifact】就是合成图片中，不自然的、反常的、能让人看出是人为处理过的痕迹、区域、瑕疵等。
 
 
+# Reference
+
+      * Seminar：Sketching Fast and Slow: Cognition, Heuristics, and the Challenge of Intuitive Workflows from Kevin    
+      *  * Prof. Daniel Sykora from CTU Prague
+
 [1]: https://www.vive.com/uk/product/cosmos/?gclid=CjwKCAjw5_DsBRBPEiwAIEDRWyXCbSl6FfrrDH82GmMol5dQdGgQVCWEx-ESFb3dQ8szSFE0dYja_xoC5-8QAvD_BwE
 [2]: https://www.oculus.com/setup/#rift-s-setup

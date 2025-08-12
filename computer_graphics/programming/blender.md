@@ -25,3 +25,5 @@ else:
     bm.to_mesh(mesh)
     mesh.update()
 ```
+
+* Rendering: use blender to render obj. Render 360 degree gif.

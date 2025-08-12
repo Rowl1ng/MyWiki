@@ -18,6 +18,8 @@ pip install opencv-python
 img = cv2.imread('13.jpg',0)
 ```
 
+历史遗留问题：matplotlib使用的颜色模式是RGB模式，而opencv使用的是BGR模式。
+
 判断图片是否损坏：
 
 ```python

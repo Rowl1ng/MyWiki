@@ -1,3 +1,5 @@
+  * lung nodule detection：[天池比赛](https://rowl1ng.com/blog/tech/luna.html)
+  
 用到的包：
 
 ```

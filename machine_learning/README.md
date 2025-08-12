@@ -7,6 +7,11 @@
 
 在16周的NNML课程学完后，很难一口气总结到底学到了什么，但中间的磕磕绊绊却是印象深刻，都总结在了这本书里。
 
+
+* 读论文：
+  * paper reading：Lifting Layers；MetaGAN: An Adversarial Approach to Few-Shot Learning
+  * 跟李沐学AI：CLIPasso论文解读，DALLE2。如何读论文；ResNet论文逐段精读；Transformer论文逐段精读；4.1 模型评估。
+    * 🧑🏻‍💻喝CV的咖啡：GNN
 # Inbox
 
 * K-fold和ensemble learning：

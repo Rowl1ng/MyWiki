@@ -1,5 +1,31 @@
 # 钼钯
+- 乳腺超声：高频探头（清晰度高，深度小）；跟年龄、生理周期有关；纵横比大于一很可能恶性（压迫胸大肌）
+- 工程化：胸肌线分割+乳腺区域分割；
+- 讲座：birads分级是不同类别，不是渐进关系
 
+* mammogram：
+  * DDSM数据：
+      * 处理数据、做标注一定要check之后再跑实验！！
+      * patch sampling
+  * calcification：
+      * faster rcnn：复现论文在INBreast上的效果：在ddsm上训练;和作者通信
+          * VGG16降低下采样到16倍、8倍
+      * 调inbreast的窗宽窗位：“发明”了“自适应”调节方法
+      * huber loss
+      * hard example mining
+  * mass:
+      * local contrast normalization的pytorch实现
+      * evaluation要统一计算标准
+      * mask rcnn：
+          * multi_view：R和L的对齐;check不同数据集的对齐效果
+          * ignore四种类型
+          * rcnn、rpn加focal loss
+          * data augmentation：gamma correction
+      * 迭代新模型:
+          * 加入新数据训练
+          * 做错误分析：统计漏检的大小分布，腺体分型；误检、漏检统计，分数最低
+  * 产品化：做控制单一变量的对比实验！！！
+  
 ## 数据格式
 
 ```json
@@ -91,3 +117,7 @@ def __make_json_result(series_list, pid, studyid, seriesid, mass_list, task_name
     ret['nodes'] = roi_list
     return json.dumps(ret), "OK"
 ```
+
+# 参考资料
+
+      * 《乳腺比较 影像诊断学》by刘万花、《医学影像诊断学》第三版、《乳腺疾病诊治》第三版

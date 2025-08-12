@@ -25,3 +25,6 @@ From Wikipedia
 ## Reference
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Guqin)
+
+* 毁得一手好琴：适合自己难度目标的练习曲、有针对性的练习弥补短板（把熟悉的练习曲定制化）：左右手+音阶+节拍+耐力；录音+听录音
+* 古琴若木：练习曲讲解：轮指练习；孙颢榕古琴；鼓秋鼓秋那你
