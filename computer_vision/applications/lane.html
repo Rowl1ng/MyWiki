@@ -1,0 +1,2591 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Road Lane Recognition · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-hqbook/theme.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../programming/engineering.html" />
+    
+    
+    <link rel="prev" href="roadnn.html" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="" alt="logo">
+        </div>
+        <span class="title"></span>
+
+        <!-- Search -->
+        
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <!--<div class="book-summary-title">文档目录</div>-->
+        
+        
+        <nav role="navigation">
+            
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://rowl1ng.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://rowl1ng.com/blog" target="_blank" class="custom-link">Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Read me
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Research</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../research/writing_papers.html">
+            
+                <a href="../../research/writing_papers.html">
+            
+                    
+                    Writing papers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../research/latex.html">
+            
+                <a href="../../research/latex.html">
+            
+                    
+                    Latex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../research/presentation.html">
+            
+                <a href="../../research/presentation.html">
+            
+                    
+                    Presentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../research/projects.html">
+            
+                <a href="../../research/projects.html">
+            
+                    
+                    Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Math</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../math/probability.html">
+            
+                <a href="../../math/probability.html">
+            
+                    
+                    Probability Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../math/optimization/optimization.html">
+            
+                <a href="../../math/optimization/optimization.html">
+            
+                    
+                    Nonliner Optimization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../math/optimization/introduction.html">
+            
+                <a href="../../math/optimization/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../math/optimization/smo.html">
+            
+                <a href="../../math/optimization/smo.html">
+            
+                    
+                    SMO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../math/optimization/optimizer.html">
+            
+                <a href="../../math/optimization/optimizer.html">
+            
+                    
+                    优化算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Machine Learning</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../machine_learning/">
+            
+                <a href="../../machine_learning/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../machine_learning/data_analysis/data_analyse.html">
+            
+                <a href="../../machine_learning/data_analysis/data_analyse.html">
+            
+                    
+                    Part -1 Data Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../machine_learning/data_analysis/scikit-learn.html">
+            
+                <a href="../../machine_learning/data_analysis/scikit-learn.html">
+            
+                    
+                    scikit-learn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../machine_learning/data_analysis/pandas.html">
+            
+                <a href="../../machine_learning/data_analysis/pandas.html">
+            
+                    
+                    pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../machine_learning/data_analysis/jupyter.html">
+            
+                <a href="../../machine_learning/data_analysis/jupyter.html">
+            
+                    
+                    Jupyter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../../machine_learning/data_analysis/numpy.html">
+            
+                <a href="../../machine_learning/data_analysis/numpy.html">
+            
+                    
+                    numpy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.4.1" data-path="../../machine_learning/data_analysis/numpy/array.html">
+            
+                <a href="../../machine_learning/data_analysis/numpy/array.html">
+            
+                    
+                    array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../machine_learning/math/chapter1.html">
+            
+                <a href="../../machine_learning/math/chapter1.html">
+            
+                    
+                    Part 0 Math Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../machine_learning/math/inbox0.html">
+            
+                <a href="../../machine_learning/math/inbox0.html">
+            
+                    
+                    inbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../../machine_learning/math/function.html">
+            
+                <a href="../../machine_learning/math/function.html">
+            
+                    
+                    functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="../../machine_learning/math/differential.html">
+            
+                <a href="../../machine_learning/math/differential.html">
+            
+                    
+                    Derivatives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="../../machine_learning/math/integral.html">
+            
+                <a href="../../machine_learning/math/integral.html">
+            
+                    
+                    Integrals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="../../machine_learning/math/matrix.html">
+            
+                <a href="../../machine_learning/math/matrix.html">
+            
+                    
+                    matrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.6" data-path="../../machine_learning/math/probability.md">
+            
+                <span>
+            
+                    
+                    Probability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.7" data-path="../../machine_learning/math/metrics.html">
+            
+                <a href="../../machine_learning/math/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.8" data-path="../../machine_learning/math/distance.html">
+            
+                <a href="../../machine_learning/math/distance.html">
+            
+                    
+                    Distance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.9" data-path="../../machine_learning/math/term.md.html">
+            
+                <a href="../../machine_learning/math/term.md.html">
+            
+                    
+                    Terminology
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../machine_learning/basics/basic.html">
+            
+                <a href="../../machine_learning/basics/basic.html">
+            
+                    
+                    Part 1 Basic Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../../machine_learning/basics/generality.html">
+            
+                <a href="../../machine_learning/basics/generality.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="../../machine_learning/basics/svm.html">
+            
+                <a href="../../machine_learning/basics/svm.html">
+            
+                    
+                    基础学习算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="../../machine_learning/basics/convolution.html">
+            
+                <a href="../../machine_learning/basics/convolution.html">
+            
+                    
+                    Convolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.4" data-path="../../machine_learning/basics/crf.html">
+            
+                <a href="../../machine_learning/basics/crf.html">
+            
+                    
+                    CRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.5" data-path="../../machine_learning/basics/normalization.html">
+            
+                <a href="../../machine_learning/basics/normalization.html">
+            
+                    
+                    normalization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.6" data-path="../../machine_learning/basics/regularization.html">
+            
+                <a href="../../machine_learning/basics/regularization.html">
+            
+                    
+                    regularization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../machine_learning/nn/nnintro.html">
+            
+                <a href="../../machine_learning/nn/nnintro.html">
+            
+                    
+                    Part 2 NN from scratch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="../../machine_learning/nn/nnfunction.html">
+            
+                <a href="../../machine_learning/nn/nnfunction.html">
+            
+                    
+                    functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1.1" data-path="../../machine_learning/nn/activation-function.html">
+            
+                <a href="../../machine_learning/nn/activation-function.html">
+            
+                    
+                    activation function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.1.2" data-path="../../machine_learning/nn/loss-function.html">
+            
+                <a href="../../machine_learning/nn/loss-function.html">
+            
+                    
+                    loss function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="../../machine_learning/nn/nnstructure.html">
+            
+                <a href="../../machine_learning/nn/nnstructure.html">
+            
+                    
+                    NN Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="../../machine_learning/nn/regulizer.html">
+            
+                <a href="../../machine_learning/nn/regulizer.html">
+            
+                    
+                    Regularized Networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.4" data-path="../../machine_learning/nn/rnn.html">
+            
+                <a href="../../machine_learning/nn/rnn.html">
+            
+                    
+                    RNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.5" data-path="../../machine_learning/nn/cnn.html">
+            
+                <a href="../../machine_learning/nn/cnn.html">
+            
+                    
+                    CNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.6" data-path="../../machine_learning/nn/criterion.html">
+            
+                <a href="../../machine_learning/nn/criterion.html">
+            
+                    
+                    Criterion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.7" data-path="../../machine_learning/nn/backbone.html">
+            
+                <a href="../../machine_learning/nn/backbone.html">
+            
+                    
+                    Backbone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.8" data-path="../../machine_learning/nn/termsmd.html">
+            
+                <a href="../../machine_learning/nn/termsmd.html">
+            
+                    
+                    Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.9" data-path="../../machine_learning/nn/boost.html">
+            
+                <a href="../../machine_learning/nn/boost.html">
+            
+                    
+                    boost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.10" data-path="../../machine_learning/nn/attention.html">
+            
+                <a href="../../machine_learning/nn/attention.html">
+            
+                    
+                    Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../../machine_learning/problems/">
+            
+                <a href="../../machine_learning/problems/">
+            
+                    
+                    Part 3 Problems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../../machine_learning/problems/generative-model.html">
+            
+                <a href="../../machine_learning/problems/generative-model.html">
+            
+                    
+                    Generative Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="../../machine_learning/problems/transfer-learning.html">
+            
+                <a href="../../machine_learning/problems/transfer-learning.html">
+            
+                    
+                    Transfer Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="../../machine_learning/problems/few-shot-learning.html">
+            
+                <a href="../../machine_learning/problems/few-shot-learning.html">
+            
+                    
+                    Few-shot Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="../../machine_learning/problems/imbalance.html">
+            
+                <a href="../../machine_learning/problems/imbalance.html">
+            
+                    
+                    sample imbalance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.5" data-path="../../machine_learning/problems/unsupervised-learning.html">
+            
+                <a href="../../machine_learning/problems/unsupervised-learning.html">
+            
+                    
+                    unsupervised learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.6" data-path="../../machine_learning/problems/metric-learning.html">
+            
+                <a href="../../machine_learning/problems/metric-learning.html">
+            
+                    
+                    Metric Laerning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../../machine_learning/programming/nnpractice.html">
+            
+                <a href="../../machine_learning/programming/nnpractice.html">
+            
+                    
+                    Part 4 NN Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="../../machine_learning/programming/keras.html">
+            
+                <a href="../../machine_learning/programming/keras.html">
+            
+                    
+                    keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="../../machine_learning/programming/theano.html">
+            
+                <a href="../../machine_learning/programming/theano.html">
+            
+                    
+                    Theano
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.3" data-path="../../machine_learning/programming/tensorflow.html">
+            
+                <a href="../../machine_learning/programming/tensorflow.html">
+            
+                    
+                    Tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.4" data-path="../../machine_learning/programming/caffe.html">
+            
+                <a href="../../machine_learning/programming/caffe.html">
+            
+                    
+                    caffe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.5" data-path="../../machine_learning/programming/layer.html">
+            
+                <a href="../../machine_learning/programming/layer.html">
+            
+                    
+                    layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.6" data-path="../../machine_learning/programming/matlab.html">
+            
+                <a href="../../machine_learning/programming/matlab.html">
+            
+                    
+                    matlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.7" data-path="../../machine_learning/programming/pytorch.html">
+            
+                <a href="../../machine_learning/programming/pytorch.html">
+            
+                    
+                    Pytorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.8" data-path="../../machine_learning/programming/method.html">
+            
+                <a href="../../machine_learning/programming/method.html">
+            
+                    
+                    method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../../machine_learning/application/">
+            
+                <a href="../../machine_learning/application/">
+            
+                    
+                    Part 6 Applications
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.1" data-path="../../machine_learning/application/deeplearning.html">
+            
+                <a href="../../machine_learning/application/deeplearning.html">
+            
+                    
+                    Explore DL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.2" data-path="../../machine_learning/application/word2vec.md">
+            
+                <span>
+            
+                    
+                    word2vec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.3" data-path="../../machine_learning/application/alphago.html">
+            
+                <a href="../../machine_learning/application/alphago.html">
+            
+                    
+                    AlphaGo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.4" data-path="../../machine_learning/application/automated_vulnerability_detection.html">
+            
+                <a href="../../machine_learning/application/automated_vulnerability_detection.html">
+            
+                    
+                    自动漏洞挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Computer Graphics</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../computer_graphics/">
+            
+                <a href="../../computer_graphics/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../computer_graphics/basics/">
+            
+                <a href="../../computer_graphics/basics/">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../computer_graphics/basics/geometry-processing.html">
+            
+                <a href="../../computer_graphics/basics/geometry-processing.html">
+            
+                    
+                    Geometry Processing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../computer_graphics/basics/3D-vision.html">
+            
+                <a href="../../computer_graphics/basics/3D-vision.html">
+            
+                    
+                    3D Vison
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../../computer_graphics/basics/metrics.html">
+            
+                <a href="../../computer_graphics/basics/metrics.html">
+            
+                    
+                    metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../computer_graphics/programming/">
+            
+                <a href="../../computer_graphics/programming/">
+            
+                    
+                    Data Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../../computer_graphics/programming/visualization.html">
+            
+                <a href="../../computer_graphics/programming/visualization.html">
+            
+                    
+                    Visualization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../computer_graphics/programming/blender.html">
+            
+                <a href="../../computer_graphics/programming/blender.html">
+            
+                    
+                    blender
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../../computer_graphics/programming/point-cloud.html">
+            
+                <a href="../../computer_graphics/programming/point-cloud.html">
+            
+                    
+                    Point Cloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../computer_graphics/tasks/tasks.html">
+            
+                <a href="../../computer_graphics/tasks/tasks.html">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../computer_graphics/tasks/shape_deformation.html">
+            
+                <a href="../../computer_graphics/tasks/shape_deformation.html">
+            
+                    
+                    Shape Deformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../computer_graphics/tasks/shape_retrieval.html">
+            
+                <a href="../../computer_graphics/tasks/shape_retrieval.html">
+            
+                    
+                    Shape Retrieval
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../computer_graphics/tasks/VR_Sketch.html">
+            
+                <a href="../../computer_graphics/tasks/VR_Sketch.html">
+            
+                    
+                    VR Sketch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Computer Vision</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../basics/image_basics.html">
+            
+                <a href="../basics/image_basics.html">
+            
+                    
+                    Image Processing Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../basics/filter.html">
+            
+                <a href="../basics/filter.html">
+            
+                    
+                    filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../basics/feature.html">
+            
+                <a href="../basics/feature.html">
+            
+                    
+                    feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../basics/image_normalization.html">
+            
+                <a href="../basics/image_normalization.html">
+            
+                    
+                    image normalization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.4" data-path="../basics/thresholding.html">
+            
+                <a href="../basics/thresholding.html">
+            
+                    
+                    thresholding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../python_programming/python_programming.html">
+            
+                <a href="../python_programming/python_programming.html">
+            
+                    
+                    python programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="../python_programming/opencv.html">
+            
+                <a href="../python_programming/opencv.html">
+            
+                    
+                    opencv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="../python_programming/matplotlib.html">
+            
+                <a href="../python_programming/matplotlib.html">
+            
+                    
+                    matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="../python_programming/skimage.html">
+            
+                <a href="../python_programming/skimage.html">
+            
+                    
+                    scikit-image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.4" data-path="../python_programming/visualize.html">
+            
+                <a href="../python_programming/visualize.html">
+            
+                    
+                    visualize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.5" data-path="../python_programming/froc.html">
+            
+                <a href="../python_programming/froc.html">
+            
+                    
+                    FROC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.6" data-path="../python_programming/patch.html">
+            
+                <a href="../python_programming/patch.html">
+            
+                    
+                    patch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../problems/ren-wu.html">
+            
+                <a href="../problems/ren-wu.html">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="../problems/segmentation.html">
+            
+                <a href="../problems/segmentation.html">
+            
+                    
+                    segmentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="../problems/detection.html">
+            
+                <a href="../problems/detection.html">
+            
+                    
+                    detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                    Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="medical_image_analysis.html">
+            
+                <a href="medical_image_analysis.html">
+            
+                    
+                    Medical Image Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="mammogram.html">
+            
+                <a href="mammogram.html">
+            
+                    
+                    Mammogram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="roadnn.html">
+            
+                <a href="roadnn.html">
+            
+                    
+                    Road Crack Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.5.4" data-path="lane.html">
+            
+                <a href="lane.html">
+            
+                    
+                    Road Lane Recognition
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Programming</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../programming/engineering.html">
+            
+                <a href="../../programming/engineering.html">
+            
+                    
+                    工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../programming/python/">
+            
+                <a href="../../programming/python/">
+            
+                    
+                    Python Handbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../../programming/python/basics.html">
+            
+                <a href="../../programming/python/basics.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.2" data-path="../../programming/python/file.html">
+            
+                <a href="../../programming/python/file.html">
+            
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.3" data-path="../../programming/python/multiproccessing.html">
+            
+                <a href="../../programming/python/multiproccessing.html">
+            
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.4" data-path="../../programming/python/database.html">
+            
+                <a href="../../programming/python/database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.5" data-path="../../programming/python/code.html">
+            
+                <a href="../../programming/python/code.html">
+            
+                    
+                    编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.6" data-path="../../programming/python/debug.html">
+            
+                <a href="../../programming/python/debug.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.7" data-path="../../programming/python/log.html">
+            
+                <a href="../../programming/python/log.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.8" data-path="../../programming/python/module.html">
+            
+                <a href="../../programming/python/module.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.9" data-path="../../programming/python/OOP.html">
+            
+                <a href="../../programming/python/OOP.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.10" data-path="../../programming/python/error.html">
+            
+                <a href="../../programming/python/error.html">
+            
+                    
+                    错误和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.11" data-path="../../programming/python/cython.html">
+            
+                <a href="../../programming/python/cython.html">
+            
+                    
+                    cython
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.12" data-path="../../programming/python/superior.html">
+            
+                <a href="../../programming/python/superior.html">
+            
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.13" data-path="../../programming/python/functional.html">
+            
+                <a href="../../programming/python/functional.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../programming/linux/linux.html">
+            
+                <a href="../../programming/linux/linux.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.3.1" data-path="../../programming/linux/trainandtest.html">
+            
+                <a href="../../programming/linux/trainandtest.html">
+            
+                    
+                    train&test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../programming/windows.md">
+            
+                <span>
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Language</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../language/English/">
+            
+                <a href="../../language/English/">
+            
+                    
+                    English
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../../language/English/suffix.html">
+            
+                <a href="../../language/English/suffix.html">
+            
+                    
+                    suffix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../../language/English/prefix.html">
+            
+                <a href="../../language/English/prefix.html">
+            
+                    
+                    prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../../language/English/verb.html">
+            
+                <a href="../../language/English/verb.html">
+            
+                    
+                    verb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4" data-path="../../language/English/synonym.html">
+            
+                <a href="../../language/English/synonym.html">
+            
+                    
+                    synonym
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.5" data-path="../../language/English/math.html">
+            
+                <a href="../../language/English/math.html">
+            
+                    
+                    math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.6" data-path="../../language/English/material.html">
+            
+                <a href="../../language/English/material.html">
+            
+                    
+                    material
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../language/japanese.html">
+            
+                <a href="../../language/japanese.html">
+            
+                    
+                    日本語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../language/francis.html">
+            
+                <a href="../../language/francis.html">
+            
+                    
+                    Francis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../../language/others.html">
+            
+                <a href="../../language/others.html">
+            
+                    
+                    others
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Art</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../art/color.html">
+            
+                <a href="../../art/color.html">
+            
+                    
+                    color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../../art/light.html">
+            
+                <a href="../../art/light.html">
+            
+                    
+                    light
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Music</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../../music/guqin.html">
+            
+                <a href="../../music/guqin.html">
+            
+                    
+                    古琴
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+        </nav>
+        
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <!--<div class="book-anchor-title">在这篇文章中:</div>-->
+        <div class="book-anchor-body">
+
+        </div>
+    </div>
+
+    <div class="book-body">
+        
+        <div class="body-inner">
+            
+            
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Road Lane Recognition</a>
+    </h1>
+</div>
+
+
+
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                    <section class="normal markdown-section">
+                        
+                        <h1 id="车道线识别">车道线识别</h1>
+<h2 id="1-任务的背景和意义">1. 任务的背景和意义</h2>
+<h3 id="11-背景">1.1 背景</h3>
+<ul>
+<li>总体需求
+对CiCS设备采集的路面图像中的道路标志标线进行识别及位置标记。</li>
+<li>路面图像
+路面图像包括CiCS两种照明模式下的图片，需要对两种照明下的标线进行识别，尽可能统一一个接口调用执行，如一个算法有困难，可通过参数调用不同算法针对不同照明图像。</li>
+<li>标线识别结果标记
+生成一个新的大小与输入图像一致的图像，在新图像中对识别出的标线像素用白色灰度（255）表示，对于其余位置像素用黑色表示（0）。</li>
+<li>识别要求
+1）标线上的开裂裂缝算作标线的一部分，需要算作标线整体的一部分，不能分成小块识别出。
+2）标线由于光照条件及自身颜色，在灰度上会有不同标线，要求能自适应各种灰度分布下的标线。
+3）对于污损或磨损严重的标线，要求能够尽可能的将标线识别的完整。</li>
+<li>指标
+对于正常的洁净的路面图像上无明显或轻微污损的标志标线，要求识别的完整性&gt;=80%。
+对于污损较严重的标线，要求对无污损的部分能完整识别（&gt;=80%），污损的部分尽可能补全。<h3 id="12-意义">1.2 意义</h3>
+本任务的成果将帮助公路维护部门审查路面维护状况：通过对路面图像的处理帮助发现标线的污损状况，以及时做出处理。<h2 id="2-主要问题">2. 主要问题</h2>
+</li>
+<li><p>对不同亮度的图片能统一处理，且达到较高的准确率，以下是几种解决方案：</p>
+<ul>
+<li>检测图像白色（255）像素的比例，如果过高的话，调整相应阈值。或者，换句话是检测亮度；</li>
+<li>循环内判断，跳出循环的条件就是亮度/比例；</li>
+<li>对所有图片进行归一化处理，使得亮度在同一个范围内；</li>
+<li>增加图片对比度。<h2 id="3-完成方法">3. 完成方法</h2>
+开发语言选择使用Python，借助OpenCV的Python包完成对图像的基础操作，并通过PyQt4编写界面，以提高程序的可操作性。<h3 id="31-配置开发环境">3.1 配置开发环境</h3>
+这里的使用的编程环境是Eclipse+Python2.7,但想要支持图像处理的各种功能还需要安装各种Python组件才行.</li>
+</ul>
+</li>
+<li><p>安装numpy、scipy、PIL（Pillow）、matplotlib：
+这些包用来支持OpenCV的功能（PIL是Python“嫡系”的图像处理包，可以不安装），matplotlib时很有用的python作图组件，比如我们在实时调节参数时要使用的trackbar就是它的功能之一。 </p>
+</li>
+<li>安装openCV：    <ul>
+<li>进入OpenCV的安装目录下找到：\build\python\2.7\cv2.pyd</li>
+<li>将cv2.pyd复制到Python的子目录下：\Lib\site-packages\</li>
+</ul>
+</li>
+<li>安装pyQt4；</li>
+<li>安装pydev(Eclipse)：在Eclipse下写Python的必备插件。</li>
+</ul>
+<hr></hr>
+<h2 id="4-任务步骤">4. 任务步骤</h2>
+<h3 id="41-基础操作">4.1 基础操作</h3>
+<h4 id="1）-读入、输出jpg图片">1） 读入、输出jpg图片</h4>
+<pre><code class="lang-python">    <span class="hljs-keyword">for</span> infile <span class="hljs-keyword">in</span>  glob.glob(<span class="hljs-string">'../photos/test/*.jpg'</span>):
+         out=processImage(infile)
+         outfile=<span class="hljs-built_in">str</span>(infile).split(<span class="hljs-string">'\\'</span>)[<span class="hljs-number">1</span>]
+         outfile=outfile.split(<span class="hljs-string">'.'</span>)[<span class="hljs-number">0</span>]
+         cv2.imwrite(<span class="hljs-string">'../result/normlaneresult/'</span>+outfile+<span class="hljs-string">'.jpg'</span>,out)
+</code></pre>
+<h4 id="2）-trackbar实时调节参数">2） <strong>trackbar</strong>实时调节参数</h4>
+<p>通过调节trackbar实时观察输出的图片结果更直观、有效，节省调参的时间。
+创建trackbar：</p>
+<pre><code class="lang-python">    cv2.createTrackbar(<span class="hljs-string">'thrs1'</span>, <span class="hljs-string">'fill'</span>, <span class="hljs-number">2000</span>, <span class="hljs-number">10000</span>, nothing)
+</code></pre>
+<p>从trackbar获取参数：</p>
+<pre><code class="lang-python">    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span> 
+        thrs1 = cv2.getTrackbarPos(<span class="hljs-string">'thrs1'</span>, <span class="hljs-string">'fill'</span>)
+        cv2.imshow(<span class="hljs-string">'fill'</span>, image)
+        cv2.waitKey(<span class="hljs-number">0</span>)
+    cv2.destroyAllWindows()
+</code></pre>
+<p>效果见下图：
+<img src="http://static.zybuluo.com/sixijinling/kw38t2wd0qhj5u5a34o32v9u/filter.png" alt="filter.png-1143.7kB"></img>
+这里实际上是在调节双边滤波函数（<strong>平滑化处理</strong>）的一个参数对输出结果的影响（相当于模糊处理）。</p>
+<h4 id="3）-scharr操作">3）<strong>*</strong> <strong>Scharr</strong>操作</h4>
+<p>想要明确区分图片中的标线区域和路面，首先想到的是边缘检测之后再进行颜色填充。边缘检测的效果如下：
+<img src="http://static.zybuluo.com/sixijinling/sktq295xvyxkgv92gbjm0ypi/black.png" alt="black.png-7.5kB"></img>
+边缘是指图像里那些梯度非常高的点。我们说的梯度是指像素亮度值变化。图像梯度是通过计算x和y方向上的梯度然后使用毕达哥拉斯定理(注:勾股定理)结合得到。虽然通常不需要该值，你可以分别通过y与x的比例的反正切来得到梯度角度值。
+Scharr操作：x和y方向上的梯度可以分别用下面的核做卷积计算得到：
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtable><mtr><mtd><mrow><mo>−</mo><mn>3</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn><mn>0</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>1</mn><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>3</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>(</mo><mtext><mi mathvariant="normal">X</mi><mtext>&nbsp;</mtext><mi mathvariant="normal">方</mi><mi mathvariant="normal">向</mi></mtext><mo>)</mo></mrow></mtd></mtr></mtable><mtable><mtr><mtd><mrow><mo>−</mo><mn>3</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn><mn>0</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd><mtd><mrow><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn></mrow></mtd><mtd><mrow><mn>1</mn><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>(</mo><mtext><mi mathvariant="normal">Y</mi><mtext>&nbsp;</mtext><mi mathvariant="normal">方</mi><mi mathvariant="normal">向</mi></mtext><mo>)</mo></mrow></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">
+\begin{array}{ccc}
+        -3 &amp;   0 &amp;  3\\
+        -10 &amp; 0 &amp; 10\\
+        -3  &amp;  0 &amp;  3   \\   (\text{X 方向})
+\end{array}
+\begin{array}{ccc}
+       -3 &amp; -10  &amp; -3\\
+         0  &amp;  0   &amp;  0\\
+        3   &amp; 10   &amp; 3    \\ (\text{Y 方向})
+\end{array}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.6500000000000004em;"></span><span class="strut bottom" style="height:4.800000000000001em;vertical-align:-2.1500000000000004em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-1.8100000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">3</span></span></span><span style="top:-0.6100000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span></span></span><span style="top:0.5900000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">3</span></span></span><span style="top:1.7900000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mopen">(</span><span class="mord text displaystyle textstyle uncramped"><span class="mord mathrm">X&nbsp;</span><span class="mord mathrm cjk_fallback">方向</span></span><span class="mclose">)</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-1.8100000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">0</span></span></span><span style="top:-0.6100000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">0</span></span></span><span style="top:0.5900000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">0</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-1.8100000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">3</span></span></span><span style="top:-0.6100000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">0</span></span></span><span style="top:0.5900000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-1.8100000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">3</span></span></span><span style="top:-0.6100000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">0</span></span></span><span style="top:0.5900000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">3</span></span></span><span style="top:1.7900000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mopen">(</span><span class="mord text displaystyle textstyle uncramped"><span class="mord mathrm">Y&nbsp;</span><span class="mord mathrm cjk_fallback">方向</span></span><span class="mclose">)</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-1.8100000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span></span></span><span style="top:-0.6100000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">0</span></span></span><span style="top:0.5900000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">0</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-1.8100000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">3</span></span></span><span style="top:-0.6100000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">0</span></span></span><span style="top:0.5900000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span></span></span></span></span></p>
+<p>任务中并<strong>没用到</strong>这个操作，因为尝试后发现：在标识线不清晰的情况下，Scharr操作只能突出密密麻麻的裂缝（这也就是后面选择使用<strong>平滑化处理</strong>的原因了），优点是能有效区别开没有污损的标识线（平滑）和路面上的白色印记（粗糙）。
+具体操作代码：</p>
+<pre><code class="lang-python">    gradX = cv2.Sobel(gray, ddepth = cv2.CV_32F, dx = <span class="hljs-number">1</span>, dy = <span class="hljs-number">0</span>, ksize = -<span class="hljs-number">1</span>)
+    gradY = cv2.Sobel(gray, ddepth = cv2.CV_32F, dx = <span class="hljs-number">0</span>, dy = <span class="hljs-number">1</span>, ksize = -<span class="hljs-number">1</span>)
+    gradient = cv2.subtract(gradX, gradY)
+    gradient = cv2.convertScaleAbs(gradient)
+</code></pre>
+<h3 id="42-平滑化处理">4.2 平滑化处理</h3>
+<p>吸收前面使用Scharr操作尝试边缘检测的失败经验，改变思路，选择使用平滑化处理以尽可能消除路面上裂缝的影响。考虑到最终输出是二值化图片，这里主要参考了StackOverflow上对图像进行二值化处理的一种<a href="http://stackoverflow.com/questions/26145806/filling-contours-in-opencv" target="_blank">解决方案</a>。即最终的解决思路是：</p>
+<p>st=&gt;start: 开始:&gt;<a href="https://www.row1ng.com" target="_blank">https://www.row1ng.com</a>
+io1=&gt;inputoutput: 输入图片（灰度图）
+op1=&gt;operation: 双边滤波(模糊化)
+op2=&gt;operation: 增强对比度
+op3=&gt;operation: 全局阈值
+io2=&gt;inputoutput: 输出图片（黑白二值）
+e=&gt;end: 结束</p>
+<p>st-&gt;io1-&gt;op1-&gt;op2-&gt;op3-&gt;io2-&gt;e</p>
+<h4 id="1）-双边滤波">1） 双边滤波</h4>
+<blockquote>
+<p>该滤波器可以在保证<strong>边界清晰</strong>的情况下有效的<strong>去掉噪声</strong>。它的构造比较复杂，即考虑了图像的<strong>空间关系</strong>，也考虑图像的<strong>灰度关系</strong>。双边滤波同时使用了空间高斯权重和灰度相似性高斯权重，确保了边界不会被模糊掉。</p>
+</blockquote>
+<p> <code>cv2.bilateralFilter(src, d, sigmaColor, sigmaSpace[, dst[, borderType]])</code>
+ <code>cv2.bilateralFilter(image, 9, 90,16)</code>
+cv2.bilateralFilter(img,d,’p1’,’p2’)函数有四个参数需要，d是领域的直径，后面两个参数是空间高斯函数标准差和灰度值相似性高斯函数标准差。
+    <code>cv2.bilateralFilter(img, 9, 90,16)</code></p>
+<h4 id="2）-高斯滤波（这个好像没有太大影响。。。）">2） 高斯滤波（<em>这个好像没有太大影响。。。</em>）</h4>
+<ul>
+<li>这里需要注意的是参数必须是奇数，因此在使用trackbar进行调节时需要用trackbar*2+1来作为参数值。<pre><code class="lang-python">  img = cv2.GaussianBlur(image,(<span class="hljs-number">7</span>,<span class="hljs-number">7</span>),<span class="hljs-number">0</span>)
+</code></pre>
+<h3 id="43--对比度">4.3 <strong>*</strong> 对比度</h3>
+OpenCV的<a href="http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html" target="_blank">Histograms</a></li>
+<li style="list-style: none"><input type="checkbox" disabled="disabled"></input> 用trackbar调节参数  img2 = cdf[img]
+  res = np.hstack((img,equ)) #stacking images side-by-side
+
+
+用cdf增强对比度后发现路面上稍亮一些的印记也被强化了,并未达到理想效果，因此放弃。4.4 阈值处理
+任务进行到这里就到了收尾阶段，处理完的图片需要输出为二值化的图片，因此需要阈值处理操作。
+一般使得图像的像素值更单一、图像更简单。阈值可以分为全局性质的阈值，也可以分为局部性质的阈值，可以是单阈值的也可以是多阈值的。
+
+</li>
+</ul>
+<p><img src="http://static.zybuluo.com/sixijinling/8dy1l0qe9n3y7tjgukglu51t/Image1.png" alt="Image1.png-210kB"></img></p>
+<h4 id="1）自适应的阈值（右下角图片）">1）自适应的阈值（右下角图片）</h4>
+<blockquote>
+<p>通过某种算法分别为不同的区域计算不同的阈值(自适应的阈值)，然后再根据每个区域的阈值具体地去处理每个区域</p>
+</blockquote>
+<p>可以看到上述窗口大小使用的为11，当窗口越小的时候，得到的图像越细。想想一下，如果把窗口设置足够大以后（不能超过图像大小），那么得到的结果可能就和第二幅图像的相同了。&lt;
+这种方法理论上得到的效果更好，相当于在动态自适应的调整属于自己像素点的阈值，而不是整幅图像都用一个阈值。
+ 但经过实践发现并不适合车道标线这种强调轮廓，忽视细节的对象。</p>
+<h4 id="2）全局性的阈值（右上角图片）">2）全局性的阈值（右上角图片）</h4>
+<p>最终选择使用的是全局性阈值(参见花絮[1])。<br></br>对在两种照明情况下拍摄的图片取了两个不同的全局性阈值（thresh）:
+明亮环境（阈值147）：
+<img src="http://static.zybuluo.com/sixijinling/3eum3iqvfyaygtr0dayhr9lg/light.png" alt="light.png-6.6kB"></img>
+昏暗环境（阈值93）：
+<img src="http://static.zybuluo.com/sixijinling/9ljvyh7kv2vbu5opcrkjueue/dark.png" alt="dark.png-17.5kB"></img></p>
+<pre><code class="lang-python">    cv2.THRESH_BINARY <span class="hljs-comment"># 黑白二值</span>
+    binImg = cv2.adaptiveThreshold(img, <span class="hljs-number">1</span>, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, <span class="hljs-number">55</span>, -<span class="hljs-number">3</span>)<span class="hljs-comment">#cv2.bilateralFilter(binImg, 9, 90,16)</span>
+    <span class="hljs-comment">#binImg = cv2.GaussianBlur(binImg, (3,3), 0)</span>
+    <span class="hljs-comment">#ret, binImg = cv2.threshold(img, 35000, 1, cv2.THRESH_BINARY+cv2.THRESH_OTSU)</span>
+    plt.imshow(binImg, cmap = <span class="hljs-string">'gray'</span>, interpolation = <span class="hljs-string">'bicubic'</span>)
+    plt.xticks([]), plt.yticks([])  <span class="hljs-comment"># to hide tick values on X and Y axis</span>
+</code></pre>
+<hr></hr>
+<h3 id="45-gui部分（pyqt4）">4.5 GUI部分（PyQt4）</h3>
+<p><a href="http://www.pythoner.com/176.html" target="_blank">参考代码</a></p>
+<h3 id="1）界面">1）界面</h3>
+<p><img src="http://static.zybuluo.com/sixijinling/fq1y0onoen7c8hr6x2n0yzed/gui.png" alt="gui.png-6.8kB"></img></p>
+<pre><code class="lang-python">    <span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+
+    <span class="hljs-keyword">import</span> sys
+
+    <span class="hljs-keyword">from</span> PyQt4 <span class="hljs-keyword">import</span> QtCore, QtGui 
+
+    <span class="hljs-keyword">try</span>:
+        _fromUtf8 = QtCore.QString.fromUtf8
+    <span class="hljs-keyword">except</span> AttributeError:
+        <span class="hljs-keyword">def</span> <span class="hljs-title function_">_fromUtf8</span>(<span class="hljs-params">s</span>):
+            <span class="hljs-keyword">return</span> s
+
+    <span class="hljs-keyword">try</span>:
+        _encoding = QtGui.QApplication.UnicodeUTF8
+        <span class="hljs-keyword">def</span> <span class="hljs-title function_">_translate</span>(<span class="hljs-params">context, text, disambig</span>):
+            <span class="hljs-keyword">return</span> QtGui.QApplication.translate(context, text, disambig, _encoding)
+    <span class="hljs-keyword">except</span> AttributeError:
+        <span class="hljs-keyword">def</span> <span class="hljs-title function_">_translate</span>(<span class="hljs-params">context, text, disambig</span>):
+            <span class="hljs-keyword">return</span> QtGui.QApplication.translate(context, text, disambig)
+
+    <span class="hljs-keyword">class</span> <span class="hljs-title class_">Ui_Dialog</span>(<span class="hljs-title class_ inherited__">object</span>):
+        <span class="hljs-keyword">def</span> <span class="hljs-title function_">setupUi</span>(<span class="hljs-params">self, Dialog</span>):
+            Dialog.setObjectName(_fromUtf8(<span class="hljs-string">"Dialog"</span>))
+            Dialog.resize(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>)
+            Dialog.setMinimumSize(QtCore.QSize(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>))
+            Dialog.setMaximumSize(QtCore.QSize(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>))
+
+            <span class="hljs-comment">#GroupBox1</span>
+            <span class="hljs-variable language_">self</span>.groupBox = QtGui.QGroupBox(Dialog)
+            <span class="hljs-variable language_">self</span>.groupBox.setGeometry(QtCore.QRect(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">381</span>, <span class="hljs-number">101</span>))
+            <span class="hljs-variable language_">self</span>.groupBox.setObjectName(_fromUtf8(<span class="hljs-string">"groupBox"</span>))
+            <span class="hljs-variable language_">self</span>.label_2 = QtGui.QLabel(<span class="hljs-variable language_">self</span>.groupBox)
+            <span class="hljs-variable language_">self</span>.label_2.setGeometry(QtCore.QRect(<span class="hljs-number">20</span>, <span class="hljs-number">62</span>, <span class="hljs-number">54</span>, <span class="hljs-number">12</span>))
+            <span class="hljs-variable language_">self</span>.label_2.setObjectName(_fromUtf8(<span class="hljs-string">"label_2"</span>))
+            <span class="hljs-comment">#Choose Input Path</span>
+            <span class="hljs-variable language_">self</span>.InputChoose = QtGui.QPushButton(<span class="hljs-variable language_">self</span>.groupBox)
+            <span class="hljs-variable language_">self</span>.InputChoose.setGeometry(QtCore.QRect(<span class="hljs-number">320</span>, <span class="hljs-number">28</span>, <span class="hljs-number">40</span>, <span class="hljs-number">25</span>))
+            <span class="hljs-variable language_">self</span>.InputChoose.setFocusPolicy(QtCore.Qt.StrongFocus)
+            <span class="hljs-variable language_">self</span>.InputChoose.setObjectName(_fromUtf8(<span class="hljs-string">"InputChoose"</span>))
+            <span class="hljs-variable language_">self</span>.txtPath1 = QtGui.QLineEdit(<span class="hljs-variable language_">self</span>.groupBox)
+            <span class="hljs-variable language_">self</span>.txtPath1.setGeometry(QtCore.QRect(<span class="hljs-number">70</span>, <span class="hljs-number">30</span>, <span class="hljs-number">241</span>, <span class="hljs-number">20</span>))
+            <span class="hljs-variable language_">self</span>.txtPath1.setFocusPolicy(QtCore.Qt.StrongFocus)
+            <span class="hljs-variable language_">self</span>.txtPath1.setReadOnly(<span class="hljs-literal">True</span>)
+            <span class="hljs-variable language_">self</span>.txtPath1.setObjectName(_fromUtf8(<span class="hljs-string">"txtPath1"</span>))
+            <span class="hljs-comment">#Choose Output Path</span>
+            <span class="hljs-variable language_">self</span>.OutputChoose = QtGui.QPushButton(<span class="hljs-variable language_">self</span>.groupBox)
+            <span class="hljs-variable language_">self</span>.OutputChoose.setGeometry(QtCore.QRect(<span class="hljs-number">320</span>, <span class="hljs-number">58</span>, <span class="hljs-number">40</span>, <span class="hljs-number">25</span>))
+            <span class="hljs-variable language_">self</span>.OutputChoose.setFocusPolicy(QtCore.Qt.StrongFocus)
+            <span class="hljs-variable language_">self</span>.OutputChoose.setObjectName(_fromUtf8(<span class="hljs-string">"OutputChoose"</span>))
+            <span class="hljs-variable language_">self</span>.txtPath2 = QtGui.QLineEdit(<span class="hljs-variable language_">self</span>.groupBox)
+            <span class="hljs-variable language_">self</span>.txtPath2.setGeometry(QtCore.QRect(<span class="hljs-number">70</span>, <span class="hljs-number">60</span>, <span class="hljs-number">241</span>, <span class="hljs-number">20</span>))
+            <span class="hljs-variable language_">self</span>.txtPath2.setFocusPolicy(QtCore.Qt.StrongFocus)
+            <span class="hljs-variable language_">self</span>.txtPath2.setReadOnly(<span class="hljs-literal">True</span>)
+            <span class="hljs-variable language_">self</span>.txtPath2.setObjectName(_fromUtf8(<span class="hljs-string">"txtPath2"</span>))
+
+            <span class="hljs-comment">#选择两种处理模式中的一个：</span>
+            <span class="hljs-variable language_">self</span>.btnLight = QtGui.QPushButton(Dialog)
+            <span class="hljs-variable language_">self</span>.btnLight.setGeometry(QtCore.QRect(<span class="hljs-number">10</span>, <span class="hljs-number">280</span>, <span class="hljs-number">381</span>, <span class="hljs-number">51</span>))
+            <span class="hljs-variable language_">self</span>.btnLight.setObjectName(_fromUtf8(<span class="hljs-string">"btnLight"</span>))
+
+            <span class="hljs-variable language_">self</span>.btnDark = QtGui.QPushButton(Dialog)
+            <span class="hljs-variable language_">self</span>.btnDark.setGeometry(QtCore.QRect(<span class="hljs-number">10</span>, <span class="hljs-number">340</span>, <span class="hljs-number">381</span>, <span class="hljs-number">51</span>))
+            <span class="hljs-variable language_">self</span>.btnDark.setObjectName(_fromUtf8(<span class="hljs-string">"btnDark"</span>))
+
+            <span class="hljs-variable language_">self</span>.retranslateUi(Dialog)
+            QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+        <span class="hljs-keyword">def</span> <span class="hljs-title function_">retranslateUi</span>(<span class="hljs-params">self, Dialog</span>):
+            Dialog.setWindowTitle(_translate(<span class="hljs-string">"Dialog"</span>, <span class="hljs-string">"车道标线识别程序 by Rowling"</span>, <span class="hljs-literal">None</span>))
+            <span class="hljs-variable language_">self</span>.btnLight.setText(_translate(<span class="hljs-string">"Dialog"</span>, <span class="hljs-string">"光亮模式"</span>, <span class="hljs-literal">None</span>))
+            <span class="hljs-variable language_">self</span>.btnDark.setText(_translate(<span class="hljs-string">"Dialog"</span>, <span class="hljs-string">"昏暗模式"</span>, <span class="hljs-literal">None</span>))
+            <span class="hljs-variable language_">self</span>.groupBox.setTitle(_translate(<span class="hljs-string">"Dialog"</span>, <span class="hljs-string">"请选择需要处理的图片文件夹以及输出图片的存放位置"</span>, <span class="hljs-literal">None</span>))
+            <span class="hljs-variable language_">self</span>.label_2.setText(_translate(<span class="hljs-string">"Dialog"</span>, <span class="hljs-string">"输出"</span>, <span class="hljs-literal">None</span>))
+            <span class="hljs-variable language_">self</span>.InputChoose.setText(_translate(<span class="hljs-string">"Dialog"</span>, <span class="hljs-string">"..."</span>, <span class="hljs-literal">None</span>))
+            <span class="hljs-variable language_">self</span>.OutputChoose.setText(_translate(<span class="hljs-string">"Dialog"</span>, <span class="hljs-string">"..."</span>, <span class="hljs-literal">None</span>))
+
+
+
+    <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+        app = QtGui.QApplication(sys.argv)
+        Dialog = QtGui.QDialog()
+        ui = Ui_Dialog()
+        ui.setupUi(Dialog)
+        Dialog.show()
+        sys.exit(app.exec_())
+        <span class="hljs-comment">#应用程序的主事件循环，事件处理从这里开始</span>
+</code></pre>
+<ul>
+<li>exec是Python的关键字，因此，用 exec_() 来取代它。</li>
+</ul>
+<h4 id="2）-自定义槽">2） 自定义槽</h4>
+<pre><code class="lang-python">        <span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+
+<span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">from</span> PyQt4 <span class="hljs-keyword">import</span> QtGui
+<span class="hljs-keyword">from</span> PyQt4 <span class="hljs-keyword">import</span> QtCore
+
+<span class="hljs-keyword">import</span> Fill
+<span class="hljs-keyword">from</span> GUI <span class="hljs-keyword">import</span> Ui_Dialog
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ImageProcess</span>(QtGui.QDialog, Ui_Dialog):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, parent = <span class="hljs-literal">None</span></span>):
+        QtGui.QDialog.__init__(<span class="hljs-variable language_">self</span>, parent)
+        <span class="hljs-variable language_">self</span>.setupUi(<span class="hljs-variable language_">self</span>)
+        <span class="hljs-variable language_">self</span>.exclude_list = []
+
+<span class="hljs-meta">    @QtCore.pyqtSignature(<span class="hljs-params"><span class="hljs-string">""</span></span>)</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_InputChoose_clicked</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-variable language_">self</span>.indir = QtGui.QFileDialog.getExistingDirectory(<span class="hljs-variable language_">self</span>,  <span class="hljs-string">u"选择目录"</span>,<span class="hljs-string">"../photos/light_lane"</span>).replace(<span class="hljs-string">"\\"</span>,<span class="hljs-string">"/"</span>)
+        <span class="hljs-variable language_">self</span>.txtPath1.setText(<span class="hljs-variable language_">self</span>.indir)
+
+<span class="hljs-meta">    @QtCore.pyqtSignature(<span class="hljs-params"><span class="hljs-string">""</span></span>)</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_OutputChoose_clicked</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-variable language_">self</span>.outdir = QtGui.QFileDialog.getExistingDirectory(<span class="hljs-variable language_">self</span>,  <span class="hljs-string">u"选择目录"</span>,<span class="hljs-string">"../result/laneresult"</span>).replace(<span class="hljs-string">"\\"</span>,<span class="hljs-string">"/"</span>)
+        <span class="hljs-variable language_">self</span>.txtPath2.setText(<span class="hljs-variable language_">self</span>.outdir)
+
+
+<span class="hljs-meta">    @QtCore.pyqtSignature(<span class="hljs-params"><span class="hljs-string">""</span></span>)</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_btnLight_clicked</span>(<span class="hljs-params">self</span>):
+        Fill.processLightLane(<span class="hljs-built_in">str</span>(<span class="hljs-variable language_">self</span>.indir),<span class="hljs-built_in">str</span>(<span class="hljs-variable language_">self</span>.outdir))
+        QtGui.QMessageBox.warning(<span class="hljs-variable language_">self</span>, <span class="hljs-string">'完成'</span>, <span class="hljs-string">'处理完毕，请到输出目录下查看'</span>)
+
+
+<span class="hljs-meta">    @QtCore.pyqtSignature(<span class="hljs-params"><span class="hljs-string">""</span></span>)</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_btnDark_clicked</span>(<span class="hljs-params">self</span>):
+        Fill.processDarkLane(<span class="hljs-built_in">str</span>(<span class="hljs-variable language_">self</span>.indir),<span class="hljs-built_in">str</span>(<span class="hljs-variable language_">self</span>.outdir))
+        QtGui.QMessageBox.warning(<span class="hljs-variable language_">self</span>, <span class="hljs-string">'完成'</span>, <span class="hljs-string">'处理完毕，请到输出目录下查看'</span>)
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_formated_path1</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.format_path(<span class="hljs-variable language_">self</span>.txtPath1.text())
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_formated_path2</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.format_path(<span class="hljs-variable language_">self</span>.txtPath2.text())
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">format_path</span>(<span class="hljs-params">self, path
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">str</span>(<span class="hljs-params">path</span>).rstrip(<span class="hljs-params"><span class="hljs-string">'\\'</span></span>) + <span class="hljs-string">'\\'</span>
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    reload(<span class="hljs-params">sys</span>)
+    app = QtGui.QApplication(<span class="hljs-params">sys.argv</span>)
+    dlg = ImageProcess(<span class="hljs-params"></span>)
+    dlg.show(<span class="hljs-params"></span>)
+    sys.exit(<span class="hljs-params">app.exec_(<span class="hljs-params"></span>)</span>)
+</span></code></pre>
+<h3 id="46-打包成exe">4.6 打包成EXE</h3>
+<p>将Python程序打包成exe有好几种选择,</p>
+<ul>
+<li>py2exe </li>
+<li>cx_Freeze</li>
+<li>pyinstaller
+具体操作可以看这个<a href="https://www.youtube.com/watch?v=11Q2QADsAEE" target="_blank">视频</a>。
+这里选择的是较为方便的pyinstaller：
+首先按Documentation的要求安装pyinstaller,第一步就是要安装pywin32,选择合适的版本即可（比如我的Python是2.7，系统是64位）。
+安装完后，直接用powershell(管理员模式下打开)，运行<code>pip install PyInstaller</code>。
+之后切到要打包的python程序的文件夹（参见花絮[2]）运行<code>pyinstaller XXX.py</code>即可，目标exe保存在dist目录下。
+命令行参数补充：</li>
+</ul>
+<blockquote>
+<ul>
+<li>-c, --console, --nowindowed      Open a console window for standard i/o (default)</li>
+<li>-w, --windowed, --noconsole      Windows and Mac OS X: <strong>do not</strong> provide a <strong>console window</strong> for standard i/o. On Mac OS X this also triggers
+building an OS X .app bundle.This option is ignored in *NIX systems.</li>
+<li>-F, --onefile    Create a one-file bundled executable.</li>
+<li>-D, --onedir    Create a one-folder bundle containing an executable (default)</li>
+</ul>
+</blockquote>
+<p>所以最后的执行语句是： 
+   <code>pyinstaller -F -D --noconsole -n Lane G:\C\Lane\Lane\file_ui.py</code></p>
+<hr></hr>
+<h2 id="5-参考资料">5. 参考资料</h2>
+<p>清华大学出版社的《图像处理与计算机视觉算法及应用(第0版) 》TP391.41/P121.</p>
+<p><em>图书馆还有一本但就是找不到。。。</em></p>
+<pre><code>  [1]: http://stackoverflow.com/questions/26145806/filling-contours-in-opencv
+  [2]: http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html
+  [3]: http://www.pythoner.com/176.html
+  [4]: https://www.youtube.com/watch?v=11Q2QADsAEE
+</code></pre><h2 id="6----任务完成体会">6.    任务完成体会</h2>
+<p>从零开始学习OpenCV图像处理，并且使用刚上手的Python,对自己而言无疑是一个巨大的挑战。好在过程还算顺利，虽然会不停地遇到问题，但经过不断尝试总能或多或少地缓解“燃眉之急”。就目前来看，解决方案还有很大提升空间，譬如自动化识别，要解决这个或者得彻底改变思路（譬如充分模糊化之后再做边缘检测），即对不同亮度的图片能达到同样高的正确率。
+在请教别人后会有人建议去看Photoshop怎么做，忽然意识到成熟的商业软件背后蕴藏着许许多多人智慧的结晶，而自己还有很多很多需要理解掌握的东西。</p>
+<h3 id="花絮">花絮</h3>
+<blockquote>
+<ul>
+<li>[1] 这次用的是全局性阈值，自适应阈值能平衡细节，但对有裂缝的车道来说并不适用。因为最后的结果强调标志线与路面的黑白对比，所以只是通过一个全局的阈值“筛出”白色标志线。不过这时遇到一个问题：对于光照条件不同的路面照片，阈值是不同的,甚至在一种光照条件（暗光），路面照片也不一样，这个时候开始考虑归一化和增强对比度的问题。</li>
+<li>[2] 真傻还是假傻。。。。在powershell里执行命令，默认都是在system32文件夹里啊。。。。得切到工程文件夹里才好啊啊啊啊</li>
+</ul>
+</blockquote>
+
+                        
+                    </section>
+                    
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        <a href="roadnn.html"
+           class="navigation navigation-prev "
+           aria-label="Previous page: Road Crack Detection">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="../../programming/engineering.html"
+           class="navigation navigation-next "
+           aria-label="Next page: 工程化">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
+        
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Road Lane Recognition","level":"6.5.4","depth":2,"next":{"title":"工程化","level":"7.1","depth":1,"path":"programming/engineering.md","ref":"programming/engineering.md","articles":[]},"previous":{"title":"Road Crack Detection","level":"6.5.3","depth":2,"path":"computer_vision/applications/roadnn.md","ref":"computer_vision/applications/roadnn.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-hqbook","chapter-fold","katex","expandable-chapters-small","todo","donate","favicon","code","advanced-emoji","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["gitbook-plugin-theme-hqbook/_themes/prism-vs.css"]},"todo":{},"search-pro":{},"code":{"copyButtons":true},"donate":{"title":"","button":"Donate","wechat":"http://static.zybuluo.com/sixijinling/3mhqbsdz9a24mrhdgj348e9x/image_1cfuoqam86g5197d1cnt12k211s823.png","alipay":"http://static.zybuluo.com/sixijinling/3fnxywa4rs75f25kinu5ahnn/image_1cfuh8j65mc41k3q28cp431679.png","wechatText":"微信打赏","alipayText":"支付宝打赏"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{},"lightbox":{"includeJQuery":false,"sameUuid":true,"options":{"resizeDuration":500,"wrapAround":false}},"theme-hqbook":{"favicon":"https://rowl1ng.com/blog/style/favicons/favicon.ico","logo":"https://rowl1ng.com/blog/style/images/logo-rowl1ng.png","search-placeholder":"Search","copyButtons":true,"copyLines":true,"dragSplitter":true,"flexible-linkcard":{"title":"Converts blockquotes into beautiful linkcard, custom nice links","target":"_blank","hrefUrl":"../../demo/demo.html","imgSrc":"../../images/home/logo.png","imgClass":""},"hide-elements":[".summary .gitbook-link"]},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://rowl1ng.com/blog/style/images/logo-rowl1ng.png","style":"background: none; max-width: 100px"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Home":"http://rowl1ng.com","Blog":"http://rowl1ng.com/blog"}},"gitbook":"*"},"file":{"path":"computer_vision/applications/lane.md","mtime":"2024-02-22T08:15:30.072Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-08-12T14:03:27.368Z"},"basePath":"../..","book":{"language":""}})
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-hqbook/theme.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1 @@
+  * 读论文：NeRF。Youtube上的讲论文视频：SIREN，NeRF，volume rendering。

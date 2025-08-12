@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+# 确保在 source 分支
+git checkout source
+
+# 构建 GitBook/Honkit
+npx honkit build
+
+# 进入构建目录
+cd _book
+
+# 初始化临时 Git 仓库
+git init
+git checkout -b master
+git add .
+git commit -m "Deploy to GitHub Pages"
+
+# 推送到远程 master 分支（覆盖）
+git push --force git@github.com:Rowl1ng/MyWiki.git master
+
+# 7. 返回原目录
+cd ..
+
+echo "✅ 部署完成！已推送到 master 分支。"
