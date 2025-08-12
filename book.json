@@ -8,7 +8,6 @@
     "plugins": [
                 "theme-hqbook",
                 "chapter-fold",
-                "prism",
                 "katex",
                 "expandable-chapters-small",
                 "todo",
@@ -38,7 +37,7 @@
                    "wechat":"http://static.zybuluo.com/sixijinling/3mhqbsdz9a24mrhdgj348e9x/image_1cfuoqam86g5197d1cnt12k211s823.png",
                         "alipay": "http://static.zybuluo.com/sixijinling/3fnxywa4rs75f25kinu5ahnn/image_1cfuh8j65mc41k3q28cp431679.png",
                         "title": "",
-                        "button": "赏",
+                        "button": "Donate",
                         "alipayText": "支付宝打赏",
                         "wechatText": "微信打赏"
                       },

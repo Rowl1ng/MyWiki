@@ -10,6 +10,9 @@ discretization
 discretization of surface into 3D points
 does not model connectivity
 
+[Generating Point Samples on a Mesh](https://www.fwilliams.info/point-cloud-utils/sections/mesh_sampling/)
+
+
 ## Meshes
 discretization into vertices and faces
 
