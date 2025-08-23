@@ -99,6 +99,7 @@ nav:
       - Latex: research/latex.md
       - Presentation: research/presentation.md
       - Projects: research/projects.md
+      - Thesis: research/thesis.md
 
   - Math:
       - Probability Theory: math/probability.md
@@ -259,6 +260,7 @@ nav:
   - Art:
       - color: art/color.md
       - light: art/light.md
+      - 摄影: art/photography.md
 
   - Music:
       - Inbox: music/inbox.md
